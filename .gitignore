@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Environments and editors
+.venv/
+venv/
+.idea/
+.vscode/
+
+# Credentials
+.env
+.env.*
+*.key
+credentials*.json
+secret*.json
+
+# Generated runtime state
+runs/
+workspaces/
+repos_source/
+checkpoints/
+models/
+*.log
+
+# Archives and local thesis source
+*.zip
+*.tar
+*.tar.gz
+/毕业论文.pdf
+/thesis.pdf

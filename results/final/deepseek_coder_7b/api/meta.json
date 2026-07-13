@@ -1,0 +1,9 @@
+{
+  "run_id": "deepseek__api__rg1_ws20_ss2__allrepos_N200_seed42__t0__max128__20260422_170135",
+  "prompt_path": "prompts/standard_api_rg1_ws20_ss2_allrepos_N200_seed42.jsonl",
+  "model_path": "/root/autodl-tmp/LLM/Deepseek-coder",
+  "max_new_tokens": 128,
+  "temperature": 0.0,
+  "n_samples": 1600,
+  "protocol": "original_api_protocol"
+}

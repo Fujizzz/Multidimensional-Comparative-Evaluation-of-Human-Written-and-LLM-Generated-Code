@@ -1,0 +1,7 @@
+﻿,Reference Consistency,Executability,Engineering Quality,Contextual Coherence,Risk Exposure
+Human Baseline,1.0,1.0,1.0,0.447503,1.0
+DeepSeek-Coder 7B,0.541091,0.520734,0.713419,0.35,0.550364
+Qwen2.5-Coder 7B Instruct,0.372813,0.563137,0.627455,0.356627,0.452772
+DeepSeek-V4-Flash (API),0.35,0.717796,0.407709,0.367305,0.35
+Repoformer 7B,0.617582,0.35,0.35,0.976317,0.735597
+mini-swe-agent (DeepSeek-V4-Flash),0.433131,0.44142,0.744655,1.0,0.873342

@@ -1,0 +1,24 @@
+RUN_ID = deepseek__api__rg1_ws20_ss2__allrepos_N200_seed42__t0__max128__20260422_170135
+PRED = predictions/deepseek__api__rg1_ws20_ss2__allrepos_N200_seed42__t0__max128__20260422_170135.jsonl
+
+=== EM (pass@1) ===
+EM
+0.42	200	alibaba_FederatedScope
+0.52	200	awslabs_fortuna
+0.35	200	google_vizier
+0.74	200	huggingface_diffusers
+0.465	200	huggingface_evaluate
+0.34	200	nerfstudio-project_nerfstudio
+0.485	200	opendilab_ACE
+0.445	200	pytorch_rl
+
+=== ES (pass@1) ===
+ES
+0.7167	200	alibaba_FederatedScope
+0.8	200	awslabs_fortuna
+0.6639	200	google_vizier
+0.8617	200	huggingface_diffusers
+0.8053	200	huggingface_evaluate
+0.6031	200	nerfstudio-project_nerfstudio
+0.7001	200	opendilab_ACE
+0.6695	200	pytorch_rl

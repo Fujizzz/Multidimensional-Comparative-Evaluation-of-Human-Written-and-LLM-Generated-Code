@@ -1,0 +1,1600 @@
+{"metadata": {"task_id": "huggingface_diffusers/0"}, "raw_generation": "StableDiffusionInpaintPipelineLegacy,"}
+{"metadata": {"task_id": "huggingface_diffusers/3"}, "raw_generation": "import os"}
+{"metadata": {"task_id": "huggingface_diffusers/4"}, "raw_generation": "timesteps: torch.IntTensor,"}
+{"metadata": {"task_id": "huggingface_diffusers/2"}, "raw_generation": "\"Run validation every X epochs. Validation consists of running the prompt\""}
+{"metadata": {"task_id": "huggingface_diffusers/5"}, "raw_generation": "return image"}
+{"metadata": {"task_id": "huggingface_diffusers/7"}, "raw_generation": ")"}
+{"metadata": {"task_id": "huggingface_diffusers/8"}, "raw_generation": "assert np.abs(image_from_tuple_slice.flatten() - expected_slice).max() < 1e-2"}
+{"metadata": {"task_id": "huggingface_diffusers/1"}, "raw_generation": "requires_backends(self, [\"torch\", \"transformers\", \"k_diffusion\"])"}
+{"metadata": {"task_id": "huggingface_diffusers/6"}, "raw_generation": "self.model_save_dir = kwargs.get(\"model_save_dir\", None)"}
+{"metadata": {"task_id": "huggingface_diffusers/9"}, "raw_generation": "):"}
+{"metadata": {"task_id": "huggingface_diffusers/13"}, "raw_generation": "out_channels: int,"}
+{"metadata": {"task_id": "huggingface_diffusers/12"}, "raw_generation": "def from_config(cls, *args, **kwargs):"}
+{"metadata": {"task_id": "huggingface_diffusers/10"}, "raw_generation": "filename = os.path.split(path)[-1]"}
+{"metadata": {"task_id": "huggingface_diffusers/11"}, "raw_generation": "\"PLBartDecoder\","}
+{"metadata": {"task_id": "huggingface_diffusers/15"}, "raw_generation": "model_id,"}
+{"metadata": {"task_id": "huggingface_diffusers/16"}, "raw_generation": "The number of steps taken forward in time before going backward in time for a single jump (\"j\" in"}
+{"metadata": {"task_id": "huggingface_diffusers/14"}, "raw_generation": "height (`int`, *optional*, defaults to 512):"}
+{"metadata": {"task_id": "huggingface_diffusers/17"}, "raw_generation": "diff_max = (generated - audio).abs().max()"}
+{"metadata": {"task_id": "huggingface_diffusers/20"}, "raw_generation": "Function invoked when calling the pipeline for generation."}
+{"metadata": {"task_id": "huggingface_diffusers/23"}, "raw_generation": "num_attention_heads=4,"}
+{"metadata": {"task_id": "huggingface_diffusers/24"}, "raw_generation": "def tearDown(self):"}
+{"metadata": {"task_id": "huggingface_diffusers/19"}, "raw_generation": "provided, text embeddings will be generated from `prompt` input argument."}
+{"metadata": {"task_id": "huggingface_diffusers/21"}, "raw_generation": "f\"{diffusers_attention_prefix}.add_k_proj.bias\": encoder_k_bias,"}
+{"metadata": {"task_id": "huggingface_diffusers/22"}, "raw_generation": "text_embeddings_clip,"}
+{"metadata": {"task_id": "huggingface_diffusers/26"}, "raw_generation": "return_dict=False,"}
+{"metadata": {"task_id": "huggingface_diffusers/27"}, "raw_generation": "self.sample = None"}
+{"metadata": {"task_id": "huggingface_diffusers/25"}, "raw_generation": "installation page: https://pytorch.org/get-started/locally/ and follow the ones that match your environment."}
+{"metadata": {"task_id": "huggingface_diffusers/28"}, "raw_generation": "accelerator.wait_for_everyone()"}
+{"metadata": {"task_id": "huggingface_diffusers/18"}, "raw_generation": "noise to that region the larger the `strength`. If `strength` is 0, no inpainting will occur."}
+{"metadata": {"task_id": "huggingface_diffusers/29"}, "raw_generation": "args.local_rank = env_local_rank"}
+{"metadata": {"task_id": "huggingface_diffusers/30"}, "raw_generation": "return latents"}
+{"metadata": {"task_id": "huggingface_diffusers/31"}, "raw_generation": "elif isinstance(image, torch.Tensor):"}
+{"metadata": {"task_id": "huggingface_diffusers/32"}, "raw_generation": "Save a model and its configuration file to a directory, so that it can be re-loaded using the"}
+{"metadata": {"task_id": "huggingface_diffusers/33"}, "raw_generation": "state_dict (dict): EMA state. Should be an object returned"}
+{"metadata": {"task_id": "huggingface_diffusers/34"}, "raw_generation": "self.timesteps = self.timesteps.to(original_samples.device, dtype=torch.float32)"}
+{"metadata": {"task_id": "huggingface_diffusers/35"}, "raw_generation": "else:"}
+{"metadata": {"task_id": "huggingface_diffusers/36"}, "raw_generation": "from diffusers.pipelines.stable_diffusion import StableDiffusionSafetyChecker"}
+{"metadata": {"task_id": "huggingface_diffusers/37"}, "raw_generation": "uncond_tokens,"}
+{"metadata": {"task_id": "huggingface_diffusers/41"}, "raw_generation": "t_mask_np, t_masked_np = prepare_mask_and_masked_image(im_np, mask_np)"}
+{"metadata": {"task_id": "huggingface_diffusers/38"}, "raw_generation": "The output format of the generate image. Choose between"}
+{"metadata": {"task_id": "huggingface_diffusers/45"}, "raw_generation": "max_diff = (output_slice.flatten() - expected_slice).abs().sum().item()"}
+{"metadata": {"task_id": "huggingface_diffusers/46"}, "raw_generation": "res_skip_channels = in_channels if (i == num_layers - 1) else out_channels"}
+{"metadata": {"task_id": "huggingface_diffusers/43"}, "raw_generation": "Truncates log_p_x_0 such that for each column vector, the total cumulative probability is `truncation_rate` The"}
+{"metadata": {"task_id": "huggingface_diffusers/39"}, "raw_generation": "generator=generator,"}
+{"metadata": {"task_id": "huggingface_diffusers/57"}, "raw_generation": "uncond_tokens = [\"\"] * batch_size"}
+{"metadata": {"task_id": "huggingface_diffusers/44"}, "raw_generation": "dummy_file_paths = {"}
+{"metadata": {"task_id": "huggingface_diffusers/40"}, "raw_generation": "return (pred_prev_sample, state)"}
+{"metadata": {"task_id": "huggingface_diffusers/48"}, "raw_generation": "out_channels=out_channels,"}
+{"metadata": {"task_id": "huggingface_diffusers/58"}, "raw_generation": "image = torch.from_numpy(image).to(dtype=torch.float32) / 127.5 - 1.0"}
+{"metadata": {"task_id": "huggingface_diffusers/53"}, "raw_generation": "kwargs[\"num_inference_steps\"] = num_inference_steps"}
+{"metadata": {"task_id": "huggingface_diffusers/42"}, "raw_generation": "do_classifier_free_guidance = guidance_scale > 1.0"}
+{"metadata": {"task_id": "huggingface_diffusers/59"}, "raw_generation": "time_embedding_norm=resnet_time_scale_shift,"}
+{"metadata": {"task_id": "huggingface_diffusers/56"}, "raw_generation": "scheduler_config = self.get_scheduler_config()"}
+{"metadata": {"task_id": "huggingface_diffusers/55"}, "raw_generation": "sd_upsample_prefix = f\"up.{3-i}.upsample.\""}
+{"metadata": {"task_id": "huggingface_diffusers/51"}, "raw_generation": "\"thresholding\": False,"}
+{"metadata": {"task_id": "huggingface_diffusers/49"}, "raw_generation": "raise ValueError(\"Mask should be in [0, 1] range\")"}
+{"metadata": {"task_id": "huggingface_diffusers/47"}, "raw_generation": "[`DDIMScheduler`], [`LMSDiscreteScheduler`], or [`PNDMScheduler`]."}
+{"metadata": {"task_id": "huggingface_diffusers/54"}, "raw_generation": "\" checkpoints in case they are better than the last checkpoint, and are also suitable for resuming\""}
+{"metadata": {"task_id": "huggingface_diffusers/50"}, "raw_generation": "super_res_latents (`torch.FloatTensor` of shape (batch size, channels, super res height, super res width), *optional*):"}
+{"metadata": {"task_id": "huggingface_diffusers/52"}, "raw_generation": "\"linear\": PIL_INTERPOLATION[\"linear\"],"}
+{"metadata": {"task_id": "huggingface_diffusers/60"}, "raw_generation": "unet = self.dummy_uncond_unet"}
+{"metadata": {"task_id": "huggingface_diffusers/61"}, "raw_generation": "if isinstance(first, dict):"}
+{"metadata": {"task_id": "huggingface_diffusers/62"}, "raw_generation": "documented_obj = []"}
+{"metadata": {"task_id": "huggingface_diffusers/63"}, "raw_generation": "r\"\"\""}
+{"metadata": {"task_id": "huggingface_diffusers/64"}, "raw_generation": "elif model_class == \"RobertaSeriesModelWithTransformation\":"}
+{"metadata": {"task_id": "huggingface_diffusers/65"}, "raw_generation": "parser.add_argument(\"--prior_loss_weight\", type=float, default=1.0, help=\"The weight of prior preservation loss.\")"}
+{"metadata": {"task_id": "huggingface_diffusers/67"}, "raw_generation": "feature_extractor=CLIPFeatureExtractor.from_pretrained(\"openai/clip-vit-base-patch32\"),"}
+{"metadata": {"task_id": "huggingface_diffusers/68"}, "raw_generation": "height (`int`, *optional*, defaults to self.unet.config.sample_size * self.vae_scale_factor):"}
+{"metadata": {"task_id": "huggingface_diffusers/70"}, "raw_generation": "\"--dataset_config_name\","}
+{"metadata": {"task_id": "huggingface_diffusers/71"}, "raw_generation": "transformer=transformer,"}
+{"metadata": {"task_id": "huggingface_diffusers/69"}, "raw_generation": "model = PriorTransformer(**PRIOR_CONFIG)"}
+{"metadata": {"task_id": "huggingface_diffusers/66"}, "raw_generation": "...     \"runwayml/stable-diffusion-v1-5\", revision=\"bf16\", dtype=jnp.bfloat16"}
+{"metadata": {"task_id": "huggingface_diffusers/73"}, "raw_generation": "time_step = scheduler.timesteps[len(scheduler.timesteps) // 2]"}
+{"metadata": {"task_id": "huggingface_diffusers/74"}, "raw_generation": "from diffusers.models.embeddings import get_timestep_embedding"}
+{"metadata": {"task_id": "huggingface_diffusers/76"}, "raw_generation": "transform_to_pil = transforms.ToPILImage()"}
+{"metadata": {"task_id": "huggingface_diffusers/77"}, "raw_generation": "DiffusionPipeline,"}
+{"metadata": {"task_id": "huggingface_diffusers/79"}, "raw_generation": "self.mean, self.logvar = torch.chunk(parameters, 2, dim=1)"}
+{"metadata": {"task_id": "huggingface_diffusers/78"}, "raw_generation": "def __init__("}
+{"metadata": {"task_id": "huggingface_diffusers/83"}, "raw_generation": "model_output: jnp.ndarray,"}
+{"metadata": {"task_id": "huggingface_diffusers/72"}, "raw_generation": "out_channels=3,"}
+{"metadata": {"task_id": "huggingface_diffusers/85"}, "raw_generation": "vqvae ([`VQModel`]):"}
+{"metadata": {"task_id": "huggingface_diffusers/84"}, "raw_generation": "\"prompt\": \"An astronaut riding an elephant\","}
+{"metadata": {"task_id": "huggingface_diffusers/82"}, "raw_generation": "if not self.use_linear_projection:"}
+{"metadata": {"task_id": "huggingface_diffusers/80"}, "raw_generation": "deps[\"huggingface-hub\"],"}
+{"metadata": {"task_id": "huggingface_diffusers/75"}, "raw_generation": "parser.add_argument("}
+{"metadata": {"task_id": "huggingface_diffusers/81"}, "raw_generation": "\"image\": init_image,"}
+{"metadata": {"task_id": "huggingface_diffusers/88"}, "raw_generation": "out_channels=4,"}
+{"metadata": {"task_id": "huggingface_diffusers/86"}, "raw_generation": "type=int,"}
+{"metadata": {"task_id": "huggingface_diffusers/87"}, "raw_generation": "args.max_train_steps = args.num_train_epochs * num_update_steps_per_epoch"}
+{"metadata": {"task_id": "huggingface_diffusers/89"}, "raw_generation": "\"num_train_timesteps\": 1100,"}
+{"metadata": {"task_id": "huggingface_diffusers/90"}, "raw_generation": "logging.basicConfig("}
+{"metadata": {"task_id": "huggingface_diffusers/91"}, "raw_generation": "from diffusers.schedulers import DDIMScheduler, LMSDiscreteScheduler, PNDMScheduler"}
+{"metadata": {"task_id": "huggingface_diffusers/92"}, "raw_generation": "}"}
+{"metadata": {"task_id": "huggingface_diffusers/93"}, "raw_generation": "assert number_of_steps == 2"}
+{"metadata": {"task_id": "huggingface_diffusers/94"}, "raw_generation": "sld_momentum_scale (`float`, *optional*, defaults to 0.3):"}
+{"metadata": {"task_id": "huggingface_diffusers/95"}, "raw_generation": "if token is None:"}
+{"metadata": {"task_id": "huggingface_diffusers/96"}, "raw_generation": "resnet_groups=resnet_groups,"}
+{"metadata": {"task_id": "huggingface_diffusers/98"}, "raw_generation": "model = UNet2DConditionModel("}
+{"metadata": {"task_id": "huggingface_diffusers/97"}, "raw_generation": "\"--scale_lr\","}
+{"metadata": {"task_id": "huggingface_diffusers/99"}, "raw_generation": "Pre-generated text embeddings. Can be used to easily tweak text inputs, *e.g.* prompt weighting. If not"}
+{"metadata": {"task_id": "huggingface_diffusers/102"}, "raw_generation": "args.learning_rate"}
+{"metadata": {"task_id": "huggingface_diffusers/104"}, "raw_generation": "model_id, subfolder=\"unet\", dtype=dtype, revision=revision"}
+{"metadata": {"task_id": "huggingface_diffusers/103"}, "raw_generation": "transforms.Resize(args.resolution, interpolation=transforms.InterpolationMode.BILINEAR),"}
+{"metadata": {"task_id": "huggingface_diffusers/105"}, "raw_generation": "scheduler = FlaxPNDMScheduler("}
+{"metadata": {"task_id": "huggingface_diffusers/106"}, "raw_generation": "tokenizer = CLIPTokenizer.from_pretrained(\"hf-internal-testing/tiny-random-clip\")"}
+{"metadata": {"task_id": "huggingface_diffusers/101"}, "raw_generation": "if step == 1:"}
+{"metadata": {"task_id": "huggingface_diffusers/108"}, "raw_generation": "Whether or not to force the (re-)download of the model weights and configuration files, overriding the"}
+{"metadata": {"task_id": "huggingface_diffusers/110"}, "raw_generation": "for name, param in named_params.items():"}
+{"metadata": {"task_id": "huggingface_diffusers/107"}, "raw_generation": "_backends = [\"torch\", \"transformers\"]"}
+{"metadata": {"task_id": "huggingface_diffusers/111"}, "raw_generation": "return model"}
+{"metadata": {"task_id": "huggingface_diffusers/100"}, "raw_generation": "timestep_list,"}
+{"metadata": {"task_id": "huggingface_diffusers/113"}, "raw_generation": "\"cross_attention_dim\": 32,"}
+{"metadata": {"task_id": "huggingface_diffusers/114"}, "raw_generation": "ddpm_2 = DDPMScheduler.from_pretrained(\"google/ddpm-celebahq-256\", beta_start=88)"}
+{"metadata": {"task_id": "huggingface_diffusers/116"}, "raw_generation": "prompt_ids = shard(prompt_ids)"}
+{"metadata": {"task_id": "huggingface_diffusers/115"}, "raw_generation": "One or a list of [torch generator(s)](https://pytorch.org/docs/stable/generated/torch.Generator.html)"}
+{"metadata": {"task_id": "huggingface_diffusers/117"}, "raw_generation": "requires_backends(self, [\"torch\"])"}
+{"metadata": {"task_id": "huggingface_diffusers/109"}, "raw_generation": "main()"}
+{"metadata": {"task_id": "huggingface_diffusers/112"}, "raw_generation": "from tqdm.auto import tqdm"}
+{"metadata": {"task_id": "huggingface_diffusers/118"}, "raw_generation": "dtype=self.dtype,"}
+{"metadata": {"task_id": "huggingface_diffusers/119"}, "raw_generation": "cross_attention_dim=32,"}
+{"metadata": {"task_id": "huggingface_diffusers/120"}, "raw_generation": "set=\"train\","}
+{"metadata": {"task_id": "huggingface_diffusers/123"}, "raw_generation": "diffusers_transformer_block_prefix = f\"transformer_blocks.{transformer_block_idx}\""}
+{"metadata": {"task_id": "huggingface_diffusers/122"}, "raw_generation": "if `guidance_scale` is less than `1`)."}
+{"metadata": {"task_id": "huggingface_diffusers/121"}, "raw_generation": "help=("}
+{"metadata": {"task_id": "huggingface_diffusers/124"}, "raw_generation": "0.49129390716552734,"}
+{"metadata": {"task_id": "huggingface_diffusers/125"}, "raw_generation": "\"--checkpoint_load_device\","}
+{"metadata": {"task_id": "huggingface_diffusers/126"}, "raw_generation": ">>> img2img = StableDiffusionImg2ImgPipeline(**text2img.components)"}
+{"metadata": {"task_id": "huggingface_diffusers/128"}, "raw_generation": "args.pretrained_model_name_or_path,"}
+{"metadata": {"task_id": "huggingface_diffusers/129"}, "raw_generation": "gc.collect()"}
+{"metadata": {"task_id": "huggingface_diffusers/127"}, "raw_generation": "to make generation deterministic."}
+{"metadata": {"task_id": "huggingface_diffusers/130"}, "raw_generation": "image quality. This pipeline requires a value of at least `1`."}
+{"metadata": {"task_id": "huggingface_diffusers/131"}, "raw_generation": "assert torch.allclose(output_slice.flatten(), expected_slice, atol=1e-3)"}
+{"metadata": {"task_id": "huggingface_diffusers/133"}, "raw_generation": "output_2 = sd_pipe(**inputs)"}
+{"metadata": {"task_id": "huggingface_diffusers/132"}, "raw_generation": "self.conv = conv"}
+{"metadata": {"task_id": "huggingface_diffusers/134"}, "raw_generation": "parser = argparse.ArgumentParser(description=\"Simple example of a training script.\")"}
+{"metadata": {"task_id": "huggingface_diffusers/136"}, "raw_generation": "return ("}
+{"metadata": {"task_id": "huggingface_diffusers/137"}, "raw_generation": "n_heads (:obj:`int`):"}
+{"metadata": {"task_id": "huggingface_diffusers/139"}, "raw_generation": "num_inference_steps = 10"}
+{"metadata": {"task_id": "huggingface_diffusers/138"}, "raw_generation": "Cross Attention 2D Downsizing block - original architecture from Unet transformers:"}
+{"metadata": {"task_id": "huggingface_diffusers/135"}, "raw_generation": "Pre-generated noisy latents, sampled from a Gaussian distribution, to be used as inputs for image"}
+{"metadata": {"task_id": "huggingface_diffusers/140"}, "raw_generation": "num_training_steps=args.max_train_steps * args.gradient_accumulation_steps,"}
+{"metadata": {"task_id": "huggingface_diffusers/142"}, "raw_generation": "return components"}
+{"metadata": {"task_id": "huggingface_diffusers/141"}, "raw_generation": "path = os.path.basename(args.resume_from_checkpoint)"}
+{"metadata": {"task_id": "huggingface_diffusers/144"}, "raw_generation": "\"unet\": unet,"}
+{"metadata": {"task_id": "huggingface_diffusers/143"}, "raw_generation": "prompts: List[str]"}
+{"metadata": {"task_id": "huggingface_diffusers/145"}, "raw_generation": "temb_channels=512,"}
+{"metadata": {"task_id": "huggingface_diffusers/146"}, "raw_generation": "return os.path.join(tests_dir, append_path)"}
+{"metadata": {"task_id": "huggingface_diffusers/148"}, "raw_generation": "if torch_device == \"mps\":"}
+{"metadata": {"task_id": "huggingface_diffusers/149"}, "raw_generation": "repeats=args.repeats,"}
+{"metadata": {"task_id": "huggingface_diffusers/147"}, "raw_generation": "func_doc = fn.__doc__"}
+{"metadata": {"task_id": "huggingface_diffusers/150"}, "raw_generation": "pipe = self.pipeline_class(**init_components)"}
+{"metadata": {"task_id": "huggingface_diffusers/151"}, "raw_generation": "text_encoder_config = PretrainedConfig.from_pretrained("}
+{"metadata": {"task_id": "huggingface_diffusers/154"}, "raw_generation": "if latents is None:"}
+{"metadata": {"task_id": "huggingface_diffusers/152"}, "raw_generation": "import hashlib"}
+{"metadata": {"task_id": "huggingface_diffusers/155"}, "raw_generation": "num_inference_steps (`int`, *optional*, defaults to 50):"}
+{"metadata": {"task_id": "huggingface_diffusers/156"}, "raw_generation": "prompt (`str` or `List[str]`, *optional*):"}
+{"metadata": {"task_id": "huggingface_diffusers/153"}, "raw_generation": "\"models/xlm_roberta/test_modeling_xlm_roberta.py\","}
+{"metadata": {"task_id": "huggingface_diffusers/158"}, "raw_generation": "scheduler = scheduler_class(**scheduler_config)"}
+{"metadata": {"task_id": "huggingface_diffusers/157"}, "raw_generation": "if output_size is None:"}
+{"metadata": {"task_id": "huggingface_diffusers/161"}, "raw_generation": "\"nearest\": PIL.Image.Resampling.NEAREST,"}
+{"metadata": {"task_id": "huggingface_diffusers/160"}, "raw_generation": "When `\"auto\"`, halves the input to the attention heads, so attention will be computed in two steps. If"}
+{"metadata": {"task_id": "huggingface_diffusers/162"}, "raw_generation": "size=512,"}
+{"metadata": {"task_id": "huggingface_diffusers/163"}, "raw_generation": "max_length=self.tokenizer.model_max_length,"}
+{"metadata": {"task_id": "huggingface_diffusers/164"}, "raw_generation": "beta_end: float = 0.02,"}
+{"metadata": {"task_id": "huggingface_diffusers/159"}, "raw_generation": "image = np.array(image).astype(np.uint8)"}
+{"metadata": {"task_id": "huggingface_diffusers/166"}, "raw_generation": "noisy_latents = noise_scheduler.add_noise(latents, noise, timesteps)"}
+{"metadata": {"task_id": "huggingface_diffusers/167"}, "raw_generation": "max_length=max_length,"}
+{"metadata": {"task_id": "huggingface_diffusers/165"}, "raw_generation": "if os.path.isdir(pretrained_model_name_or_path)"}
+{"metadata": {"task_id": "huggingface_diffusers/168"}, "raw_generation": "safety_checker=None,"}
+{"metadata": {"task_id": "huggingface_diffusers/169"}, "raw_generation": "if self.config.prediction_type == \"epsilon\":"}
+{"metadata": {"task_id": "huggingface_diffusers/172"}, "raw_generation": "result_mean = torch.mean(torch.abs(sample))"}
+{"metadata": {"task_id": "huggingface_diffusers/170"}, "raw_generation": "with tempfile.NamedTemporaryFile() as file:"}
+{"metadata": {"task_id": "huggingface_diffusers/171"}, "raw_generation": "max_diff = np.abs(output_batch[0][0] - output[0][0]).max()"}
+{"metadata": {"task_id": "huggingface_diffusers/175"}, "raw_generation": "vae = AutoencoderKL("}
+{"metadata": {"task_id": "huggingface_diffusers/173"}, "raw_generation": "images = images.cpu().permute(0, 2, 3, 1).numpy()"}
+{"metadata": {"task_id": "huggingface_diffusers/174"}, "raw_generation": "num_images_per_prompt (`int`, *optional*, defaults to 1):"}
+{"metadata": {"task_id": "huggingface_diffusers/178"}, "raw_generation": "output = scheduler.step(residual, time_step, sample, **kwargs).prev_sample"}
+{"metadata": {"task_id": "huggingface_diffusers/176"}, "raw_generation": ") -> Union[FlaxKarrasVeOutput, Tuple]:"}
+{"metadata": {"task_id": "huggingface_diffusers/179"}, "raw_generation": "except OptionalDependencyNotAvailable:"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/0"}, "raw_generation": "all_images.append(batch[\"image\"][i][indices[:, 1], indices[:, 2]])"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/2"}, "raw_generation": "def get_outputs_for_camera_ray_bundle(self, camera_ray_bundle: RayBundle) -> Dict[str, torch.Tensor]:"}
+{"metadata": {"task_id": "huggingface_diffusers/177"}, "raw_generation": "groups_out=None,"}
+{"metadata": {"task_id": "huggingface_diffusers/180"}, "raw_generation": "Parameters `dtype`"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/1"}, "raw_generation": "crop_border_pixels: Optional[int] = None,"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/3"}, "raw_generation": "CONSOLE.log(f\"Deleting {img}\")"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/4"}, "raw_generation": "if not line:"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/5"}, "raw_generation": "with progress as progress_bar:"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/6"}, "raw_generation": "from typing import Dict, List"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/7"}, "raw_generation": "assert not size_of_chunk"}
+{"metadata": {"task_id": "huggingface_diffusers/181"}, "raw_generation": "masked_image = image * (image_mask < 127.5)"}
+{"metadata": {"task_id": "huggingface_diffusers/182"}, "raw_generation": "block_out_channels=[32, 64],"}
+{"metadata": {"task_id": "huggingface_diffusers/183"}, "raw_generation": "requires_backends(cls, [\"torch\"])"}
+{"metadata": {"task_id": "huggingface_diffusers/184"}, "raw_generation": "text_encoder = resize_token_embeddings("}
+{"metadata": {"task_id": "huggingface_diffusers/186"}, "raw_generation": "block_out_channels=(32, 32, 64),"}
+{"metadata": {"task_id": "huggingface_diffusers/185"}, "raw_generation": "unet.load_state_dict(unet_state_dict)"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/8"}, "raw_generation": "self.zmq_socket, self.zmq_stream, self.zmq_url = self.setup_zmq(zmq_url)"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/9"}, "raw_generation": "self.depth_unit_scale_factor = self.metadata[\"depth_unit_scale_factor\"]"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/10"}, "raw_generation": "self.mlp_head = tcnn.Network("}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/11"}, "raw_generation": "self.image_indices = list(range(len(input_dataset)))"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/13"}, "raw_generation": "shutil.rmtree(image_dir, ignore_errors=True)"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/12"}, "raw_generation": "temporal_row_index,"}
+{"metadata": {"task_id": "huggingface_diffusers/187"}, "raw_generation": "return new_state_dict"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/14"}, "raw_generation": "density = self.field_output_density(base_mlp_out)"}
+{"metadata": {"task_id": "huggingface_diffusers/188"}, "raw_generation": "Conceptually, indicates how much to transform the reference `image`. Must be between 0 and 1. `image`"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/15"}, "raw_generation": "d = {\"t1\": torch.ones((4, 6, 3)), \"t2\": {\"t3\": torch.ones((6, 4))}}"}
+{"metadata": {"task_id": "huggingface_diffusers/189"}, "raw_generation": "pipe = StableDiffusionDepth2ImgPipeline.from_pretrained("}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/16"}, "raw_generation": "):"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/17"}, "raw_generation": "CameraModel(model_id=0, model_name=\"SIMPLE_PINHOLE\", num_params=3),"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/18"}, "raw_generation": "nears = torch.clamp(nears, min=near_plane)"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/19"}, "raw_generation": "RGBFieldHead,"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/20"}, "raw_generation": "coord.broadcast_to(1, 2),"}
+{"metadata": {"task_id": "huggingface_diffusers/193"}, "raw_generation": "t[t != t] = 0"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/21"}, "raw_generation": "error = float(elems[7])"}
+{"metadata": {"task_id": "huggingface_diffusers/192"}, "raw_generation": "_backends = [\"torch\"]"}
+{"metadata": {"task_id": "huggingface_diffusers/194"}, "raw_generation": "from ...models import AutoencoderKL, UNet2DConditionModel"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/22"}, "raw_generation": "return colormaps.apply_depth_colormap(outputs[reformatted_output], accumulation=outputs[accumulation_str])"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/23"}, "raw_generation": "and (torch.max(outputs[reformatted_output]) - 1.0) <= eps  # handle floating point arithmetic"}
+{"metadata": {"task_id": "huggingface_diffusers/190"}, "raw_generation": "def __init__(self):"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/24"}, "raw_generation": "self._model = typing.cast(Model, DDP(self._model, device_ids=[local_rank], find_unused_parameters=True))"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/25"}, "raw_generation": "return stuff.detach().cpu()"}
+{"metadata": {"task_id": "huggingface_diffusers/196"}, "raw_generation": "def test_save_load_float16(self):"}
+{"metadata": {"task_id": "huggingface_diffusers/195"}, "raw_generation": "text_input_ids, untruncated_ids"}
+{"metadata": {"task_id": "huggingface_diffusers/197"}, "raw_generation": "mask_image = load_image("}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/26"}, "raw_generation": "histogram_padding: float = 0.01,"}
+{"metadata": {"task_id": "huggingface_diffusers/198"}, "raw_generation": "default=100,"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/27"}, "raw_generation": "config: Optional[TrainerConfig] = None,"}
+{"metadata": {"task_id": "huggingface_diffusers/191"}, "raw_generation": "_backends = [\"flax\"]"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/28"}, "raw_generation": "entrypoint()"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/29"}, "raw_generation": "self.viewer_state.update_scene(self, step, self.pipeline.model, num_rays_per_batch)"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/32"}, "raw_generation": "implementation: Literal[\"tcnn\", \"torch\"] = \"tcnn\","}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/31"}, "raw_generation": "feature_type: Literal["}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/33"}, "raw_generation": "ends=ends,"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/30"}, "raw_generation": "directions=shaped_raybundle_fields.directions,  # [..., 1, 3]"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/34"}, "raw_generation": "test_tensor_ops()"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/35"}, "raw_generation": "* `NamedTuple[V1_i, V2_i, ...]` -> `NamedTuple[nerfstudio_collate([V1_1, V1_2, ...]),"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/36"}, "raw_generation": "assert camera_opt_to_camera is None or camera_opt_to_camera.shape[:-2] == coords.shape[:-1]"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/37"}, "raw_generation": "basename = name.split(\".\")[0]"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/38"}, "raw_generation": ")"}
+{"metadata": {"task_id": "huggingface_diffusers/199"}, "raw_generation": "text_encoder=text_encoder,"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/39"}, "raw_generation": "assert len(i_eval) == num_eval_images"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/41"}, "raw_generation": "\"myst_nb\","}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/40"}, "raw_generation": "},"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/42"}, "raw_generation": "imgs = read_images_binary(self.data / \"dense/sparse/images.bin\")"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/46"}, "raw_generation": "from torch.nn import Parameter"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/44"}, "raw_generation": "CONSOLE.log(\"[bold green]:tada: Done copying images.\")"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/49"}, "raw_generation": "target_path = str(save_dir / f\"{dataset_name}/{capture_name}\")"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/43"}, "raw_generation": "condition = d_values < triangle_distances"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/48"}, "raw_generation": "depth = rescale(depth, 1 / d, cv2.INTER_AREA)"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/45"}, "raw_generation": "CONSOLE.log(f\":broom: Deleted existing completion directory: {target_dir}.\")"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/50"}, "raw_generation": "v = f\"{v:0.4f}\""}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/47"}, "raw_generation": "k4 = distortion_params[..., 3]"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/53"}, "raw_generation": "c2wh = torch.matmul(c2wh_global, local_c2wh)"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/56"}, "raw_generation": "encoded = encoder(in_tensor)"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/55"}, "raw_generation": "idx_lo = torch.clamp(idx_lo, min=0, max=y1.shape[-1] - 1)"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/54"}, "raw_generation": "activation=nn.ReLU(),"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/57"}, "raw_generation": "img.rename(image_dir / f\"frame_{i+1+num_extracted_frames:05d}.png\")"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/52"}, "raw_generation": "from nerfstudio.configs.method_configs import AnnotatedBaseConfigUnion"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/51"}, "raw_generation": "UniformSampler,"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/58"}, "raw_generation": "ty_max_temp = (aabb[4] - origins[:, 1]) / directions[:, 1]"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/61"}, "raw_generation": "2 * qvec[3] * qvec[1] + 2 * qvec[0] * qvec[2],"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/59"}, "raw_generation": "if not self.has_printed and self.config.max_log_size:"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/62"}, "raw_generation": "return {}"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/60"}, "raw_generation": "test_nested_class()"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/64"}, "raw_generation": "self.optimizers[param_group_name].step()"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/66"}, "raw_generation": "offset += params_in_level"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/65"}, "raw_generation": "self.func(*self.args, **self.kwargs, step=step)"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/67"}, "raw_generation": "from torch import nn"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/63"}, "raw_generation": "comp_m = torch.tensor(bounding_box_max, device=point.device)"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/69"}, "raw_generation": "colormap_type = self.state.vis[\"renderingState/colormap_choice\"].read()"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/68"}, "raw_generation": "from typing_extensions import Literal"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/70"}, "raw_generation": "]"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/71"}, "raw_generation": "self.profiler_dict = {}"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/72"}, "raw_generation": "def get_image_metrics_and_images("}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/73"}, "raw_generation": "config.add(host)"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/74"}, "raw_generation": "squares_per_side_h, squares_per_side_w, 1, 2"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/75"}, "raw_generation": "\"otype\": \"SphericalHarmonics\","}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/76"}, "raw_generation": "camera_to_world_h[0, :],"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/78"}, "raw_generation": ") -> None:"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/77"}, "raw_generation": "points3D = read_points3d_binary(os.path.join(path, \"points3D\") + ext)"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/80"}, "raw_generation": "sigma_fn=None,  # self.get_sigma_fn(rays_o, rays_d),"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/83"}, "raw_generation": "return None"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/79"}, "raw_generation": "ret_code = subprocess.call(command, shell=True)"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/81"}, "raw_generation": "rc_path = pathlib.Path(os.environ[\"HOME\"]) / f\".{shell}rc\""}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/82"}, "raw_generation": "frame_json = io.load_from_json(json_filename)"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/88"}, "raw_generation": "base_mlp_out = self.mlp_base(encoded_xyz)"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/84"}, "raw_generation": "line_of_sight_loss_near = (weights - torch.exp(target_distribution.log_prob(steps - termination_depth))) ** 2"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/86"}, "raw_generation": "xys = np.column_stack([tuple(map(float, x_y_id_s[0::3])), tuple(map(float, x_y_id_s[1::3]))])"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/87"}, "raw_generation": "output_type = OutputTypes.RGB_FINE"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/85"}, "raw_generation": "transform = torch.eye(4)"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/91"}, "raw_generation": "cy=0.5 * float(height),"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/89"}, "raw_generation": "point3D_id = int(elems[0])"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/90"}, "raw_generation": "directions = -("}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/95"}, "raw_generation": "self.vis_outputs = outputs"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/93"}, "raw_generation": "super().__init__()"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/94"}, "raw_generation": "mlp_out_sem = self.mlp_semantic(mlp_out)"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/92"}, "raw_generation": "spacing_fn_inv=lambda x: x,"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/97"}, "raw_generation": "m00 = M[0, 0]"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/100"}, "raw_generation": "config.viewer, log_filename=viewer_log_path, datapath=config.pipeline.datamanager.dataparser.data"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/101"}, "raw_generation": "if camera_mask_path is not None:"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/102"}, "raw_generation": "\"times\": torch.as_tensor(time_ids[idx] / self._time_ids.max()).float(),"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/99"}, "raw_generation": "**kwargs,"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/98"}, "raw_generation": "_, eval_loss_dict, eval_metrics_dict = self.pipeline.get_eval_loss_dict(step=step)"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/103"}, "raw_generation": "self.kill_webrtc_signal = False"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/96"}, "raw_generation": "radius: float, center: TensorType[3] = None, color: str = \"black\", opacity: float = 1.0, resolution: int = 32"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/104"}, "raw_generation": "import os"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/105"}, "raw_generation": "pipeline,"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/106"}, "raw_generation": "nbf.write(ntbk, ipath)"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/107"}, "raw_generation": "],"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/108"}, "raw_generation": "new_batch[\"image\"] = images"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/110"}, "raw_generation": "q = np.array(quaternion, dtype=np.float64, copy=True)"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/111"}, "raw_generation": "\"nerfacto\": \"Recommended real-time model tuned for real captures. This model will be continually updated.\","}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/109"}, "raw_generation": ")  # transient rgb"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/114"}, "raw_generation": "else:"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/112"}, "raw_generation": "for shell in shells_found:"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/115"}, "raw_generation": "class Blender(DataParser):"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/116"}, "raw_generation": "metrics_dict_list = []"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/113"}, "raw_generation": "class ColmapCameraModel:"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/118"}, "raw_generation": "),"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/119"}, "raw_generation": "\"scheduler\": None,"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/120"}, "raw_generation": "f\"{destination}\","}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/121"}, "raw_generation": "t_max = torch.max(tx_min, tx_max)"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/117"}, "raw_generation": "resolution: Union[int, List[int]] = field(default_factory=lambda: [128, 128, 128])"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/123"}, "raw_generation": "return dataparser_outputs"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/122"}, "raw_generation": "from mathutils import Matrix"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/125"}, "raw_generation": "if h_w.ndim == 0 or h_w.shape[-1] != 1:"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/124"}, "raw_generation": "print(\"ssh_key_filename\", ssh_key_filename)"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/126"}, "raw_generation": "from nuscenes.utils.data_classes import Box"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/129"}, "raw_generation": "assert batch.b.shape == (4, 5)"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/128"}, "raw_generation": "w2c = np.concatenate([w2c, np.array([[0, 0, 0, 1]])], 0)"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/127"}, "raw_generation": "scale_factor: float = 1.0"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/131"}, "raw_generation": "return ray_bundle"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/130"}, "raw_generation": "pred_normal_loss,"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/136"}, "raw_generation": "input_json = None"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/132"}, "raw_generation": "k2: float = 0.0,"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/133"}, "raw_generation": "\"n_levels\": num_levels,"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/135"}, "raw_generation": ").values"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/134"}, "raw_generation": "[0.0, 0.0, 0.0, 1.0],"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/139"}, "raw_generation": "mapper_cmd = ["}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/137"}, "raw_generation": "from typing import Dict, Optional, Union"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/140"}, "raw_generation": "if self.config.save_only_latest_checkpoint:"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/138"}, "raw_generation": "completions_dir = pathlib.Path(__file__).absolute().parent"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/141"}, "raw_generation": "from dataclasses import dataclass, field"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/143"}, "raw_generation": "outputs.append(exp_map_SO3xR3(self.pose_adjustment[indices, :]))"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/142"}, "raw_generation": "\"Ns 1.00000000\","}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/144"}, "raw_generation": "pipeline: Pipeline,"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/148"}, "raw_generation": "assert distortion_params_delta is None or distortion_params_delta.shape[:-1] == coords.shape[:-1]"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/145"}, "raw_generation": "{"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/147"}, "raw_generation": "tyro.extras.set_accent_color(\"bright_yellow\")"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/149"}, "raw_generation": "for k, v in stuff.items():"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/146"}, "raw_generation": "tmp_path = str(save_dir / \".temp\")"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/151"}, "raw_generation": ".tolist()[1:]"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/153"}, "raw_generation": "eigenvals = eigenvals[idx]"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/150"}, "raw_generation": "lines += f\"{key}: {str(val)}\".split(\"\\n\")"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/156"}, "raw_generation": "height: Optional[Union[TensorType[\"batch_hs\":..., 1], int]] = None,"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/152"}, "raw_generation": "Annotated[ProcessVideo, tyro.conf.subcommand(name=\"video\")],"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/157"}, "raw_generation": "cmd = f\"ffprobe -v error -select_streams v:0 -count_packets \\"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/158"}, "raw_generation": "compressed = compressed.replace(\"--check\", \"\")"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/155"}, "raw_generation": "camera_optimizer=CameraOptimizerConfig("}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/160"}, "raw_generation": "directions=self.directions,"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/161"}, "raw_generation": "assert fps_str not in metrics_dict"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/154"}, "raw_generation": "cell_tags = cell.get(\"metadata\", {}).get(\"tags\", [])"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/162"}, "raw_generation": "StrictHostKeyChecking=\"No\","}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/163"}, "raw_generation": "t = M[i, i] - (M[j, j] + M[k, k]) + M[3, 3]"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/164"}, "raw_generation": "torch.stack("}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/159"}, "raw_generation": "for key, scalar in scalar_dict.items():"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/166"}, "raw_generation": "print(\"skipping\", config_name)"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/167"}, "raw_generation": "if skipped_frames > 0:"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/168"}, "raw_generation": "new_path = self.entries"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/165"}, "raw_generation": "density_before_activation, base_mlp_out = torch.split(h, [1, self.geo_feat_dim], dim=-1)"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/172"}, "raw_generation": "translation = im_data.tvec.reshape(3, 1)"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/170"}, "raw_generation": "aabb_center = torch.tensor("}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/174"}, "raw_generation": "self._lookat = np.array(extra_dict[\"lookat\"], dtype=np.float32)"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/169"}, "raw_generation": "torch.zeros(5, 1),"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/171"}, "raw_generation": "use_integrated_encoding: bool = False,"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/175"}, "raw_generation": "image_dir: Path,"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/173"}, "raw_generation": "radius: TensorType[..., 1],"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/176"}, "raw_generation": "positions = ray_samples.frustums.get_positions()"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/177"}, "raw_generation": "one_minus_cosine_by_theta2 = torch.where(near_zero, 0.5 * sine_by_theta, (1 - cosine) / theta2_nz)"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/181"}, "raw_generation": "logfile = open(  # pylint: disable=consider-using-with"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/178"}, "raw_generation": "uv_coords_shape = uv_coords.shape"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/180"}, "raw_generation": "import struct"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/179"}, "raw_generation": "if not os.path.exists(config.load_dir):"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/183"}, "raw_generation": "x_y_id_s = read_next_bytes(fid, num_bytes=24 * num_points2d, format_char_sequence=\"ddq\" * num_points2d)"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/186"}, "raw_generation": "return True"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/187"}, "raw_generation": "input_dim: int = 3,"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/182"}, "raw_generation": "class DepthNerfactoModelConfig(NerfactoModelConfig):"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/184"}, "raw_generation": "wandb.log({name: wandb.Image(image)}, step=step)"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/188"}, "raw_generation": "from aiortc import RTCPeerConnection"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/189"}, "raw_generation": "\"nerfacto\","}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/185"}, "raw_generation": "state = {key.replace(\"module.\", \"\"): value for key, value in loaded_state.items()}"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/190"}, "raw_generation": "super().__init__(num_samples=num_samples)"}
+{"metadata": {"task_id": "awslabs_fortuna/0"}, "raw_generation": ")"}
+{"metadata": {"task_id": "awslabs_fortuna/1"}, "raw_generation": "val_data_loader=self.reg_val_data_loader,"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/191"}, "raw_generation": "for i, process in enumerate(process_context.processes):"}
+{"metadata": {"task_id": "awslabs_fortuna/2"}, "raw_generation": "disable_training_metrics_computation=True,"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/192"}, "raw_generation": "self.embeddings.data.uniform_(-std, std)"}
+{"metadata": {"task_id": "awslabs_fortuna/3"}, "raw_generation": "def __init__(self, mean: Array, cov: Array):"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/195"}, "raw_generation": "print(f\"Error: {e}\")"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/193"}, "raw_generation": "\"otype\": \"FullyFusedMLP\","}
+{"metadata": {"task_id": "awslabs_fortuna/7"}, "raw_generation": "sample = prob_class.posterior.sample()"}
+{"metadata": {"task_id": "awslabs_fortuna/4"}, "raw_generation": "else:"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/199"}, "raw_generation": "scale_factor /= float(torch.max(torch.abs(poses[:, :3, 3])))"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/198"}, "raw_generation": "from __future__ import annotations"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/196"}, "raw_generation": "try:"}
+{"metadata": {"task_id": "awslabs_fortuna/6"}, "raw_generation": "self,"}
+{"metadata": {"task_id": "awslabs_fortuna/8"}, "raw_generation": "self.assertEqual("}
+{"metadata": {"task_id": "awslabs_fortuna/5"}, "raw_generation": "n = len(rav)"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/194"}, "raw_generation": "if zmq_port is None:"}
+{"metadata": {"task_id": "awslabs_fortuna/9"}, "raw_generation": "rng: PRNGKeyArray,"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/197"}, "raw_generation": "base_mlp_layer_width: int = 256,"}
+{"metadata": {"task_id": "awslabs_fortuna/10"}, "raw_generation": "def __str__(self):"}
+{"metadata": {"task_id": "awslabs_fortuna/11"}, "raw_generation": "train_data_loader=self.class_train_data_loader,"}
+{"metadata": {"task_id": "awslabs_fortuna/13"}, "raw_generation": "validation_metrics_step5 = {\"metric1\": 1, \"metric2\": 2}"}
+{"metadata": {"task_id": "awslabs_fortuna/12"}, "raw_generation": "from fortuna.prob_model.posterior.posterior_state_repository import \\"}
+{"metadata": {"task_id": "awslabs_fortuna/14"}, "raw_generation": "raise ValueError("}
+{"metadata": {"task_id": "awslabs_fortuna/15"}, "raw_generation": "-------"}
+{"metadata": {"task_id": "awslabs_fortuna/16"}, "raw_generation": "state,"}
+{"metadata": {"task_id": "awslabs_fortuna/17"}, "raw_generation": "An estimate of the predictive entropy for each input."}
+{"metadata": {"task_id": "awslabs_fortuna/19"}, "raw_generation": "MAPPosteriorApproximator"}
+{"metadata": {"task_id": "awslabs_fortuna/18"}, "raw_generation": "def __init__("}
+{"metadata": {"task_id": "awslabs_fortuna/20"}, "raw_generation": "model parameters, :math:`\\mathcal{D}` is a training data set and :math:`\\phi` are calibration parameters."}
+{"metadata": {"task_id": "awslabs_fortuna/21"}, "raw_generation": "val_targets: Array,"}
+{"metadata": {"task_id": "awslabs_fortuna/22"}, "raw_generation": "raise TypeError(\"`key_paths` must be a tuple.\")"}
+{"metadata": {"task_id": "awslabs_fortuna/23"}, "raw_generation": "yield from data_loader"}
+{"metadata": {"task_id": "awslabs_fortuna/24"}, "raw_generation": "unravel: Optional[Callable[[any], PyTree]] = None,"}
+{"metadata": {"task_id": "awslabs_fortuna/25"}, "raw_generation": "params = mlp.init(self.rng, self.inputs)"}
+{"metadata": {"task_id": "awslabs_fortuna/27"}, "raw_generation": "self.n_inputs,"}
+{"metadata": {"task_id": "awslabs_fortuna/26"}, "raw_generation": "checkpointer: CalibCheckpointer = CalibCheckpointer(),"}
+{"metadata": {"task_id": "awslabs_fortuna/28"}, "raw_generation": "predict_fn=self.joint.likelihood.prob_output_layer.predict,"}
+{"metadata": {"task_id": "awslabs_fortuna/29"}, "raw_generation": "),"}
+{"metadata": {"task_id": "awslabs_fortuna/30"}, "raw_generation": "self.save_checkpoint_dir"}
+{"metadata": {"task_id": "awslabs_fortuna/31"}, "raw_generation": "def init("}
+{"metadata": {"task_id": "awslabs_fortuna/32"}, "raw_generation": "Number of target samples to draw for each input."}
+{"metadata": {"task_id": "awslabs_fortuna/33"}, "raw_generation": "val_epoch_metrics_str,"}
+{"metadata": {"task_id": "awslabs_fortuna/34"}, "raw_generation": "An estimate of the aleatoric predictive variance."}
+{"metadata": {"task_id": "awslabs_fortuna/35"}, "raw_generation": "self.assertDictEqual("}
+{"metadata": {"task_id": "awslabs_fortuna/36"}, "raw_generation": "outputs = outputs.reshape(outputs.shape[0] * outputs.shape[1], -1)"}
+{"metadata": {"task_id": "awslabs_fortuna/37"}, "raw_generation": "Compute the outputs and their calibrated version."}
+{"metadata": {"task_id": "awslabs_fortuna/38"}, "raw_generation": "Tuple[Callable[[jnp.ndarray, Array], Union[float, Array]], ...]"}
+{"metadata": {"task_id": "awslabs_fortuna/40"}, "raw_generation": "calib_config=self.class_calib_config_nodir_nodump,"}
+{"metadata": {"task_id": "awslabs_fortuna/39"}, "raw_generation": "return super(MultiDeviceMixin, self).save_checkpoint("}
+{"metadata": {"task_id": "awslabs_fortuna/41"}, "raw_generation": "self.rank = rank"}
+{"metadata": {"task_id": "awslabs_fortuna/42"}, "raw_generation": "predict_fn: Callable[[jnp.ndarray], jnp.ndarray],"}
+{"metadata": {"task_id": "awslabs_fortuna/43"}, "raw_generation": "calib_config=calib_config,"}
+{"metadata": {"task_id": "awslabs_fortuna/45"}, "raw_generation": "super().__init__(*args, **kwargs)"}
+{"metadata": {"task_id": "awslabs_fortuna/44"}, "raw_generation": "metrics: Optional[Tuple[Callable[[jnp.ndarray, Array], float], ...]] = None,"}
+{"metadata": {"task_id": "awslabs_fortuna/47"}, "raw_generation": "A loader of input data points."}
+{"metadata": {"task_id": "awslabs_fortuna/46"}, "raw_generation": "state, status[\"swag\"] = trainer.train("}
+{"metadata": {"task_id": "awslabs_fortuna/48"}, "raw_generation": "predict_fn=lambda x: x,"}
+{"metadata": {"task_id": "awslabs_fortuna/49"}, "raw_generation": "loo_val_outputs = np.random.normal(size=(n, 1))"}
+{"metadata": {"task_id": "awslabs_fortuna/51"}, "raw_generation": "fit_config=self.class_fit_config_dir_dump(tmp_dir),"}
+{"metadata": {"task_id": "awslabs_fortuna/50"}, "raw_generation": "training_dataloader=train_data_loader,"}
+{"metadata": {"task_id": "awslabs_fortuna/52"}, "raw_generation": "for data in response.iter_content(chunk_size=1024):"}
+{"metadata": {"task_id": "awslabs_fortuna/53"}, "raw_generation": "fun: Callable,"}
+{"metadata": {"task_id": "awslabs_fortuna/54"}, "raw_generation": "conv: ModuleDef = nn.Conv"}
+{"metadata": {"task_id": "awslabs_fortuna/55"}, "raw_generation": "from jax import random, vmap"}
+{"metadata": {"task_id": "awslabs_fortuna/56"}, "raw_generation": "self, val_lower_bounds: Array, val_upper_bounds: Array, val_targets: Array,"}
+{"metadata": {"task_id": "awslabs_fortuna/57"}, "raw_generation": "output_type=\"continuous\","}
+{"metadata": {"task_id": "awslabs_fortuna/58"}, "raw_generation": "jnp.ndarray"}
+{"metadata": {"task_id": "awslabs_fortuna/59"}, "raw_generation": "self.disable_jit = disable_jit"}
+{"metadata": {"task_id": "awslabs_fortuna/62"}, "raw_generation": "plot_reliability_diagram(accs[0], confs[0])"}
+{"metadata": {"task_id": "awslabs_fortuna/61"}, "raw_generation": "A posterior approximation method. The default method is SWAG."}
+{"metadata": {"task_id": "awslabs_fortuna/60"}, "raw_generation": "if mutable is not None:"}
+{"metadata": {"task_id": "awslabs_fortuna/63"}, "raw_generation": "from fortuna.typing import OptaxOptimizer, Path"}
+{"metadata": {"task_id": "awslabs_fortuna/64"}, "raw_generation": "distribute: bool"}
+{"metadata": {"task_id": "awslabs_fortuna/65"}, "raw_generation": "from fortuna.prob_model.calib_config.base import CalibConfig"}
+{"metadata": {"task_id": "awslabs_fortuna/68"}, "raw_generation": "prob_class.save_state(checkpoint_path=tmp_dir)"}
+{"metadata": {"task_id": "awslabs_fortuna/66"}, "raw_generation": "Tuple[Callable[[jnp.ndarray, jnp.ndarray, Array], Array], ...]"}
+{"metadata": {"task_id": "awslabs_fortuna/67"}, "raw_generation": "activations: Optional[Tuple[Callable[[Array], Array]]] = (nn.relu, nn.relu)"}
+{"metadata": {"task_id": "awslabs_fortuna/69"}, "raw_generation": "lik_log_var=self.reg_lik.model_manager.likelihood_log_variance_model.init("}
+{"metadata": {"task_id": "awslabs_fortuna/70"}, "raw_generation": "self.state.put(state, keep=fit_config.checkpointer.keep_top_n_checkpoints)"}
+{"metadata": {"task_id": "awslabs_fortuna/71"}, "raw_generation": "from jax import random"}
+{"metadata": {"task_id": "awslabs_fortuna/73"}, "raw_generation": "optimizer=FitOptimizer(n_epochs=3),"}
+{"metadata": {"task_id": "awslabs_fortuna/72"}, "raw_generation": "calib_config: CalibConfig = CalibConfig(),"}
+{"metadata": {"task_id": "awslabs_fortuna/74"}, "raw_generation": "}"}
+{"metadata": {"task_id": "awslabs_fortuna/75"}, "raw_generation": "metrics: Optional["}
+{"metadata": {"task_id": "awslabs_fortuna/76"}, "raw_generation": "calib_config=self.reg_calib_config_nodir_nodump,"}
+{"metadata": {"task_id": "awslabs_fortuna/78"}, "raw_generation": "status = prob_reg_map.train("}
+{"metadata": {"task_id": "awslabs_fortuna/77"}, "raw_generation": "ADVIPosterior"}
+{"metadata": {"task_id": "awslabs_fortuna/80"}, "raw_generation": "Whether to distribute computation over multiple devices, if available."}
+{"metadata": {"task_id": "awslabs_fortuna/79"}, "raw_generation": "MultiDeviceCalibModelCalibrator)"}
+{"metadata": {"task_id": "awslabs_fortuna/81"}, "raw_generation": "raise ValueError(\"\"\"`error` must be a scalar between 0 and 1.\"\"\")"}
+{"metadata": {"task_id": "awslabs_fortuna/82"}, "raw_generation": "def __call__(self, x: jnp.ndarray,) -> jnp.ndarray:"}
+{"metadata": {"task_id": "awslabs_fortuna/83"}, "raw_generation": "optimizer=optimizer,"}
+{"metadata": {"task_id": "awslabs_fortuna/84"}, "raw_generation": ":math:`p(y|\\mu, \\sigma^2)=\\text{Normal}(y|\\mu, \\sigma^2)`, where :math:`y` denotes a target variable and"}
+{"metadata": {"task_id": "awslabs_fortuna/85"}, "raw_generation": "val_data_loader=self.class_val_data_loader,"}
+{"metadata": {"task_id": "awslabs_fortuna/86"}, "raw_generation": "----------"}
+{"metadata": {"task_id": "awslabs_fortuna/87"}, "raw_generation": ") -> Dict[str, jnp.ndarray]:"}
+{"metadata": {"task_id": "awslabs_fortuna/88"}, "raw_generation": "rng: jnp.ndarray,"}
+{"metadata": {"task_id": "awslabs_fortuna/89"}, "raw_generation": "An estimate of the predictive aleatoric variance for each input."}
+{"metadata": {"task_id": "awslabs_fortuna/90"}, "raw_generation": "progress_bar,"}
+{"metadata": {"task_id": "awslabs_fortuna/91"}, "raw_generation": "self.assertEqual(c1, c2)"}
+{"metadata": {"task_id": "awslabs_fortuna/92"}, "raw_generation": "(preds.shape[1], preds.shape[0] * preds.shape[2],)"}
+{"metadata": {"task_id": "awslabs_fortuna/93"}, "raw_generation": "early_stopping_patience=2,"}
+{"metadata": {"task_id": "awslabs_fortuna/94"}, "raw_generation": "calib_data_loader=calib_data_loader,"}
+{"metadata": {"task_id": "awslabs_fortuna/95"}, "raw_generation": "perm = np.random.choice("}
+{"metadata": {"task_id": "awslabs_fortuna/96"}, "raw_generation": "An evaluation of the log-pdf for each data point."}
+{"metadata": {"task_id": "awslabs_fortuna/97"}, "raw_generation": "mutable: Optional[Mutable] = None"}
+{"metadata": {"task_id": "awslabs_fortuna/98"}, "raw_generation": "model must have been calibrated beforehand."}
+{"metadata": {"task_id": "awslabs_fortuna/99"}, "raw_generation": "def _update(_i):"}
+{"metadata": {"task_id": "awslabs_fortuna/100"}, "raw_generation": "strides: Tuple[int, int] = (1, 1)"}
+{"metadata": {"task_id": "awslabs_fortuna/101"}, "raw_generation": "if (val_uncertainties <= 0).any():"}
+{"metadata": {"task_id": "awslabs_fortuna/102"}, "raw_generation": "val_lower_bounds, val_upper_bounds, val_targets, error"}
+{"metadata": {"task_id": "awslabs_fortuna/103"}, "raw_generation": "return_aux = []"}
+{"metadata": {"task_id": "awslabs_fortuna/104"}, "raw_generation": "prob_output_layer: ProbOutputLayer,"}
+{"metadata": {"task_id": "awslabs_fortuna/105"}, "raw_generation": "params: CalibParams,"}
+{"metadata": {"task_id": "awslabs_fortuna/106"}, "raw_generation": "def __init__(self, generator):"}
+{"metadata": {"task_id": "awslabs_fortuna/108"}, "raw_generation": "distribute: bool = True,"}
+{"metadata": {"task_id": "awslabs_fortuna/107"}, "raw_generation": "mutable=init_prob_model_state.mutable,"}
+{"metadata": {"task_id": "awslabs_fortuna/109"}, "raw_generation": "self, devices: int = -1, disable_jit: bool = False,"}
+{"metadata": {"task_id": "awslabs_fortuna/110"}, "raw_generation": "shape_inputs=self.shape_inputs,"}
+{"metadata": {"task_id": "awslabs_fortuna/111"}, "raw_generation": "state: PosteriorState,"}
+{"metadata": {"task_id": "awslabs_fortuna/112"}, "raw_generation": "prefix: str = \"checkpoint_\","}
+{"metadata": {"task_id": "awslabs_fortuna/113"}, "raw_generation": "dropout_rate=self.dropout_rate,"}
+{"metadata": {"task_id": "awslabs_fortuna/114"}, "raw_generation": "if self.should_perform_validation(val_targets, epoch):"}
+{"metadata": {"task_id": "awslabs_fortuna/115"}, "raw_generation": "flag = 0"}
+{"metadata": {"task_id": "awslabs_fortuna/116"}, "raw_generation": "n_data=10,"}
+{"metadata": {"task_id": "awslabs_fortuna/117"}, "raw_generation": "disable_calibration_metrics_computation: bool = False,"}
+{"metadata": {"task_id": "awslabs_fortuna/118"}, "raw_generation": "training_dataloader=training_dataloader,"}
+{"metadata": {"task_id": "awslabs_fortuna/119"}, "raw_generation": "from fortuna.prob_model.posterior.map.map_state import MAPState"}
+{"metadata": {"task_id": "awslabs_fortuna/121"}, "raw_generation": "likelihood_log_variance_model=MyModel(self.reg_output_dim),"}
+{"metadata": {"task_id": "awslabs_fortuna/120"}, "raw_generation": "state: TrainState,"}
+{"metadata": {"task_id": "awslabs_fortuna/123"}, "raw_generation": "("}
+{"metadata": {"task_id": "awslabs_fortuna/122"}, "raw_generation": "logging.info(\"Training on CPU without jit.\")"}
+{"metadata": {"task_id": "awslabs_fortuna/124"}, "raw_generation": "make_array_random_data("}
+{"metadata": {"task_id": "awslabs_fortuna/125"}, "raw_generation": "val_losses = super().val_loss_step(state, batch, outputs, fun, rng, n_data)"}
+{"metadata": {"task_id": "awslabs_fortuna/126"}, "raw_generation": "return np.concatenate(targets, 0)"}
+{"metadata": {"task_id": "awslabs_fortuna/127"}, "raw_generation": "output_calibrator=self.output_calib_manager.init("}
+{"metadata": {"task_id": "awslabs_fortuna/128"}, "raw_generation": "uncertainty_fn: Callable[[jnp.ndarray, jnp.ndarray, Array], jnp.ndarray],"}
+{"metadata": {"task_id": "awslabs_fortuna/129"}, "raw_generation": "if metrics is not None:"}
+{"metadata": {"task_id": "awslabs_fortuna/130"}, "raw_generation": "- :math:`W` denotes the random model parameters."}
+{"metadata": {"task_id": "awslabs_fortuna/131"}, "raw_generation": ") -> jnp.ndarray:"}
+{"metadata": {"task_id": "awslabs_fortuna/132"}, "raw_generation": "from fortuna.output_calibrator.output_calib_manager.base import \\"}
+{"metadata": {"task_id": "awslabs_fortuna/133"}, "raw_generation": "self.output_dim,"}
+{"metadata": {"task_id": "awslabs_fortuna/134"}, "raw_generation": "output_calibrator=ClassificationTemperatureScaler(),"}
+{"metadata": {"task_id": "awslabs_fortuna/135"}, "raw_generation": "filters=self.filters,"}
+{"metadata": {"task_id": "awslabs_fortuna/136"}, "raw_generation": "metaclass=abc.ABCMeta,"}
+{"metadata": {"task_id": "awslabs_fortuna/137"}, "raw_generation": "raise ValueError(\"\"\"`probs` must be a two-dimensional array.\"\"\")"}
+{"metadata": {"task_id": "awslabs_fortuna/138"}, "raw_generation": "params=calib_dict[\"calib_params\"],"}
+{"metadata": {"task_id": "awslabs_fortuna/139"}, "raw_generation": ") -> Tuple[CalibState, Dict[str, Any]]:"}
+{"metadata": {"task_id": "awslabs_fortuna/140"}, "raw_generation": "bs = 32"}
+{"metadata": {"task_id": "awslabs_fortuna/141"}, "raw_generation": "return state, data_loaders, outputs_loaders, model_key"}
+{"metadata": {"task_id": "awslabs_fortuna/142"}, "raw_generation": "else None"}
+{"metadata": {"task_id": "awslabs_fortuna/143"}, "raw_generation": "def sync_gradients_and_loss("}
+{"metadata": {"task_id": "awslabs_fortuna/144"}, "raw_generation": "self.n_batches = 2"}
+{"metadata": {"task_id": "awslabs_fortuna/145"}, "raw_generation": "validation_dataset_size: int,"}
+{"metadata": {"task_id": "awslabs_fortuna/146"}, "raw_generation": "def sample(self, params_like: Params, rng: Optional[PRNGKeyArray] = None) -> Params:"}
+{"metadata": {"task_id": "awslabs_fortuna/147"}, "raw_generation": "See `posterior_approximator` in `Parameters`."}
+{"metadata": {"task_id": "awslabs_fortuna/148"}, "raw_generation": "yield from self._targets_loader()"}
+{"metadata": {"task_id": "awslabs_fortuna/150"}, "raw_generation": "n_params = len(ravel_pytree(self.params)[0])"}
+{"metadata": {"task_id": "awslabs_fortuna/151"}, "raw_generation": "if output_type == \"continuous\""}
+{"metadata": {"task_id": "awslabs_fortuna/149"}, "raw_generation": "A random number generator. If not passed, this will be taken from the attributes of this class."}
+{"metadata": {"task_id": "awslabs_fortuna/152"}, "raw_generation": "self.assertFalse(improved)"}
+{"metadata": {"task_id": "awslabs_fortuna/153"}, "raw_generation": "cls,"}
+{"metadata": {"task_id": "awslabs_fortuna/154"}, "raw_generation": "right = jnp.concatenate([mu[None] + ri[:, None] for mu, ri in zip(cross_test_outputs, r)])"}
+{"metadata": {"task_id": "awslabs_fortuna/156"}, "raw_generation": "self.forward = architecture.forward"}
+{"metadata": {"task_id": "awslabs_fortuna/155"}, "raw_generation": "pass"}
+{"metadata": {"task_id": "awslabs_fortuna/157"}, "raw_generation": "self.assertDictEqual(observed_losses_and_metrics, expected_losses_and_metrics)"}
+{"metadata": {"task_id": "awslabs_fortuna/158"}, "raw_generation": "\"image_dark\": \"fortuna_symbol_white.png\","}
+{"metadata": {"task_id": "awslabs_fortuna/159"}, "raw_generation": "state: CalibState,"}
+{"metadata": {"task_id": "awslabs_fortuna/162"}, "raw_generation": "calib_params=state.calib_params,"}
+{"metadata": {"task_id": "awslabs_fortuna/160"}, "raw_generation": "yield np.random.normal(size=(batch_size,) + shape_inputs)"}
+{"metadata": {"task_id": "awslabs_fortuna/163"}, "raw_generation": "status = prob_reg.train("}
+{"metadata": {"task_id": "awslabs_fortuna/161"}, "raw_generation": "OptaxOptimizer = GradientTransformation"}
+{"metadata": {"task_id": "awslabs_fortuna/164"}, "raw_generation": "ckpt_file_temp = os.path.join(ckpt_dir, name + \".temp\")"}
+{"metadata": {"task_id": "awslabs_fortuna/165"}, "raw_generation": "if not self._ready:"}
+{"metadata": {"task_id": "awslabs_fortuna/166"}, "raw_generation": "lambda batch: tree_map(_reshape_input_batch, batch), self.dataloader"}
+{"metadata": {"task_id": "awslabs_fortuna/167"}, "raw_generation": "output_dim=self.output_dim,"}
+{"metadata": {"task_id": "awslabs_fortuna/168"}, "raw_generation": "return brier_score(p, y)"}
+{"metadata": {"task_id": "awslabs_fortuna/170"}, "raw_generation": "return_aux += [\"mutable\"]"}
+{"metadata": {"task_id": "awslabs_fortuna/171"}, "raw_generation": "**kwargs"}
+{"metadata": {"task_id": "awslabs_fortuna/172"}, "raw_generation": "\"discrete\", \"continuous\""}
+{"metadata": {"task_id": "awslabs_fortuna/169"}, "raw_generation": "from fortuna.typing import Array"}
+{"metadata": {"task_id": "awslabs_fortuna/173"}, "raw_generation": "prefix=prefix,"}
+{"metadata": {"task_id": "awslabs_fortuna/174"}, "raw_generation": "assert jnp.alltrue(prob_model.rng._rng == prob_model.likelihood.rng._rng)"}
+{"metadata": {"task_id": "awslabs_fortuna/175"}, "raw_generation": "optimizer=calib_config.optimizer.method,"}
+{"metadata": {"task_id": "awslabs_fortuna/176"}, "raw_generation": "calib_params : Optional[CalibParams]"}
+{"metadata": {"task_id": "awslabs_fortuna/177"}, "raw_generation": "{"}
+{"metadata": {"task_id": "awslabs_fortuna/178"}, "raw_generation": "assert hasattr(cs.mutable, \"unfreeze\")"}
+{"metadata": {"task_id": "awslabs_fortuna/179"}, "raw_generation": "seed: int = 0,"}
+{"metadata": {"task_id": "awslabs_fortuna/180"}, "raw_generation": "self, joint: Joint, posterior_approximator: ADVIPosteriorApproximator,"}
+{"metadata": {"task_id": "awslabs_fortuna/181"}, "raw_generation": "the output calibrator is described by a function :math:`g(\\phi, o)`,"}
+{"metadata": {"task_id": "awslabs_fortuna/182"}, "raw_generation": "rng: Optional[PRNGKeyArray] = None,"}
+{"metadata": {"task_id": "awslabs_fortuna/183"}, "raw_generation": "\\mathbb{E}_{Y|w, x}[Y],"}
+{"metadata": {"task_id": "awslabs_fortuna/184"}, "raw_generation": "if lower_bounds.ndim == 1:"}
+{"metadata": {"task_id": "awslabs_fortuna/185"}, "raw_generation": "scores: Optional[Array] = None,"}
+{"metadata": {"task_id": "awslabs_fortuna/187"}, "raw_generation": "targets: Array,"}
+{"metadata": {"task_id": "awslabs_fortuna/188"}, "raw_generation": "self._fun = fun"}
+{"metadata": {"task_id": "awslabs_fortuna/186"}, "raw_generation": "return_aux = [\"outputs\"]"}
+{"metadata": {"task_id": "awslabs_fortuna/189"}, "raw_generation": "Number of target samples to sample for each input data point."}
+{"metadata": {"task_id": "awslabs_fortuna/190"}, "raw_generation": "\"sphinx_gallery.load_style\","}
+{"metadata": {"task_id": "awslabs_fortuna/191"}, "raw_generation": "if means is not None:"}
+{"metadata": {"task_id": "awslabs_fortuna/192"}, "raw_generation": "save_every_n_steps=fit_config.checkpointer.save_every_n_steps,"}
+{"metadata": {"task_id": "awslabs_fortuna/194"}, "raw_generation": ") = trainer._training_loop("}
+{"metadata": {"task_id": "awslabs_fortuna/193"}, "raw_generation": "from jax._src.prng import PRNGKeyArray"}
+{"metadata": {"task_id": "awslabs_fortuna/195"}, "raw_generation": "progress_bar.update(len(data))"}
+{"metadata": {"task_id": "awslabs_fortuna/196"}, "raw_generation": "rav = ravel_pytree(params)[0]"}
+{"metadata": {"task_id": "awslabs_fortuna/197"}, "raw_generation": "if inputs is not None:"}
+{"metadata": {"task_id": "awslabs_fortuna/199"}, "raw_generation": "yield from self._inputs_loader()"}
+{"metadata": {"task_id": "awslabs_fortuna/198"}, "raw_generation": "d2 = d0"}
+{"metadata": {"task_id": "huggingface_evaluate/0"}, "raw_generation": "metrics = [metric_dir.split(os.sep)[-2] for metric_dir in glob.glob(\"./metrics/*/\")]"}
+{"metadata": {"task_id": "huggingface_evaluate/1"}, "raw_generation": "addscore = 2 * addscore_precision * addscore_recall / (addscore_precision + addscore_recall)"}
+{"metadata": {"task_id": "huggingface_evaluate/3"}, "raw_generation": "metric.add_batch(references=refs, predictions=preds)"}
+{"metadata": {"task_id": "huggingface_evaluate/2"}, "raw_generation": "with tempfile.TemporaryDirectory() as dirname:"}
+{"metadata": {"task_id": "huggingface_evaluate/5"}, "raw_generation": "metric=\"accuracy\","}
+{"metadata": {"task_id": "huggingface_evaluate/6"}, "raw_generation": "def zstd_file(tmp_path_factory):"}
+{"metadata": {"task_id": "huggingface_evaluate/4"}, "raw_generation": ">>> results = indic_glue_metric.compute(predictions=predictions, references=references)"}
+{"metadata": {"task_id": "huggingface_evaluate/7"}, "raw_generation": "device_id: Device for featurization. Supply a GPU id (e.g. 0 or 3) to use GPU. If no GPU with this id is found, use CPU"}
+{"metadata": {"task_id": "huggingface_evaluate/8"}, "raw_generation": "else:"}
+{"metadata": {"task_id": "huggingface_evaluate/9"}, "raw_generation": "f\"{os.path.join(self.dir_path, 'questionanswering_squadv2_transformers', 'eval_results.json')}\", \"r\""}
+{"metadata": {"task_id": "huggingface_evaluate/10"}, "raw_generation": "predictions: array-like of shape (n_samples,) or (n_samples, n_outputs)"}
+{"metadata": {"task_id": "huggingface_evaluate/13"}, "raw_generation": "init_file_path = os.path.join(importable_subdirectory, \"__init__.py\")"}
+{"metadata": {"task_id": "huggingface_evaluate/12"}, "raw_generation": "combined_evaluation = combine([dummy_metric, dummy_metric])"}
+{"metadata": {"task_id": "huggingface_evaluate/11"}, "raw_generation": ">>> precision_metric = evaluate.load(\"precision\")"}
+{"metadata": {"task_id": "huggingface_evaluate/14"}, "raw_generation": "import os"}
+{"metadata": {"task_id": "huggingface_evaluate/15"}, "raw_generation": "List of predicted segmentation maps, each of shape (height, width). Each segmentation map can be of a different size."}
+{"metadata": {"task_id": "huggingface_evaluate/18"}, "raw_generation": "data=self.data,"}
+{"metadata": {"task_id": "huggingface_evaluate/17"}, "raw_generation": "error_msg = ("}
+{"metadata": {"task_id": "huggingface_evaluate/16"}, "raw_generation": ">>> results = super_glue_metric.compute(predictions=predictions, references=references)"}
+{"metadata": {"task_id": "huggingface_evaluate/19"}, "raw_generation": "label_column (`str`, defaults to `\"label\"`):"}
+{"metadata": {"task_id": "huggingface_evaluate/22"}, "raw_generation": "def setUp(self):"}
+{"metadata": {"task_id": "huggingface_evaluate/21"}, "raw_generation": "\"ner_tags\": [[1, 2, 0, 0, 0, 0, 3, 0, 0, 0]],"}
+{"metadata": {"task_id": "huggingface_evaluate/20"}, "raw_generation": "with contextlib.redirect_stdout(stream):"}
+{"metadata": {"task_id": "huggingface_evaluate/24"}, "raw_generation": "return LocalEvaluationModuleFactory("}
+{"metadata": {"task_id": "huggingface_evaluate/30"}, "raw_generation": "metric=\"seqeval\","}
+{"metadata": {"task_id": "huggingface_evaluate/25"}, "raw_generation": "}"}
+{"metadata": {"task_id": "huggingface_evaluate/23"}, "raw_generation": ">>>     metric=\"wer\","}
+{"metadata": {"task_id": "huggingface_evaluate/26"}, "raw_generation": "for line in lines:"}
+{"metadata": {"task_id": "huggingface_evaluate/32"}, "raw_generation": "self.assertEqual(self.counter, 8)"}
+{"metadata": {"task_id": "huggingface_evaluate/28"}, "raw_generation": "feature_extractor: Union[\"PreTrainedTokenizerBase\", \"FeatureExtractionMixin\"] = None,  # noqa: F821"}
+{"metadata": {"task_id": "huggingface_evaluate/33"}, "raw_generation": "elif mode is OfflineSimulationMode.HF_EVALUATE_OFFLINE_SET_TO_1:"}
+{"metadata": {"task_id": "huggingface_evaluate/31"}, "raw_generation": ")"}
+{"metadata": {"task_id": "huggingface_evaluate/27"}, "raw_generation": "metric=cer,"}
+{"metadata": {"task_id": "huggingface_evaluate/34"}, "raw_generation": "model_id=\"username/repo\","}
+{"metadata": {"task_id": "huggingface_evaluate/29"}, "raw_generation": "tokens separated by spaces."}
+{"metadata": {"task_id": "huggingface_evaluate/35"}, "raw_generation": "preds = [\"weaewolf\"]"}
+{"metadata": {"task_id": "huggingface_evaluate/36"}, "raw_generation": "label_mapping=self.label_mapping,"}
+{"metadata": {"task_id": "huggingface_evaluate/38"}, "raw_generation": ">>> predictions = [0, 1, 1, 0, 0]"}
+{"metadata": {"task_id": "huggingface_evaluate/40"}, "raw_generation": "The CoNLL format has one word per line with all the annotation for this word in column separated by spaces:"}
+{"metadata": {"task_id": "huggingface_evaluate/37"}, "raw_generation": "message = \"Unanswered question \" + qa[\"id\"] + \" will receive score 0.\""}
+{"metadata": {"task_id": "huggingface_evaluate/39"}, "raw_generation": "cache_dir = config.HF_EVALUATE_CACHE"}
+{"metadata": {"task_id": "huggingface_evaluate/43"}, "raw_generation": ") -> requests.Response:"}
+{"metadata": {"task_id": "huggingface_evaluate/41"}, "raw_generation": "return filename"}
+{"metadata": {"task_id": "huggingface_evaluate/42"}, "raw_generation": "ftp_get(url, temp_file)"}
+{"metadata": {"task_id": "huggingface_evaluate/45"}, "raw_generation": "return HubEvaluationModuleFactory("}
+{"metadata": {"task_id": "huggingface_evaluate/44"}, "raw_generation": ">>>     data=data,"}
+{"metadata": {"task_id": "huggingface_evaluate/46"}, "raw_generation": "],"}
+{"metadata": {"task_id": "huggingface_evaluate/47"}, "raw_generation": "smooth_value (`float`): The smoothing value. Only valid when `smooth_method='floor'` (in which case `smooth_value` defaults to `0.1`) or `smooth_method='add-k'` (in which case `smooth_value` defaults to `1`)."}
+{"metadata": {"task_id": "huggingface_evaluate/49"}, "raw_generation": "\"legend_loc\": \"upper right\","}
+{"metadata": {"task_id": "huggingface_evaluate/51"}, "raw_generation": "{\"type\": \"dummy_metric\", \"value\": 1.0, \"name\": \"Pretty Metric Name\"},"}
+{"metadata": {"task_id": "huggingface_evaluate/50"}, "raw_generation": ">>> sources=[\"About 95 species are currently accepted .\"]"}
+{"metadata": {"task_id": "huggingface_evaluate/52"}, "raw_generation": "an associated metric, and runs evaluation on a model or pipeline. Evaluation suites can be a Python script found"}
+{"metadata": {"task_id": "huggingface_evaluate/48"}, "raw_generation": "...                                     predictions=[1, 2, 2, 0, 3, 3],"}
+{"metadata": {"task_id": "huggingface_evaluate/53"}, "raw_generation": "launch_gradio_widget(module)"}
+{"metadata": {"task_id": "huggingface_evaluate/54"}, "raw_generation": "exclude = set(string.punctuation)"}
+{"metadata": {"task_id": "huggingface_evaluate/56"}, "raw_generation": "del metric"}
+{"metadata": {"task_id": "huggingface_evaluate/55"}, "raw_generation": "- `'micro'`: Calculate metrics globally by counting the total true positives, false negatives, and false positives."}
+{"metadata": {"task_id": "huggingface_evaluate/57"}, "raw_generation": "resume_download: bool = False"}
+{"metadata": {"task_id": "huggingface_evaluate/58"}, "raw_generation": "{'precision': 0.5}"}
+{"metadata": {"task_id": "huggingface_evaluate/62"}, "raw_generation": "if not _run_packaged_tests or _run_packaged_tests == 0:"}
+{"metadata": {"task_id": "huggingface_evaluate/60"}, "raw_generation": "_value = default"}
+{"metadata": {"task_id": "huggingface_evaluate/59"}, "raw_generation": "['MISC', 'PER', 'overall_precision', 'overall_recall', 'overall_f1', 'overall_accuracy']"}
+{"metadata": {"task_id": "huggingface_evaluate/61"}, "raw_generation": ">>> data = [\"hello world and hello moon\"]"}
+{"metadata": {"task_id": "huggingface_evaluate/63"}, "raw_generation": "HubEvaluationModuleFactory,"}
+{"metadata": {"task_id": "huggingface_evaluate/65"}, "raw_generation": "["}
+{"metadata": {"task_id": "huggingface_evaluate/64"}, "raw_generation": "Examples:"}
+{"metadata": {"task_id": "huggingface_evaluate/67"}, "raw_generation": ">>> data = load_dataset(\"wmt19\", \"fr-de\", split=\"validation[:40]\")"}
+{"metadata": {"task_id": "huggingface_evaluate/70"}, "raw_generation": "results = metric.compute()"}
+{"metadata": {"task_id": "huggingface_evaluate/66"}, "raw_generation": ">>> task_evaluator = evaluator(\"automatic-speech-recognition\")"}
+{"metadata": {"task_id": "huggingface_evaluate/71"}, "raw_generation": "json.dump(data, f)"}
+{"metadata": {"task_id": "huggingface_evaluate/69"}, "raw_generation": "module_type: Optional[str] = None,"}
+{"metadata": {"task_id": "huggingface_evaluate/68"}, "raw_generation": "]"}
+{"metadata": {"task_id": "huggingface_evaluate/76"}, "raw_generation": "inputs_description=_KWARGS_DESCRIPTION,"}
+{"metadata": {"task_id": "huggingface_evaluate/72"}, "raw_generation": "**params,"}
+{"metadata": {"task_id": "huggingface_evaluate/77"}, "raw_generation": ">>> predictions = [\"hello there\", \"general kenobi\"]"}
+{"metadata": {"task_id": "huggingface_evaluate/73"}, "raw_generation": "rougeLsum: rouge_lsum (f1)"}
+{"metadata": {"task_id": "huggingface_evaluate/78"}, "raw_generation": "r4gramslist = []"}
+{"metadata": {"task_id": "huggingface_evaluate/79"}, "raw_generation": "if not transformers_version.endswith(\".dev0\"):"}
+{"metadata": {"task_id": "huggingface_evaluate/75"}, "raw_generation": "\"table-question-answering\","}
+{"metadata": {"task_id": "huggingface_evaluate/74"}, "raw_generation": "while True:"}
+{"metadata": {"task_id": "huggingface_evaluate/80"}, "raw_generation": "import io"}
+{"metadata": {"task_id": "huggingface_evaluate/82"}, "raw_generation": "{\"start\": 16, \"entity\": \"B-LOC\"},"}
+{"metadata": {"task_id": "huggingface_evaluate/81"}, "raw_generation": "from evaluate.utils import launch_gradio_widget"}
+{"metadata": {"task_id": "huggingface_evaluate/83"}, "raw_generation": "This metric computes the area under the curve (AUC) for the Receiver Operating Characteristic Curve (ROC). The return values represent how well the model used is predicting the correct classes, based on the input data. A score of `0.5` means that the model is predicting exactly at chance, i.e. the model's predictions are correct at the same rate as if the predictions were being decided by the flip of a fair coin or the roll of a fair die. A score above `0.5` indicates that the model is doing better than chance, while a score below `0.5` indicates that the model is doing worse than chance."}
+{"metadata": {"task_id": "huggingface_evaluate/84"}, "raw_generation": "homepage=\"https://github.com/openai/human-eval\","}
+{"metadata": {"task_id": "huggingface_evaluate/85"}, "raw_generation": "Args:"}
+{"metadata": {"task_id": "huggingface_evaluate/86"}, "raw_generation": "num_layers (int): The layer of representation to use,"}
+{"metadata": {"task_id": "huggingface_evaluate/87"}, "raw_generation": "\"Programming Language :: Python :: 3\","}
+{"metadata": {"task_id": "huggingface_evaluate/88"}, "raw_generation": "path = str(tmp_path_factory.mktemp(\"data\") / \"dataset.json\")"}
+{"metadata": {"task_id": "huggingface_evaluate/89"}, "raw_generation": "elif tokenizer == \"penn\":"}
+{"metadata": {"task_id": "huggingface_evaluate/90"}, "raw_generation": ">>> wer_score = wer.compute(predictions=predictions, references=references)"}
+{"metadata": {"task_id": "huggingface_evaluate/91"}, "raw_generation": "dataset_config (`str`, *optional*):"}
+{"metadata": {"task_id": "huggingface_evaluate/92"}, "raw_generation": "download_desc=download_config.download_desc,"}
+{"metadata": {"task_id": "huggingface_evaluate/93"}, "raw_generation": "for x, t in zip(evaluation_modules, evaluation_module_types)"}
+{"metadata": {"task_id": "huggingface_evaluate/94"}, "raw_generation": "average=average,"}
+{"metadata": {"task_id": "huggingface_evaluate/95"}, "raw_generation": "import sys"}
+{"metadata": {"task_id": "huggingface_evaluate/97"}, "raw_generation": "self.assertEqual(results[\"f1\"], 100.0)"}
+{"metadata": {"task_id": "huggingface_evaluate/96"}, "raw_generation": "title = {The Woman Worked as a Babysitter: On Biases in Language Generation},"}
+{"metadata": {"task_id": "huggingface_evaluate/98"}, "raw_generation": "finally:"}
+{"metadata": {"task_id": "huggingface_evaluate/99"}, "raw_generation": "`total_word_count` (`int`) : the total number of words in the input string(s)"}
+{"metadata": {"task_id": "huggingface_evaluate/100"}, "raw_generation": "- None (default): Returns an array of Matthews correlation coefficients, one for each feature"}
+{"metadata": {"task_id": "huggingface_evaluate/101"}, "raw_generation": "-0.7"}
+{"metadata": {"task_id": "huggingface_evaluate/102"}, "raw_generation": "shutil.move(temp_file.name, cache_path)"}
+{"metadata": {"task_id": "huggingface_evaluate/103"}, "raw_generation": "- 'idx': index of the question as specified by the dataset"}
+{"metadata": {"task_id": "huggingface_evaluate/105"}, "raw_generation": "self.assertTrue(abs(char_error_rate - 0.1818181818) < 1e-6)"}
+{"metadata": {"task_id": "huggingface_evaluate/104"}, "raw_generation": "in the input list, as well as the mean perplexity. If one of the input texts is"}
+{"metadata": {"task_id": "huggingface_evaluate/108"}, "raw_generation": "loaded_result_dict = json.load(f)"}
+{"metadata": {"task_id": "huggingface_evaluate/106"}, "raw_generation": "base_path=hf_hub_url(path=self.name, name=\"\", revision=revision),"}
+{"metadata": {"task_id": "huggingface_evaluate/107"}, "raw_generation": "from huggingface_hub.repocard import metadata_update"}
+{"metadata": {"task_id": "huggingface_evaluate/109"}, "raw_generation": ">>> print(results)"}
+{"metadata": {"task_id": "huggingface_evaluate/110"}, "raw_generation": "connected = ftp_head(url)"}
+{"metadata": {"task_id": "huggingface_evaluate/112"}, "raw_generation": "metric_inputs: Dict,"}
+{"metadata": {"task_id": "huggingface_evaluate/113"}, "raw_generation": "return path"}
+{"metadata": {"task_id": "huggingface_evaluate/111"}, "raw_generation": ">>> references = [[\"does this sentence match\", \"does this sentence match!?!\"],"}
+{"metadata": {"task_id": "huggingface_evaluate/115"}, "raw_generation": ">>> results = perplexity.compute(model_id='gpt2',"}
+{"metadata": {"task_id": "huggingface_evaluate/114"}, "raw_generation": "dataset_split: str = None,"}
+{"metadata": {"task_id": "huggingface_evaluate/116"}, "raw_generation": "try:"}
+{"metadata": {"task_id": "huggingface_evaluate/121"}, "raw_generation": "metric = DummyMetric("}
+{"metadata": {"task_id": "huggingface_evaluate/117"}, "raw_generation": "os.putenv = None"}
+{"metadata": {"task_id": "huggingface_evaluate/118"}, "raw_generation": "with:"}
+{"metadata": {"task_id": "huggingface_evaluate/123"}, "raw_generation": "Tokenizes an input line with the tokenizer."}
+{"metadata": {"task_id": "huggingface_evaluate/122"}, "raw_generation": "self.assertEqual(data.split, \"test\")"}
+{"metadata": {"task_id": "huggingface_evaluate/125"}, "raw_generation": "self.data = Dataset.from_dict({\"label\": [1, 0], \"text\": [\"great movie\", \"horrible movie\"]})"}
+{"metadata": {"task_id": "huggingface_evaluate/120"}, "raw_generation": "if self.revision is None and os.getenv(\"HF_SCRIPTS_VERSION\", SCRIPTS_VERSION) != \"main\":"}
+{"metadata": {"task_id": "huggingface_evaluate/119"}, "raw_generation": "description=_DESCRIPTION,"}
+{"metadata": {"task_id": "huggingface_evaluate/126"}, "raw_generation": "title={Evaluating Large Language Models Trained on Code},"}
+{"metadata": {"task_id": "huggingface_evaluate/127"}, "raw_generation": "from .utils import DatasetColumnPair"}
+{"metadata": {"task_id": "huggingface_evaluate/124"}, "raw_generation": "containing the score, the confidence interval and the standard error calculated for each metric key."}
+{"metadata": {"task_id": "huggingface_evaluate/128"}, "raw_generation": ">>> import numpy as np"}
+{"metadata": {"task_id": "huggingface_evaluate/129"}, "raw_generation": "e.args = (max_retry_error,)"}
+{"metadata": {"task_id": "huggingface_evaluate/130"}, "raw_generation": "metrics_online.StddevAcrossRuns("}
+{"metadata": {"task_id": "huggingface_evaluate/131"}, "raw_generation": "{'charcut_mt': 0.1971153846153846}"}
+{"metadata": {"task_id": "huggingface_evaluate/132"}, "raw_generation": "Returns the duplicate fraction of duplicate strings in the input."}
+{"metadata": {"task_id": "huggingface_evaluate/133"}, "raw_generation": ">>> results = recall_metric.compute(references=[0, 0, 1, 1, 1], predictions=[0, 1, 0, 1, 1], sample_weight=sample_weight)"}
+{"metadata": {"task_id": "huggingface_evaluate/134"}, "raw_generation": "{"}
+{"metadata": {"task_id": "huggingface_evaluate/135"}, "raw_generation": "self.evaluation_module_names = [module.name for module in self.evaluation_modules]"}
+{"metadata": {"task_id": "huggingface_evaluate/136"}, "raw_generation": "the mean IoU of the image is calculated by taking the IoU of each class and averaging them."}
+{"metadata": {"task_id": "huggingface_evaluate/138"}, "raw_generation": ">>> results = exact_match.compute(references=refs, predictions=preds, regexes_to_ignore=[\"the \", \"yell\", \"YELL\"], ignore_case=True, ignore_punctuation=True)"}
+{"metadata": {"task_id": "huggingface_evaluate/139"}, "raw_generation": "importable_directory_path = os.path.join(dynamic_modules_path, self.module_type, self.name)"}
+{"metadata": {"task_id": "huggingface_evaluate/140"}, "raw_generation": "references: array-like of shape (n_samples,) or (n_samples, n_outputs)"}
+{"metadata": {"task_id": "huggingface_evaluate/141"}, "raw_generation": "c2grams.append(c2gram)"}
+{"metadata": {"task_id": "huggingface_evaluate/137"}, "raw_generation": "logger.info(f\"TensorFlow found but with version {TF_VERSION}. `datasets` requires version 2 minimum.\")"}
+{"metadata": {"task_id": "huggingface_evaluate/142"}, "raw_generation": "evaluation_module = evaluation_module_factory("}
+{"metadata": {"task_id": "huggingface_evaluate/144"}, "raw_generation": "writer.writeheader()"}
+{"metadata": {"task_id": "huggingface_evaluate/143"}, "raw_generation": "{'mse': 0.375}"}
+{"metadata": {"task_id": "huggingface_evaluate/145"}, "raw_generation": "...     )"}
+{"metadata": {"task_id": "huggingface_evaluate/148"}, "raw_generation": "{\"start\": 0, \"entity\": \"B-LOC\"},"}
+{"metadata": {"task_id": "huggingface_evaluate/146"}, "raw_generation": "Overall accuracy on all images."}
+{"metadata": {"task_id": "huggingface_evaluate/147"}, "raw_generation": "- `'macro'`: Calculate metrics for each label, and find their unweighted mean. This does not take label imbalance into account."}
+{"metadata": {"task_id": "huggingface_evaluate/149"}, "raw_generation": "raise ValueError("}
+{"metadata": {"task_id": "huggingface_evaluate/150"}, "raw_generation": "...                              predictions=input_texts)"}
+{"metadata": {"task_id": "huggingface_evaluate/152"}, "raw_generation": "is_match = get_jaccard(pred, ground_truth) >= IOU_THRESH or ground_truth in pred"}
+{"metadata": {"task_id": "huggingface_evaluate/153"}, "raw_generation": "Sari = (F1_add + F1_keep + P_del) / 3"}
+{"metadata": {"task_id": "huggingface_evaluate/151"}, "raw_generation": "},"}
+{"metadata": {"task_id": "huggingface_evaluate/154"}, "raw_generation": "),"}
+{"metadata": {"task_id": "huggingface_evaluate/156"}, "raw_generation": "if config.JAX_AVAILABLE:"}
+{"metadata": {"task_id": "huggingface_evaluate/157"}, "raw_generation": "def xml_file(tmp_path_factory):"}
+{"metadata": {"task_id": "huggingface_evaluate/155"}, "raw_generation": "32.0"}
+{"metadata": {"task_id": "huggingface_evaluate/163"}, "raw_generation": "to_use_files.extend(list(Path(file_path).rglob(\"*.[pP][yY]\")))"}
+{"metadata": {"task_id": "huggingface_evaluate/158"}, "raw_generation": "```"}
+{"metadata": {"task_id": "huggingface_evaluate/159"}, "raw_generation": "def load_local_metric(evaluation_module_name, *args, **kwargs):"}
+{"metadata": {"task_id": "huggingface_evaluate/161"}, "raw_generation": "signal.setitimer(signal.ITIMER_REAL, 0)"}
+{"metadata": {"task_id": "huggingface_evaluate/162"}, "raw_generation": "if response.status_code == 200:  # ok"}
+{"metadata": {"task_id": "huggingface_evaluate/165"}, "raw_generation": "self.label_mapping = {\"NEGATIVE\": 0.0, \"POSITIVE\": 1.0}"}
+{"metadata": {"task_id": "huggingface_evaluate/160"}, "raw_generation": "raise e1 from None"}
+{"metadata": {"task_id": "huggingface_evaluate/168"}, "raw_generation": "f\"Input {input_name}: {summarize_if_long_list(batch[input_name])}\""}
+{"metadata": {"task_id": "huggingface_evaluate/164"}, "raw_generation": "predictions = json.load(prediction_file)"}
+{"metadata": {"task_id": "huggingface_evaluate/167"}, "raw_generation": "task_type: str"}
+{"metadata": {"task_id": "huggingface_evaluate/166"}, "raw_generation": "with self.assertRaises(ValueError):"}
+{"metadata": {"task_id": "huggingface_evaluate/171"}, "raw_generation": "metric=\"squad\","}
+{"metadata": {"task_id": "huggingface_evaluate/172"}, "raw_generation": "return False"}
+{"metadata": {"task_id": "huggingface_evaluate/169"}, "raw_generation": "...                                     predictions=[10, 9, 2.5, 6, 4],"}
+{"metadata": {"task_id": "huggingface_evaluate/170"}, "raw_generation": "author={Bertie Vidgen and Tristan Thrush and Zeerak Waseem and Douwe Kiela},"}
+{"metadata": {"task_id": "huggingface_evaluate/173"}, "raw_generation": "confidence_level=confidence_level,"}
+{"metadata": {"task_id": "huggingface_evaluate/174"}, "raw_generation": "the name of the column containing the input text in the dataset specified by `data`."}
+{"metadata": {"task_id": "huggingface_evaluate/178"}, "raw_generation": "url, temp_file, proxies=None, resume_size=0, headers=None, cookies=None, timeout=100.0, max_retries=0, desc=None"}
+{"metadata": {"task_id": "huggingface_evaluate/175"}, "raw_generation": "Parses test cases to be used in gradio Dataframe. Note that an apostrophe is added"}
+{"metadata": {"task_id": "huggingface_evaluate/176"}, "raw_generation": ">>> print({k: round(v, 2) for k, v in results['regard_difference'].items()})"}
+{"metadata": {"task_id": "huggingface_evaluate/181"}, "raw_generation": "references (list of list of str): The references. There should be one reference sub-list for each prediction sentence."}
+{"metadata": {"task_id": "huggingface_evaluate/177"}, "raw_generation": "pixel_values = torch.stack("}
+{"metadata": {"task_id": "huggingface_evaluate/180"}, "raw_generation": "predictions (list of str): The predicted sentences."}
+{"metadata": {"task_id": "huggingface_evaluate/182"}, "raw_generation": "max_length (int): maximum sequence length."}
+{"metadata": {"task_id": "huggingface_evaluate/179"}, "raw_generation": "- for 'axb':"}
+{"metadata": {"task_id": "huggingface_evaluate/184"}, "raw_generation": "tf_mock = mock.Mock()"}
+{"metadata": {"task_id": "huggingface_evaluate/186"}, "raw_generation": "Computes CUAD scores (EM, F1, AUPR, Precision@80%Recall, and Precision@90%Recall)."}
+{"metadata": {"task_id": "huggingface_evaluate/188"}, "raw_generation": "self.assertAlmostEqual(results[\"total_time_in_seconds\"], 0.1, 1)"}
+{"metadata": {"task_id": "huggingface_evaluate/183"}, "raw_generation": "multi_class=\"raise\","}
+{"metadata": {"task_id": "huggingface_evaluate/185"}, "raw_generation": "self.assertListEqual(predictions[\"predictions\"][0], [\"B-LOC\", \"O\", \"O\", \"O\", \"B-LOC\", \"O\"])"}
+{"metadata": {"task_id": "huggingface_evaluate/187"}, "raw_generation": "the name of the column containing the input audio path in the dataset specified by `data`."}
+{"metadata": {"task_id": "huggingface_evaluate/189"}, "raw_generation": "description: str"}
+{"metadata": {"task_id": "huggingface_evaluate/191"}, "raw_generation": "Argument can be used to overwrite a default tokenizer if `model_or_pipeline` represents a model for"}
+{"metadata": {"task_id": "huggingface_evaluate/190"}, "raw_generation": "longer than the max input length of the model, then it is truncated to the"}
+{"metadata": {"task_id": "huggingface_evaluate/192"}, "raw_generation": "\"references\": Sequence(Value(\"string\", id=\"reference\"), id=\"references\"),"}
+{"metadata": {"task_id": "huggingface_evaluate/193"}, "raw_generation": "(1, 0, preds_0, refs_0, None, tmp_dir, 0),"}
+{"metadata": {"task_id": "huggingface_evaluate/195"}, "raw_generation": "...     \"rank\": [0, 1],"}
+{"metadata": {"task_id": "huggingface_evaluate/196"}, "raw_generation": "f\"evaluate-{module_type}/{path}\","}
+{"metadata": {"task_id": "huggingface_evaluate/198"}, "raw_generation": "def hypothesis_sent():"}
+{"metadata": {"task_id": "huggingface_evaluate/199"}, "raw_generation": "Computes NIST score of translated segments against one or more references."}
+{"metadata": {"task_id": "huggingface_evaluate/194"}, "raw_generation": "N\tCoreference\tCoreference chain information encoded in a parenthesis structure."}
+{"metadata": {"task_id": "huggingface_evaluate/197"}, "raw_generation": "if self.config_name not in [\"online\", \"offline\"]:"}
+{"metadata": {"task_id": "google_vizier/0"}, "raw_generation": "firefly_pool.create_or_update_fly(trial, 112)"}
+{"metadata": {"task_id": "google_vizier/3"}, "raw_generation": ")"}
+{"metadata": {"task_id": "google_vizier/1"}, "raw_generation": "logging.warn("}
+{"metadata": {"task_id": "google_vizier/5"}, "raw_generation": "if self._getter_spec.type == NumpyArraySpecType.DISCRETE"}
+{"metadata": {"task_id": "google_vizier/4"}, "raw_generation": "UNKNOWN = 'UNKNOWN'"}
+{"metadata": {"task_id": "google_vizier/6"}, "raw_generation": "expected = ["}
+{"metadata": {"task_id": "google_vizier/7"}, "raw_generation": "early_stopping_operations: Dict["}
+{"metadata": {"task_id": "google_vizier/2"}, "raw_generation": "feasible_values = []"}
+{"metadata": {"task_id": "google_vizier/8"}, "raw_generation": "components.append(cls.default_study_prefix)"}
+{"metadata": {"task_id": "google_vizier/11"}, "raw_generation": "absltest.main()"}
+{"metadata": {"task_id": "google_vizier/9"}, "raw_generation": "def _set_bounds("}
+{"metadata": {"task_id": "google_vizier/10"}, "raw_generation": "if name not in self._parameter_configs:"}
+{"metadata": {"task_id": "google_vizier/13"}, "raw_generation": "name=pc.name,"}
+{"metadata": {"task_id": "google_vizier/12"}, "raw_generation": "initial_temp: float = 1.0,"}
+{"metadata": {"task_id": "google_vizier/14"}, "raw_generation": "self._best_params: Dict[str, Any] = None  # place holder for best parameters"}
+{"metadata": {"task_id": "google_vizier/15"}, "raw_generation": "logging.info('Starting a new convergence test (n_features: %s)', n_features)"}
+{"metadata": {"task_id": "google_vizier/16"}, "raw_generation": "if proto.state == proto.STOPPING"}
+{"metadata": {"task_id": "google_vizier/22"}, "raw_generation": "datetime.datetime.now().astimezone())"}
+{"metadata": {"task_id": "google_vizier/19"}, "raw_generation": "self._features = np.concatenate([self._features, random_features])"}
+{"metadata": {"task_id": "google_vizier/26"}, "raw_generation": "class OwnerResource:"}
+{"metadata": {"task_id": "google_vizier/17"}, "raw_generation": "[0.0, 0.0, 0.0, 1.0],"}
+{"metadata": {"task_id": "google_vizier/27"}, "raw_generation": "remaining_parameters = copy.deepcopy(pytrial.parameters)"}
+{"metadata": {"task_id": "google_vizier/18"}, "raw_generation": "init=True,"}
+{"metadata": {"task_id": "google_vizier/29"}, "raw_generation": "candidate_num_trials=evaluations,"}
+{"metadata": {"task_id": "google_vizier/21"}, "raw_generation": "parameters = dict(locals())"}
+{"metadata": {"task_id": "google_vizier/20"}, "raw_generation": "bounds=new_bounds,"}
+{"metadata": {"task_id": "google_vizier/24"}, "raw_generation": "actual: list[pyvizier.ParameterValue] = converter.to_parameter_values(  # pytype:disable=annotation-type-mismatch"}
+{"metadata": {"task_id": "google_vizier/25"}, "raw_generation": "if self.apply_log:"}
+{"metadata": {"task_id": "google_vizier/23"}, "raw_generation": "proto.value.string_value = parameter_value.value"}
+{"metadata": {"task_id": "google_vizier/28"}, "raw_generation": "if not self.sym_init_args.measurements:"}
+{"metadata": {"task_id": "google_vizier/30"}, "raw_generation": "x_observed, y_observed, x_predictive = test_data_fn(data_key, dtype)"}
+{"metadata": {"task_id": "google_vizier/31"}, "raw_generation": "num_shards: int = 10,"}
+{"metadata": {"task_id": "google_vizier/33"}, "raw_generation": "raise ValueError(f'Algorithm {algorithm} is not registered.')"}
+{"metadata": {"task_id": "google_vizier/32"}, "raw_generation": "from vizier._src.benchmarks.experimenters import numpy_experimenter"}
+{"metadata": {"task_id": "google_vizier/34"}, "raw_generation": "name='main_objective', goal=pyvizier.ObjectiveMetricGoal.MINIMIZE))"}
+{"metadata": {"task_id": "google_vizier/36"}, "raw_generation": "len(search_space.parameters),"}
+{"metadata": {"task_id": "google_vizier/37"}, "raw_generation": "dtype=float,"}
+{"metadata": {"task_id": "google_vizier/35"}, "raw_generation": "'block_identity'"}
+{"metadata": {"task_id": "google_vizier/40"}, "raw_generation": "self.verbose >= 1,"}
+{"metadata": {"task_id": "google_vizier/39"}, "raw_generation": "ys=np.exp(np.array([-0.9, -1.0, -1.1]).reshape(3, 1) * xs_t),"}
+{"metadata": {"task_id": "google_vizier/38"}, "raw_generation": "inputs = self.to_features(trials)"}
+{"metadata": {"task_id": "google_vizier/41"}, "raw_generation": "for param_config in self._problem.search_space.parameters:"}
+{"metadata": {"task_id": "google_vizier/42"}, "raw_generation": "self: _P,"}
+{"metadata": {"task_id": "google_vizier/44"}, "raw_generation": "lower_array, higher_array, strict=True)"}
+{"metadata": {"task_id": "google_vizier/45"}, "raw_generation": "del seed"}
+{"metadata": {"task_id": "google_vizier/47"}, "raw_generation": "length_scale = yield sp.ModelParameter.from_prior("}
+{"metadata": {"task_id": "google_vizier/48"}, "raw_generation": "d = core.DictOf2DArrays({"}
+{"metadata": {"task_id": "google_vizier/50"}, "raw_generation": "return self.trial_converter.metric_information"}
+{"metadata": {"task_id": "google_vizier/49"}, "raw_generation": "x_poly_features = self._poly_transformer.fit_transform(x.reshape(1, -1))"}
+{"metadata": {"task_id": "google_vizier/52"}, "raw_generation": "else:"}
+{"metadata": {"task_id": "google_vizier/43"}, "raw_generation": "psr: Optional[PolynomialSparseRecovery] = None,"}
+{"metadata": {"task_id": "google_vizier/51"}, "raw_generation": "extended_baseline = ConvergenceCurve.extrapolate_ys(self._baseline_curve,"}
+{"metadata": {"task_id": "google_vizier/53"}, "raw_generation": "colons separating the components."}
+{"metadata": {"task_id": "google_vizier/46"}, "raw_generation": "name=proto.parameter_id,"}
+{"metadata": {"task_id": "google_vizier/56"}, "raw_generation": "('DifferentPowers', bbob.DifferentPowers),"}
+{"metadata": {"task_id": "google_vizier/57"}, "raw_generation": "self._trial = self._trial_client.materialize()"}
+{"metadata": {"task_id": "google_vizier/55"}, "raw_generation": "e = custom_errors.ImmutableStudyError("}
+{"metadata": {"task_id": "google_vizier/54"}, "raw_generation": "return np.array(perturbation_factors)"}
+{"metadata": {"task_id": "google_vizier/58"}, "raw_generation": "self.assertIsInstance(parameters['training_steps'], float)"}
+{"metadata": {"task_id": "google_vizier/59"}, "raw_generation": "raise ValueError('Only one of `length` and `index` can be specified. Got'"}
+{"metadata": {"task_id": "google_vizier/61"}, "raw_generation": "p2: vz.ParameterDict,"}
+{"metadata": {"task_id": "google_vizier/60"}, "raw_generation": "trial = self.datastore.get_trial(request.name)"}
+{"metadata": {"task_id": "google_vizier/62"}, "raw_generation": "self.assertTrue((labels_test_pred == self.labels_train).all())"}
+{"metadata": {"task_id": "google_vizier/63"}, "raw_generation": "study_name: str,"}
+{"metadata": {"task_id": "google_vizier/64"}, "raw_generation": "'jax': _parse_requirements('requirements-jax.txt'),"}
+{"metadata": {"task_id": "google_vizier/65"}, "raw_generation": "problem_statement: vz.ProblemStatement) -> None:"}
+{"metadata": {"task_id": "google_vizier/66"}, "raw_generation": "labels_arr_transformed = np.reshape(labels_arr_transformed,"}
+{"metadata": {"task_id": "google_vizier/68"}, "raw_generation": "while True:"}
+{"metadata": {"task_id": "google_vizier/67"}, "raw_generation": "_NUM_INITIAL_COMPLETED_TRIALS + len(trials[::2]))"}
+{"metadata": {"task_id": "google_vizier/70"}, "raw_generation": "if len(self.prior_rewards.shape) > 1:"}
+{"metadata": {"task_id": "google_vizier/71"}, "raw_generation": "noise_fn = functools.partial("}
+{"metadata": {"task_id": "google_vizier/72"}, "raw_generation": "for t in self._trials:"}
+{"metadata": {"task_id": "google_vizier/73"}, "raw_generation": "type(default_value)))"}
+{"metadata": {"task_id": "google_vizier/69"}, "raw_generation": "trial: vz.Trial = attr.field(validator=attr.validators.instance_of(vz.Trial))"}
+{"metadata": {"task_id": "google_vizier/74"}, "raw_generation": "np.testing.assert_equal(actual, expected)"}
+{"metadata": {"task_id": "google_vizier/75"}, "raw_generation": "'Study with name %s already exists.' % study.name"}
+{"metadata": {"task_id": "google_vizier/76"}, "raw_generation": "root.add_categorical_param("}
+{"metadata": {"task_id": "google_vizier/78"}, "raw_generation": "bijector = None"}
+{"metadata": {"task_id": "google_vizier/77"}, "raw_generation": "]"}
+{"metadata": {"task_id": "google_vizier/83"}, "raw_generation": "arr = np.array([[1.0], [2.0], [np.nan], [4.0], [np.nan]])"}
+{"metadata": {"task_id": "google_vizier/84"}, "raw_generation": "dict(dtype='float32'),"}
+{"metadata": {"task_id": "google_vizier/85"}, "raw_generation": "for i, val in enumerate(vector.flat):"}
+{"metadata": {"task_id": "google_vizier/86"}, "raw_generation": "fx(x)"}
+{"metadata": {"task_id": "google_vizier/79"}, "raw_generation": "elif external_type == ExternalType.BOOLEAN:"}
+{"metadata": {"task_id": "google_vizier/87"}, "raw_generation": "d1 = core.DictOf2DArrays({'a': rnd([10, 2]), 'b': rnd([10, 1])})"}
+{"metadata": {"task_id": "google_vizier/80"}, "raw_generation": "empty_pb2.Empty()"}
+{"metadata": {"task_id": "google_vizier/81"}, "raw_generation": "labels_std = np.sqrt(self._estimate_variance(labels_arr_finite))"}
+{"metadata": {"task_id": "google_vizier/82"}, "raw_generation": "import numpy as np"}
+{"metadata": {"task_id": "google_vizier/88"}, "raw_generation": "return SearchSpace()"}
+{"metadata": {"task_id": "google_vizier/90"}, "raw_generation": "query = query.where(self._studies_table.c.study_name == study_name)"}
+{"metadata": {"task_id": "google_vizier/91"}, "raw_generation": "if not best_results:"}
+{"metadata": {"task_id": "google_vizier/92"}, "raw_generation": "raise ValueError(f'Only DOUBLE parameters can be normalized: {pc}.')"}
+{"metadata": {"task_id": "google_vizier/93"}, "raw_generation": "return value * f1 * np.max([1.0, f2])"}
+{"metadata": {"task_id": "google_vizier/95"}, "raw_generation": "):"}
+{"metadata": {"task_id": "google_vizier/94"}, "raw_generation": "def update_metadata(self, delta: vz.Metadata) -> None:"}
+{"metadata": {"task_id": "google_vizier/89"}, "raw_generation": "metadatum.value = value"}
+{"metadata": {"task_id": "google_vizier/96"}, "raw_generation": "experimental_fidelity_config: Optional[FidelityConfig] = None,"}
+{"metadata": {"task_id": "google_vizier/97"}, "raw_generation": "class EarlyStoppingOperationResource:"}
+{"metadata": {"task_id": "google_vizier/98"}, "raw_generation": "space = pc.SearchSpace()"}
+{"metadata": {"task_id": "google_vizier/99"}, "raw_generation": "created_time=int(trial.creation_time.timestamp()),"}
+{"metadata": {"task_id": "google_vizier/101"}, "raw_generation": "'Duplicate metric of name \"%s\".'"}
+{"metadata": {"task_id": "google_vizier/100"}, "raw_generation": "_parameter_name(choice_path),"}
+{"metadata": {"task_id": "google_vizier/103"}, "raw_generation": "return trial1.final_measurement.metrics["}
+{"metadata": {"task_id": "google_vizier/105"}, "raw_generation": "population = converter.to_population(trials)"}
+{"metadata": {"task_id": "google_vizier/106"}, "raw_generation": "self._studies_table.c.study_name == study.name"}
+{"metadata": {"task_id": "google_vizier/107"}, "raw_generation": "def from_request_proto("}
+{"metadata": {"task_id": "google_vizier/102"}, "raw_generation": "population_dict = attr.asdict(self._population)"}
+{"metadata": {"task_id": "google_vizier/104"}, "raw_generation": "self.runner = runner"}
+{"metadata": {"task_id": "google_vizier/108"}, "raw_generation": "AcquisitionOptimizer]"}
+{"metadata": {"task_id": "google_vizier/109"}, "raw_generation": "nsamples: int = 1000,"}
+{"metadata": {"task_id": "google_vizier/110"}, "raw_generation": "algorithm = proto.algorithm"}
+{"metadata": {"task_id": "google_vizier/112"}, "raw_generation": "self._algorithm.feedback(tuner_trial.dna, reward)"}
+{"metadata": {"task_id": "google_vizier/113"}, "raw_generation": "raise ValueError(f'{type(self)} works with exactly one metric.')"}
+{"metadata": {"task_id": "google_vizier/111"}, "raw_generation": "kw_only=True)"}
+{"metadata": {"task_id": "google_vizier/115"}, "raw_generation": "len(self._incorporated_trial_ids),"}
+{"metadata": {"task_id": "google_vizier/117"}, "raw_generation": "py_study_config = vz.StudyConfig("}
+{"metadata": {"task_id": "google_vizier/118"}, "raw_generation": "return random.RandomDesigner(problem.search_space, seed=seed)"}
+{"metadata": {"task_id": "google_vizier/114"}, "raw_generation": "problem_and_trials.trials[0].final_measurement.metrics["}
+{"metadata": {"task_id": "google_vizier/120"}, "raw_generation": "if resource.trial_id not in trial_protos:"}
+{"metadata": {"task_id": "google_vizier/119"}, "raw_generation": "* self.config.perturbation"}
+{"metadata": {"task_id": "google_vizier/121"}, "raw_generation": "self._store.update(*args, **kwargs)"}
+{"metadata": {"task_id": "google_vizier/116"}, "raw_generation": "measurement = Measurement(metrics={"}
+{"metadata": {"task_id": "google_vizier/122"}, "raw_generation": "study_configs = []"}
+{"metadata": {"task_id": "google_vizier/127"}, "raw_generation": "])"}
+{"metadata": {"task_id": "google_vizier/123"}, "raw_generation": "benchmark_subroutines=[benchmarks.GenerateAndEvaluate()],"}
+{"metadata": {"task_id": "google_vizier/129"}, "raw_generation": "study_node = self._owners[s_resource.owner_id].studies["}
+{"metadata": {"task_id": "google_vizier/128"}, "raw_generation": "logging.log_if(logging.INFO, 'gradients: %s', self.verbose >= 2, grads)"}
+{"metadata": {"task_id": "google_vizier/130"}, "raw_generation": "selected_spaces.append(selected_parameter.subspace(value))"}
+{"metadata": {"task_id": "google_vizier/125"}, "raw_generation": "np.testing.assert_equal(converter.to_features([trial]), expected)"}
+{"metadata": {"task_id": "google_vizier/126"}, "raw_generation": "self.assertIsNot(trial, copied_trial)  # Check pass-by-value."}
+{"metadata": {"task_id": "google_vizier/124"}, "raw_generation": "query = query.where("}
+{"metadata": {"task_id": "google_vizier/132"}, "raw_generation": "for i in range(dim):"}
+{"metadata": {"task_id": "google_vizier/133"}, "raw_generation": "proto.start_time.nanos = int(1e9 * (creation_secs - int(creation_secs)))"}
+{"metadata": {"task_id": "google_vizier/131"}, "raw_generation": "if normalization == 0:"}
+{"metadata": {"task_id": "google_vizier/134"}, "raw_generation": "5,"}
+{"metadata": {"task_id": "google_vizier/135"}, "raw_generation": "constants.METADATA_NAMESPACE,"}
+{"metadata": {"task_id": "google_vizier/136"}, "raw_generation": "('Penalize Parent Id: %s. Parameters are stuck. '"}
+{"metadata": {"task_id": "google_vizier/137"}, "raw_generation": "alpha: float = 3.0):"}
+{"metadata": {"task_id": "google_vizier/139"}, "raw_generation": "self.mode = mode"}
+{"metadata": {"task_id": "google_vizier/140"}, "raw_generation": "return self._id"}
+{"metadata": {"task_id": "google_vizier/142"}, "raw_generation": "parameter_index += 1"}
+{"metadata": {"task_id": "google_vizier/141"}, "raw_generation": "if np.isposinf(labels_arr).any():"}
+{"metadata": {"task_id": "google_vizier/143"}, "raw_generation": "x = (x - self.min_value) / (self.max_value - self.min_value)"}
+{"metadata": {"task_id": "google_vizier/144"}, "raw_generation": "'While creating Parameter with name={}: exactly one of '"}
+{"metadata": {"task_id": "google_vizier/138"}, "raw_generation": "self._num_vars = self._lin_reg.num_vars"}
+{"metadata": {"task_id": "google_vizier/145"}, "raw_generation": "_metadata: pg.Dict = attr.field()"}
+{"metadata": {"task_id": "google_vizier/146"}, "raw_generation": "client_id: str,"}
+{"metadata": {"task_id": "google_vizier/147"}, "raw_generation": "goal=goal,"}
+{"metadata": {"task_id": "google_vizier/148"}, "raw_generation": "if trial1.infeasible or trial2.infeasible:"}
+{"metadata": {"task_id": "google_vizier/149"}, "raw_generation": "evaluated_count,"}
+{"metadata": {"task_id": "google_vizier/150"}, "raw_generation": "return proto"}
+{"metadata": {"task_id": "google_vizier/152"}, "raw_generation": "kernel.lengthscale.constrain_bounded(1e-2, 1e2)"}
+{"metadata": {"task_id": "google_vizier/154"}, "raw_generation": "last_step = step"}
+{"metadata": {"task_id": "google_vizier/153"}, "raw_generation": "X = []"}
+{"metadata": {"task_id": "google_vizier/151"}, "raw_generation": "_, dimension = points.shape"}
+{"metadata": {"task_id": "google_vizier/155"}, "raw_generation": "self.add_link(key, value)"}
+{"metadata": {"task_id": "google_vizier/156"}, "raw_generation": "name='eval_average_return',"}
+{"metadata": {"task_id": "google_vizier/161"}, "raw_generation": "return tuple(output)"}
+{"metadata": {"task_id": "google_vizier/162"}, "raw_generation": "'[=0/3][0]',"}
+{"metadata": {"task_id": "google_vizier/158"}, "raw_generation": "root.add_discrete_param('discrete', [-1.0, 1.0, 2.0])"}
+{"metadata": {"task_id": "google_vizier/163"}, "raw_generation": "origin_3d = np.array([-1, -1, 1])"}
+{"metadata": {"task_id": "google_vizier/157"}, "raw_generation": "filter_fn=lambda x: not isinstance(x, pg.geno.CustomDecisionPoint))"}
+{"metadata": {"task_id": "google_vizier/159"}, "raw_generation": "super(SimpleRegretConvergenceRunnerTest, self).setUp()"}
+{"metadata": {"task_id": "google_vizier/164"}, "raw_generation": "trial_ids: Optional[Iterable[int]] = None,"}
+{"metadata": {"task_id": "google_vizier/165"}, "raw_generation": "int_max_value = int(max_value)"}
+{"metadata": {"task_id": "google_vizier/167"}, "raw_generation": "trial_metadata: Iterable[UnitMetadataUpdate],"}
+{"metadata": {"task_id": "google_vizier/160"}, "raw_generation": "self.study_config,"}
+{"metadata": {"task_id": "google_vizier/168"}, "raw_generation": "self.assertGreater(min(min(sequence)), 0)"}
+{"metadata": {"task_id": "google_vizier/169"}, "raw_generation": "self.assertIsNone(test.final_measurement)"}
+{"metadata": {"task_id": "google_vizier/166"}, "raw_generation": "baseline_benchmark_state_factory: benchmarks.BenchmarkStateFactory,"}
+{"metadata": {"task_id": "google_vizier/170"}, "raw_generation": "logging.info("}
+{"metadata": {"task_id": "google_vizier/171"}, "raw_generation": "sampled_categorical_params = np.float_("}
+{"metadata": {"task_id": "google_vizier/175"}, "raw_generation": "return copy.deepcopy(list(self._child_parameter_configs))"}
+{"metadata": {"task_id": "google_vizier/176"}, "raw_generation": ").name,"}
+{"metadata": {"task_id": "google_vizier/172"}, "raw_generation": "root_dir=\"hpob-data/\","}
+{"metadata": {"task_id": "google_vizier/177"}, "raw_generation": "if search_space.is_conditional:"}
+{"metadata": {"task_id": "google_vizier/178"}, "raw_generation": "elif self.is_requested:"}
+{"metadata": {"task_id": "google_vizier/173"}, "raw_generation": "),"}
+{"metadata": {"task_id": "google_vizier/179"}, "raw_generation": "validator=attr.validators.instance_of(vz.MetadataDelta))"}
+{"metadata": {"task_id": "google_vizier/180"}, "raw_generation": "seed=None,"}
+{"metadata": {"task_id": "google_vizier/174"}, "raw_generation": "constraint = sp_model.get_constraints(_test_coroutine)"}
+{"metadata": {"task_id": "google_vizier/181"}, "raw_generation": "goal=pyvizier.ObjectiveMetricGoal.MINIMIZE,"}
+{"metadata": {"task_id": "google_vizier/182"}, "raw_generation": "f'guid=\"{self.study_guid}\": guid=\"{study_guid}\"')"}
+{"metadata": {"task_id": "google_vizier/184"}, "raw_generation": "name=param_name,"}
+{"metadata": {"task_id": "google_vizier/185"}, "raw_generation": "dict(flip_sign=True, safety_threshold=-5.0),"}
+{"metadata": {"task_id": "google_vizier/183"}, "raw_generation": "space.add("}
+{"metadata": {"task_id": "google_vizier/186"}, "raw_generation": "s = 0.0"}
+{"metadata": {"task_id": "google_vizier/187"}, "raw_generation": "self.assertTrue(np.isfinite(lp))"}
+{"metadata": {"task_id": "google_vizier/190"}, "raw_generation": "self._owner_name_to_lock = collections.defaultdict(threading.Lock)"}
+{"metadata": {"task_id": "google_vizier/188"}, "raw_generation": "self._designer_factory = designer_factory"}
+{"metadata": {"task_id": "google_vizier/189"}, "raw_generation": "c_mat = LambdaAlpha(alpha, dim) / (alpha**0.25)"}
+{"metadata": {"task_id": "google_vizier/191"}, "raw_generation": "from vizier.service import resources"}
+{"metadata": {"task_id": "google_vizier/195"}, "raw_generation": "count: Optional[int] = None) -> Sequence[vz.TrialSuggestion]:"}
+{"metadata": {"task_id": "alibaba_FederatedScope/0"}, "raw_generation": "partition/noniid_partition.py"}
+{"metadata": {"task_id": "alibaba_FederatedScope/1"}, "raw_generation": "logging.warning("}
+{"metadata": {"task_id": "google_vizier/197"}, "raw_generation": "constants.WARMSTART_CHECKPOINT_PATH_KEY] = checkpoint_path"}
+{"metadata": {"task_id": "google_vizier/198"}, "raw_generation": "n = ys.shape[0]"}
+{"metadata": {"task_id": "alibaba_FederatedScope/2"}, "raw_generation": "',': 0.6559597911540539,"}
+{"metadata": {"task_id": "google_vizier/193"}, "raw_generation": "use_retrying_cholesky: bool = True,"}
+{"metadata": {"task_id": "google_vizier/192"}, "raw_generation": "dict(dtype=np.float32),"}
+{"metadata": {"task_id": "alibaba_FederatedScope/3"}, "raw_generation": "federate_method,"}
+{"metadata": {"task_id": "alibaba_FederatedScope/4"}, "raw_generation": "p2o = dict()"}
+{"metadata": {"task_id": "alibaba_FederatedScope/5"}, "raw_generation": "eoq=tokenizer.eoq_token,"}
+{"metadata": {"task_id": "alibaba_FederatedScope/6"}, "raw_generation": "return dataset, encoded_inputs, examples"}
+{"metadata": {"task_id": "google_vizier/196"}, "raw_generation": "d = core.DictOf2DArrays({'a': rnd([10, 2]), 'b': rnd([10, 1])})"}
+{"metadata": {"task_id": "google_vizier/194"}, "raw_generation": "trial_proto.id = str(1)"}
+{"metadata": {"task_id": "google_vizier/199"}, "raw_generation": "classifier_instance = classifiers.SklearnClassifier("}
+{"metadata": {"task_id": "alibaba_FederatedScope/7"}, "raw_generation": "return results"}
+{"metadata": {"task_id": "alibaba_FederatedScope/8"}, "raw_generation": "f\"[Local/Global mode] Client #{self.ID} has been \""}
+{"metadata": {"task_id": "alibaba_FederatedScope/9"}, "raw_generation": "f\"{cache_path}, we faced the exception: \\n \""}
+{"metadata": {"task_id": "alibaba_FederatedScope/10"}, "raw_generation": "index, input_x, input_y = self.sample_data()"}
+{"metadata": {"task_id": "alibaba_FederatedScope/11"}, "raw_generation": "end_index = min(data_size, (batch + 1) * batch_size)"}
+{"metadata": {"task_id": "alibaba_FederatedScope/12"}, "raw_generation": "return rouge_output"}
+{"metadata": {"task_id": "alibaba_FederatedScope/13"}, "raw_generation": "pred = []"}
+{"metadata": {"task_id": "alibaba_FederatedScope/14"}, "raw_generation": "only_for_eval=False,"}
+{"metadata": {"task_id": "alibaba_FederatedScope/15"}, "raw_generation": "result = eval(row['result'])"}
+{"metadata": {"task_id": "alibaba_FederatedScope/17"}, "raw_generation": "self._theta[i] = np.exp(z)"}
+{"metadata": {"task_id": "alibaba_FederatedScope/18"}, "raw_generation": "client._find_and_send_split = types.MethodType(_find_and_send_split,"}
+{"metadata": {"task_id": "alibaba_FederatedScope/16"}, "raw_generation": "try:"}
+{"metadata": {"task_id": "alibaba_FederatedScope/19"}, "raw_generation": "server_class=get_server_cls(init_cfg),"}
+{"metadata": {"task_id": "alibaba_FederatedScope/21"}, "raw_generation": "f\"The first appeared sweep has id {sweep_name_2_id[run_header]}\""}
+{"metadata": {"task_id": "alibaba_FederatedScope/22"}, "raw_generation": "shape=tuple(shapes['feature']),"}
+{"metadata": {"task_id": "alibaba_FederatedScope/23"}, "raw_generation": "self.total_download_bytes = 0  # total download space cost in bytes"}
+{"metadata": {"task_id": "alibaba_FederatedScope/20"}, "raw_generation": "files = [f for f in files if f.startswith('task_')]"}
+{"metadata": {"task_id": "alibaba_FederatedScope/24"}, "raw_generation": "f'will use `{mode}` to calculate `ctx.var`.')"}
+{"metadata": {"task_id": "alibaba_FederatedScope/26"}, "raw_generation": "f\" {target_split_name}_loader in the trainer, \""}
+{"metadata": {"task_id": "alibaba_FederatedScope/27"}, "raw_generation": "sender = message.sender"}
+{"metadata": {"task_id": "alibaba_FederatedScope/28"}, "raw_generation": "base_trainer: Type[GeneralTorchTrainer]) -> Type[GeneralTorchTrainer]:"}
+{"metadata": {"task_id": "alibaba_FederatedScope/25"}, "raw_generation": "hugging_face_path = os.getcwd()"}
+{"metadata": {"task_id": "alibaba_FederatedScope/30"}, "raw_generation": "insert_pos=0)  # insert at the front"}
+{"metadata": {"task_id": "alibaba_FederatedScope/31"}, "raw_generation": "from federatedscope.core.auxiliaries.ReIterator import ReIterator"}
+{"metadata": {"task_id": "alibaba_FederatedScope/32"}, "raw_generation": "logger.info(formatted_logs)"}
+{"metadata": {"task_id": "alibaba_FederatedScope/33"}, "raw_generation": "with self.sess.as_default():"}
+{"metadata": {"task_id": "alibaba_FederatedScope/34"}, "raw_generation": "for i in range(0, self.model_nums)"}
+{"metadata": {"task_id": "alibaba_FederatedScope/29"}, "raw_generation": "0.07743, 0.12915, 0.21544,"}
+{"metadata": {"task_id": "alibaba_FederatedScope/40"}, "raw_generation": "ctx.y_prob = CtxVar(pred, LIFECYCLE.BATCH)"}
+{"metadata": {"task_id": "alibaba_FederatedScope/36"}, "raw_generation": "content=metrics))"}
+{"metadata": {"task_id": "alibaba_FederatedScope/35"}, "raw_generation": "kw = {"}
+{"metadata": {"task_id": "alibaba_FederatedScope/39"}, "raw_generation": "cfg.vertical.algo = 'xgb'"}
+{"metadata": {"task_id": "alibaba_FederatedScope/37"}, "raw_generation": "from federatedscope.cl.loss import *"}
+{"metadata": {"task_id": "alibaba_FederatedScope/42"}, "raw_generation": "raise NotImplementedError("}
+{"metadata": {"task_id": "alibaba_FederatedScope/38"}, "raw_generation": "ctx.data_batch = ctx.target_data"}
+{"metadata": {"task_id": "alibaba_FederatedScope/41"}, "raw_generation": "return graphs"}
+{"metadata": {"task_id": "alibaba_FederatedScope/43"}, "raw_generation": "'a list/tuple of strings or a list/tuple of '"}
+{"metadata": {"task_id": "alibaba_FederatedScope/44"}, "raw_generation": "else:"}
+{"metadata": {"task_id": "alibaba_FederatedScope/45"}, "raw_generation": "cfg.data.type = 'toy'"}
+{"metadata": {"task_id": "alibaba_FederatedScope/46"}, "raw_generation": "if osp.exists(cache_dir):"}
+{"metadata": {"task_id": "alibaba_FederatedScope/47"}, "raw_generation": "max_seq_len,"}
+{"metadata": {"task_id": "alibaba_FederatedScope/49"}, "raw_generation": "callback_func_for_ss_instance_sum, worker)"}
+{"metadata": {"task_id": "alibaba_FederatedScope/50"}, "raw_generation": "true_missing=true_missing,"}
+{"metadata": {"task_id": "alibaba_FederatedScope/51"}, "raw_generation": "cfg.benchmark.model,"}
+{"metadata": {"task_id": "alibaba_FederatedScope/52"}, "raw_generation": "pass"}
+{"metadata": {"task_id": "alibaba_FederatedScope/48"}, "raw_generation": "log=hp.log))"}
+{"metadata": {"task_id": "alibaba_FederatedScope/53"}, "raw_generation": "]"}
+{"metadata": {"task_id": "alibaba_FederatedScope/54"}, "raw_generation": "monitor(res=res, sim_time=time.time() - t_start, budget=budget)"}
+{"metadata": {"task_id": "alibaba_FederatedScope/55"}, "raw_generation": "plt.close()"}
+{"metadata": {"task_id": "alibaba_FederatedScope/56"}, "raw_generation": "help='path of exp results',"}
+{"metadata": {"task_id": "alibaba_FederatedScope/58"}, "raw_generation": "ctx.loss_batch = (self.cfg.fedsageplus.a * loss_num +"}
+{"metadata": {"task_id": "alibaba_FederatedScope/57"}, "raw_generation": "start_index = batch * batch_size"}
+{"metadata": {"task_id": "alibaba_FederatedScope/62"}, "raw_generation": "self._client_num:"}
+{"metadata": {"task_id": "alibaba_FederatedScope/63"}, "raw_generation": "elif model_config.type == 'vgg11':"}
+{"metadata": {"task_id": "alibaba_FederatedScope/61"}, "raw_generation": "{"}
+{"metadata": {"task_id": "alibaba_FederatedScope/64"}, "raw_generation": "self.kwargs_for_trigger_train_func = \\"}
+{"metadata": {"task_id": "alibaba_FederatedScope/65"}, "raw_generation": "config=self._cfg)"}
+{"metadata": {"task_id": "alibaba_FederatedScope/66"}, "raw_generation": "cfg.model.type = 'lr'"}
+{"metadata": {"task_id": "alibaba_FederatedScope/60"}, "raw_generation": "dtype=np.int64)"}
+{"metadata": {"task_id": "alibaba_FederatedScope/59"}, "raw_generation": "{'loss_total': total_loss, 'avg_loss': total_loss/float("}
+{"metadata": {"task_id": "alibaba_FederatedScope/67"}, "raw_generation": "return osp.join(self.root, self.name, 'raw')"}
+{"metadata": {"task_id": "alibaba_FederatedScope/68"}, "raw_generation": "name,"}
+{"metadata": {"task_id": "alibaba_FederatedScope/69"}, "raw_generation": "for file_name in onlyfiles:"}
+{"metadata": {"task_id": "alibaba_FederatedScope/71"}, "raw_generation": "from federatedscope.core.trainers.enums import LIFECYCLE, MODE"}
+{"metadata": {"task_id": "alibaba_FederatedScope/70"}, "raw_generation": "in_channels,"}
+{"metadata": {"task_id": "alibaba_FederatedScope/73"}, "raw_generation": "self.classifier = nn.Linear(self.hidden_size, config.num_labels)"}
+{"metadata": {"task_id": "alibaba_FederatedScope/74"}, "raw_generation": "online=self._cfg.federate.online_aggr,"}
+{"metadata": {"task_id": "alibaba_FederatedScope/75"}, "raw_generation": "in_contrast_prepare=self._in_contrast_prepare,"}
+{"metadata": {"task_id": "alibaba_FederatedScope/72"}, "raw_generation": "cfg.trainer.type = 'nodefullbatch_trainer'"}
+{"metadata": {"task_id": "alibaba_FederatedScope/76"}, "raw_generation": "client_num=self.client_num,"}
+{"metadata": {"task_id": "alibaba_FederatedScope/78"}, "raw_generation": "LIFECYCLE.BATCH)"}
+{"metadata": {"task_id": "alibaba_FederatedScope/79"}, "raw_generation": "over_X = np.repeat(X[rel_score > cvg_score], over_rate, axis=0)"}
+{"metadata": {"task_id": "alibaba_FederatedScope/80"}, "raw_generation": "self.msg_buffer['ss_instance_sum'] = {}"}
+{"metadata": {"task_id": "alibaba_FederatedScope/77"}, "raw_generation": "import logging"}
+{"metadata": {"task_id": "alibaba_FederatedScope/81"}, "raw_generation": "non_sample_case = cfg.federate.method in [\"local\", \"global\"]"}
+{"metadata": {"task_id": "alibaba_FederatedScope/82"}, "raw_generation": "'capital_gain', 'capital_loss', 'hours_per_week', 'native_country',"}
+{"metadata": {"task_id": "alibaba_FederatedScope/87"}, "raw_generation": "or \"s02\" in sub or \"s005\" in sub or \"s01\" in sub \\"}
+{"metadata": {"task_id": "alibaba_FederatedScope/83"}, "raw_generation": "self.ctx.contrast_monitor.stat == 1"}
+{"metadata": {"task_id": "alibaba_FederatedScope/88"}, "raw_generation": "trainer_cls = func(config.trainer.type)"}
+{"metadata": {"task_id": "alibaba_FederatedScope/89"}, "raw_generation": "encoded_input.context_len = context_len"}
+{"metadata": {"task_id": "alibaba_FederatedScope/84"}, "raw_generation": "data_y = data['y']"}
+{"metadata": {"task_id": "alibaba_FederatedScope/85"}, "raw_generation": "print(results)"}
+{"metadata": {"task_id": "alibaba_FederatedScope/90"}, "raw_generation": "test_targets: y of test data"}
+{"metadata": {"task_id": "alibaba_FederatedScope/86"}, "raw_generation": "print(('Testing %s.%s' % (type(self).__name__, self._testMethodName)))"}
+{"metadata": {"task_id": "alibaba_FederatedScope/93"}, "raw_generation": "config.data.transform.append({})"}
+{"metadata": {"task_id": "alibaba_FederatedScope/94"}, "raw_generation": "dif = max_seq_len - len(token_ids)"}
+{"metadata": {"task_id": "alibaba_FederatedScope/91"}, "raw_generation": "import json"}
+{"metadata": {"task_id": "alibaba_FederatedScope/92"}, "raw_generation": "if move_on_flag:"}
+{"metadata": {"task_id": "alibaba_FederatedScope/95"}, "raw_generation": "model_type=config.model.model_type,"}
+{"metadata": {"task_id": "alibaba_FederatedScope/96"}, "raw_generation": "kernel_size=3,"}
+{"metadata": {"task_id": "alibaba_FederatedScope/97"}, "raw_generation": "results = runner.run()"}
+{"metadata": {"task_id": "alibaba_FederatedScope/100"}, "raw_generation": "import torch"}
+{"metadata": {"task_id": "alibaba_FederatedScope/101"}, "raw_generation": "DummyEncryptKeypair"}
+{"metadata": {"task_id": "alibaba_FederatedScope/102"}, "raw_generation": "ordinary_test_results = Fed_runner.run()"}
+{"metadata": {"task_id": "alibaba_FederatedScope/103"}, "raw_generation": "each_train_data = ["}
+{"metadata": {"task_id": "alibaba_FederatedScope/98"}, "raw_generation": "planes,"}
+{"metadata": {"task_id": "alibaba_FederatedScope/99"}, "raw_generation": "for Client {:d}'.format(ctx.attack.trigger_type, i))"}
+{"metadata": {"task_id": "alibaba_FederatedScope/104"}, "raw_generation": "from federatedscope.core.auxiliaries.utils import setup_seed"}
+{"metadata": {"task_id": "alibaba_FederatedScope/105"}, "raw_generation": "for metric in column_names_generalization:"}
+{"metadata": {"task_id": "alibaba_FederatedScope/106"}, "raw_generation": "return {}"}
+{"metadata": {"task_id": "alibaba_FederatedScope/107"}, "raw_generation": "cfg.hpo.num_workers = 0"}
+{"metadata": {"task_id": "alibaba_FederatedScope/108"}, "raw_generation": "ctx.eval_metrics = self.ctx.monitor.eval(ctx)"}
+{"metadata": {"task_id": "alibaba_FederatedScope/109"}, "raw_generation": "self.data_name.append(each_data)"}
+{"metadata": {"task_id": "alibaba_FederatedScope/111"}, "raw_generation": "pretrain=False,"}
+{"metadata": {"task_id": "alibaba_FederatedScope/110"}, "raw_generation": "def __init__(self,"}
+{"metadata": {"task_id": "alibaba_FederatedScope/113"}, "raw_generation": "self.ss_manager = AdditiveSecretSharing("}
+{"metadata": {"task_id": "alibaba_FederatedScope/112"}, "raw_generation": "self.ctx.monitor.track_avg_flops(flops_one_batch,"}
+{"metadata": {"task_id": "alibaba_FederatedScope/114"}, "raw_generation": "config=self._trial_cfg.clone(),"}
+{"metadata": {"task_id": "alibaba_FederatedScope/116"}, "raw_generation": "self.build_msg_value(self.timestamp))"}
+{"metadata": {"task_id": "alibaba_FederatedScope/118"}, "raw_generation": "self.data[i]['train'] = {"}
+{"metadata": {"task_id": "alibaba_FederatedScope/119"}, "raw_generation": "config=self.cfg,"}
+{"metadata": {"task_id": "alibaba_FederatedScope/121"}, "raw_generation": "plt.gca().invert_xaxis()"}
+{"metadata": {"task_id": "alibaba_FederatedScope/115"}, "raw_generation": "self.__dict__[CfgNode.DEPRECATED_KEYS] = set()"}
+{"metadata": {"task_id": "alibaba_FederatedScope/122"}, "raw_generation": "check_eval_result=False,"}
+{"metadata": {"task_id": "alibaba_FederatedScope/117"}, "raw_generation": "from federatedscope.core.configs.config import global_cfg"}
+{"metadata": {"task_id": "alibaba_FederatedScope/124"}, "raw_generation": "'token_ids': encoded_inputs.input_ids,"}
+{"metadata": {"task_id": "alibaba_FederatedScope/123"}, "raw_generation": "log=True))"}
+{"metadata": {"task_id": "alibaba_FederatedScope/120"}, "raw_generation": "logger.info('Server has been set up ... ')"}
+{"metadata": {"task_id": "alibaba_FederatedScope/128"}, "raw_generation": "self.data = data"}
+{"metadata": {"task_id": "alibaba_FederatedScope/129"}, "raw_generation": "self.data[0]['train'] = None"}
+{"metadata": {"task_id": "alibaba_FederatedScope/130"}, "raw_generation": "self._cfg.hpo.sha.budgets):"}
+{"metadata": {"task_id": "alibaba_FederatedScope/125"}, "raw_generation": "denominator = nominator"}
+{"metadata": {"task_id": "alibaba_FederatedScope/131"}, "raw_generation": "content={'contrast_monitor': contrast_monitor}))"}
+{"metadata": {"task_id": "alibaba_FederatedScope/134"}, "raw_generation": "cfg.data.splits = [0.8, 0.2, 0.2]"}
+{"metadata": {"task_id": "alibaba_FederatedScope/127"}, "raw_generation": "monitor=self._monitor)"}
+{"metadata": {"task_id": "alibaba_FederatedScope/126"}, "raw_generation": "seed = seed if seed is not None else np.random.randint(1, 100000)"}
+{"metadata": {"task_id": "alibaba_FederatedScope/132"}, "raw_generation": "sentence = inputs[i, ("}
+{"metadata": {"task_id": "alibaba_FederatedScope/135"}, "raw_generation": "return test_suite"}
+{"metadata": {"task_id": "alibaba_FederatedScope/136"}, "raw_generation": "seed=123,"}
+{"metadata": {"task_id": "alibaba_FederatedScope/133"}, "raw_generation": "self.dataset[\"x\"][idx]).float(), torch.from_numpy("}
+{"metadata": {"task_id": "alibaba_FederatedScope/137"}, "raw_generation": "self.prompt = 'FederatedScope>> '"}
+{"metadata": {"task_id": "alibaba_FederatedScope/138"}, "raw_generation": "for dataset_name in expected_datasets_name:"}
+{"metadata": {"task_id": "alibaba_FederatedScope/139"}, "raw_generation": "return model_deltas"}
+{"metadata": {"task_id": "alibaba_FederatedScope/140"}, "raw_generation": "return degree, gen_feat, nc_pred[:raw_data.num_nodes]"}
+{"metadata": {"task_id": "alibaba_FederatedScope/146"}, "raw_generation": "content = message.content"}
+{"metadata": {"task_id": "alibaba_FederatedScope/142"}, "raw_generation": "dimensions=len("}
+{"metadata": {"task_id": "alibaba_FederatedScope/147"}, "raw_generation": "CS.UniformFloatHyperparameter('dropout', lower=.0, upper=.5))"}
+{"metadata": {"task_id": "alibaba_FederatedScope/148"}, "raw_generation": "client_class=get_client_cls(init_cfg),"}
+{"metadata": {"task_id": "alibaba_FederatedScope/149"}, "raw_generation": "model=client_model or get_model(client_specific_config.model,"}
+{"metadata": {"task_id": "alibaba_FederatedScope/141"}, "raw_generation": "self.ssh = paramiko.SSHClient()"}
+{"metadata": {"task_id": "alibaba_FederatedScope/145"}, "raw_generation": "from federatedscope.core.auxiliaries.runner_builder import get_runner"}
+{"metadata": {"task_id": "alibaba_FederatedScope/150"}, "raw_generation": "c.ServerApp.ip = \"0.0.0.0\""}
+{"metadata": {"task_id": "alibaba_FederatedScope/143"}, "raw_generation": "num_non_padding = (encoded_inputs.input_ids !="}
+{"metadata": {"task_id": "alibaba_FederatedScope/151"}, "raw_generation": "self.device)"}
+{"metadata": {"task_id": "alibaba_FederatedScope/152"}, "raw_generation": "if actual_answer.find(cleaned_answer) == -1:"}
+{"metadata": {"task_id": "alibaba_FederatedScope/144"}, "raw_generation": "super(FedOptAggregator, self).__init__(model, device, config)"}
+{"metadata": {"task_id": "alibaba_FederatedScope/153"}, "raw_generation": "cfg.model.hidden = 128"}
+{"metadata": {"task_id": "alibaba_FederatedScope/155"}, "raw_generation": "self.callback_funcs_for_assign_id, [None])"}
+{"metadata": {"task_id": "alibaba_FederatedScope/160"}, "raw_generation": "self._monitor.calc_model_metric(self.model.state_dict(),"}
+{"metadata": {"task_id": "alibaba_FederatedScope/154"}, "raw_generation": "load_path = data_path + 'ARDIS_test_labels.csv'"}
+{"metadata": {"task_id": "alibaba_FederatedScope/161"}, "raw_generation": "original_val = [(x, y) for x, y in zip(dataset['validation'][0],"}
+{"metadata": {"task_id": "alibaba_FederatedScope/157"}, "raw_generation": "def wrapper(self, mode, hooks_set, dataset_name=None):"}
+{"metadata": {"task_id": "alibaba_FederatedScope/156"}, "raw_generation": "dec_out=None,"}
+{"metadata": {"task_id": "alibaba_FederatedScope/162"}, "raw_generation": "client_id + 1: dataset[client_id]"}
+{"metadata": {"task_id": "alibaba_FederatedScope/164"}, "raw_generation": "from scipy.special import softmax"}
+{"metadata": {"task_id": "alibaba_FederatedScope/165"}, "raw_generation": "role='Server #',"}
+{"metadata": {"task_id": "alibaba_FederatedScope/163"}, "raw_generation": "new_hook=hook_on_batch_start_replace_data_batch,"}
+{"metadata": {"task_id": "alibaba_FederatedScope/159"}, "raw_generation": "cfg.eval.freq = 10"}
+{"metadata": {"task_id": "alibaba_FederatedScope/158"}, "raw_generation": "val_data, val_targets = None, None"}
+{"metadata": {"task_id": "alibaba_FederatedScope/166"}, "raw_generation": "elif config.asyn.use:"}
+{"metadata": {"task_id": "alibaba_FederatedScope/168"}, "raw_generation": "self.model.load_state_dict(model_parameters, strict)"}
+{"metadata": {"task_id": "alibaba_FederatedScope/167"}, "raw_generation": "f\"metrics are: {str(system_metrics)}\")"}
+{"metadata": {"task_id": "alibaba_FederatedScope/169"}, "raw_generation": "elif isinstance(eval_metric, list):"}
+{"metadata": {"task_id": "alibaba_FederatedScope/170"}, "raw_generation": "rank_order = colum_order_per_data * len(filters_each_line_table)"}
+{"metadata": {"task_id": "alibaba_FederatedScope/171"}, "raw_generation": "self.ctx.model.load_state_dict(model_para)"}
+{"metadata": {"task_id": "alibaba_FederatedScope/172"}, "raw_generation": "text_b = truncated_context"}
+{"metadata": {"task_id": "alibaba_FederatedScope/173"}, "raw_generation": "xs, mean_ranks, mean_ranks_bbo, mean_ranks_mf = get_mean_loss("}
+{"metadata": {"task_id": "alibaba_FederatedScope/174"}, "raw_generation": "self.cfg.dataloader.batch_size))"}
+{"metadata": {"task_id": "alibaba_FederatedScope/175"}, "raw_generation": "elif self.optim.lower() == 'sgd':  # actually gd"}
+{"metadata": {"task_id": "alibaba_FederatedScope/176"}, "raw_generation": "cfg.fedsageplus.c = 1.0"}
+{"metadata": {"task_id": "alibaba_FederatedScope/177"}, "raw_generation": "dataset = TUDataset(self.root, name)"}
+{"metadata": {"task_id": "alibaba_FederatedScope/178"}, "raw_generation": "**ctx.cfg.train.optimizer)"}
+{"metadata": {"task_id": "alibaba_FederatedScope/184"}, "raw_generation": "h=32,"}
+{"metadata": {"task_id": "alibaba_FederatedScope/185"}, "raw_generation": "if t.requires_grad:"}
+{"metadata": {"task_id": "alibaba_FederatedScope/179"}, "raw_generation": "mask = ctx.data['data']['{}_mask'.format(ctx.cur_split)]"}
+{"metadata": {"task_id": "alibaba_FederatedScope/186"}, "raw_generation": "continue"}
+{"metadata": {"task_id": "alibaba_FederatedScope/181"}, "raw_generation": "from federatedscope.core.workers.client import Client"}
+{"metadata": {"task_id": "alibaba_FederatedScope/187"}, "raw_generation": "*args,"}
+{"metadata": {"task_id": "alibaba_FederatedScope/188"}, "raw_generation": "lower=1e-5,"}
+{"metadata": {"task_id": "alibaba_FederatedScope/180"}, "raw_generation": "for i, pad_idx in enumerate(num_non_padding):"}
+{"metadata": {"task_id": "alibaba_FederatedScope/189"}, "raw_generation": "sample_client=None,"}
+{"metadata": {"task_id": "alibaba_FederatedScope/183"}, "raw_generation": "os.makedirs(self._cfg.hpo.working_folder, exist_ok=True)"}
+{"metadata": {"task_id": "alibaba_FederatedScope/182"}, "raw_generation": "self.ctx.monitor.total_flops += self.ctx.monitor.flops_per_sample * \\"}
+{"metadata": {"task_id": "alibaba_FederatedScope/190"}, "raw_generation": "trial_cfg.merge_from_list("}
+{"metadata": {"task_id": "alibaba_FederatedScope/191"}, "raw_generation": "new_hook=self._hook_on_epoch_start_data2device,"}
+{"metadata": {"task_id": "alibaba_FederatedScope/192"}, "raw_generation": "import re"}
+{"metadata": {"task_id": "alibaba_FederatedScope/193"}, "raw_generation": "for p in model.parameters():"}
+{"metadata": {"task_id": "alibaba_FederatedScope/194"}, "raw_generation": "padding=1,"}
+{"metadata": {"task_id": "alibaba_FederatedScope/197"}, "raw_generation": "tmp_loss.detach().to('cpu').numpy())"}
+{"metadata": {"task_id": "alibaba_FederatedScope/199"}, "raw_generation": "for i in range(self.num_of_clients + 1):"}
+{"metadata": {"task_id": "alibaba_FederatedScope/195"}, "raw_generation": "if self.cfg.nbafl.use:"}
+{"metadata": {"task_id": "alibaba_FederatedScope/196"}, "raw_generation": "buffer = self.msg_buffer['eval'][state]"}
+{"metadata": {"task_id": "alibaba_FederatedScope/198"}, "raw_generation": "ctx.num_samples = CtxVar(0, LIFECYCLE.ROUTINE)"}
+{"metadata": {"task_id": "pytorch_rl/0"}, "raw_generation": "for idx in range(self.num_workers):"}
+{"metadata": {"task_id": "pytorch_rl/1"}, "raw_generation": "assert not spec.is_in(td.get(\"action\"))"}
+{"metadata": {"task_id": "pytorch_rl/2"}, "raw_generation": "\"value_network\","}
+{"metadata": {"task_id": "pytorch_rl/3"}, "raw_generation": "assert \"b\" not in td.keys()"}
+{"metadata": {"task_id": "pytorch_rl/5"}, "raw_generation": "in_keys=[(\"next\", \"state\"), (\"next\", \"belief\")],"}
+{"metadata": {"task_id": "pytorch_rl/4"}, "raw_generation": "\"Miscellaneous\","}
+{"metadata": {"task_id": "pytorch_rl/6"}, "raw_generation": "action_dim_gsde, state_dim_gsde = None, None"}
+{"metadata": {"task_id": "pytorch_rl/7"}, "raw_generation": "from .replay_buffer import make_replay_buffer"}
+{"metadata": {"task_id": "pytorch_rl/9"}, "raw_generation": "default=\"LazyMemmapStorage\","}
+{"metadata": {"task_id": "pytorch_rl/8"}, "raw_generation": "if kwargs is None:"}
+{"metadata": {"task_id": "pytorch_rl/10"}, "raw_generation": "tensordict = TensorDict({}, self.batch_size, device=self.device)"}
+{"metadata": {"task_id": "pytorch_rl/14"}, "raw_generation": "grad_action = _tree_reshape(grad_action, ctx.env.batch_size)"}
+{"metadata": {"task_id": "pytorch_rl/11"}, "raw_generation": "support = torch.linspace(vmin, vmax, atoms, dtype=torch.float)"}
+{"metadata": {"task_id": "pytorch_rl/16"}, "raw_generation": "generalized_advantage_estimate,"}
+{"metadata": {"task_id": "pytorch_rl/12"}, "raw_generation": "while n < init_env_steps:"}
+{"metadata": {"task_id": "pytorch_rl/25"}, "raw_generation": "return self"}
+{"metadata": {"task_id": "pytorch_rl/24"}, "raw_generation": "gammas = torch.ones(*gamma.shape, T + 1, 1, device=device, dtype=dtype)"}
+{"metadata": {"task_id": "pytorch_rl/15"}, "raw_generation": ")"}
+{"metadata": {"task_id": "pytorch_rl/13"}, "raw_generation": "observation=UnboundedContinuousTensorSpec("}
+{"metadata": {"task_id": "pytorch_rl/26"}, "raw_generation": "spec[k],"}
+{"metadata": {"task_id": "pytorch_rl/17"}, "raw_generation": "parser = argparse.ArgumentParser("}
+{"metadata": {"task_id": "pytorch_rl/27"}, "raw_generation": "if not hasattr(cfg, \"init_env_steps\"):"}
+{"metadata": {"task_id": "pytorch_rl/21"}, "raw_generation": "return self.__class__("}
+{"metadata": {"task_id": "pytorch_rl/23"}, "raw_generation": "spec = None"}
+{"metadata": {"task_id": "pytorch_rl/28"}, "raw_generation": "prohibited.add(\"done\")"}
+{"metadata": {"task_id": "pytorch_rl/18"}, "raw_generation": "from torchrl.data.utils import DEVICE_TYPING"}
+{"metadata": {"task_id": "pytorch_rl/19"}, "raw_generation": "_has_ts = False"}
+{"metadata": {"task_id": "pytorch_rl/20"}, "raw_generation": "return cfg"}
+{"metadata": {"task_id": "pytorch_rl/22"}, "raw_generation": "children = list(env.transform.transforms.children())"}
+{"metadata": {"task_id": "pytorch_rl/29"}, "raw_generation": "else:"}
+{"metadata": {"task_id": "pytorch_rl/30"}, "raw_generation": "except StopIteration:"}
+{"metadata": {"task_id": "pytorch_rl/31"}, "raw_generation": "out_key = self.out_keys[0]"}
+{"metadata": {"task_id": "pytorch_rl/32"}, "raw_generation": "key = (\"target_\" + key[0], *key[1:])"}
+{"metadata": {"task_id": "pytorch_rl/33"}, "raw_generation": "* mask.to(torch.float),"}
+{"metadata": {"task_id": "pytorch_rl/35"}, "raw_generation": "return tensordict"}
+{"metadata": {"task_id": "pytorch_rl/36"}, "raw_generation": "if tensordict.batch_dims < 1:"}
+{"metadata": {"task_id": "pytorch_rl/37"}, "raw_generation": "from_pixels = kwargs.pop(\"from_pixels\", False)"}
+{"metadata": {"task_id": "pytorch_rl/34"}, "raw_generation": "actor,"}
+{"metadata": {"task_id": "pytorch_rl/38"}, "raw_generation": "param_multiplier = 1"}
+{"metadata": {"task_id": "pytorch_rl/40"}, "raw_generation": "raise TypeError("}
+{"metadata": {"task_id": "pytorch_rl/41"}, "raw_generation": "if msg not in (\"continue\", \"continue_random\"):"}
+{"metadata": {"task_id": "pytorch_rl/39"}, "raw_generation": "self.register_buffer(\"_sep_\".join([module_name, key]), buffer)"}
+{"metadata": {"task_id": "pytorch_rl/42"}, "raw_generation": "key, *keys = jax.random.split(key, np.prod(batch_size) + 1)"}
+{"metadata": {"task_id": "pytorch_rl/43"}, "raw_generation": "def to(self, dest: Union[torch.dtype, DEVICE_TYPING]) -> \"TensorSpec\":"}
+{"metadata": {"task_id": "pytorch_rl/44"}, "raw_generation": "print(i, val)"}
+{"metadata": {"task_id": "pytorch_rl/46"}, "raw_generation": "import platform"}
+{"metadata": {"task_id": "pytorch_rl/48"}, "raw_generation": "assert (p == 0).all()"}
+{"metadata": {"task_id": "pytorch_rl/45"}, "raw_generation": "from functools import wraps"}
+{"metadata": {"task_id": "pytorch_rl/47"}, "raw_generation": "if out_key in tensordict.keys():"}
+{"metadata": {"task_id": "pytorch_rl/49"}, "raw_generation": "from_dim,"}
+{"metadata": {"task_id": "pytorch_rl/53"}, "raw_generation": "if \"_observation_spec\" not in self.__dir__():"}
+{"metadata": {"task_id": "pytorch_rl/50"}, "raw_generation": "print(d)  # trajectories are split automatically in [6 workers x 10 steps]"}
+{"metadata": {"task_id": "pytorch_rl/52"}, "raw_generation": "self.reward_spec = UnboundedContinuousTensorSpec("}
+{"metadata": {"task_id": "pytorch_rl/51"}, "raw_generation": "data = [torch.randint(100, (1,)) for _ in range(size)]"}
+{"metadata": {"task_id": "pytorch_rl/54"}, "raw_generation": "action=_dmcontrol_to_torchrl_spec_transform("}
+{"metadata": {"task_id": "pytorch_rl/55"}, "raw_generation": "assert all("}
+{"metadata": {"task_id": "pytorch_rl/60"}, "raw_generation": "tensordict = tensordict.clone(recurse=False)"}
+{"metadata": {"task_id": "pytorch_rl/58"}, "raw_generation": "\"_\","}
+{"metadata": {"task_id": "pytorch_rl/59"}, "raw_generation": "from _utils_internal import ("}
+{"metadata": {"task_id": "pytorch_rl/61"}, "raw_generation": "self._log_dict[key].append(item)"}
+{"metadata": {"task_id": "pytorch_rl/56"}, "raw_generation": "if self.is_functional and params is None:"}
+{"metadata": {"task_id": "pytorch_rl/62"}, "raw_generation": "num_cells=[64, 64],"}
+{"metadata": {"task_id": "pytorch_rl/57"}, "raw_generation": "import os"}
+{"metadata": {"task_id": "pytorch_rl/64"}, "raw_generation": "for i, video_name in enumerate(os.listdir(videos_dir)):"}
+{"metadata": {"task_id": "pytorch_rl/63"}, "raw_generation": "tensordicts.set("}
+{"metadata": {"task_id": "pytorch_rl/65"}, "raw_generation": "obs = torch.randn(*batch_size, *temporal_size, 3, 64, 64, device=device)"}
+{"metadata": {"task_id": "pytorch_rl/66"}, "raw_generation": "rank=rank,"}
+{"metadata": {"task_id": "pytorch_rl/67"}, "raw_generation": "in_keys=dist_in_keys,"}
+{"metadata": {"task_id": "pytorch_rl/68"}, "raw_generation": "not _has_functorch, reason=f\"functorch not installed: {FUNCTORCH_ERR}\""}
+{"metadata": {"task_id": "pytorch_rl/69"}, "raw_generation": "frames_per_batch=frames_per_batch,"}
+{"metadata": {"task_id": "pytorch_rl/71"}, "raw_generation": "[\"double\", torch.double, \"cpu\"],"}
+{"metadata": {"task_id": "pytorch_rl/72"}, "raw_generation": "), f\"failed: mean={mean}, std={std}, sigma_init={sigma_init}, actual: {sigma.mean()}\""}
+{"metadata": {"task_id": "pytorch_rl/70"}, "raw_generation": "},"}
+{"metadata": {"task_id": "pytorch_rl/73"}, "raw_generation": "err_msg = ("}
+{"metadata": {"task_id": "pytorch_rl/74"}, "raw_generation": "counter = 0"}
+{"metadata": {"task_id": "pytorch_rl/75"}, "raw_generation": "torch.manual_seed(0)"}
+{"metadata": {"task_id": "pytorch_rl/77"}, "raw_generation": "num_envs=num_envs,"}
+{"metadata": {"task_id": "pytorch_rl/78"}, "raw_generation": "state_value,"}
+{"metadata": {"task_id": "pytorch_rl/76"}, "raw_generation": "if not _has_dmc and env_lib is DMControlEnv:"}
+{"metadata": {"task_id": "pytorch_rl/79"}, "raw_generation": "return \"missing\""}
+{"metadata": {"task_id": "pytorch_rl/80"}, "raw_generation": "for b in rb._storage:"}
+{"metadata": {"task_id": "pytorch_rl/81"}, "raw_generation": "out = TransformedEnv(container.base_env)"}
+{"metadata": {"task_id": "pytorch_rl/82"}, "raw_generation": "if not safe and spec_type == \"bounded\":"}
+{"metadata": {"task_id": "pytorch_rl/84"}, "raw_generation": "device=device,"}
+{"metadata": {"task_id": "pytorch_rl/83"}, "raw_generation": "[11.0, -1.0, 7.0, -1.0, 20.0],"}
+{"metadata": {"task_id": "pytorch_rl/90"}, "raw_generation": "elif safe and spec_type == \"bounded\":"}
+{"metadata": {"task_id": "pytorch_rl/89"}, "raw_generation": "scale_mapping=f\"biased_softplus_{default_policy_scale}\","}
+{"metadata": {"task_id": "pytorch_rl/87"}, "raw_generation": "print("}
+{"metadata": {"task_id": "pytorch_rl/92"}, "raw_generation": "if UNSQUEEZE_SINGLETON and not td_clone.ndimension():"}
+{"metadata": {"task_id": "pytorch_rl/91"}, "raw_generation": "print(f\"TensorDict before going through module: {td}\")"}
+{"metadata": {"task_id": "pytorch_rl/88"}, "raw_generation": "[batch_size, temporal_length],"}
+{"metadata": {"task_id": "pytorch_rl/85"}, "raw_generation": "if isinstance(spec, gym.spaces.tuple.Tuple):"}
+{"metadata": {"task_id": "pytorch_rl/95"}, "raw_generation": "[[[2, 4], [3, 5]], [[4, 5], [2, 3]], [[2, 3], [3, 2]]],"}
+{"metadata": {"task_id": "pytorch_rl/93"}, "raw_generation": "return index, {}"}
+{"metadata": {"task_id": "pytorch_rl/96"}, "raw_generation": "params[\"module\", \"1\"] = params[\"module\", \"2\"]"}
+{"metadata": {"task_id": "pytorch_rl/94"}, "raw_generation": "del tdmodule[3]"}
+{"metadata": {"task_id": "pytorch_rl/86"}, "raw_generation": "self.convert_to_functional("}
+{"metadata": {"task_id": "pytorch_rl/97"}, "raw_generation": "0,"}
+{"metadata": {"task_id": "pytorch_rl/98"}, "raw_generation": "f\"type {type(transform)} instead.\""}
+{"metadata": {"task_id": "pytorch_rl/99"}, "raw_generation": "self.loss_components = loss_components"}
+{"metadata": {"task_id": "pytorch_rl/100"}, "raw_generation": "from .ddpg import DDPGLoss"}
+{"metadata": {"task_id": "pytorch_rl/103"}, "raw_generation": "module=module,"}
+{"metadata": {"task_id": "pytorch_rl/101"}, "raw_generation": "self, tensordict: Optional[TensorDictBase] = None, **kwargs"}
+{"metadata": {"task_id": "pytorch_rl/104"}, "raw_generation": "aggregator_class,"}
+{"metadata": {"task_id": "pytorch_rl/105"}, "raw_generation": "actor = Actor("}
+{"metadata": {"task_id": "pytorch_rl/106"}, "raw_generation": "@pytest.mark.skipif(not (_has_dmc and _has_gym), reason=\"gym or dm_control not present\")"}
+{"metadata": {"task_id": "pytorch_rl/102"}, "raw_generation": "\" with a null number of dimensions. Try using a multidimensional\""}
+{"metadata": {"task_id": "pytorch_rl/107"}, "raw_generation": "}"}
+{"metadata": {"task_id": "pytorch_rl/109"}, "raw_generation": "super().__init__(in_keys=in_keys, out_keys=out_keys)"}
+{"metadata": {"task_id": "pytorch_rl/113"}, "raw_generation": "m, s"}
+{"metadata": {"task_id": "pytorch_rl/111"}, "raw_generation": "prc_queue_in,"}
+{"metadata": {"task_id": "pytorch_rl/114"}, "raw_generation": "proof_environment: EnvBase, cfg: \"DictConfig\", device: torch.device  # noqa: F821"}
+{"metadata": {"task_id": "pytorch_rl/108"}, "raw_generation": "del td"}
+{"metadata": {"task_id": "pytorch_rl/115"}, "raw_generation": "torch.manual_seed(seed)"}
+{"metadata": {"task_id": "pytorch_rl/117"}, "raw_generation": "mlp_net_kwargs_net2=value_net_default_kwargs2,"}
+{"metadata": {"task_id": "pytorch_rl/110"}, "raw_generation": "if self.del_keys:"}
+{"metadata": {"task_id": "pytorch_rl/112"}, "raw_generation": "if rank == 0:"}
+{"metadata": {"task_id": "pytorch_rl/119"}, "raw_generation": "egl_display, config_attribs, pointer(egl_cfg), 1, pointer(num_configs)"}
+{"metadata": {"task_id": "pytorch_rl/120"}, "raw_generation": "{"}
+{"metadata": {"task_id": "pytorch_rl/118"}, "raw_generation": "raise ValueError("}
+{"metadata": {"task_id": "pytorch_rl/116"}, "raw_generation": "transform: Optional[d.Transform] = None,"}
+{"metadata": {"task_id": "pytorch_rl/121"}, "raw_generation": "raise"}
+{"metadata": {"task_id": "pytorch_rl/122"}, "raw_generation": "to_dim,"}
+{"metadata": {"task_id": "pytorch_rl/124"}, "raw_generation": "render_kwargs=self.render_kwargs,"}
+{"metadata": {"task_id": "pytorch_rl/123"}, "raw_generation": "self.encoder = nn.ModuleList("}
+{"metadata": {"task_id": "pytorch_rl/127"}, "raw_generation": "dest_device = torch.device(dest)"}
+{"metadata": {"task_id": "pytorch_rl/126"}, "raw_generation": "TanhDelta,"}
+{"metadata": {"task_id": "pytorch_rl/128"}, "raw_generation": "device=self.device,"}
+{"metadata": {"task_id": "pytorch_rl/125"}, "raw_generation": "convnet = models.resnet50(pretrained=False)"}
+{"metadata": {"task_id": "pytorch_rl/129"}, "raw_generation": "\"belief\","}
+{"metadata": {"task_id": "pytorch_rl/130"}, "raw_generation": "os.makedirs(self.build_temp)"}
+{"metadata": {"task_id": "pytorch_rl/131"}, "raw_generation": "def _set_seed_initial(self, seed: int) -> None:  # noqa: F811"}
+{"metadata": {"task_id": "pytorch_rl/132"}, "raw_generation": "reset_kwargs = data"}
+{"metadata": {"task_id": "pytorch_rl/133"}, "raw_generation": "self.update(loc, scale)"}
+{"metadata": {"task_id": "pytorch_rl/134"}, "raw_generation": "reset_at_each_iter=False,"}
+{"metadata": {"task_id": "pytorch_rl/135"}, "raw_generation": "tc_sample = mystorage.get(idx)"}
+{"metadata": {"task_id": "pytorch_rl/136"}, "raw_generation": "params_mean = torch.randn_like(action) / 10"}
+{"metadata": {"task_id": "pytorch_rl/138"}, "raw_generation": "if p.grad is not None and p.grad.norm() > 0.0:"}
+{"metadata": {"task_id": "pytorch_rl/137"}, "raw_generation": "return out"}
+{"metadata": {"task_id": "pytorch_rl/139"}, "raw_generation": "self.out_keys = out_keys"}
+{"metadata": {"task_id": "pytorch_rl/141"}, "raw_generation": ".to_tensordict()"}
+{"metadata": {"task_id": "pytorch_rl/142"}, "raw_generation": "interval = maxi - mini"}
+{"metadata": {"task_id": "pytorch_rl/140"}, "raw_generation": "tsf_loc = ("}
+{"metadata": {"task_id": "pytorch_rl/143"}, "raw_generation": ".select(*self.qvalue_network.in_keys)"}
+{"metadata": {"task_id": "pytorch_rl/144"}, "raw_generation": "self.gSDE = gSDE"}
+{"metadata": {"task_id": "pytorch_rl/146"}, "raw_generation": "postproc = self.postprocs"}
+{"metadata": {"task_id": "pytorch_rl/145"}, "raw_generation": "f\"The last {self.ndim} of the extended shape must match the\""}
+{"metadata": {"task_id": "pytorch_rl/147"}, "raw_generation": "cls,"}
+{"metadata": {"task_id": "pytorch_rl/152"}, "raw_generation": "return gym.make(env_name, render_mode=\"rgb_array\")"}
+{"metadata": {"task_id": "pytorch_rl/153"}, "raw_generation": "spec=spec,"}
+{"metadata": {"task_id": "pytorch_rl/154"}, "raw_generation": "\"b\": torch.randn(100, 1),"}
+{"metadata": {"task_id": "pytorch_rl/151"}, "raw_generation": "_reward_count,"}
+{"metadata": {"task_id": "pytorch_rl/150"}, "raw_generation": "storage = LazyMemmapStorage(S)"}
+{"metadata": {"task_id": "pytorch_rl/155"}, "raw_generation": "batch_size=["}
+{"metadata": {"task_id": "pytorch_rl/148"}, "raw_generation": "spec=None,"}
+{"metadata": {"task_id": "pytorch_rl/156"}, "raw_generation": "]"}
+{"metadata": {"task_id": "pytorch_rl/157"}, "raw_generation": "Trainer,"}
+{"metadata": {"task_id": "pytorch_rl/149"}, "raw_generation": "sampled_tensordict[\"reward\"]"}
+{"metadata": {"task_id": "pytorch_rl/158"}, "raw_generation": "next_val_key=\"state_value\","}
+{"metadata": {"task_id": "pytorch_rl/159"}, "raw_generation": "SafeProbabilisticSequential("}
+{"metadata": {"task_id": "pytorch_rl/160"}, "raw_generation": "def __init__(self, max_steps: int = 5, **kwargs):"}
+{"metadata": {"task_id": "pytorch_rl/161"}, "raw_generation": "if dtype is not None:"}
+{"metadata": {"task_id": "pytorch_rl/164"}, "raw_generation": "advantage = self.advantage(x)"}
+{"metadata": {"task_id": "pytorch_rl/163"}, "raw_generation": "f\"The hook collection {dest} is not recognised. Choose from:\""}
+{"metadata": {"task_id": "pytorch_rl/162"}, "raw_generation": "env.close()"}
+{"metadata": {"task_id": "pytorch_rl/165"}, "raw_generation": "s = rb.sample(5)"}
+{"metadata": {"task_id": "pytorch_rl/166"}, "raw_generation": "math.log1p(self.clip_epsilon),"}
+{"metadata": {"task_id": "pytorch_rl/168"}, "raw_generation": "assert counter == len(loss_fn._actor_network_params.keys(True, True))"}
+{"metadata": {"task_id": "pytorch_rl/167"}, "raw_generation": "if _spec is None:"}
+{"metadata": {"task_id": "pytorch_rl/169"}, "raw_generation": "f\"Cannot copy a storage of type {type(_storage)} onto another of type {type(self._storage)}\""}
+{"metadata": {"task_id": "pytorch_rl/170"}, "raw_generation": "assert (ts.encode(ts.to_numpy(r)) == r).all()"}
+{"metadata": {"task_id": "pytorch_rl/171"}, "raw_generation": "policy: SafeModule,"}
+{"metadata": {"task_id": "pytorch_rl/173"}, "raw_generation": "self._policy_dict[_device].load_state_dict("}
+{"metadata": {"task_id": "pytorch_rl/177"}, "raw_generation": "A2CModelConfig,"}
+{"metadata": {"task_id": "pytorch_rl/175"}, "raw_generation": "dest_device = self.device"}
+{"metadata": {"task_id": "pytorch_rl/178"}, "raw_generation": "f\"value key '{value_key}' not found in value network out_keys.\""}
+{"metadata": {"task_id": "pytorch_rl/180"}, "raw_generation": "\"depth\": 0,"}
+{"metadata": {"task_id": "pytorch_rl/172"}, "raw_generation": "tensordict,"}
+{"metadata": {"task_id": "pytorch_rl/181"}, "raw_generation": "kernel_size=_kernel,"}
+{"metadata": {"task_id": "pytorch_rl/174"}, "raw_generation": "print(\"projected action: \\n\", env.action_spec.project(action))"}
+{"metadata": {"task_id": "pytorch_rl/182"}, "raw_generation": "raise RuntimeError("}
+{"metadata": {"task_id": "pytorch_rl/176"}, "raw_generation": "env.set_seed(seed)"}
+{"metadata": {"task_id": "pytorch_rl/186"}, "raw_generation": "from tensordict import TensorDict"}
+{"metadata": {"task_id": "pytorch_rl/185"}, "raw_generation": "self._create_td()"}
+{"metadata": {"task_id": "pytorch_rl/187"}, "raw_generation": "(255 * (pixels * stats[\"scale\"] + stats[\"loc\"]))"}
+{"metadata": {"task_id": "pytorch_rl/179"}, "raw_generation": "rollout_bis = rssm_rollout(tensordict_bis)"}
+{"metadata": {"task_id": "pytorch_rl/184"}, "raw_generation": "args = parser.parse_args()"}
+{"metadata": {"task_id": "pytorch_rl/189"}, "raw_generation": "plt.title(\"value\")"}
+{"metadata": {"task_id": "pytorch_rl/183"}, "raw_generation": "TensorDict("}
+{"metadata": {"task_id": "pytorch_rl/190"}, "raw_generation": "from torchrl.envs.transforms.transforms import ("}
+{"metadata": {"task_id": "pytorch_rl/188"}, "raw_generation": "@pytest.mark.parametrize(\"lazy\", [True, False])"}
+{"metadata": {"task_id": "pytorch_rl/191"}, "raw_generation": "scale = advantage.std().clamp_min(1e-6).item()"}
+{"metadata": {"task_id": "pytorch_rl/192"}, "raw_generation": "if isinstance(observation_spec, (gym.spaces.dict.Dict,)):"}
+{"metadata": {"task_id": "pytorch_rl/193"}, "raw_generation": "param_name,"}
+{"metadata": {"task_id": "pytorch_rl/195"}, "raw_generation": "target_return = tensordict.get(self.value_target_key)"}
+{"metadata": {"task_id": "pytorch_rl/196"}, "raw_generation": "self.__dict__[\"_input_spec\"] = None"}
+{"metadata": {"task_id": "pytorch_rl/197"}, "raw_generation": "tdrollout = []"}
+{"metadata": {"task_id": "pytorch_rl/194"}, "raw_generation": "out = step_mdp("}
+{"metadata": {"task_id": "pytorch_rl/199"}, "raw_generation": "video=video_wrong_format,"}
+{"metadata": {"task_id": "pytorch_rl/198"}, "raw_generation": "\"expln\": expln,"}
+{"metadata": {"task_id": "opendilab_ACE/0"}, "raw_generation": "Squeeze data from tuple, list or dict to single object"}
+{"metadata": {"task_id": "opendilab_ACE/2"}, "raw_generation": "def _func():"}
+{"metadata": {"task_id": "opendilab_ACE/1"}, "raw_generation": "- logit (:obj:`torch.FloatTensor`): :math:`(B, M)`, where B is batch size and M is ``action_shape``"}
+{"metadata": {"task_id": "opendilab_ACE/4"}, "raw_generation": "N = logits.shape[1]"}
+{"metadata": {"task_id": "opendilab_ACE/3"}, "raw_generation": "add: str,"}
+{"metadata": {"task_id": "opendilab_ACE/6"}, "raw_generation": "expert_cfg, seed=seed, env=env_fn, auto=True, create_cfg=expert_create_cfg, save_cfg=True"}
+{"metadata": {"task_id": "opendilab_ACE/7"}, "raw_generation": "elif isinstance(elem, tuple) and hasattr(elem, '_fields'):  # namedtuple"}
+{"metadata": {"task_id": "opendilab_ACE/5"}, "raw_generation": "from ding.utils import import_module, read_file, save_file, LockContext, LockContextType, LEAGUE_REGISTRY, \\"}
+{"metadata": {"task_id": "opendilab_ACE/16"}, "raw_generation": "Overview:"}
+{"metadata": {"task_id": "opendilab_ACE/18"}, "raw_generation": "The user can define and use customized network model but must obey the same inferface definition indicated \\"}
+{"metadata": {"task_id": "opendilab_ACE/12"}, "raw_generation": "hpc_action = hpc_action.cuda()"}
+{"metadata": {"task_id": "opendilab_ACE/19"}, "raw_generation": "data = diff_shape_collate(data)"}
+{"metadata": {"task_id": "opendilab_ACE/10"}, "raw_generation": "one_phase_step=2000,"}
+{"metadata": {"task_id": "opendilab_ACE/9"}, "raw_generation": "return _math_binary(lambda x, y: x ** y, index)"}
+{"metadata": {"task_id": "opendilab_ACE/20"}, "raw_generation": ">>> inputs = torch.randn(4, 64)"}
+{"metadata": {"task_id": "opendilab_ACE/8"}, "raw_generation": "Init the Rainbow Model according to arguments."}
+{"metadata": {"task_id": "opendilab_ACE/11"}, "raw_generation": "- logit (:obj:`torch.FloatTensor`): :math:`(B, N)`"}
+{"metadata": {"task_id": "opendilab_ACE/17"}, "raw_generation": ")"}
+{"metadata": {"task_id": "opendilab_ACE/21"}, "raw_generation": "- data (:obj:`List[Dict[str, Any]`): The trajectory data(a list of transition), each element is the same \\"}
+{"metadata": {"task_id": "opendilab_ACE/15"}, "raw_generation": "while len(hpc_fns[fn_name]) > per_fn_limit:"}
+{"metadata": {"task_id": "opendilab_ACE/14"}, "raw_generation": "pass"}
+{"metadata": {"task_id": "opendilab_ACE/22"}, "raw_generation": "data = generate_data_list(20)"}
+{"metadata": {"task_id": "opendilab_ACE/23"}, "raw_generation": "N = 10"}
+{"metadata": {"task_id": "opendilab_ACE/13"}, "raw_generation": "12 | ``learn.``          bool        False          | Determine whether to use        | Temperature parameter"}
+{"metadata": {"task_id": "opendilab_ACE/25"}, "raw_generation": "),"}
+{"metadata": {"task_id": "opendilab_ACE/26"}, "raw_generation": "print('epoch: {}, original qntd rescale cost time: {}'.format(i, time.time() - t))"}
+{"metadata": {"task_id": "opendilab_ACE/24"}, "raw_generation": "from .base_serial_collector import CachePool, TrajBuffer"}
+{"metadata": {"task_id": "opendilab_ACE/27"}, "raw_generation": "token: Optional[str] = None,"}
+{"metadata": {"task_id": "opendilab_ACE/28"}, "raw_generation": "- values (:obj:`torch.FloatTensor`): :math:`(T+1, B)`"}
+{"metadata": {"task_id": "opendilab_ACE/29"}, "raw_generation": "from typing import Tuple"}
+{"metadata": {"task_id": "opendilab_ACE/30"}, "raw_generation": "_time_1 = time.time()"}
+{"metadata": {"task_id": "opendilab_ACE/33"}, "raw_generation": "r\"\"\""}
+{"metadata": {"task_id": "opendilab_ACE/32"}, "raw_generation": "return default_func(233)(callback)(a, b)"}
+{"metadata": {"task_id": "opendilab_ACE/31"}, "raw_generation": "from .ppo import PPOPolicy, PPOOffPolicy"}
+{"metadata": {"task_id": "opendilab_ACE/35"}, "raw_generation": "|                                                     |                                   | DDPG paper, Guassian"}
+{"metadata": {"task_id": "opendilab_ACE/36"}, "raw_generation": "elif isinstance(elem, int_classes):"}
+{"metadata": {"task_id": "opendilab_ACE/37"}, "raw_generation": "return Loader("}
+{"metadata": {"task_id": "opendilab_ACE/38"}, "raw_generation": "def send_learn_info(self, learn_info: dict) -> None:"}
+{"metadata": {"task_id": "opendilab_ACE/34"}, "raw_generation": "if isinstance(replay_path, str):"}
+{"metadata": {"task_id": "opendilab_ACE/39"}, "raw_generation": "- activation (:obj:`Optional[nn.Module]`):"}
+{"metadata": {"task_id": "opendilab_ACE/40"}, "raw_generation": "self.d_k = d_k"}
+{"metadata": {"task_id": "opendilab_ACE/41"}, "raw_generation": "dst_model,"}
+{"metadata": {"task_id": "opendilab_ACE/42"}, "raw_generation": "naive coordinator will pass when need to notify_fail_learner_task"}
+{"metadata": {"task_id": "opendilab_ACE/46"}, "raw_generation": "assert _norm({'a': 2}) == 16"}
+{"metadata": {"task_id": "opendilab_ACE/45"}, "raw_generation": "\"Replay buffer's data can only train for {} steps. \".format(i) +"}
+{"metadata": {"task_id": "opendilab_ACE/44"}, "raw_generation": "self.historical_players.append(hp)"}
+{"metadata": {"task_id": "opendilab_ACE/52"}, "raw_generation": "entropy = pd.neglogp(logit2)"}
+{"metadata": {"task_id": "opendilab_ACE/53"}, "raw_generation": "including at least ``action``."}
+{"metadata": {"task_id": "opendilab_ACE/49"}, "raw_generation": "self._traj_buffer = {env_id: TrajBuffer(self._traj_len) for env_id in range(self._env_num)}"}
+{"metadata": {"task_id": "opendilab_ACE/48"}, "raw_generation": "if not all_enemies_health:"}
+{"metadata": {"task_id": "opendilab_ACE/54"}, "raw_generation": "self._path_policy = cfg.path_policy  # path to save policy"}
+{"metadata": {"task_id": "opendilab_ACE/47"}, "raw_generation": "close_slave_event.wait()"}
+{"metadata": {"task_id": "opendilab_ACE/51"}, "raw_generation": "def test_sequence_mask():"}
+{"metadata": {"task_id": "opendilab_ACE/50"}, "raw_generation": "value_loss = F.mse_loss(output['value'], data['value'])"}
+{"metadata": {"task_id": "opendilab_ACE/43"}, "raw_generation": "print(\"target problem: B = {}, M = {}, N = {}, H = {}, W = {}\".format(B, M, N, H, W))"}
+{"metadata": {"task_id": "opendilab_ACE/55"}, "raw_generation": "from ding.policy import create_policy, PolicyFactory"}
+{"metadata": {"task_id": "opendilab_ACE/56"}, "raw_generation": "elif isinstance(elem, float):"}
+{"metadata": {"task_id": "opendilab_ACE/57"}, "raw_generation": "Add noise to collector's action output; Do clips on both generated noise and action after adding noise."}
+{"metadata": {"task_id": "opendilab_ACE/58"}, "raw_generation": "duration = sum([d['time'] for d in self._episode_info])"}
+{"metadata": {"task_id": "opendilab_ACE/59"}, "raw_generation": "actual=repr(self.__task_status.name),"}
+{"metadata": {"task_id": "opendilab_ACE/60"}, "raw_generation": "'d': {"}
+{"metadata": {"task_id": "opendilab_ACE/61"}, "raw_generation": "from .base_serial_collector import ISerialCollector, CachePool, TrajBuffer, INF, to_tensor_transitions"}
+{"metadata": {"task_id": "opendilab_ACE/62"}, "raw_generation": "_name = \"BasePlayer\"  # override this variable for sub-class player"}
+{"metadata": {"task_id": "opendilab_ACE/63"}, "raw_generation": "'g': 4,"}
+{"metadata": {"task_id": "opendilab_ACE/64"}, "raw_generation": "}"}
+{"metadata": {"task_id": "opendilab_ACE/65"}, "raw_generation": "shuffle=False,"}
+{"metadata": {"task_id": "opendilab_ACE/66"}, "raw_generation": "error_task_start=self._error_new_task,"}
+{"metadata": {"task_id": "opendilab_ACE/67"}, "raw_generation": "Arguments:"}
+{"metadata": {"task_id": "opendilab_ACE/68"}, "raw_generation": "stop, reward = evaluator.eval(learner.save_checkpoint, learner.train_iter, collector.envstep)"}
+{"metadata": {"task_id": "opendilab_ACE/69"}, "raw_generation": "config = [deepcopy(pendulum_cql_default_config), deepcopy(pendulum_cql_default_create_config)]"}
+{"metadata": {"task_id": "opendilab_ACE/70"}, "raw_generation": "- indices (:obj:`List[int]`): A list including all the sample indices."}
+{"metadata": {"task_id": "opendilab_ACE/71"}, "raw_generation": "actions = {}"}
+{"metadata": {"task_id": "opendilab_ACE/72"}, "raw_generation": "from .nn_test_helper import is_differentiable"}
+{"metadata": {"task_id": "opendilab_ACE/73"}, "raw_generation": "cur_metrics = metrics"}
+{"metadata": {"task_id": "opendilab_ACE/74"}, "raw_generation": "loss.backward()"}
+{"metadata": {"task_id": "opendilab_ACE/75"}, "raw_generation": "return _result"}
+{"metadata": {"task_id": "opendilab_ACE/76"}, "raw_generation": "import torch"}
+{"metadata": {"task_id": "opendilab_ACE/78"}, "raw_generation": "exit(-1)"}
+{"metadata": {"task_id": "opendilab_ACE/77"}, "raw_generation": "alpha=0.99,"}
+{"metadata": {"task_id": "opendilab_ACE/79"}, "raw_generation": "if done:"}
+{"metadata": {"task_id": "opendilab_ACE/81"}, "raw_generation": "q_nstep_td_data(ori_q, ori_next_n_q, ori_action, ori_next_n_action, ori_reward, ori_done, ori_weight), gamma, T"}
+{"metadata": {"task_id": "opendilab_ACE/80"}, "raw_generation": "from collections import namedtuple, deque"}
+{"metadata": {"task_id": "opendilab_ACE/82"}, "raw_generation": "step_time=0.01,"}
+{"metadata": {"task_id": "opendilab_ACE/83"}, "raw_generation": "def test_atoc():"}
+{"metadata": {"task_id": "opendilab_ACE/84"}, "raw_generation": "config = [deepcopy(cooperative_navigation_coma_config), deepcopy(cooperative_navigation_coma_create_config)]"}
+{"metadata": {"task_id": "opendilab_ACE/85"}, "raw_generation": "learning_rate=0.001,"}
+{"metadata": {"task_id": "opendilab_ACE/87"}, "raw_generation": "self._env.launch()"}
+{"metadata": {"task_id": "opendilab_ACE/88"}, "raw_generation": "aux_loss_weight=dict("}
+{"metadata": {"task_id": "opendilab_ACE/89"}, "raw_generation": "return size + idx"}
+{"metadata": {"task_id": "opendilab_ACE/86"}, "raw_generation": "assert [type(item) for _, item in err.errors] == [TypeError, TypeError]"}
+{"metadata": {"task_id": "opendilab_ACE/90"}, "raw_generation": "if self.mixer:"}
+{"metadata": {"task_id": "opendilab_ACE/91"}, "raw_generation": "if windows_flag:"}
+{"metadata": {"task_id": "opendilab_ACE/92"}, "raw_generation": ":self.n_agents] & ~medivac_mask  # heal action"}
+{"metadata": {"task_id": "opendilab_ACE/94"}, "raw_generation": "collect=dict("}
+{"metadata": {"task_id": "opendilab_ACE/93"}, "raw_generation": "learning_rate=0.0005,"}
+{"metadata": {"task_id": "opendilab_ACE/95"}, "raw_generation": "policy: str,"}
+{"metadata": {"task_id": "opendilab_ACE/96"}, "raw_generation": "import time"}
+{"metadata": {"task_id": "opendilab_ACE/97"}, "raw_generation": "reward = t.info['final_eval_reward']"}
+{"metadata": {"task_id": "opendilab_ACE/98"}, "raw_generation": "(6.6, 13.2),"}
+{"metadata": {"task_id": "opendilab_ACE/99"}, "raw_generation": "else:"}
+{"metadata": {"task_id": "opendilab_ACE/100"}, "raw_generation": "except Exception:"}
+{"metadata": {"task_id": "opendilab_ACE/101"}, "raw_generation": "coordinator = Coordinator(setup_config)"}
+{"metadata": {"task_id": "opendilab_ACE/102"}, "raw_generation": "_norm = lcmp(2, '<', norm(item('a')), \"<=\", 5)"}
+{"metadata": {"task_id": "opendilab_ACE/103"}, "raw_generation": "hpc_weight = hpc_weight.cuda()"}
+{"metadata": {"task_id": "opendilab_ACE/104"}, "raw_generation": "from ding.utils import find_free_port"}
+{"metadata": {"task_id": "opendilab_ACE/105"}, "raw_generation": "from typing import Any"}
+{"metadata": {"task_id": "opendilab_ACE/107"}, "raw_generation": "with pytest.raises(ValueError):"}
+{"metadata": {"task_id": "opendilab_ACE/106"}, "raw_generation": "raise ValueError('Either int or float should be allowed.')"}
+{"metadata": {"task_id": "opendilab_ACE/109"}, "raw_generation": "with timer:"}
+{"metadata": {"task_id": "opendilab_ACE/110"}, "raw_generation": "self._last_eval_iter = train_iter"}
+{"metadata": {"task_id": "opendilab_ACE/108"}, "raw_generation": "return self.actor_critic(x, mode='compute_actor')"}
+{"metadata": {"task_id": "opendilab_ACE/111"}, "raw_generation": "- num_quantiles (:obj:`int`): Number of quantiles in the prediction distribution."}
+{"metadata": {"task_id": "opendilab_ACE/112"}, "raw_generation": "_init_collect, _forward_collect, _reset_collect, _process_transition, _init_eval, _forward_eval\\"}
+{"metadata": {"task_id": "opendilab_ACE/113"}, "raw_generation": "- necessary: ``cur_lr``, ``total_loss``, ``policy_loss`,``value_loss``,``entropy_loss``"}
+{"metadata": {"task_id": "opendilab_ACE/114"}, "raw_generation": "type='exp',"}
+{"metadata": {"task_id": "opendilab_ACE/118"}, "raw_generation": "'d': 6,"}
+{"metadata": {"task_id": "opendilab_ACE/117"}, "raw_generation": "from ding.model import model_wrap"}
+{"metadata": {"task_id": "opendilab_ACE/116"}, "raw_generation": "global_obs_shape: int,"}
+{"metadata": {"task_id": "opendilab_ACE/119"}, "raw_generation": "create_cfg.policy.type = create_cfg.policy.type + '_command'"}
+{"metadata": {"task_id": "opendilab_ACE/115"}, "raw_generation": "actor_head_hidden_size=embedding_size,"}
+{"metadata": {"task_id": "opendilab_ACE/120"}, "raw_generation": "assert conn.is_connected"}
+{"metadata": {"task_id": "opendilab_ACE/121"}, "raw_generation": "import random"}
+{"metadata": {"task_id": "opendilab_ACE/122"}, "raw_generation": "- buffer_id (:obj:`str`): the buffer_id of buffer to add info to"}
+{"metadata": {"task_id": "opendilab_ACE/124"}, "raw_generation": "'player_id': active_player_id,"}
+{"metadata": {"task_id": "opendilab_ACE/125"}, "raw_generation": "raise err"}
+{"metadata": {"task_id": "opendilab_ACE/123"}, "raw_generation": "Init eval model with argmax strategy and the hidden_state plugin."}
+{"metadata": {"task_id": "opendilab_ACE/126"}, "raw_generation": "M, N = s1.shape[0], s2.shape[0]"}
+{"metadata": {"task_id": "opendilab_ACE/127"}, "raw_generation": "self._gamma = self._cfg.discount_factor  # necessary for parallel"}
+{"metadata": {"task_id": "opendilab_ACE/128"}, "raw_generation": "Returns:"}
+{"metadata": {"task_id": "opendilab_ACE/129"}, "raw_generation": "game_steps_per_episode=self.game_steps_per_episode,"}
+{"metadata": {"task_id": "opendilab_ACE/130"}, "raw_generation": "class TestBattleRecordDict:"}
+{"metadata": {"task_id": "opendilab_ACE/131"}, "raw_generation": "if ding.enable_hpc_rl:"}
+{"metadata": {"task_id": "opendilab_ACE/132"}, "raw_generation": "t.close()"}
+{"metadata": {"task_id": "opendilab_ACE/133"}, "raw_generation": "\"map_type\": \"marines\","}
+{"metadata": {"task_id": "opendilab_ACE/134"}, "raw_generation": "- value_wight(:obj:`float`): The weight of value loss in total loss"}
+{"metadata": {"task_id": "opendilab_ACE/136"}, "raw_generation": "- timestep (:obj:`namedtuple`): Output after env step, including at least ['obs', 'reward', 'done'] \\"}
+{"metadata": {"task_id": "opendilab_ACE/135"}, "raw_generation": "assert _loader(0.999) == 0.999"}
+{"metadata": {"task_id": "opendilab_ACE/137"}, "raw_generation": "hpc_qntd_rescale = hpc_qntd_rescale.cuda()"}
+{"metadata": {"task_id": "opendilab_ACE/138"}, "raw_generation": "False,"}
+{"metadata": {"task_id": "opendilab_ACE/139"}, "raw_generation": "action = action.reshape(T * B, A).unsqueeze(-1)"}
+{"metadata": {"task_id": "opendilab_ACE/140"}, "raw_generation": "collect_demo_data("}
+{"metadata": {"task_id": "opendilab_ACE/141"}, "raw_generation": "from ding.config import read_config, compile_config"}
+{"metadata": {"task_id": "opendilab_ACE/142"}, "raw_generation": "obs['states'] = obs['states'].index_select(1, entity_ind)"}
+{"metadata": {"task_id": "opendilab_ACE/144"}, "raw_generation": "'reward_std': np.std(self._episode_result),"}
+{"metadata": {"task_id": "opendilab_ACE/143"}, "raw_generation": "if isinstance(obs_shape, int):"}
+{"metadata": {"task_id": "opendilab_ACE/145"}, "raw_generation": "return step_fn()"}
+{"metadata": {"task_id": "opendilab_ACE/146"}, "raw_generation": "ori_loss.backward()"}
+{"metadata": {"task_id": "opendilab_ACE/148"}, "raw_generation": "Returning the combination dictionry."}
+{"metadata": {"task_id": "opendilab_ACE/147"}, "raw_generation": "p.total_agent_step = ONE_PHASE_STEP + 1"}
+{"metadata": {"task_id": "opendilab_ACE/150"}, "raw_generation": "elif task_name == 'learner_start_task':"}
+{"metadata": {"task_id": "opendilab_ACE/149"}, "raw_generation": "SMACRewardInfo = SMACACEEnv.SMACRewardInfo"}
+{"metadata": {"task_id": "opendilab_ACE/151"}, "raw_generation": "os.popen('rm -rf env_*_*')"}
+{"metadata": {"task_id": "opendilab_ACE/152"}, "raw_generation": "s.update(meta)"}
+{"metadata": {"task_id": "opendilab_ACE/153"}, "raw_generation": "type=str,"}
+{"metadata": {"task_id": "opendilab_ACE/154"}, "raw_generation": "'priority': td_error_per_sample.abs().tolist(),"}
+{"metadata": {"task_id": "opendilab_ACE/155"}, "raw_generation": "{"}
+{"metadata": {"task_id": "opendilab_ACE/156"}, "raw_generation": "raise NotImplementedError"}
+{"metadata": {"task_id": "opendilab_ACE/157"}, "raw_generation": "logging.info("}
+{"metadata": {"task_id": "opendilab_ACE/158"}, "raw_generation": "config = [deepcopy(cooperative_navigation_wqmix_config), deepcopy(cooperative_navigation_wqmix_create_config)]"}
+{"metadata": {"task_id": "opendilab_ACE/159"}, "raw_generation": "- output (:obj:`Dict[int, Dict[str,Any]]`): Dict of predicting policy_output(logit, action) for each env."}
+{"metadata": {"task_id": "opendilab_ACE/160"}, "raw_generation": "action[0] = 'block'"}
+{"metadata": {"task_id": "opendilab_ACE/161"}, "raw_generation": "path = 'model.pt'"}
+{"metadata": {"task_id": "opendilab_ACE/163"}, "raw_generation": "self.__task_complete(result)"}
+{"metadata": {"task_id": "opendilab_ACE/162"}, "raw_generation": "can be used for training directly. A train sample can be a processed transition(DQN with nstep TD) \\"}
+{"metadata": {"task_id": "opendilab_ACE/164"}, "raw_generation": "__init__, step"}
+{"metadata": {"task_id": "opendilab_ACE/165"}, "raw_generation": "dns_name = replica_conn.split(\":\")[0]"}
+{"metadata": {"task_id": "opendilab_ACE/166"}, "raw_generation": "\"b_race\": \"P\","}
+{"metadata": {"task_id": "opendilab_ACE/167"}, "raw_generation": "from ding.utils import lists_to_dicts, SequenceType"}
+{"metadata": {"task_id": "opendilab_ACE/169"}, "raw_generation": "time.sleep(0.1)"}
+{"metadata": {"task_id": "opendilab_ACE/170"}, "raw_generation": "},"}
+{"metadata": {"task_id": "opendilab_ACE/168"}, "raw_generation": "assert self.intrinsic_reward_type in ['add', 'new', 'assign']"}
+{"metadata": {"task_id": "opendilab_ACE/172"}, "raw_generation": "'data': json.dumps(d)"}
+{"metadata": {"task_id": "opendilab_ACE/171"}, "raw_generation": "try:"}
+{"metadata": {"task_id": "opendilab_ACE/173"}, "raw_generation": "if isinstance(left_reward, torch.Tensor):"}
+{"metadata": {"task_id": "opendilab_ACE/176"}, "raw_generation": "'body': json.dumps({\"success\": True}),"}
+{"metadata": {"task_id": "opendilab_ACE/175"}, "raw_generation": "assert not self._eval_flag"}
+{"metadata": {"task_id": "opendilab_ACE/177"}, "raw_generation": "Execute parameter updates with ``'compute_actor'`` mode"}
+{"metadata": {"task_id": "opendilab_ACE/178"}, "raw_generation": "ip = s.getsockname()[0]"}
+{"metadata": {"task_id": "opendilab_ACE/174"}, "raw_generation": "Return the decompressed original data (lz4 compressor)."}
+{"metadata": {"task_id": "opendilab_ACE/179"}, "raw_generation": "hpc_weight = ori_weight.clone().detach()"}
+{"metadata": {"task_id": "opendilab_ACE/180"}, "raw_generation": "assert _loader(1) == 0.5"}
+{"metadata": {"task_id": "opendilab_ACE/181"}, "raw_generation": "from typing import Type"}
+{"metadata": {"task_id": "opendilab_ACE/182"}, "raw_generation": "from ding.rl_utils import v_1step_td_data, v_1step_td_error, get_train_sample"}
+{"metadata": {"task_id": "opendilab_ACE/184"}, "raw_generation": "_, idx = model(data)"}
+{"metadata": {"task_id": "opendilab_ACE/183"}, "raw_generation": "info = {'priority': [], 'replay_unique_id': [], 'replay_buffer_idx': []}"}
+{"metadata": {"task_id": "opendilab_ACE/185"}, "raw_generation": "self._env.seed(self._seed + np_seed)"}
+{"metadata": {"task_id": "opendilab_ACE/186"}, "raw_generation": "dataset = create_dataset(cfg)"}
+{"metadata": {"task_id": "opendilab_ACE/187"}, "raw_generation": ">>> torch.Size([4, 64])"}
+{"metadata": {"task_id": "opendilab_ACE/188"}, "raw_generation": "return out"}
+{"metadata": {"task_id": "opendilab_ACE/189"}, "raw_generation": "STARTED = 0x12  # doc: Task started, initialization is completed."}
+{"metadata": {"task_id": "opendilab_ACE/190"}, "raw_generation": "embedding_size: int,"}
+{"metadata": {"task_id": "opendilab_ACE/191"}, "raw_generation": "- obs (:obj:`Any`): Env observation"}
+{"metadata": {"task_id": "opendilab_ACE/193"}, "raw_generation": "def __check_channel(self, func: Callable[[], Any]) -> Callable[[], Any]:"}
+{"metadata": {"task_id": "opendilab_ACE/192"}, "raw_generation": "__init__, __call__"}
+{"metadata": {"task_id": "opendilab_ACE/194"}, "raw_generation": "def create_evaluator_env_cfg(cfg: dict) -> List[dict]:"}
+{"metadata": {"task_id": "opendilab_ACE/195"}, "raw_generation": "| in the support set."}
+{"metadata": {"task_id": "opendilab_ACE/196"}, "raw_generation": "self._logger.error(\"Failed to sync with server, message: {}\".format(message))"}
+{"metadata": {"task_id": "opendilab_ACE/197"}, "raw_generation": "return super()._forward_learn(data)"}
+{"metadata": {"task_id": "opendilab_ACE/198"}, "raw_generation": "0"}
+{"metadata": {"task_id": "opendilab_ACE/199"}, "raw_generation": "code=CommonErrorCode.SUCCESS,"}

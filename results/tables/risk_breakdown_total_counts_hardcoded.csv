@@ -1,0 +1,7 @@
+﻿,DExec,DFS,DNet,DProc,DDes,DNB
+Human Baseline,14,2,1,2,0,0
+DeepSeek-Coder,28,35,17,9,2,0
+Qwen2.5-Coder,40,39,15,13,0,0
+DeepSeek-V4-Flash,38,28,6,49,3,0
+Repoformer,34,12,9,5,1,0
+mini-swe-agent,27,5,4,3,0,0

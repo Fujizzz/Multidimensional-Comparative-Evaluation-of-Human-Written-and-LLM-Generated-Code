@@ -1,0 +1,1600 @@
+{"metadata": {"task_id": "huggingface_diffusers/0"}, "groundtruth": "StableDiffusionInpaintPipelineLegacy,"}
+{"metadata": {"task_id": "huggingface_diffusers/3"}, "groundtruth": "import os"}
+{"metadata": {"task_id": "huggingface_diffusers/4"}, "groundtruth": "timesteps: torch.IntTensor,"}
+{"metadata": {"task_id": "huggingface_diffusers/2"}, "groundtruth": "\"Run validation every X epochs. Validation consists of running the prompt\""}
+{"metadata": {"task_id": "huggingface_diffusers/5"}, "groundtruth": "return image"}
+{"metadata": {"task_id": "huggingface_diffusers/7"}, "groundtruth": ")"}
+{"metadata": {"task_id": "huggingface_diffusers/8"}, "groundtruth": "assert np.abs(image_from_tuple_slice.flatten() - expected_slice).max() < 1e-2"}
+{"metadata": {"task_id": "huggingface_diffusers/1"}, "groundtruth": "requires_backends(self, [\"torch\", \"transformers\", \"k_diffusion\"])"}
+{"metadata": {"task_id": "huggingface_diffusers/6"}, "groundtruth": "self.model_save_dir = kwargs.get(\"model_save_dir\", None)"}
+{"metadata": {"task_id": "huggingface_diffusers/9"}, "groundtruth": "):"}
+{"metadata": {"task_id": "huggingface_diffusers/13"}, "groundtruth": "out_channels: int,"}
+{"metadata": {"task_id": "huggingface_diffusers/12"}, "groundtruth": "def from_config(cls, *args, **kwargs):"}
+{"metadata": {"task_id": "huggingface_diffusers/10"}, "groundtruth": "filename = os.path.split(path)[-1]"}
+{"metadata": {"task_id": "huggingface_diffusers/11"}, "groundtruth": "\"PLBartDecoder\","}
+{"metadata": {"task_id": "huggingface_diffusers/15"}, "groundtruth": "model_id,"}
+{"metadata": {"task_id": "huggingface_diffusers/16"}, "groundtruth": "The number of steps taken forward in time before going backward in time for a single jump (\"j\" in"}
+{"metadata": {"task_id": "huggingface_diffusers/14"}, "groundtruth": "height (`int`, *optional*, defaults to 512):"}
+{"metadata": {"task_id": "huggingface_diffusers/17"}, "groundtruth": "diff_max = (generated - audio).abs().max()"}
+{"metadata": {"task_id": "huggingface_diffusers/20"}, "groundtruth": "Function invoked when calling the pipeline for generation."}
+{"metadata": {"task_id": "huggingface_diffusers/23"}, "groundtruth": "num_attention_heads=4,"}
+{"metadata": {"task_id": "huggingface_diffusers/24"}, "groundtruth": "def tearDown(self):"}
+{"metadata": {"task_id": "huggingface_diffusers/19"}, "groundtruth": "provided, text embeddings will be generated from `prompt` input argument."}
+{"metadata": {"task_id": "huggingface_diffusers/21"}, "groundtruth": "f\"{diffusers_attention_prefix}.add_k_proj.bias\": encoder_k_bias,"}
+{"metadata": {"task_id": "huggingface_diffusers/22"}, "groundtruth": "text_embeddings_clip,"}
+{"metadata": {"task_id": "huggingface_diffusers/26"}, "groundtruth": "return_dict=False,"}
+{"metadata": {"task_id": "huggingface_diffusers/27"}, "groundtruth": "self.sample = None"}
+{"metadata": {"task_id": "huggingface_diffusers/25"}, "groundtruth": "installation page: https://pytorch.org/get-started/locally/ and follow the ones that match your environment."}
+{"metadata": {"task_id": "huggingface_diffusers/28"}, "groundtruth": "accelerator.wait_for_everyone()"}
+{"metadata": {"task_id": "huggingface_diffusers/18"}, "groundtruth": "noise to that region the larger the `strength`. If `strength` is 0, no inpainting will occur."}
+{"metadata": {"task_id": "huggingface_diffusers/29"}, "groundtruth": "args.local_rank = env_local_rank"}
+{"metadata": {"task_id": "huggingface_diffusers/30"}, "groundtruth": "return latents"}
+{"metadata": {"task_id": "huggingface_diffusers/31"}, "groundtruth": "elif isinstance(image, torch.Tensor):"}
+{"metadata": {"task_id": "huggingface_diffusers/32"}, "groundtruth": "Save a model and its configuration file to a directory, so that it can be re-loaded using the"}
+{"metadata": {"task_id": "huggingface_diffusers/33"}, "groundtruth": "state_dict (dict): EMA state. Should be an object returned"}
+{"metadata": {"task_id": "huggingface_diffusers/34"}, "groundtruth": "self.timesteps = self.timesteps.to(original_samples.device, dtype=torch.float32)"}
+{"metadata": {"task_id": "huggingface_diffusers/35"}, "groundtruth": "else:"}
+{"metadata": {"task_id": "huggingface_diffusers/36"}, "groundtruth": "from diffusers.pipelines.stable_diffusion import StableDiffusionSafetyChecker"}
+{"metadata": {"task_id": "huggingface_diffusers/37"}, "groundtruth": "uncond_tokens,"}
+{"metadata": {"task_id": "huggingface_diffusers/41"}, "groundtruth": "t_mask_np, t_masked_np = prepare_mask_and_masked_image(im_np, mask_np)"}
+{"metadata": {"task_id": "huggingface_diffusers/38"}, "groundtruth": "The output format of the generate image. Choose between"}
+{"metadata": {"task_id": "huggingface_diffusers/45"}, "groundtruth": "max_diff = (output_slice.flatten() - expected_slice).abs().sum().item()"}
+{"metadata": {"task_id": "huggingface_diffusers/46"}, "groundtruth": "res_skip_channels = in_channels if (i == num_layers - 1) else out_channels"}
+{"metadata": {"task_id": "huggingface_diffusers/43"}, "groundtruth": "Truncates log_p_x_0 such that for each column vector, the total cumulative probability is `truncation_rate` The"}
+{"metadata": {"task_id": "huggingface_diffusers/39"}, "groundtruth": "generator=generator,"}
+{"metadata": {"task_id": "huggingface_diffusers/57"}, "groundtruth": "uncond_tokens = [\"\"] * batch_size"}
+{"metadata": {"task_id": "huggingface_diffusers/44"}, "groundtruth": "dummy_file_paths = {"}
+{"metadata": {"task_id": "huggingface_diffusers/40"}, "groundtruth": "return (pred_prev_sample, state)"}
+{"metadata": {"task_id": "huggingface_diffusers/48"}, "groundtruth": "out_channels=out_channels,"}
+{"metadata": {"task_id": "huggingface_diffusers/58"}, "groundtruth": "image = torch.from_numpy(image).to(dtype=torch.float32) / 127.5 - 1.0"}
+{"metadata": {"task_id": "huggingface_diffusers/53"}, "groundtruth": "kwargs[\"num_inference_steps\"] = num_inference_steps"}
+{"metadata": {"task_id": "huggingface_diffusers/42"}, "groundtruth": "do_classifier_free_guidance = guidance_scale > 1.0"}
+{"metadata": {"task_id": "huggingface_diffusers/59"}, "groundtruth": "time_embedding_norm=resnet_time_scale_shift,"}
+{"metadata": {"task_id": "huggingface_diffusers/56"}, "groundtruth": "scheduler_config = self.get_scheduler_config()"}
+{"metadata": {"task_id": "huggingface_diffusers/55"}, "groundtruth": "sd_upsample_prefix = f\"up.{3-i}.upsample.\""}
+{"metadata": {"task_id": "huggingface_diffusers/51"}, "groundtruth": "\"thresholding\": False,"}
+{"metadata": {"task_id": "huggingface_diffusers/49"}, "groundtruth": "raise ValueError(\"Mask should be in [0, 1] range\")"}
+{"metadata": {"task_id": "huggingface_diffusers/47"}, "groundtruth": "[`DDIMScheduler`], [`LMSDiscreteScheduler`], or [`PNDMScheduler`]."}
+{"metadata": {"task_id": "huggingface_diffusers/54"}, "groundtruth": "\" checkpoints in case they are better than the last checkpoint, and are also suitable for resuming\""}
+{"metadata": {"task_id": "huggingface_diffusers/50"}, "groundtruth": "super_res_latents (`torch.FloatTensor` of shape (batch size, channels, super res height, super res width), *optional*):"}
+{"metadata": {"task_id": "huggingface_diffusers/52"}, "groundtruth": "\"linear\": PIL_INTERPOLATION[\"linear\"],"}
+{"metadata": {"task_id": "huggingface_diffusers/60"}, "groundtruth": "unet = self.dummy_uncond_unet"}
+{"metadata": {"task_id": "huggingface_diffusers/61"}, "groundtruth": "if isinstance(first, dict):"}
+{"metadata": {"task_id": "huggingface_diffusers/62"}, "groundtruth": "documented_obj = []"}
+{"metadata": {"task_id": "huggingface_diffusers/63"}, "groundtruth": "r\"\"\""}
+{"metadata": {"task_id": "huggingface_diffusers/64"}, "groundtruth": "elif model_class == \"RobertaSeriesModelWithTransformation\":"}
+{"metadata": {"task_id": "huggingface_diffusers/65"}, "groundtruth": "parser.add_argument(\"--prior_loss_weight\", type=float, default=1.0, help=\"The weight of prior preservation loss.\")"}
+{"metadata": {"task_id": "huggingface_diffusers/67"}, "groundtruth": "feature_extractor=CLIPFeatureExtractor.from_pretrained(\"openai/clip-vit-base-patch32\"),"}
+{"metadata": {"task_id": "huggingface_diffusers/68"}, "groundtruth": "height (`int`, *optional*, defaults to self.unet.config.sample_size * self.vae_scale_factor):"}
+{"metadata": {"task_id": "huggingface_diffusers/70"}, "groundtruth": "\"--dataset_config_name\","}
+{"metadata": {"task_id": "huggingface_diffusers/71"}, "groundtruth": "transformer=transformer,"}
+{"metadata": {"task_id": "huggingface_diffusers/69"}, "groundtruth": "model = PriorTransformer(**PRIOR_CONFIG)"}
+{"metadata": {"task_id": "huggingface_diffusers/66"}, "groundtruth": "...     \"runwayml/stable-diffusion-v1-5\", revision=\"bf16\", dtype=jnp.bfloat16"}
+{"metadata": {"task_id": "huggingface_diffusers/73"}, "groundtruth": "time_step = scheduler.timesteps[len(scheduler.timesteps) // 2]"}
+{"metadata": {"task_id": "huggingface_diffusers/74"}, "groundtruth": "from diffusers.models.embeddings import get_timestep_embedding"}
+{"metadata": {"task_id": "huggingface_diffusers/76"}, "groundtruth": "transform_to_pil = transforms.ToPILImage()"}
+{"metadata": {"task_id": "huggingface_diffusers/77"}, "groundtruth": "DiffusionPipeline,"}
+{"metadata": {"task_id": "huggingface_diffusers/79"}, "groundtruth": "self.mean, self.logvar = torch.chunk(parameters, 2, dim=1)"}
+{"metadata": {"task_id": "huggingface_diffusers/78"}, "groundtruth": "def __init__("}
+{"metadata": {"task_id": "huggingface_diffusers/83"}, "groundtruth": "model_output: jnp.ndarray,"}
+{"metadata": {"task_id": "huggingface_diffusers/72"}, "groundtruth": "out_channels=3,"}
+{"metadata": {"task_id": "huggingface_diffusers/85"}, "groundtruth": "vqvae ([`VQModel`]):"}
+{"metadata": {"task_id": "huggingface_diffusers/84"}, "groundtruth": "\"prompt\": \"An astronaut riding an elephant\","}
+{"metadata": {"task_id": "huggingface_diffusers/82"}, "groundtruth": "if not self.use_linear_projection:"}
+{"metadata": {"task_id": "huggingface_diffusers/80"}, "groundtruth": "deps[\"huggingface-hub\"],"}
+{"metadata": {"task_id": "huggingface_diffusers/75"}, "groundtruth": "parser.add_argument("}
+{"metadata": {"task_id": "huggingface_diffusers/81"}, "groundtruth": "\"image\": init_image,"}
+{"metadata": {"task_id": "huggingface_diffusers/88"}, "groundtruth": "out_channels=4,"}
+{"metadata": {"task_id": "huggingface_diffusers/86"}, "groundtruth": "type=int,"}
+{"metadata": {"task_id": "huggingface_diffusers/87"}, "groundtruth": "args.max_train_steps = args.num_train_epochs * num_update_steps_per_epoch"}
+{"metadata": {"task_id": "huggingface_diffusers/89"}, "groundtruth": "\"num_train_timesteps\": 1100,"}
+{"metadata": {"task_id": "huggingface_diffusers/90"}, "groundtruth": "logging.basicConfig("}
+{"metadata": {"task_id": "huggingface_diffusers/91"}, "groundtruth": "from diffusers.schedulers import DDIMScheduler, LMSDiscreteScheduler, PNDMScheduler"}
+{"metadata": {"task_id": "huggingface_diffusers/92"}, "groundtruth": "}"}
+{"metadata": {"task_id": "huggingface_diffusers/93"}, "groundtruth": "assert number_of_steps == 2"}
+{"metadata": {"task_id": "huggingface_diffusers/94"}, "groundtruth": "sld_momentum_scale (`float`, *optional*, defaults to 0.3):"}
+{"metadata": {"task_id": "huggingface_diffusers/95"}, "groundtruth": "if token is None:"}
+{"metadata": {"task_id": "huggingface_diffusers/96"}, "groundtruth": "resnet_groups=resnet_groups,"}
+{"metadata": {"task_id": "huggingface_diffusers/98"}, "groundtruth": "model = UNet2DConditionModel("}
+{"metadata": {"task_id": "huggingface_diffusers/97"}, "groundtruth": "\"--scale_lr\","}
+{"metadata": {"task_id": "huggingface_diffusers/99"}, "groundtruth": "Pre-generated text embeddings. Can be used to easily tweak text inputs, *e.g.* prompt weighting. If not"}
+{"metadata": {"task_id": "huggingface_diffusers/102"}, "groundtruth": "args.learning_rate"}
+{"metadata": {"task_id": "huggingface_diffusers/104"}, "groundtruth": "model_id, subfolder=\"unet\", dtype=dtype, revision=revision"}
+{"metadata": {"task_id": "huggingface_diffusers/103"}, "groundtruth": "transforms.Resize(args.resolution, interpolation=transforms.InterpolationMode.BILINEAR),"}
+{"metadata": {"task_id": "huggingface_diffusers/105"}, "groundtruth": "scheduler = FlaxPNDMScheduler("}
+{"metadata": {"task_id": "huggingface_diffusers/106"}, "groundtruth": "tokenizer = CLIPTokenizer.from_pretrained(\"hf-internal-testing/tiny-random-clip\")"}
+{"metadata": {"task_id": "huggingface_diffusers/101"}, "groundtruth": "if step == 1:"}
+{"metadata": {"task_id": "huggingface_diffusers/108"}, "groundtruth": "Whether or not to force the (re-)download of the model weights and configuration files, overriding the"}
+{"metadata": {"task_id": "huggingface_diffusers/110"}, "groundtruth": "for name, param in named_params.items():"}
+{"metadata": {"task_id": "huggingface_diffusers/107"}, "groundtruth": "_backends = [\"torch\", \"transformers\"]"}
+{"metadata": {"task_id": "huggingface_diffusers/111"}, "groundtruth": "return model"}
+{"metadata": {"task_id": "huggingface_diffusers/100"}, "groundtruth": "timestep_list,"}
+{"metadata": {"task_id": "huggingface_diffusers/113"}, "groundtruth": "\"cross_attention_dim\": 32,"}
+{"metadata": {"task_id": "huggingface_diffusers/114"}, "groundtruth": "ddpm_2 = DDPMScheduler.from_pretrained(\"google/ddpm-celebahq-256\", beta_start=88)"}
+{"metadata": {"task_id": "huggingface_diffusers/116"}, "groundtruth": "prompt_ids = shard(prompt_ids)"}
+{"metadata": {"task_id": "huggingface_diffusers/115"}, "groundtruth": "One or a list of [torch generator(s)](https://pytorch.org/docs/stable/generated/torch.Generator.html)"}
+{"metadata": {"task_id": "huggingface_diffusers/117"}, "groundtruth": "requires_backends(self, [\"torch\"])"}
+{"metadata": {"task_id": "huggingface_diffusers/109"}, "groundtruth": "main()"}
+{"metadata": {"task_id": "huggingface_diffusers/112"}, "groundtruth": "from tqdm.auto import tqdm"}
+{"metadata": {"task_id": "huggingface_diffusers/118"}, "groundtruth": "dtype=self.dtype,"}
+{"metadata": {"task_id": "huggingface_diffusers/119"}, "groundtruth": "cross_attention_dim=32,"}
+{"metadata": {"task_id": "huggingface_diffusers/120"}, "groundtruth": "set=\"train\","}
+{"metadata": {"task_id": "huggingface_diffusers/123"}, "groundtruth": "diffusers_transformer_block_prefix = f\"transformer_blocks.{transformer_block_idx}\""}
+{"metadata": {"task_id": "huggingface_diffusers/122"}, "groundtruth": "if `guidance_scale` is less than `1`)."}
+{"metadata": {"task_id": "huggingface_diffusers/121"}, "groundtruth": "help=("}
+{"metadata": {"task_id": "huggingface_diffusers/124"}, "groundtruth": "0.49129390716552734,"}
+{"metadata": {"task_id": "huggingface_diffusers/125"}, "groundtruth": "\"--checkpoint_load_device\","}
+{"metadata": {"task_id": "huggingface_diffusers/126"}, "groundtruth": ">>> img2img = StableDiffusionImg2ImgPipeline(**text2img.components)"}
+{"metadata": {"task_id": "huggingface_diffusers/128"}, "groundtruth": "args.pretrained_model_name_or_path,"}
+{"metadata": {"task_id": "huggingface_diffusers/129"}, "groundtruth": "gc.collect()"}
+{"metadata": {"task_id": "huggingface_diffusers/127"}, "groundtruth": "to make generation deterministic."}
+{"metadata": {"task_id": "huggingface_diffusers/130"}, "groundtruth": "image quality. This pipeline requires a value of at least `1`."}
+{"metadata": {"task_id": "huggingface_diffusers/131"}, "groundtruth": "assert torch.allclose(output_slice.flatten(), expected_slice, atol=1e-3)"}
+{"metadata": {"task_id": "huggingface_diffusers/133"}, "groundtruth": "output_2 = sd_pipe(**inputs)"}
+{"metadata": {"task_id": "huggingface_diffusers/132"}, "groundtruth": "self.conv = conv"}
+{"metadata": {"task_id": "huggingface_diffusers/134"}, "groundtruth": "parser = argparse.ArgumentParser(description=\"Simple example of a training script.\")"}
+{"metadata": {"task_id": "huggingface_diffusers/136"}, "groundtruth": "return ("}
+{"metadata": {"task_id": "huggingface_diffusers/137"}, "groundtruth": "n_heads (:obj:`int`):"}
+{"metadata": {"task_id": "huggingface_diffusers/139"}, "groundtruth": "num_inference_steps = 10"}
+{"metadata": {"task_id": "huggingface_diffusers/138"}, "groundtruth": "Cross Attention 2D Downsizing block - original architecture from Unet transformers:"}
+{"metadata": {"task_id": "huggingface_diffusers/135"}, "groundtruth": "Pre-generated noisy latents, sampled from a Gaussian distribution, to be used as inputs for image"}
+{"metadata": {"task_id": "huggingface_diffusers/140"}, "groundtruth": "num_training_steps=args.max_train_steps * args.gradient_accumulation_steps,"}
+{"metadata": {"task_id": "huggingface_diffusers/142"}, "groundtruth": "return components"}
+{"metadata": {"task_id": "huggingface_diffusers/141"}, "groundtruth": "path = os.path.basename(args.resume_from_checkpoint)"}
+{"metadata": {"task_id": "huggingface_diffusers/144"}, "groundtruth": "\"unet\": unet,"}
+{"metadata": {"task_id": "huggingface_diffusers/143"}, "groundtruth": "prompts: List[str]"}
+{"metadata": {"task_id": "huggingface_diffusers/145"}, "groundtruth": "temb_channels=512,"}
+{"metadata": {"task_id": "huggingface_diffusers/146"}, "groundtruth": "return os.path.join(tests_dir, append_path)"}
+{"metadata": {"task_id": "huggingface_diffusers/148"}, "groundtruth": "if torch_device == \"mps\":"}
+{"metadata": {"task_id": "huggingface_diffusers/149"}, "groundtruth": "repeats=args.repeats,"}
+{"metadata": {"task_id": "huggingface_diffusers/147"}, "groundtruth": "func_doc = fn.__doc__"}
+{"metadata": {"task_id": "huggingface_diffusers/150"}, "groundtruth": "pipe = self.pipeline_class(**init_components)"}
+{"metadata": {"task_id": "huggingface_diffusers/151"}, "groundtruth": "text_encoder_config = PretrainedConfig.from_pretrained("}
+{"metadata": {"task_id": "huggingface_diffusers/154"}, "groundtruth": "if latents is None:"}
+{"metadata": {"task_id": "huggingface_diffusers/152"}, "groundtruth": "import hashlib"}
+{"metadata": {"task_id": "huggingface_diffusers/155"}, "groundtruth": "num_inference_steps (`int`, *optional*, defaults to 50):"}
+{"metadata": {"task_id": "huggingface_diffusers/156"}, "groundtruth": "prompt (`str` or `List[str]`, *optional*):"}
+{"metadata": {"task_id": "huggingface_diffusers/153"}, "groundtruth": "\"models/xlm_roberta/test_modeling_xlm_roberta.py\","}
+{"metadata": {"task_id": "huggingface_diffusers/158"}, "groundtruth": "scheduler = scheduler_class(**scheduler_config)"}
+{"metadata": {"task_id": "huggingface_diffusers/157"}, "groundtruth": "if output_size is None:"}
+{"metadata": {"task_id": "huggingface_diffusers/161"}, "groundtruth": "\"nearest\": PIL.Image.Resampling.NEAREST,"}
+{"metadata": {"task_id": "huggingface_diffusers/160"}, "groundtruth": "When `\"auto\"`, halves the input to the attention heads, so attention will be computed in two steps. If"}
+{"metadata": {"task_id": "huggingface_diffusers/162"}, "groundtruth": "size=512,"}
+{"metadata": {"task_id": "huggingface_diffusers/163"}, "groundtruth": "max_length=self.tokenizer.model_max_length,"}
+{"metadata": {"task_id": "huggingface_diffusers/164"}, "groundtruth": "beta_end: float = 0.02,"}
+{"metadata": {"task_id": "huggingface_diffusers/159"}, "groundtruth": "image = np.array(image).astype(np.uint8)"}
+{"metadata": {"task_id": "huggingface_diffusers/166"}, "groundtruth": "noisy_latents = noise_scheduler.add_noise(latents, noise, timesteps)"}
+{"metadata": {"task_id": "huggingface_diffusers/167"}, "groundtruth": "max_length=max_length,"}
+{"metadata": {"task_id": "huggingface_diffusers/165"}, "groundtruth": "if os.path.isdir(pretrained_model_name_or_path)"}
+{"metadata": {"task_id": "huggingface_diffusers/168"}, "groundtruth": "safety_checker=None,"}
+{"metadata": {"task_id": "huggingface_diffusers/169"}, "groundtruth": "if self.config.prediction_type == \"epsilon\":"}
+{"metadata": {"task_id": "huggingface_diffusers/172"}, "groundtruth": "result_mean = torch.mean(torch.abs(sample))"}
+{"metadata": {"task_id": "huggingface_diffusers/170"}, "groundtruth": "with tempfile.NamedTemporaryFile() as file:"}
+{"metadata": {"task_id": "huggingface_diffusers/171"}, "groundtruth": "max_diff = np.abs(output_batch[0][0] - output[0][0]).max()"}
+{"metadata": {"task_id": "huggingface_diffusers/175"}, "groundtruth": "vae = AutoencoderKL("}
+{"metadata": {"task_id": "huggingface_diffusers/173"}, "groundtruth": "images = images.cpu().permute(0, 2, 3, 1).numpy()"}
+{"metadata": {"task_id": "huggingface_diffusers/174"}, "groundtruth": "num_images_per_prompt (`int`, *optional*, defaults to 1):"}
+{"metadata": {"task_id": "huggingface_diffusers/178"}, "groundtruth": "output = scheduler.step(residual, time_step, sample, **kwargs).prev_sample"}
+{"metadata": {"task_id": "huggingface_diffusers/176"}, "groundtruth": ") -> Union[FlaxKarrasVeOutput, Tuple]:"}
+{"metadata": {"task_id": "huggingface_diffusers/179"}, "groundtruth": "except OptionalDependencyNotAvailable:"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/0"}, "groundtruth": "all_images.append(batch[\"image\"][i][indices[:, 1], indices[:, 2]])"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/2"}, "groundtruth": "def get_outputs_for_camera_ray_bundle(self, camera_ray_bundle: RayBundle) -> Dict[str, torch.Tensor]:"}
+{"metadata": {"task_id": "huggingface_diffusers/177"}, "groundtruth": "groups_out=None,"}
+{"metadata": {"task_id": "huggingface_diffusers/180"}, "groundtruth": "Parameters `dtype`"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/1"}, "groundtruth": "crop_border_pixels: Optional[int] = None,"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/3"}, "groundtruth": "CONSOLE.log(f\"Deleting {img}\")"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/4"}, "groundtruth": "if not line:"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/5"}, "groundtruth": "with progress as progress_bar:"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/6"}, "groundtruth": "from typing import Dict, List"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/7"}, "groundtruth": "assert not size_of_chunk"}
+{"metadata": {"task_id": "huggingface_diffusers/181"}, "groundtruth": "masked_image = image * (image_mask < 127.5)"}
+{"metadata": {"task_id": "huggingface_diffusers/182"}, "groundtruth": "block_out_channels=[32, 64],"}
+{"metadata": {"task_id": "huggingface_diffusers/183"}, "groundtruth": "requires_backends(cls, [\"torch\"])"}
+{"metadata": {"task_id": "huggingface_diffusers/184"}, "groundtruth": "text_encoder = resize_token_embeddings("}
+{"metadata": {"task_id": "huggingface_diffusers/186"}, "groundtruth": "block_out_channels=(32, 32, 64),"}
+{"metadata": {"task_id": "huggingface_diffusers/185"}, "groundtruth": "unet.load_state_dict(unet_state_dict)"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/8"}, "groundtruth": "self.zmq_socket, self.zmq_stream, self.zmq_url = self.setup_zmq(zmq_url)"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/9"}, "groundtruth": "self.depth_unit_scale_factor = self.metadata[\"depth_unit_scale_factor\"]"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/10"}, "groundtruth": "self.mlp_head = tcnn.Network("}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/11"}, "groundtruth": "self.image_indices = list(range(len(input_dataset)))"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/13"}, "groundtruth": "shutil.rmtree(image_dir, ignore_errors=True)"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/12"}, "groundtruth": "temporal_row_index,"}
+{"metadata": {"task_id": "huggingface_diffusers/187"}, "groundtruth": "return new_state_dict"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/14"}, "groundtruth": "density = self.field_output_density(base_mlp_out)"}
+{"metadata": {"task_id": "huggingface_diffusers/188"}, "groundtruth": "Conceptually, indicates how much to transform the reference `image`. Must be between 0 and 1. `image`"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/15"}, "groundtruth": "d = {\"t1\": torch.ones((4, 6, 3)), \"t2\": {\"t3\": torch.ones((6, 4))}}"}
+{"metadata": {"task_id": "huggingface_diffusers/189"}, "groundtruth": "pipe = StableDiffusionDepth2ImgPipeline.from_pretrained("}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/16"}, "groundtruth": "):"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/17"}, "groundtruth": "CameraModel(model_id=0, model_name=\"SIMPLE_PINHOLE\", num_params=3),"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/18"}, "groundtruth": "nears = torch.clamp(nears, min=near_plane)"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/19"}, "groundtruth": "RGBFieldHead,"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/20"}, "groundtruth": "coord.broadcast_to(1, 2),"}
+{"metadata": {"task_id": "huggingface_diffusers/193"}, "groundtruth": "t[t != t] = 0"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/21"}, "groundtruth": "error = float(elems[7])"}
+{"metadata": {"task_id": "huggingface_diffusers/192"}, "groundtruth": "_backends = [\"torch\"]"}
+{"metadata": {"task_id": "huggingface_diffusers/194"}, "groundtruth": "from ...models import AutoencoderKL, UNet2DConditionModel"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/22"}, "groundtruth": "return colormaps.apply_depth_colormap(outputs[reformatted_output], accumulation=outputs[accumulation_str])"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/23"}, "groundtruth": "and (torch.max(outputs[reformatted_output]) - 1.0) <= eps  # handle floating point arithmetic"}
+{"metadata": {"task_id": "huggingface_diffusers/190"}, "groundtruth": "def __init__(self):"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/24"}, "groundtruth": "self._model = typing.cast(Model, DDP(self._model, device_ids=[local_rank], find_unused_parameters=True))"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/25"}, "groundtruth": "return stuff.detach().cpu()"}
+{"metadata": {"task_id": "huggingface_diffusers/196"}, "groundtruth": "def test_save_load_float16(self):"}
+{"metadata": {"task_id": "huggingface_diffusers/195"}, "groundtruth": "text_input_ids, untruncated_ids"}
+{"metadata": {"task_id": "huggingface_diffusers/197"}, "groundtruth": "mask_image = load_image("}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/26"}, "groundtruth": "histogram_padding: float = 0.01,"}
+{"metadata": {"task_id": "huggingface_diffusers/198"}, "groundtruth": "default=100,"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/27"}, "groundtruth": "config: Optional[TrainerConfig] = None,"}
+{"metadata": {"task_id": "huggingface_diffusers/191"}, "groundtruth": "_backends = [\"flax\"]"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/28"}, "groundtruth": "entrypoint()"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/29"}, "groundtruth": "self.viewer_state.update_scene(self, step, self.pipeline.model, num_rays_per_batch)"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/32"}, "groundtruth": "implementation: Literal[\"tcnn\", \"torch\"] = \"tcnn\","}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/31"}, "groundtruth": "feature_type: Literal["}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/33"}, "groundtruth": "ends=ends,"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/30"}, "groundtruth": "directions=shaped_raybundle_fields.directions,  # [..., 1, 3]"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/34"}, "groundtruth": "test_tensor_ops()"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/35"}, "groundtruth": "* `NamedTuple[V1_i, V2_i, ...]` -> `NamedTuple[nerfstudio_collate([V1_1, V1_2, ...]),"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/36"}, "groundtruth": "assert camera_opt_to_camera is None or camera_opt_to_camera.shape[:-2] == coords.shape[:-1]"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/37"}, "groundtruth": "basename = name.split(\".\")[0]"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/38"}, "groundtruth": ")"}
+{"metadata": {"task_id": "huggingface_diffusers/199"}, "groundtruth": "text_encoder=text_encoder,"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/39"}, "groundtruth": "assert len(i_eval) == num_eval_images"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/41"}, "groundtruth": "\"myst_nb\","}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/40"}, "groundtruth": "},"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/42"}, "groundtruth": "imgs = read_images_binary(self.data / \"dense/sparse/images.bin\")"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/46"}, "groundtruth": "from torch.nn import Parameter"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/44"}, "groundtruth": "CONSOLE.log(\"[bold green]:tada: Done copying images.\")"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/49"}, "groundtruth": "target_path = str(save_dir / f\"{dataset_name}/{capture_name}\")"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/43"}, "groundtruth": "condition = d_values < triangle_distances"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/48"}, "groundtruth": "depth = rescale(depth, 1 / d, cv2.INTER_AREA)"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/45"}, "groundtruth": "CONSOLE.log(f\":broom: Deleted existing completion directory: {target_dir}.\")"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/50"}, "groundtruth": "v = f\"{v:0.4f}\""}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/47"}, "groundtruth": "k4 = distortion_params[..., 3]"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/53"}, "groundtruth": "c2wh = torch.matmul(c2wh_global, local_c2wh)"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/56"}, "groundtruth": "encoded = encoder(in_tensor)"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/55"}, "groundtruth": "idx_lo = torch.clamp(idx_lo, min=0, max=y1.shape[-1] - 1)"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/54"}, "groundtruth": "activation=nn.ReLU(),"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/57"}, "groundtruth": "img.rename(image_dir / f\"frame_{i+1+num_extracted_frames:05d}.png\")"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/52"}, "groundtruth": "from nerfstudio.configs.method_configs import AnnotatedBaseConfigUnion"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/51"}, "groundtruth": "UniformSampler,"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/58"}, "groundtruth": "ty_max_temp = (aabb[4] - origins[:, 1]) / directions[:, 1]"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/61"}, "groundtruth": "2 * qvec[3] * qvec[1] + 2 * qvec[0] * qvec[2],"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/59"}, "groundtruth": "if not self.has_printed and self.config.max_log_size:"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/62"}, "groundtruth": "return {}"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/60"}, "groundtruth": "test_nested_class()"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/64"}, "groundtruth": "self.optimizers[param_group_name].step()"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/66"}, "groundtruth": "offset += params_in_level"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/65"}, "groundtruth": "self.func(*self.args, **self.kwargs, step=step)"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/67"}, "groundtruth": "from torch import nn"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/63"}, "groundtruth": "comp_m = torch.tensor(bounding_box_max, device=point.device)"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/69"}, "groundtruth": "colormap_type = self.state.vis[\"renderingState/colormap_choice\"].read()"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/68"}, "groundtruth": "from typing_extensions import Literal"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/70"}, "groundtruth": "]"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/71"}, "groundtruth": "self.profiler_dict = {}"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/72"}, "groundtruth": "def get_image_metrics_and_images("}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/73"}, "groundtruth": "config.add(host)"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/74"}, "groundtruth": "squares_per_side_h, squares_per_side_w, 1, 2"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/75"}, "groundtruth": "\"otype\": \"SphericalHarmonics\","}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/76"}, "groundtruth": "camera_to_world_h[0, :],"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/78"}, "groundtruth": ") -> None:"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/77"}, "groundtruth": "points3D = read_points3d_binary(os.path.join(path, \"points3D\") + ext)"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/80"}, "groundtruth": "sigma_fn=None,  # self.get_sigma_fn(rays_o, rays_d),"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/83"}, "groundtruth": "return None"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/79"}, "groundtruth": "ret_code = subprocess.call(command, shell=True)"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/81"}, "groundtruth": "rc_path = pathlib.Path(os.environ[\"HOME\"]) / f\".{shell}rc\""}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/82"}, "groundtruth": "frame_json = io.load_from_json(json_filename)"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/88"}, "groundtruth": "base_mlp_out = self.mlp_base(encoded_xyz)"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/84"}, "groundtruth": "line_of_sight_loss_near = (weights - torch.exp(target_distribution.log_prob(steps - termination_depth))) ** 2"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/86"}, "groundtruth": "xys = np.column_stack([tuple(map(float, x_y_id_s[0::3])), tuple(map(float, x_y_id_s[1::3]))])"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/87"}, "groundtruth": "output_type = OutputTypes.RGB_FINE"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/85"}, "groundtruth": "transform = torch.eye(4)"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/91"}, "groundtruth": "cy=0.5 * float(height),"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/89"}, "groundtruth": "point3D_id = int(elems[0])"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/90"}, "groundtruth": "directions = -("}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/95"}, "groundtruth": "self.vis_outputs = outputs"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/93"}, "groundtruth": "super().__init__()"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/94"}, "groundtruth": "mlp_out_sem = self.mlp_semantic(mlp_out)"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/92"}, "groundtruth": "spacing_fn_inv=lambda x: x,"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/97"}, "groundtruth": "m00 = M[0, 0]"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/100"}, "groundtruth": "config.viewer, log_filename=viewer_log_path, datapath=config.pipeline.datamanager.dataparser.data"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/101"}, "groundtruth": "if camera_mask_path is not None:"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/102"}, "groundtruth": "\"times\": torch.as_tensor(time_ids[idx] / self._time_ids.max()).float(),"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/99"}, "groundtruth": "**kwargs,"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/98"}, "groundtruth": "_, eval_loss_dict, eval_metrics_dict = self.pipeline.get_eval_loss_dict(step=step)"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/103"}, "groundtruth": "self.kill_webrtc_signal = False"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/96"}, "groundtruth": "radius: float, center: TensorType[3] = None, color: str = \"black\", opacity: float = 1.0, resolution: int = 32"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/104"}, "groundtruth": "import os"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/105"}, "groundtruth": "pipeline,"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/106"}, "groundtruth": "nbf.write(ntbk, ipath)"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/107"}, "groundtruth": "],"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/108"}, "groundtruth": "new_batch[\"image\"] = images"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/110"}, "groundtruth": "q = np.array(quaternion, dtype=np.float64, copy=True)"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/111"}, "groundtruth": "\"nerfacto\": \"Recommended real-time model tuned for real captures. This model will be continually updated.\","}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/109"}, "groundtruth": ")  # transient rgb"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/114"}, "groundtruth": "else:"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/112"}, "groundtruth": "for shell in shells_found:"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/115"}, "groundtruth": "class Blender(DataParser):"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/116"}, "groundtruth": "metrics_dict_list = []"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/113"}, "groundtruth": "class ColmapCameraModel:"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/118"}, "groundtruth": "),"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/119"}, "groundtruth": "\"scheduler\": None,"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/120"}, "groundtruth": "f\"{destination}\","}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/121"}, "groundtruth": "t_max = torch.max(tx_min, tx_max)"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/117"}, "groundtruth": "resolution: Union[int, List[int]] = field(default_factory=lambda: [128, 128, 128])"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/123"}, "groundtruth": "return dataparser_outputs"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/122"}, "groundtruth": "from mathutils import Matrix"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/125"}, "groundtruth": "if h_w.ndim == 0 or h_w.shape[-1] != 1:"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/124"}, "groundtruth": "print(\"ssh_key_filename\", ssh_key_filename)"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/126"}, "groundtruth": "from nuscenes.utils.data_classes import Box"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/129"}, "groundtruth": "assert batch.b.shape == (4, 5)"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/128"}, "groundtruth": "w2c = np.concatenate([w2c, np.array([[0, 0, 0, 1]])], 0)"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/127"}, "groundtruth": "scale_factor: float = 1.0"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/131"}, "groundtruth": "return ray_bundle"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/130"}, "groundtruth": "pred_normal_loss,"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/136"}, "groundtruth": "input_json = None"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/132"}, "groundtruth": "k2: float = 0.0,"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/133"}, "groundtruth": "\"n_levels\": num_levels,"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/135"}, "groundtruth": ").values"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/134"}, "groundtruth": "[0.0, 0.0, 0.0, 1.0],"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/139"}, "groundtruth": "mapper_cmd = ["}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/137"}, "groundtruth": "from typing import Dict, Optional, Union"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/140"}, "groundtruth": "if self.config.save_only_latest_checkpoint:"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/138"}, "groundtruth": "completions_dir = pathlib.Path(__file__).absolute().parent"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/141"}, "groundtruth": "from dataclasses import dataclass, field"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/143"}, "groundtruth": "outputs.append(exp_map_SO3xR3(self.pose_adjustment[indices, :]))"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/142"}, "groundtruth": "\"Ns 1.00000000\","}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/144"}, "groundtruth": "pipeline: Pipeline,"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/148"}, "groundtruth": "assert distortion_params_delta is None or distortion_params_delta.shape[:-1] == coords.shape[:-1]"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/145"}, "groundtruth": "{"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/147"}, "groundtruth": "tyro.extras.set_accent_color(\"bright_yellow\")"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/149"}, "groundtruth": "for k, v in stuff.items():"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/146"}, "groundtruth": "tmp_path = str(save_dir / \".temp\")"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/151"}, "groundtruth": ".tolist()[1:]"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/153"}, "groundtruth": "eigenvals = eigenvals[idx]"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/150"}, "groundtruth": "lines += f\"{key}: {str(val)}\".split(\"\\n\")"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/156"}, "groundtruth": "height: Optional[Union[TensorType[\"batch_hs\":..., 1], int]] = None,"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/152"}, "groundtruth": "Annotated[ProcessVideo, tyro.conf.subcommand(name=\"video\")],"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/157"}, "groundtruth": "cmd = f\"ffprobe -v error -select_streams v:0 -count_packets \\"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/158"}, "groundtruth": "compressed = compressed.replace(\"--check\", \"\")"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/155"}, "groundtruth": "camera_optimizer=CameraOptimizerConfig("}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/160"}, "groundtruth": "directions=self.directions,"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/161"}, "groundtruth": "assert fps_str not in metrics_dict"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/154"}, "groundtruth": "cell_tags = cell.get(\"metadata\", {}).get(\"tags\", [])"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/162"}, "groundtruth": "StrictHostKeyChecking=\"No\","}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/163"}, "groundtruth": "t = M[i, i] - (M[j, j] + M[k, k]) + M[3, 3]"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/164"}, "groundtruth": "torch.stack("}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/159"}, "groundtruth": "for key, scalar in scalar_dict.items():"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/166"}, "groundtruth": "print(\"skipping\", config_name)"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/167"}, "groundtruth": "if skipped_frames > 0:"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/168"}, "groundtruth": "new_path = self.entries"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/165"}, "groundtruth": "density_before_activation, base_mlp_out = torch.split(h, [1, self.geo_feat_dim], dim=-1)"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/172"}, "groundtruth": "translation = im_data.tvec.reshape(3, 1)"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/170"}, "groundtruth": "aabb_center = torch.tensor("}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/174"}, "groundtruth": "self._lookat = np.array(extra_dict[\"lookat\"], dtype=np.float32)"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/169"}, "groundtruth": "torch.zeros(5, 1),"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/171"}, "groundtruth": "use_integrated_encoding: bool = False,"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/175"}, "groundtruth": "image_dir: Path,"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/173"}, "groundtruth": "radius: TensorType[..., 1],"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/176"}, "groundtruth": "positions = ray_samples.frustums.get_positions()"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/177"}, "groundtruth": "one_minus_cosine_by_theta2 = torch.where(near_zero, 0.5 * sine_by_theta, (1 - cosine) / theta2_nz)"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/181"}, "groundtruth": "logfile = open(  # pylint: disable=consider-using-with"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/178"}, "groundtruth": "uv_coords_shape = uv_coords.shape"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/180"}, "groundtruth": "import struct"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/179"}, "groundtruth": "if not os.path.exists(config.load_dir):"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/183"}, "groundtruth": "x_y_id_s = read_next_bytes(fid, num_bytes=24 * num_points2d, format_char_sequence=\"ddq\" * num_points2d)"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/186"}, "groundtruth": "return True"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/187"}, "groundtruth": "input_dim: int = 3,"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/182"}, "groundtruth": "class DepthNerfactoModelConfig(NerfactoModelConfig):"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/184"}, "groundtruth": "wandb.log({name: wandb.Image(image)}, step=step)"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/188"}, "groundtruth": "from aiortc import RTCPeerConnection"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/189"}, "groundtruth": "\"nerfacto\","}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/185"}, "groundtruth": "state = {key.replace(\"module.\", \"\"): value for key, value in loaded_state.items()}"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/190"}, "groundtruth": "super().__init__(num_samples=num_samples)"}
+{"metadata": {"task_id": "awslabs_fortuna/0"}, "groundtruth": ")"}
+{"metadata": {"task_id": "awslabs_fortuna/1"}, "groundtruth": "val_data_loader=self.reg_val_data_loader,"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/191"}, "groundtruth": "for i, process in enumerate(process_context.processes):"}
+{"metadata": {"task_id": "awslabs_fortuna/2"}, "groundtruth": "disable_training_metrics_computation=True,"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/192"}, "groundtruth": "self.embeddings.data.uniform_(-std, std)"}
+{"metadata": {"task_id": "awslabs_fortuna/3"}, "groundtruth": "def __init__(self, mean: Array, cov: Array):"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/195"}, "groundtruth": "print(f\"Error: {e}\")"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/193"}, "groundtruth": "\"otype\": \"FullyFusedMLP\","}
+{"metadata": {"task_id": "awslabs_fortuna/7"}, "groundtruth": "sample = prob_class.posterior.sample()"}
+{"metadata": {"task_id": "awslabs_fortuna/4"}, "groundtruth": "else:"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/199"}, "groundtruth": "scale_factor /= float(torch.max(torch.abs(poses[:, :3, 3])))"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/198"}, "groundtruth": "from __future__ import annotations"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/196"}, "groundtruth": "try:"}
+{"metadata": {"task_id": "awslabs_fortuna/6"}, "groundtruth": "self,"}
+{"metadata": {"task_id": "awslabs_fortuna/8"}, "groundtruth": "self.assertEqual("}
+{"metadata": {"task_id": "awslabs_fortuna/5"}, "groundtruth": "n = len(rav)"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/194"}, "groundtruth": "if zmq_port is None:"}
+{"metadata": {"task_id": "awslabs_fortuna/9"}, "groundtruth": "rng: PRNGKeyArray,"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/197"}, "groundtruth": "base_mlp_layer_width: int = 256,"}
+{"metadata": {"task_id": "awslabs_fortuna/10"}, "groundtruth": "def __str__(self):"}
+{"metadata": {"task_id": "awslabs_fortuna/11"}, "groundtruth": "train_data_loader=self.class_train_data_loader,"}
+{"metadata": {"task_id": "awslabs_fortuna/13"}, "groundtruth": "validation_metrics_step5 = {\"metric1\": 1, \"metric2\": 2}"}
+{"metadata": {"task_id": "awslabs_fortuna/12"}, "groundtruth": "from fortuna.prob_model.posterior.posterior_state_repository import \\"}
+{"metadata": {"task_id": "awslabs_fortuna/14"}, "groundtruth": "raise ValueError("}
+{"metadata": {"task_id": "awslabs_fortuna/15"}, "groundtruth": "-------"}
+{"metadata": {"task_id": "awslabs_fortuna/16"}, "groundtruth": "state,"}
+{"metadata": {"task_id": "awslabs_fortuna/17"}, "groundtruth": "An estimate of the predictive entropy for each input."}
+{"metadata": {"task_id": "awslabs_fortuna/19"}, "groundtruth": "MAPPosteriorApproximator"}
+{"metadata": {"task_id": "awslabs_fortuna/18"}, "groundtruth": "def __init__("}
+{"metadata": {"task_id": "awslabs_fortuna/20"}, "groundtruth": "model parameters, :math:`\\mathcal{D}` is a training data set and :math:`\\phi` are calibration parameters."}
+{"metadata": {"task_id": "awslabs_fortuna/21"}, "groundtruth": "val_targets: Array,"}
+{"metadata": {"task_id": "awslabs_fortuna/22"}, "groundtruth": "raise TypeError(\"`key_paths` must be a tuple.\")"}
+{"metadata": {"task_id": "awslabs_fortuna/23"}, "groundtruth": "yield from data_loader"}
+{"metadata": {"task_id": "awslabs_fortuna/24"}, "groundtruth": "unravel: Optional[Callable[[any], PyTree]] = None,"}
+{"metadata": {"task_id": "awslabs_fortuna/25"}, "groundtruth": "params = mlp.init(self.rng, self.inputs)"}
+{"metadata": {"task_id": "awslabs_fortuna/27"}, "groundtruth": "self.n_inputs,"}
+{"metadata": {"task_id": "awslabs_fortuna/26"}, "groundtruth": "checkpointer: CalibCheckpointer = CalibCheckpointer(),"}
+{"metadata": {"task_id": "awslabs_fortuna/28"}, "groundtruth": "predict_fn=self.joint.likelihood.prob_output_layer.predict,"}
+{"metadata": {"task_id": "awslabs_fortuna/29"}, "groundtruth": "),"}
+{"metadata": {"task_id": "awslabs_fortuna/30"}, "groundtruth": "self.save_checkpoint_dir"}
+{"metadata": {"task_id": "awslabs_fortuna/31"}, "groundtruth": "def init("}
+{"metadata": {"task_id": "awslabs_fortuna/32"}, "groundtruth": "Number of target samples to draw for each input."}
+{"metadata": {"task_id": "awslabs_fortuna/33"}, "groundtruth": "val_epoch_metrics_str,"}
+{"metadata": {"task_id": "awslabs_fortuna/34"}, "groundtruth": "An estimate of the aleatoric predictive variance."}
+{"metadata": {"task_id": "awslabs_fortuna/35"}, "groundtruth": "self.assertDictEqual("}
+{"metadata": {"task_id": "awslabs_fortuna/36"}, "groundtruth": "outputs = outputs.reshape(outputs.shape[0] * outputs.shape[1], -1)"}
+{"metadata": {"task_id": "awslabs_fortuna/37"}, "groundtruth": "Compute the outputs and their calibrated version."}
+{"metadata": {"task_id": "awslabs_fortuna/38"}, "groundtruth": "Tuple[Callable[[jnp.ndarray, Array], Union[float, Array]], ...]"}
+{"metadata": {"task_id": "awslabs_fortuna/40"}, "groundtruth": "calib_config=self.class_calib_config_nodir_nodump,"}
+{"metadata": {"task_id": "awslabs_fortuna/39"}, "groundtruth": "return super(MultiDeviceMixin, self).save_checkpoint("}
+{"metadata": {"task_id": "awslabs_fortuna/41"}, "groundtruth": "self.rank = rank"}
+{"metadata": {"task_id": "awslabs_fortuna/42"}, "groundtruth": "predict_fn: Callable[[jnp.ndarray], jnp.ndarray],"}
+{"metadata": {"task_id": "awslabs_fortuna/43"}, "groundtruth": "calib_config=calib_config,"}
+{"metadata": {"task_id": "awslabs_fortuna/45"}, "groundtruth": "super().__init__(*args, **kwargs)"}
+{"metadata": {"task_id": "awslabs_fortuna/44"}, "groundtruth": "metrics: Optional[Tuple[Callable[[jnp.ndarray, Array], float], ...]] = None,"}
+{"metadata": {"task_id": "awslabs_fortuna/47"}, "groundtruth": "A loader of input data points."}
+{"metadata": {"task_id": "awslabs_fortuna/46"}, "groundtruth": "state, status[\"swag\"] = trainer.train("}
+{"metadata": {"task_id": "awslabs_fortuna/48"}, "groundtruth": "predict_fn=lambda x: x,"}
+{"metadata": {"task_id": "awslabs_fortuna/49"}, "groundtruth": "loo_val_outputs = np.random.normal(size=(n, 1))"}
+{"metadata": {"task_id": "awslabs_fortuna/51"}, "groundtruth": "fit_config=self.class_fit_config_dir_dump(tmp_dir),"}
+{"metadata": {"task_id": "awslabs_fortuna/50"}, "groundtruth": "training_dataloader=train_data_loader,"}
+{"metadata": {"task_id": "awslabs_fortuna/52"}, "groundtruth": "for data in response.iter_content(chunk_size=1024):"}
+{"metadata": {"task_id": "awslabs_fortuna/53"}, "groundtruth": "fun: Callable,"}
+{"metadata": {"task_id": "awslabs_fortuna/54"}, "groundtruth": "conv: ModuleDef = nn.Conv"}
+{"metadata": {"task_id": "awslabs_fortuna/55"}, "groundtruth": "from jax import random, vmap"}
+{"metadata": {"task_id": "awslabs_fortuna/56"}, "groundtruth": "self, val_lower_bounds: Array, val_upper_bounds: Array, val_targets: Array,"}
+{"metadata": {"task_id": "awslabs_fortuna/57"}, "groundtruth": "output_type=\"continuous\","}
+{"metadata": {"task_id": "awslabs_fortuna/58"}, "groundtruth": "jnp.ndarray"}
+{"metadata": {"task_id": "awslabs_fortuna/59"}, "groundtruth": "self.disable_jit = disable_jit"}
+{"metadata": {"task_id": "awslabs_fortuna/62"}, "groundtruth": "plot_reliability_diagram(accs[0], confs[0])"}
+{"metadata": {"task_id": "awslabs_fortuna/61"}, "groundtruth": "A posterior approximation method. The default method is SWAG."}
+{"metadata": {"task_id": "awslabs_fortuna/60"}, "groundtruth": "if mutable is not None:"}
+{"metadata": {"task_id": "awslabs_fortuna/63"}, "groundtruth": "from fortuna.typing import OptaxOptimizer, Path"}
+{"metadata": {"task_id": "awslabs_fortuna/64"}, "groundtruth": "distribute: bool"}
+{"metadata": {"task_id": "awslabs_fortuna/65"}, "groundtruth": "from fortuna.prob_model.calib_config.base import CalibConfig"}
+{"metadata": {"task_id": "awslabs_fortuna/68"}, "groundtruth": "prob_class.save_state(checkpoint_path=tmp_dir)"}
+{"metadata": {"task_id": "awslabs_fortuna/66"}, "groundtruth": "Tuple[Callable[[jnp.ndarray, jnp.ndarray, Array], Array], ...]"}
+{"metadata": {"task_id": "awslabs_fortuna/67"}, "groundtruth": "activations: Optional[Tuple[Callable[[Array], Array]]] = (nn.relu, nn.relu)"}
+{"metadata": {"task_id": "awslabs_fortuna/69"}, "groundtruth": "lik_log_var=self.reg_lik.model_manager.likelihood_log_variance_model.init("}
+{"metadata": {"task_id": "awslabs_fortuna/70"}, "groundtruth": "self.state.put(state, keep=fit_config.checkpointer.keep_top_n_checkpoints)"}
+{"metadata": {"task_id": "awslabs_fortuna/71"}, "groundtruth": "from jax import random"}
+{"metadata": {"task_id": "awslabs_fortuna/73"}, "groundtruth": "optimizer=FitOptimizer(n_epochs=3),"}
+{"metadata": {"task_id": "awslabs_fortuna/72"}, "groundtruth": "calib_config: CalibConfig = CalibConfig(),"}
+{"metadata": {"task_id": "awslabs_fortuna/74"}, "groundtruth": "}"}
+{"metadata": {"task_id": "awslabs_fortuna/75"}, "groundtruth": "metrics: Optional["}
+{"metadata": {"task_id": "awslabs_fortuna/76"}, "groundtruth": "calib_config=self.reg_calib_config_nodir_nodump,"}
+{"metadata": {"task_id": "awslabs_fortuna/78"}, "groundtruth": "status = prob_reg_map.train("}
+{"metadata": {"task_id": "awslabs_fortuna/77"}, "groundtruth": "ADVIPosterior"}
+{"metadata": {"task_id": "awslabs_fortuna/80"}, "groundtruth": "Whether to distribute computation over multiple devices, if available."}
+{"metadata": {"task_id": "awslabs_fortuna/79"}, "groundtruth": "MultiDeviceCalibModelCalibrator)"}
+{"metadata": {"task_id": "awslabs_fortuna/81"}, "groundtruth": "raise ValueError(\"\"\"`error` must be a scalar between 0 and 1.\"\"\")"}
+{"metadata": {"task_id": "awslabs_fortuna/82"}, "groundtruth": "def __call__(self, x: jnp.ndarray,) -> jnp.ndarray:"}
+{"metadata": {"task_id": "awslabs_fortuna/83"}, "groundtruth": "optimizer=optimizer,"}
+{"metadata": {"task_id": "awslabs_fortuna/84"}, "groundtruth": ":math:`p(y|\\mu, \\sigma^2)=\\text{Normal}(y|\\mu, \\sigma^2)`, where :math:`y` denotes a target variable and"}
+{"metadata": {"task_id": "awslabs_fortuna/85"}, "groundtruth": "val_data_loader=self.class_val_data_loader,"}
+{"metadata": {"task_id": "awslabs_fortuna/86"}, "groundtruth": "----------"}
+{"metadata": {"task_id": "awslabs_fortuna/87"}, "groundtruth": ") -> Dict[str, jnp.ndarray]:"}
+{"metadata": {"task_id": "awslabs_fortuna/88"}, "groundtruth": "rng: jnp.ndarray,"}
+{"metadata": {"task_id": "awslabs_fortuna/89"}, "groundtruth": "An estimate of the predictive aleatoric variance for each input."}
+{"metadata": {"task_id": "awslabs_fortuna/90"}, "groundtruth": "progress_bar,"}
+{"metadata": {"task_id": "awslabs_fortuna/91"}, "groundtruth": "self.assertEqual(c1, c2)"}
+{"metadata": {"task_id": "awslabs_fortuna/92"}, "groundtruth": "(preds.shape[1], preds.shape[0] * preds.shape[2],)"}
+{"metadata": {"task_id": "awslabs_fortuna/93"}, "groundtruth": "early_stopping_patience=2,"}
+{"metadata": {"task_id": "awslabs_fortuna/94"}, "groundtruth": "calib_data_loader=calib_data_loader,"}
+{"metadata": {"task_id": "awslabs_fortuna/95"}, "groundtruth": "perm = np.random.choice("}
+{"metadata": {"task_id": "awslabs_fortuna/96"}, "groundtruth": "An evaluation of the log-pdf for each data point."}
+{"metadata": {"task_id": "awslabs_fortuna/97"}, "groundtruth": "mutable: Optional[Mutable] = None"}
+{"metadata": {"task_id": "awslabs_fortuna/98"}, "groundtruth": "model must have been calibrated beforehand."}
+{"metadata": {"task_id": "awslabs_fortuna/99"}, "groundtruth": "def _update(_i):"}
+{"metadata": {"task_id": "awslabs_fortuna/100"}, "groundtruth": "strides: Tuple[int, int] = (1, 1)"}
+{"metadata": {"task_id": "awslabs_fortuna/101"}, "groundtruth": "if (val_uncertainties <= 0).any():"}
+{"metadata": {"task_id": "awslabs_fortuna/102"}, "groundtruth": "val_lower_bounds, val_upper_bounds, val_targets, error"}
+{"metadata": {"task_id": "awslabs_fortuna/103"}, "groundtruth": "return_aux = []"}
+{"metadata": {"task_id": "awslabs_fortuna/104"}, "groundtruth": "prob_output_layer: ProbOutputLayer,"}
+{"metadata": {"task_id": "awslabs_fortuna/105"}, "groundtruth": "params: CalibParams,"}
+{"metadata": {"task_id": "awslabs_fortuna/106"}, "groundtruth": "def __init__(self, generator):"}
+{"metadata": {"task_id": "awslabs_fortuna/108"}, "groundtruth": "distribute: bool = True,"}
+{"metadata": {"task_id": "awslabs_fortuna/107"}, "groundtruth": "mutable=init_prob_model_state.mutable,"}
+{"metadata": {"task_id": "awslabs_fortuna/109"}, "groundtruth": "self, devices: int = -1, disable_jit: bool = False,"}
+{"metadata": {"task_id": "awslabs_fortuna/110"}, "groundtruth": "shape_inputs=self.shape_inputs,"}
+{"metadata": {"task_id": "awslabs_fortuna/111"}, "groundtruth": "state: PosteriorState,"}
+{"metadata": {"task_id": "awslabs_fortuna/112"}, "groundtruth": "prefix: str = \"checkpoint_\","}
+{"metadata": {"task_id": "awslabs_fortuna/113"}, "groundtruth": "dropout_rate=self.dropout_rate,"}
+{"metadata": {"task_id": "awslabs_fortuna/114"}, "groundtruth": "if self.should_perform_validation(val_targets, epoch):"}
+{"metadata": {"task_id": "awslabs_fortuna/115"}, "groundtruth": "flag = 0"}
+{"metadata": {"task_id": "awslabs_fortuna/116"}, "groundtruth": "n_data=10,"}
+{"metadata": {"task_id": "awslabs_fortuna/117"}, "groundtruth": "disable_calibration_metrics_computation: bool = False,"}
+{"metadata": {"task_id": "awslabs_fortuna/118"}, "groundtruth": "training_dataloader=training_dataloader,"}
+{"metadata": {"task_id": "awslabs_fortuna/119"}, "groundtruth": "from fortuna.prob_model.posterior.map.map_state import MAPState"}
+{"metadata": {"task_id": "awslabs_fortuna/121"}, "groundtruth": "likelihood_log_variance_model=MyModel(self.reg_output_dim),"}
+{"metadata": {"task_id": "awslabs_fortuna/120"}, "groundtruth": "state: TrainState,"}
+{"metadata": {"task_id": "awslabs_fortuna/123"}, "groundtruth": "("}
+{"metadata": {"task_id": "awslabs_fortuna/122"}, "groundtruth": "logging.info(\"Training on CPU without jit.\")"}
+{"metadata": {"task_id": "awslabs_fortuna/124"}, "groundtruth": "make_array_random_data("}
+{"metadata": {"task_id": "awslabs_fortuna/125"}, "groundtruth": "val_losses = super().val_loss_step(state, batch, outputs, fun, rng, n_data)"}
+{"metadata": {"task_id": "awslabs_fortuna/126"}, "groundtruth": "return np.concatenate(targets, 0)"}
+{"metadata": {"task_id": "awslabs_fortuna/127"}, "groundtruth": "output_calibrator=self.output_calib_manager.init("}
+{"metadata": {"task_id": "awslabs_fortuna/128"}, "groundtruth": "uncertainty_fn: Callable[[jnp.ndarray, jnp.ndarray, Array], jnp.ndarray],"}
+{"metadata": {"task_id": "awslabs_fortuna/129"}, "groundtruth": "if metrics is not None:"}
+{"metadata": {"task_id": "awslabs_fortuna/130"}, "groundtruth": "- :math:`W` denotes the random model parameters."}
+{"metadata": {"task_id": "awslabs_fortuna/131"}, "groundtruth": ") -> jnp.ndarray:"}
+{"metadata": {"task_id": "awslabs_fortuna/132"}, "groundtruth": "from fortuna.output_calibrator.output_calib_manager.base import \\"}
+{"metadata": {"task_id": "awslabs_fortuna/133"}, "groundtruth": "self.output_dim,"}
+{"metadata": {"task_id": "awslabs_fortuna/134"}, "groundtruth": "output_calibrator=ClassificationTemperatureScaler(),"}
+{"metadata": {"task_id": "awslabs_fortuna/135"}, "groundtruth": "filters=self.filters,"}
+{"metadata": {"task_id": "awslabs_fortuna/136"}, "groundtruth": "metaclass=abc.ABCMeta,"}
+{"metadata": {"task_id": "awslabs_fortuna/137"}, "groundtruth": "raise ValueError(\"\"\"`probs` must be a two-dimensional array.\"\"\")"}
+{"metadata": {"task_id": "awslabs_fortuna/138"}, "groundtruth": "params=calib_dict[\"calib_params\"],"}
+{"metadata": {"task_id": "awslabs_fortuna/139"}, "groundtruth": ") -> Tuple[CalibState, Dict[str, Any]]:"}
+{"metadata": {"task_id": "awslabs_fortuna/140"}, "groundtruth": "bs = 32"}
+{"metadata": {"task_id": "awslabs_fortuna/141"}, "groundtruth": "return state, data_loaders, outputs_loaders, model_key"}
+{"metadata": {"task_id": "awslabs_fortuna/142"}, "groundtruth": "else None"}
+{"metadata": {"task_id": "awslabs_fortuna/143"}, "groundtruth": "def sync_gradients_and_loss("}
+{"metadata": {"task_id": "awslabs_fortuna/144"}, "groundtruth": "self.n_batches = 2"}
+{"metadata": {"task_id": "awslabs_fortuna/145"}, "groundtruth": "validation_dataset_size: int,"}
+{"metadata": {"task_id": "awslabs_fortuna/146"}, "groundtruth": "def sample(self, params_like: Params, rng: Optional[PRNGKeyArray] = None) -> Params:"}
+{"metadata": {"task_id": "awslabs_fortuna/147"}, "groundtruth": "See `posterior_approximator` in `Parameters`."}
+{"metadata": {"task_id": "awslabs_fortuna/148"}, "groundtruth": "yield from self._targets_loader()"}
+{"metadata": {"task_id": "awslabs_fortuna/150"}, "groundtruth": "n_params = len(ravel_pytree(self.params)[0])"}
+{"metadata": {"task_id": "awslabs_fortuna/151"}, "groundtruth": "if output_type == \"continuous\""}
+{"metadata": {"task_id": "awslabs_fortuna/149"}, "groundtruth": "A random number generator. If not passed, this will be taken from the attributes of this class."}
+{"metadata": {"task_id": "awslabs_fortuna/152"}, "groundtruth": "self.assertFalse(improved)"}
+{"metadata": {"task_id": "awslabs_fortuna/153"}, "groundtruth": "cls,"}
+{"metadata": {"task_id": "awslabs_fortuna/154"}, "groundtruth": "right = jnp.concatenate([mu[None] + ri[:, None] for mu, ri in zip(cross_test_outputs, r)])"}
+{"metadata": {"task_id": "awslabs_fortuna/156"}, "groundtruth": "self.forward = architecture.forward"}
+{"metadata": {"task_id": "awslabs_fortuna/155"}, "groundtruth": "pass"}
+{"metadata": {"task_id": "awslabs_fortuna/157"}, "groundtruth": "self.assertDictEqual(observed_losses_and_metrics, expected_losses_and_metrics)"}
+{"metadata": {"task_id": "awslabs_fortuna/158"}, "groundtruth": "\"image_dark\": \"fortuna_symbol_white.png\","}
+{"metadata": {"task_id": "awslabs_fortuna/159"}, "groundtruth": "state: CalibState,"}
+{"metadata": {"task_id": "awslabs_fortuna/162"}, "groundtruth": "calib_params=state.calib_params,"}
+{"metadata": {"task_id": "awslabs_fortuna/160"}, "groundtruth": "yield np.random.normal(size=(batch_size,) + shape_inputs)"}
+{"metadata": {"task_id": "awslabs_fortuna/163"}, "groundtruth": "status = prob_reg.train("}
+{"metadata": {"task_id": "awslabs_fortuna/161"}, "groundtruth": "OptaxOptimizer = GradientTransformation"}
+{"metadata": {"task_id": "awslabs_fortuna/164"}, "groundtruth": "ckpt_file_temp = os.path.join(ckpt_dir, name + \".temp\")"}
+{"metadata": {"task_id": "awslabs_fortuna/165"}, "groundtruth": "if not self._ready:"}
+{"metadata": {"task_id": "awslabs_fortuna/166"}, "groundtruth": "lambda batch: tree_map(_reshape_input_batch, batch), self.dataloader"}
+{"metadata": {"task_id": "awslabs_fortuna/167"}, "groundtruth": "output_dim=self.output_dim,"}
+{"metadata": {"task_id": "awslabs_fortuna/168"}, "groundtruth": "return brier_score(p, y)"}
+{"metadata": {"task_id": "awslabs_fortuna/170"}, "groundtruth": "return_aux += [\"mutable\"]"}
+{"metadata": {"task_id": "awslabs_fortuna/171"}, "groundtruth": "**kwargs"}
+{"metadata": {"task_id": "awslabs_fortuna/172"}, "groundtruth": "\"discrete\", \"continuous\""}
+{"metadata": {"task_id": "awslabs_fortuna/169"}, "groundtruth": "from fortuna.typing import Array"}
+{"metadata": {"task_id": "awslabs_fortuna/173"}, "groundtruth": "prefix=prefix,"}
+{"metadata": {"task_id": "awslabs_fortuna/174"}, "groundtruth": "assert jnp.alltrue(prob_model.rng._rng == prob_model.likelihood.rng._rng)"}
+{"metadata": {"task_id": "awslabs_fortuna/175"}, "groundtruth": "optimizer=calib_config.optimizer.method,"}
+{"metadata": {"task_id": "awslabs_fortuna/176"}, "groundtruth": "calib_params : Optional[CalibParams]"}
+{"metadata": {"task_id": "awslabs_fortuna/177"}, "groundtruth": "{"}
+{"metadata": {"task_id": "awslabs_fortuna/178"}, "groundtruth": "assert hasattr(cs.mutable, \"unfreeze\")"}
+{"metadata": {"task_id": "awslabs_fortuna/179"}, "groundtruth": "seed: int = 0,"}
+{"metadata": {"task_id": "awslabs_fortuna/180"}, "groundtruth": "self, joint: Joint, posterior_approximator: ADVIPosteriorApproximator,"}
+{"metadata": {"task_id": "awslabs_fortuna/181"}, "groundtruth": "the output calibrator is described by a function :math:`g(\\phi, o)`,"}
+{"metadata": {"task_id": "awslabs_fortuna/182"}, "groundtruth": "rng: Optional[PRNGKeyArray] = None,"}
+{"metadata": {"task_id": "awslabs_fortuna/183"}, "groundtruth": "\\mathbb{E}_{Y|w, x}[Y],"}
+{"metadata": {"task_id": "awslabs_fortuna/184"}, "groundtruth": "if lower_bounds.ndim == 1:"}
+{"metadata": {"task_id": "awslabs_fortuna/185"}, "groundtruth": "scores: Optional[Array] = None,"}
+{"metadata": {"task_id": "awslabs_fortuna/187"}, "groundtruth": "targets: Array,"}
+{"metadata": {"task_id": "awslabs_fortuna/188"}, "groundtruth": "self._fun = fun"}
+{"metadata": {"task_id": "awslabs_fortuna/186"}, "groundtruth": "return_aux = [\"outputs\"]"}
+{"metadata": {"task_id": "awslabs_fortuna/189"}, "groundtruth": "Number of target samples to sample for each input data point."}
+{"metadata": {"task_id": "awslabs_fortuna/190"}, "groundtruth": "\"sphinx_gallery.load_style\","}
+{"metadata": {"task_id": "awslabs_fortuna/191"}, "groundtruth": "if means is not None:"}
+{"metadata": {"task_id": "awslabs_fortuna/192"}, "groundtruth": "save_every_n_steps=fit_config.checkpointer.save_every_n_steps,"}
+{"metadata": {"task_id": "awslabs_fortuna/194"}, "groundtruth": ") = trainer._training_loop("}
+{"metadata": {"task_id": "awslabs_fortuna/193"}, "groundtruth": "from jax._src.prng import PRNGKeyArray"}
+{"metadata": {"task_id": "awslabs_fortuna/195"}, "groundtruth": "progress_bar.update(len(data))"}
+{"metadata": {"task_id": "awslabs_fortuna/196"}, "groundtruth": "rav = ravel_pytree(params)[0]"}
+{"metadata": {"task_id": "awslabs_fortuna/197"}, "groundtruth": "if inputs is not None:"}
+{"metadata": {"task_id": "awslabs_fortuna/199"}, "groundtruth": "yield from self._inputs_loader()"}
+{"metadata": {"task_id": "awslabs_fortuna/198"}, "groundtruth": "d2 = d0"}
+{"metadata": {"task_id": "huggingface_evaluate/0"}, "groundtruth": "metrics = [metric_dir.split(os.sep)[-2] for metric_dir in glob.glob(\"./metrics/*/\")]"}
+{"metadata": {"task_id": "huggingface_evaluate/1"}, "groundtruth": "addscore = 2 * addscore_precision * addscore_recall / (addscore_precision + addscore_recall)"}
+{"metadata": {"task_id": "huggingface_evaluate/3"}, "groundtruth": "metric.add_batch(references=refs, predictions=preds)"}
+{"metadata": {"task_id": "huggingface_evaluate/2"}, "groundtruth": "with tempfile.TemporaryDirectory() as dirname:"}
+{"metadata": {"task_id": "huggingface_evaluate/5"}, "groundtruth": "metric=\"accuracy\","}
+{"metadata": {"task_id": "huggingface_evaluate/6"}, "groundtruth": "def zstd_file(tmp_path_factory):"}
+{"metadata": {"task_id": "huggingface_evaluate/4"}, "groundtruth": ">>> results = indic_glue_metric.compute(predictions=predictions, references=references)"}
+{"metadata": {"task_id": "huggingface_evaluate/7"}, "groundtruth": "device_id: Device for featurization. Supply a GPU id (e.g. 0 or 3) to use GPU. If no GPU with this id is found, use CPU"}
+{"metadata": {"task_id": "huggingface_evaluate/8"}, "groundtruth": "else:"}
+{"metadata": {"task_id": "huggingface_evaluate/9"}, "groundtruth": "f\"{os.path.join(self.dir_path, 'questionanswering_squadv2_transformers', 'eval_results.json')}\", \"r\""}
+{"metadata": {"task_id": "huggingface_evaluate/10"}, "groundtruth": "predictions: array-like of shape (n_samples,) or (n_samples, n_outputs)"}
+{"metadata": {"task_id": "huggingface_evaluate/13"}, "groundtruth": "init_file_path = os.path.join(importable_subdirectory, \"__init__.py\")"}
+{"metadata": {"task_id": "huggingface_evaluate/12"}, "groundtruth": "combined_evaluation = combine([dummy_metric, dummy_metric])"}
+{"metadata": {"task_id": "huggingface_evaluate/11"}, "groundtruth": ">>> precision_metric = evaluate.load(\"precision\")"}
+{"metadata": {"task_id": "huggingface_evaluate/14"}, "groundtruth": "import os"}
+{"metadata": {"task_id": "huggingface_evaluate/15"}, "groundtruth": "List of predicted segmentation maps, each of shape (height, width). Each segmentation map can be of a different size."}
+{"metadata": {"task_id": "huggingface_evaluate/18"}, "groundtruth": "data=self.data,"}
+{"metadata": {"task_id": "huggingface_evaluate/17"}, "groundtruth": "error_msg = ("}
+{"metadata": {"task_id": "huggingface_evaluate/16"}, "groundtruth": ">>> results = super_glue_metric.compute(predictions=predictions, references=references)"}
+{"metadata": {"task_id": "huggingface_evaluate/19"}, "groundtruth": "label_column (`str`, defaults to `\"label\"`):"}
+{"metadata": {"task_id": "huggingface_evaluate/22"}, "groundtruth": "def setUp(self):"}
+{"metadata": {"task_id": "huggingface_evaluate/21"}, "groundtruth": "\"ner_tags\": [[1, 2, 0, 0, 0, 0, 3, 0, 0, 0]],"}
+{"metadata": {"task_id": "huggingface_evaluate/20"}, "groundtruth": "with contextlib.redirect_stdout(stream):"}
+{"metadata": {"task_id": "huggingface_evaluate/24"}, "groundtruth": "return LocalEvaluationModuleFactory("}
+{"metadata": {"task_id": "huggingface_evaluate/30"}, "groundtruth": "metric=\"seqeval\","}
+{"metadata": {"task_id": "huggingface_evaluate/25"}, "groundtruth": "}"}
+{"metadata": {"task_id": "huggingface_evaluate/23"}, "groundtruth": ">>>     metric=\"wer\","}
+{"metadata": {"task_id": "huggingface_evaluate/26"}, "groundtruth": "for line in lines:"}
+{"metadata": {"task_id": "huggingface_evaluate/32"}, "groundtruth": "self.assertEqual(self.counter, 8)"}
+{"metadata": {"task_id": "huggingface_evaluate/28"}, "groundtruth": "feature_extractor: Union[\"PreTrainedTokenizerBase\", \"FeatureExtractionMixin\"] = None,  # noqa: F821"}
+{"metadata": {"task_id": "huggingface_evaluate/33"}, "groundtruth": "elif mode is OfflineSimulationMode.HF_EVALUATE_OFFLINE_SET_TO_1:"}
+{"metadata": {"task_id": "huggingface_evaluate/31"}, "groundtruth": ")"}
+{"metadata": {"task_id": "huggingface_evaluate/27"}, "groundtruth": "metric=cer,"}
+{"metadata": {"task_id": "huggingface_evaluate/34"}, "groundtruth": "model_id=\"username/repo\","}
+{"metadata": {"task_id": "huggingface_evaluate/29"}, "groundtruth": "tokens separated by spaces."}
+{"metadata": {"task_id": "huggingface_evaluate/35"}, "groundtruth": "preds = [\"weaewolf\"]"}
+{"metadata": {"task_id": "huggingface_evaluate/36"}, "groundtruth": "label_mapping=self.label_mapping,"}
+{"metadata": {"task_id": "huggingface_evaluate/38"}, "groundtruth": ">>> predictions = [0, 1, 1, 0, 0]"}
+{"metadata": {"task_id": "huggingface_evaluate/40"}, "groundtruth": "The CoNLL format has one word per line with all the annotation for this word in column separated by spaces:"}
+{"metadata": {"task_id": "huggingface_evaluate/37"}, "groundtruth": "message = \"Unanswered question \" + qa[\"id\"] + \" will receive score 0.\""}
+{"metadata": {"task_id": "huggingface_evaluate/39"}, "groundtruth": "cache_dir = config.HF_EVALUATE_CACHE"}
+{"metadata": {"task_id": "huggingface_evaluate/43"}, "groundtruth": ") -> requests.Response:"}
+{"metadata": {"task_id": "huggingface_evaluate/41"}, "groundtruth": "return filename"}
+{"metadata": {"task_id": "huggingface_evaluate/42"}, "groundtruth": "ftp_get(url, temp_file)"}
+{"metadata": {"task_id": "huggingface_evaluate/45"}, "groundtruth": "return HubEvaluationModuleFactory("}
+{"metadata": {"task_id": "huggingface_evaluate/44"}, "groundtruth": ">>>     data=data,"}
+{"metadata": {"task_id": "huggingface_evaluate/46"}, "groundtruth": "],"}
+{"metadata": {"task_id": "huggingface_evaluate/47"}, "groundtruth": "smooth_value (`float`): The smoothing value. Only valid when `smooth_method='floor'` (in which case `smooth_value` defaults to `0.1`) or `smooth_method='add-k'` (in which case `smooth_value` defaults to `1`)."}
+{"metadata": {"task_id": "huggingface_evaluate/49"}, "groundtruth": "\"legend_loc\": \"upper right\","}
+{"metadata": {"task_id": "huggingface_evaluate/51"}, "groundtruth": "{\"type\": \"dummy_metric\", \"value\": 1.0, \"name\": \"Pretty Metric Name\"},"}
+{"metadata": {"task_id": "huggingface_evaluate/50"}, "groundtruth": ">>> sources=[\"About 95 species are currently accepted .\"]"}
+{"metadata": {"task_id": "huggingface_evaluate/52"}, "groundtruth": "an associated metric, and runs evaluation on a model or pipeline. Evaluation suites can be a Python script found"}
+{"metadata": {"task_id": "huggingface_evaluate/48"}, "groundtruth": "...                                     predictions=[1, 2, 2, 0, 3, 3],"}
+{"metadata": {"task_id": "huggingface_evaluate/53"}, "groundtruth": "launch_gradio_widget(module)"}
+{"metadata": {"task_id": "huggingface_evaluate/54"}, "groundtruth": "exclude = set(string.punctuation)"}
+{"metadata": {"task_id": "huggingface_evaluate/56"}, "groundtruth": "del metric"}
+{"metadata": {"task_id": "huggingface_evaluate/55"}, "groundtruth": "- `'micro'`: Calculate metrics globally by counting the total true positives, false negatives, and false positives."}
+{"metadata": {"task_id": "huggingface_evaluate/57"}, "groundtruth": "resume_download: bool = False"}
+{"metadata": {"task_id": "huggingface_evaluate/58"}, "groundtruth": "{'precision': 0.5}"}
+{"metadata": {"task_id": "huggingface_evaluate/62"}, "groundtruth": "if not _run_packaged_tests or _run_packaged_tests == 0:"}
+{"metadata": {"task_id": "huggingface_evaluate/60"}, "groundtruth": "_value = default"}
+{"metadata": {"task_id": "huggingface_evaluate/59"}, "groundtruth": "['MISC', 'PER', 'overall_precision', 'overall_recall', 'overall_f1', 'overall_accuracy']"}
+{"metadata": {"task_id": "huggingface_evaluate/61"}, "groundtruth": ">>> data = [\"hello world and hello moon\"]"}
+{"metadata": {"task_id": "huggingface_evaluate/63"}, "groundtruth": "HubEvaluationModuleFactory,"}
+{"metadata": {"task_id": "huggingface_evaluate/65"}, "groundtruth": "["}
+{"metadata": {"task_id": "huggingface_evaluate/64"}, "groundtruth": "Examples:"}
+{"metadata": {"task_id": "huggingface_evaluate/67"}, "groundtruth": ">>> data = load_dataset(\"wmt19\", \"fr-de\", split=\"validation[:40]\")"}
+{"metadata": {"task_id": "huggingface_evaluate/70"}, "groundtruth": "results = metric.compute()"}
+{"metadata": {"task_id": "huggingface_evaluate/66"}, "groundtruth": ">>> task_evaluator = evaluator(\"automatic-speech-recognition\")"}
+{"metadata": {"task_id": "huggingface_evaluate/71"}, "groundtruth": "json.dump(data, f)"}
+{"metadata": {"task_id": "huggingface_evaluate/69"}, "groundtruth": "module_type: Optional[str] = None,"}
+{"metadata": {"task_id": "huggingface_evaluate/68"}, "groundtruth": "]"}
+{"metadata": {"task_id": "huggingface_evaluate/76"}, "groundtruth": "inputs_description=_KWARGS_DESCRIPTION,"}
+{"metadata": {"task_id": "huggingface_evaluate/72"}, "groundtruth": "**params,"}
+{"metadata": {"task_id": "huggingface_evaluate/77"}, "groundtruth": ">>> predictions = [\"hello there\", \"general kenobi\"]"}
+{"metadata": {"task_id": "huggingface_evaluate/73"}, "groundtruth": "rougeLsum: rouge_lsum (f1)"}
+{"metadata": {"task_id": "huggingface_evaluate/78"}, "groundtruth": "r4gramslist = []"}
+{"metadata": {"task_id": "huggingface_evaluate/79"}, "groundtruth": "if not transformers_version.endswith(\".dev0\"):"}
+{"metadata": {"task_id": "huggingface_evaluate/75"}, "groundtruth": "\"table-question-answering\","}
+{"metadata": {"task_id": "huggingface_evaluate/74"}, "groundtruth": "while True:"}
+{"metadata": {"task_id": "huggingface_evaluate/80"}, "groundtruth": "import io"}
+{"metadata": {"task_id": "huggingface_evaluate/82"}, "groundtruth": "{\"start\": 16, \"entity\": \"B-LOC\"},"}
+{"metadata": {"task_id": "huggingface_evaluate/81"}, "groundtruth": "from evaluate.utils import launch_gradio_widget"}
+{"metadata": {"task_id": "huggingface_evaluate/83"}, "groundtruth": "This metric computes the area under the curve (AUC) for the Receiver Operating Characteristic Curve (ROC). The return values represent how well the model used is predicting the correct classes, based on the input data. A score of `0.5` means that the model is predicting exactly at chance, i.e. the model's predictions are correct at the same rate as if the predictions were being decided by the flip of a fair coin or the roll of a fair die. A score above `0.5` indicates that the model is doing better than chance, while a score below `0.5` indicates that the model is doing worse than chance."}
+{"metadata": {"task_id": "huggingface_evaluate/84"}, "groundtruth": "homepage=\"https://github.com/openai/human-eval\","}
+{"metadata": {"task_id": "huggingface_evaluate/85"}, "groundtruth": "Args:"}
+{"metadata": {"task_id": "huggingface_evaluate/86"}, "groundtruth": "num_layers (int): The layer of representation to use,"}
+{"metadata": {"task_id": "huggingface_evaluate/87"}, "groundtruth": "\"Programming Language :: Python :: 3\","}
+{"metadata": {"task_id": "huggingface_evaluate/88"}, "groundtruth": "path = str(tmp_path_factory.mktemp(\"data\") / \"dataset.json\")"}
+{"metadata": {"task_id": "huggingface_evaluate/89"}, "groundtruth": "elif tokenizer == \"penn\":"}
+{"metadata": {"task_id": "huggingface_evaluate/90"}, "groundtruth": ">>> wer_score = wer.compute(predictions=predictions, references=references)"}
+{"metadata": {"task_id": "huggingface_evaluate/91"}, "groundtruth": "dataset_config (`str`, *optional*):"}
+{"metadata": {"task_id": "huggingface_evaluate/92"}, "groundtruth": "download_desc=download_config.download_desc,"}
+{"metadata": {"task_id": "huggingface_evaluate/93"}, "groundtruth": "for x, t in zip(evaluation_modules, evaluation_module_types)"}
+{"metadata": {"task_id": "huggingface_evaluate/94"}, "groundtruth": "average=average,"}
+{"metadata": {"task_id": "huggingface_evaluate/95"}, "groundtruth": "import sys"}
+{"metadata": {"task_id": "huggingface_evaluate/97"}, "groundtruth": "self.assertEqual(results[\"f1\"], 100.0)"}
+{"metadata": {"task_id": "huggingface_evaluate/96"}, "groundtruth": "title = {The Woman Worked as a Babysitter: On Biases in Language Generation},"}
+{"metadata": {"task_id": "huggingface_evaluate/98"}, "groundtruth": "finally:"}
+{"metadata": {"task_id": "huggingface_evaluate/99"}, "groundtruth": "`total_word_count` (`int`) : the total number of words in the input string(s)"}
+{"metadata": {"task_id": "huggingface_evaluate/100"}, "groundtruth": "- None (default): Returns an array of Matthews correlation coefficients, one for each feature"}
+{"metadata": {"task_id": "huggingface_evaluate/101"}, "groundtruth": "-0.7"}
+{"metadata": {"task_id": "huggingface_evaluate/102"}, "groundtruth": "shutil.move(temp_file.name, cache_path)"}
+{"metadata": {"task_id": "huggingface_evaluate/103"}, "groundtruth": "- 'idx': index of the question as specified by the dataset"}
+{"metadata": {"task_id": "huggingface_evaluate/105"}, "groundtruth": "self.assertTrue(abs(char_error_rate - 0.1818181818) < 1e-6)"}
+{"metadata": {"task_id": "huggingface_evaluate/104"}, "groundtruth": "in the input list, as well as the mean perplexity. If one of the input texts is"}
+{"metadata": {"task_id": "huggingface_evaluate/108"}, "groundtruth": "loaded_result_dict = json.load(f)"}
+{"metadata": {"task_id": "huggingface_evaluate/106"}, "groundtruth": "base_path=hf_hub_url(path=self.name, name=\"\", revision=revision),"}
+{"metadata": {"task_id": "huggingface_evaluate/107"}, "groundtruth": "from huggingface_hub.repocard import metadata_update"}
+{"metadata": {"task_id": "huggingface_evaluate/109"}, "groundtruth": ">>> print(results)"}
+{"metadata": {"task_id": "huggingface_evaluate/110"}, "groundtruth": "connected = ftp_head(url)"}
+{"metadata": {"task_id": "huggingface_evaluate/112"}, "groundtruth": "metric_inputs: Dict,"}
+{"metadata": {"task_id": "huggingface_evaluate/113"}, "groundtruth": "return path"}
+{"metadata": {"task_id": "huggingface_evaluate/111"}, "groundtruth": ">>> references = [[\"does this sentence match\", \"does this sentence match!?!\"],"}
+{"metadata": {"task_id": "huggingface_evaluate/115"}, "groundtruth": ">>> results = perplexity.compute(model_id='gpt2',"}
+{"metadata": {"task_id": "huggingface_evaluate/114"}, "groundtruth": "dataset_split: str = None,"}
+{"metadata": {"task_id": "huggingface_evaluate/116"}, "groundtruth": "try:"}
+{"metadata": {"task_id": "huggingface_evaluate/121"}, "groundtruth": "metric = DummyMetric("}
+{"metadata": {"task_id": "huggingface_evaluate/117"}, "groundtruth": "os.putenv = None"}
+{"metadata": {"task_id": "huggingface_evaluate/118"}, "groundtruth": "with:"}
+{"metadata": {"task_id": "huggingface_evaluate/123"}, "groundtruth": "Tokenizes an input line with the tokenizer."}
+{"metadata": {"task_id": "huggingface_evaluate/122"}, "groundtruth": "self.assertEqual(data.split, \"test\")"}
+{"metadata": {"task_id": "huggingface_evaluate/125"}, "groundtruth": "self.data = Dataset.from_dict({\"label\": [1, 0], \"text\": [\"great movie\", \"horrible movie\"]})"}
+{"metadata": {"task_id": "huggingface_evaluate/120"}, "groundtruth": "if self.revision is None and os.getenv(\"HF_SCRIPTS_VERSION\", SCRIPTS_VERSION) != \"main\":"}
+{"metadata": {"task_id": "huggingface_evaluate/119"}, "groundtruth": "description=_DESCRIPTION,"}
+{"metadata": {"task_id": "huggingface_evaluate/126"}, "groundtruth": "title={Evaluating Large Language Models Trained on Code},"}
+{"metadata": {"task_id": "huggingface_evaluate/127"}, "groundtruth": "from .utils import DatasetColumnPair"}
+{"metadata": {"task_id": "huggingface_evaluate/124"}, "groundtruth": "containing the score, the confidence interval and the standard error calculated for each metric key."}
+{"metadata": {"task_id": "huggingface_evaluate/128"}, "groundtruth": ">>> import numpy as np"}
+{"metadata": {"task_id": "huggingface_evaluate/129"}, "groundtruth": "e.args = (max_retry_error,)"}
+{"metadata": {"task_id": "huggingface_evaluate/130"}, "groundtruth": "metrics_online.StddevAcrossRuns("}
+{"metadata": {"task_id": "huggingface_evaluate/131"}, "groundtruth": "{'charcut_mt': 0.1971153846153846}"}
+{"metadata": {"task_id": "huggingface_evaluate/132"}, "groundtruth": "Returns the duplicate fraction of duplicate strings in the input."}
+{"metadata": {"task_id": "huggingface_evaluate/133"}, "groundtruth": ">>> results = recall_metric.compute(references=[0, 0, 1, 1, 1], predictions=[0, 1, 0, 1, 1], sample_weight=sample_weight)"}
+{"metadata": {"task_id": "huggingface_evaluate/134"}, "groundtruth": "{"}
+{"metadata": {"task_id": "huggingface_evaluate/135"}, "groundtruth": "self.evaluation_module_names = [module.name for module in self.evaluation_modules]"}
+{"metadata": {"task_id": "huggingface_evaluate/136"}, "groundtruth": "the mean IoU of the image is calculated by taking the IoU of each class and averaging them."}
+{"metadata": {"task_id": "huggingface_evaluate/138"}, "groundtruth": ">>> results = exact_match.compute(references=refs, predictions=preds, regexes_to_ignore=[\"the \", \"yell\", \"YELL\"], ignore_case=True, ignore_punctuation=True)"}
+{"metadata": {"task_id": "huggingface_evaluate/139"}, "groundtruth": "importable_directory_path = os.path.join(dynamic_modules_path, self.module_type, self.name)"}
+{"metadata": {"task_id": "huggingface_evaluate/140"}, "groundtruth": "references: array-like of shape (n_samples,) or (n_samples, n_outputs)"}
+{"metadata": {"task_id": "huggingface_evaluate/141"}, "groundtruth": "c2grams.append(c2gram)"}
+{"metadata": {"task_id": "huggingface_evaluate/137"}, "groundtruth": "logger.info(f\"TensorFlow found but with version {TF_VERSION}. `datasets` requires version 2 minimum.\")"}
+{"metadata": {"task_id": "huggingface_evaluate/142"}, "groundtruth": "evaluation_module = evaluation_module_factory("}
+{"metadata": {"task_id": "huggingface_evaluate/144"}, "groundtruth": "writer.writeheader()"}
+{"metadata": {"task_id": "huggingface_evaluate/143"}, "groundtruth": "{'mse': 0.375}"}
+{"metadata": {"task_id": "huggingface_evaluate/145"}, "groundtruth": "...     )"}
+{"metadata": {"task_id": "huggingface_evaluate/148"}, "groundtruth": "{\"start\": 0, \"entity\": \"B-LOC\"},"}
+{"metadata": {"task_id": "huggingface_evaluate/146"}, "groundtruth": "Overall accuracy on all images."}
+{"metadata": {"task_id": "huggingface_evaluate/147"}, "groundtruth": "- `'macro'`: Calculate metrics for each label, and find their unweighted mean. This does not take label imbalance into account."}
+{"metadata": {"task_id": "huggingface_evaluate/149"}, "groundtruth": "raise ValueError("}
+{"metadata": {"task_id": "huggingface_evaluate/150"}, "groundtruth": "...                              predictions=input_texts)"}
+{"metadata": {"task_id": "huggingface_evaluate/152"}, "groundtruth": "is_match = get_jaccard(pred, ground_truth) >= IOU_THRESH or ground_truth in pred"}
+{"metadata": {"task_id": "huggingface_evaluate/153"}, "groundtruth": "Sari = (F1_add + F1_keep + P_del) / 3"}
+{"metadata": {"task_id": "huggingface_evaluate/151"}, "groundtruth": "},"}
+{"metadata": {"task_id": "huggingface_evaluate/154"}, "groundtruth": "),"}
+{"metadata": {"task_id": "huggingface_evaluate/156"}, "groundtruth": "if config.JAX_AVAILABLE:"}
+{"metadata": {"task_id": "huggingface_evaluate/157"}, "groundtruth": "def xml_file(tmp_path_factory):"}
+{"metadata": {"task_id": "huggingface_evaluate/155"}, "groundtruth": "32.0"}
+{"metadata": {"task_id": "huggingface_evaluate/163"}, "groundtruth": "to_use_files.extend(list(Path(file_path).rglob(\"*.[pP][yY]\")))"}
+{"metadata": {"task_id": "huggingface_evaluate/158"}, "groundtruth": "```"}
+{"metadata": {"task_id": "huggingface_evaluate/159"}, "groundtruth": "def load_local_metric(evaluation_module_name, *args, **kwargs):"}
+{"metadata": {"task_id": "huggingface_evaluate/161"}, "groundtruth": "signal.setitimer(signal.ITIMER_REAL, 0)"}
+{"metadata": {"task_id": "huggingface_evaluate/162"}, "groundtruth": "if response.status_code == 200:  # ok"}
+{"metadata": {"task_id": "huggingface_evaluate/165"}, "groundtruth": "self.label_mapping = {\"NEGATIVE\": 0.0, \"POSITIVE\": 1.0}"}
+{"metadata": {"task_id": "huggingface_evaluate/160"}, "groundtruth": "raise e1 from None"}
+{"metadata": {"task_id": "huggingface_evaluate/168"}, "groundtruth": "f\"Input {input_name}: {summarize_if_long_list(batch[input_name])}\""}
+{"metadata": {"task_id": "huggingface_evaluate/164"}, "groundtruth": "predictions = json.load(prediction_file)"}
+{"metadata": {"task_id": "huggingface_evaluate/167"}, "groundtruth": "task_type: str"}
+{"metadata": {"task_id": "huggingface_evaluate/166"}, "groundtruth": "with self.assertRaises(ValueError):"}
+{"metadata": {"task_id": "huggingface_evaluate/171"}, "groundtruth": "metric=\"squad\","}
+{"metadata": {"task_id": "huggingface_evaluate/172"}, "groundtruth": "return False"}
+{"metadata": {"task_id": "huggingface_evaluate/169"}, "groundtruth": "...                                     predictions=[10, 9, 2.5, 6, 4],"}
+{"metadata": {"task_id": "huggingface_evaluate/170"}, "groundtruth": "author={Bertie Vidgen and Tristan Thrush and Zeerak Waseem and Douwe Kiela},"}
+{"metadata": {"task_id": "huggingface_evaluate/173"}, "groundtruth": "confidence_level=confidence_level,"}
+{"metadata": {"task_id": "huggingface_evaluate/174"}, "groundtruth": "the name of the column containing the input text in the dataset specified by `data`."}
+{"metadata": {"task_id": "huggingface_evaluate/178"}, "groundtruth": "url, temp_file, proxies=None, resume_size=0, headers=None, cookies=None, timeout=100.0, max_retries=0, desc=None"}
+{"metadata": {"task_id": "huggingface_evaluate/175"}, "groundtruth": "Parses test cases to be used in gradio Dataframe. Note that an apostrophe is added"}
+{"metadata": {"task_id": "huggingface_evaluate/176"}, "groundtruth": ">>> print({k: round(v, 2) for k, v in results['regard_difference'].items()})"}
+{"metadata": {"task_id": "huggingface_evaluate/181"}, "groundtruth": "references (list of list of str): The references. There should be one reference sub-list for each prediction sentence."}
+{"metadata": {"task_id": "huggingface_evaluate/177"}, "groundtruth": "pixel_values = torch.stack("}
+{"metadata": {"task_id": "huggingface_evaluate/180"}, "groundtruth": "predictions (list of str): The predicted sentences."}
+{"metadata": {"task_id": "huggingface_evaluate/182"}, "groundtruth": "max_length (int): maximum sequence length."}
+{"metadata": {"task_id": "huggingface_evaluate/179"}, "groundtruth": "- for 'axb':"}
+{"metadata": {"task_id": "huggingface_evaluate/184"}, "groundtruth": "tf_mock = mock.Mock()"}
+{"metadata": {"task_id": "huggingface_evaluate/186"}, "groundtruth": "Computes CUAD scores (EM, F1, AUPR, Precision@80%Recall, and Precision@90%Recall)."}
+{"metadata": {"task_id": "huggingface_evaluate/188"}, "groundtruth": "self.assertAlmostEqual(results[\"total_time_in_seconds\"], 0.1, 1)"}
+{"metadata": {"task_id": "huggingface_evaluate/183"}, "groundtruth": "multi_class=\"raise\","}
+{"metadata": {"task_id": "huggingface_evaluate/185"}, "groundtruth": "self.assertListEqual(predictions[\"predictions\"][0], [\"B-LOC\", \"O\", \"O\", \"O\", \"B-LOC\", \"O\"])"}
+{"metadata": {"task_id": "huggingface_evaluate/187"}, "groundtruth": "the name of the column containing the input audio path in the dataset specified by `data`."}
+{"metadata": {"task_id": "huggingface_evaluate/189"}, "groundtruth": "description: str"}
+{"metadata": {"task_id": "huggingface_evaluate/191"}, "groundtruth": "Argument can be used to overwrite a default tokenizer if `model_or_pipeline` represents a model for"}
+{"metadata": {"task_id": "huggingface_evaluate/190"}, "groundtruth": "longer than the max input length of the model, then it is truncated to the"}
+{"metadata": {"task_id": "huggingface_evaluate/192"}, "groundtruth": "\"references\": Sequence(Value(\"string\", id=\"reference\"), id=\"references\"),"}
+{"metadata": {"task_id": "huggingface_evaluate/193"}, "groundtruth": "(1, 0, preds_0, refs_0, None, tmp_dir, 0),"}
+{"metadata": {"task_id": "huggingface_evaluate/195"}, "groundtruth": "...     \"rank\": [0, 1],"}
+{"metadata": {"task_id": "huggingface_evaluate/196"}, "groundtruth": "f\"evaluate-{module_type}/{path}\","}
+{"metadata": {"task_id": "huggingface_evaluate/198"}, "groundtruth": "def hypothesis_sent():"}
+{"metadata": {"task_id": "huggingface_evaluate/199"}, "groundtruth": "Computes NIST score of translated segments against one or more references."}
+{"metadata": {"task_id": "huggingface_evaluate/194"}, "groundtruth": "N\tCoreference\tCoreference chain information encoded in a parenthesis structure."}
+{"metadata": {"task_id": "huggingface_evaluate/197"}, "groundtruth": "if self.config_name not in [\"online\", \"offline\"]:"}
+{"metadata": {"task_id": "google_vizier/0"}, "groundtruth": "firefly_pool.create_or_update_fly(trial, 112)"}
+{"metadata": {"task_id": "google_vizier/3"}, "groundtruth": ")"}
+{"metadata": {"task_id": "google_vizier/1"}, "groundtruth": "logging.warn("}
+{"metadata": {"task_id": "google_vizier/5"}, "groundtruth": "if self._getter_spec.type == NumpyArraySpecType.DISCRETE"}
+{"metadata": {"task_id": "google_vizier/4"}, "groundtruth": "UNKNOWN = 'UNKNOWN'"}
+{"metadata": {"task_id": "google_vizier/6"}, "groundtruth": "expected = ["}
+{"metadata": {"task_id": "google_vizier/7"}, "groundtruth": "early_stopping_operations: Dict["}
+{"metadata": {"task_id": "google_vizier/2"}, "groundtruth": "feasible_values = []"}
+{"metadata": {"task_id": "google_vizier/8"}, "groundtruth": "components.append(cls.default_study_prefix)"}
+{"metadata": {"task_id": "google_vizier/11"}, "groundtruth": "absltest.main()"}
+{"metadata": {"task_id": "google_vizier/9"}, "groundtruth": "def _set_bounds("}
+{"metadata": {"task_id": "google_vizier/10"}, "groundtruth": "if name not in self._parameter_configs:"}
+{"metadata": {"task_id": "google_vizier/13"}, "groundtruth": "name=pc.name,"}
+{"metadata": {"task_id": "google_vizier/12"}, "groundtruth": "initial_temp: float = 1.0,"}
+{"metadata": {"task_id": "google_vizier/14"}, "groundtruth": "self._best_params: Dict[str, Any] = None  # place holder for best parameters"}
+{"metadata": {"task_id": "google_vizier/15"}, "groundtruth": "logging.info('Starting a new convergence test (n_features: %s)', n_features)"}
+{"metadata": {"task_id": "google_vizier/16"}, "groundtruth": "if proto.state == proto.STOPPING"}
+{"metadata": {"task_id": "google_vizier/22"}, "groundtruth": "datetime.datetime.now().astimezone())"}
+{"metadata": {"task_id": "google_vizier/19"}, "groundtruth": "self._features = np.concatenate([self._features, random_features])"}
+{"metadata": {"task_id": "google_vizier/26"}, "groundtruth": "class OwnerResource:"}
+{"metadata": {"task_id": "google_vizier/17"}, "groundtruth": "[0.0, 0.0, 0.0, 1.0],"}
+{"metadata": {"task_id": "google_vizier/27"}, "groundtruth": "remaining_parameters = copy.deepcopy(pytrial.parameters)"}
+{"metadata": {"task_id": "google_vizier/18"}, "groundtruth": "init=True,"}
+{"metadata": {"task_id": "google_vizier/29"}, "groundtruth": "candidate_num_trials=evaluations,"}
+{"metadata": {"task_id": "google_vizier/21"}, "groundtruth": "parameters = dict(locals())"}
+{"metadata": {"task_id": "google_vizier/20"}, "groundtruth": "bounds=new_bounds,"}
+{"metadata": {"task_id": "google_vizier/24"}, "groundtruth": "actual: list[pyvizier.ParameterValue] = converter.to_parameter_values(  # pytype:disable=annotation-type-mismatch"}
+{"metadata": {"task_id": "google_vizier/25"}, "groundtruth": "if self.apply_log:"}
+{"metadata": {"task_id": "google_vizier/23"}, "groundtruth": "proto.value.string_value = parameter_value.value"}
+{"metadata": {"task_id": "google_vizier/28"}, "groundtruth": "if not self.sym_init_args.measurements:"}
+{"metadata": {"task_id": "google_vizier/30"}, "groundtruth": "x_observed, y_observed, x_predictive = test_data_fn(data_key, dtype)"}
+{"metadata": {"task_id": "google_vizier/31"}, "groundtruth": "num_shards: int = 10,"}
+{"metadata": {"task_id": "google_vizier/33"}, "groundtruth": "raise ValueError(f'Algorithm {algorithm} is not registered.')"}
+{"metadata": {"task_id": "google_vizier/32"}, "groundtruth": "from vizier._src.benchmarks.experimenters import numpy_experimenter"}
+{"metadata": {"task_id": "google_vizier/34"}, "groundtruth": "name='main_objective', goal=pyvizier.ObjectiveMetricGoal.MINIMIZE))"}
+{"metadata": {"task_id": "google_vizier/36"}, "groundtruth": "len(search_space.parameters),"}
+{"metadata": {"task_id": "google_vizier/37"}, "groundtruth": "dtype=float,"}
+{"metadata": {"task_id": "google_vizier/35"}, "groundtruth": "'block_identity'"}
+{"metadata": {"task_id": "google_vizier/40"}, "groundtruth": "self.verbose >= 1,"}
+{"metadata": {"task_id": "google_vizier/39"}, "groundtruth": "ys=np.exp(np.array([-0.9, -1.0, -1.1]).reshape(3, 1) * xs_t),"}
+{"metadata": {"task_id": "google_vizier/38"}, "groundtruth": "inputs = self.to_features(trials)"}
+{"metadata": {"task_id": "google_vizier/41"}, "groundtruth": "for param_config in self._problem.search_space.parameters:"}
+{"metadata": {"task_id": "google_vizier/42"}, "groundtruth": "self: _P,"}
+{"metadata": {"task_id": "google_vizier/44"}, "groundtruth": "lower_array, higher_array, strict=True)"}
+{"metadata": {"task_id": "google_vizier/45"}, "groundtruth": "del seed"}
+{"metadata": {"task_id": "google_vizier/47"}, "groundtruth": "length_scale = yield sp.ModelParameter.from_prior("}
+{"metadata": {"task_id": "google_vizier/48"}, "groundtruth": "d = core.DictOf2DArrays({"}
+{"metadata": {"task_id": "google_vizier/50"}, "groundtruth": "return self.trial_converter.metric_information"}
+{"metadata": {"task_id": "google_vizier/49"}, "groundtruth": "x_poly_features = self._poly_transformer.fit_transform(x.reshape(1, -1))"}
+{"metadata": {"task_id": "google_vizier/52"}, "groundtruth": "else:"}
+{"metadata": {"task_id": "google_vizier/43"}, "groundtruth": "psr: Optional[PolynomialSparseRecovery] = None,"}
+{"metadata": {"task_id": "google_vizier/51"}, "groundtruth": "extended_baseline = ConvergenceCurve.extrapolate_ys(self._baseline_curve,"}
+{"metadata": {"task_id": "google_vizier/53"}, "groundtruth": "colons separating the components."}
+{"metadata": {"task_id": "google_vizier/46"}, "groundtruth": "name=proto.parameter_id,"}
+{"metadata": {"task_id": "google_vizier/56"}, "groundtruth": "('DifferentPowers', bbob.DifferentPowers),"}
+{"metadata": {"task_id": "google_vizier/57"}, "groundtruth": "self._trial = self._trial_client.materialize()"}
+{"metadata": {"task_id": "google_vizier/55"}, "groundtruth": "e = custom_errors.ImmutableStudyError("}
+{"metadata": {"task_id": "google_vizier/54"}, "groundtruth": "return np.array(perturbation_factors)"}
+{"metadata": {"task_id": "google_vizier/58"}, "groundtruth": "self.assertIsInstance(parameters['training_steps'], float)"}
+{"metadata": {"task_id": "google_vizier/59"}, "groundtruth": "raise ValueError('Only one of `length` and `index` can be specified. Got'"}
+{"metadata": {"task_id": "google_vizier/61"}, "groundtruth": "p2: vz.ParameterDict,"}
+{"metadata": {"task_id": "google_vizier/60"}, "groundtruth": "trial = self.datastore.get_trial(request.name)"}
+{"metadata": {"task_id": "google_vizier/62"}, "groundtruth": "self.assertTrue((labels_test_pred == self.labels_train).all())"}
+{"metadata": {"task_id": "google_vizier/63"}, "groundtruth": "study_name: str,"}
+{"metadata": {"task_id": "google_vizier/64"}, "groundtruth": "'jax': _parse_requirements('requirements-jax.txt'),"}
+{"metadata": {"task_id": "google_vizier/65"}, "groundtruth": "problem_statement: vz.ProblemStatement) -> None:"}
+{"metadata": {"task_id": "google_vizier/66"}, "groundtruth": "labels_arr_transformed = np.reshape(labels_arr_transformed,"}
+{"metadata": {"task_id": "google_vizier/68"}, "groundtruth": "while True:"}
+{"metadata": {"task_id": "google_vizier/67"}, "groundtruth": "_NUM_INITIAL_COMPLETED_TRIALS + len(trials[::2]))"}
+{"metadata": {"task_id": "google_vizier/70"}, "groundtruth": "if len(self.prior_rewards.shape) > 1:"}
+{"metadata": {"task_id": "google_vizier/71"}, "groundtruth": "noise_fn = functools.partial("}
+{"metadata": {"task_id": "google_vizier/72"}, "groundtruth": "for t in self._trials:"}
+{"metadata": {"task_id": "google_vizier/73"}, "groundtruth": "type(default_value)))"}
+{"metadata": {"task_id": "google_vizier/69"}, "groundtruth": "trial: vz.Trial = attr.field(validator=attr.validators.instance_of(vz.Trial))"}
+{"metadata": {"task_id": "google_vizier/74"}, "groundtruth": "np.testing.assert_equal(actual, expected)"}
+{"metadata": {"task_id": "google_vizier/75"}, "groundtruth": "'Study with name %s already exists.' % study.name"}
+{"metadata": {"task_id": "google_vizier/76"}, "groundtruth": "root.add_categorical_param("}
+{"metadata": {"task_id": "google_vizier/78"}, "groundtruth": "bijector = None"}
+{"metadata": {"task_id": "google_vizier/77"}, "groundtruth": "]"}
+{"metadata": {"task_id": "google_vizier/83"}, "groundtruth": "arr = np.array([[1.0], [2.0], [np.nan], [4.0], [np.nan]])"}
+{"metadata": {"task_id": "google_vizier/84"}, "groundtruth": "dict(dtype='float32'),"}
+{"metadata": {"task_id": "google_vizier/85"}, "groundtruth": "for i, val in enumerate(vector.flat):"}
+{"metadata": {"task_id": "google_vizier/86"}, "groundtruth": "fx(x)"}
+{"metadata": {"task_id": "google_vizier/79"}, "groundtruth": "elif external_type == ExternalType.BOOLEAN:"}
+{"metadata": {"task_id": "google_vizier/87"}, "groundtruth": "d1 = core.DictOf2DArrays({'a': rnd([10, 2]), 'b': rnd([10, 1])})"}
+{"metadata": {"task_id": "google_vizier/80"}, "groundtruth": "empty_pb2.Empty()"}
+{"metadata": {"task_id": "google_vizier/81"}, "groundtruth": "labels_std = np.sqrt(self._estimate_variance(labels_arr_finite))"}
+{"metadata": {"task_id": "google_vizier/82"}, "groundtruth": "import numpy as np"}
+{"metadata": {"task_id": "google_vizier/88"}, "groundtruth": "return SearchSpace()"}
+{"metadata": {"task_id": "google_vizier/90"}, "groundtruth": "query = query.where(self._studies_table.c.study_name == study_name)"}
+{"metadata": {"task_id": "google_vizier/91"}, "groundtruth": "if not best_results:"}
+{"metadata": {"task_id": "google_vizier/92"}, "groundtruth": "raise ValueError(f'Only DOUBLE parameters can be normalized: {pc}.')"}
+{"metadata": {"task_id": "google_vizier/93"}, "groundtruth": "return value * f1 * np.max([1.0, f2])"}
+{"metadata": {"task_id": "google_vizier/95"}, "groundtruth": "):"}
+{"metadata": {"task_id": "google_vizier/94"}, "groundtruth": "def update_metadata(self, delta: vz.Metadata) -> None:"}
+{"metadata": {"task_id": "google_vizier/89"}, "groundtruth": "metadatum.value = value"}
+{"metadata": {"task_id": "google_vizier/96"}, "groundtruth": "experimental_fidelity_config: Optional[FidelityConfig] = None,"}
+{"metadata": {"task_id": "google_vizier/97"}, "groundtruth": "class EarlyStoppingOperationResource:"}
+{"metadata": {"task_id": "google_vizier/98"}, "groundtruth": "space = pc.SearchSpace()"}
+{"metadata": {"task_id": "google_vizier/99"}, "groundtruth": "created_time=int(trial.creation_time.timestamp()),"}
+{"metadata": {"task_id": "google_vizier/101"}, "groundtruth": "'Duplicate metric of name \"%s\".'"}
+{"metadata": {"task_id": "google_vizier/100"}, "groundtruth": "_parameter_name(choice_path),"}
+{"metadata": {"task_id": "google_vizier/103"}, "groundtruth": "return trial1.final_measurement.metrics["}
+{"metadata": {"task_id": "google_vizier/105"}, "groundtruth": "population = converter.to_population(trials)"}
+{"metadata": {"task_id": "google_vizier/106"}, "groundtruth": "self._studies_table.c.study_name == study.name"}
+{"metadata": {"task_id": "google_vizier/107"}, "groundtruth": "def from_request_proto("}
+{"metadata": {"task_id": "google_vizier/102"}, "groundtruth": "population_dict = attr.asdict(self._population)"}
+{"metadata": {"task_id": "google_vizier/104"}, "groundtruth": "self.runner = runner"}
+{"metadata": {"task_id": "google_vizier/108"}, "groundtruth": "AcquisitionOptimizer]"}
+{"metadata": {"task_id": "google_vizier/109"}, "groundtruth": "nsamples: int = 1000,"}
+{"metadata": {"task_id": "google_vizier/110"}, "groundtruth": "algorithm = proto.algorithm"}
+{"metadata": {"task_id": "google_vizier/112"}, "groundtruth": "self._algorithm.feedback(tuner_trial.dna, reward)"}
+{"metadata": {"task_id": "google_vizier/113"}, "groundtruth": "raise ValueError(f'{type(self)} works with exactly one metric.')"}
+{"metadata": {"task_id": "google_vizier/111"}, "groundtruth": "kw_only=True)"}
+{"metadata": {"task_id": "google_vizier/115"}, "groundtruth": "len(self._incorporated_trial_ids),"}
+{"metadata": {"task_id": "google_vizier/117"}, "groundtruth": "py_study_config = vz.StudyConfig("}
+{"metadata": {"task_id": "google_vizier/118"}, "groundtruth": "return random.RandomDesigner(problem.search_space, seed=seed)"}
+{"metadata": {"task_id": "google_vizier/114"}, "groundtruth": "problem_and_trials.trials[0].final_measurement.metrics["}
+{"metadata": {"task_id": "google_vizier/120"}, "groundtruth": "if resource.trial_id not in trial_protos:"}
+{"metadata": {"task_id": "google_vizier/119"}, "groundtruth": "* self.config.perturbation"}
+{"metadata": {"task_id": "google_vizier/121"}, "groundtruth": "self._store.update(*args, **kwargs)"}
+{"metadata": {"task_id": "google_vizier/116"}, "groundtruth": "measurement = Measurement(metrics={"}
+{"metadata": {"task_id": "google_vizier/122"}, "groundtruth": "study_configs = []"}
+{"metadata": {"task_id": "google_vizier/127"}, "groundtruth": "])"}
+{"metadata": {"task_id": "google_vizier/123"}, "groundtruth": "benchmark_subroutines=[benchmarks.GenerateAndEvaluate()],"}
+{"metadata": {"task_id": "google_vizier/129"}, "groundtruth": "study_node = self._owners[s_resource.owner_id].studies["}
+{"metadata": {"task_id": "google_vizier/128"}, "groundtruth": "logging.log_if(logging.INFO, 'gradients: %s', self.verbose >= 2, grads)"}
+{"metadata": {"task_id": "google_vizier/130"}, "groundtruth": "selected_spaces.append(selected_parameter.subspace(value))"}
+{"metadata": {"task_id": "google_vizier/125"}, "groundtruth": "np.testing.assert_equal(converter.to_features([trial]), expected)"}
+{"metadata": {"task_id": "google_vizier/126"}, "groundtruth": "self.assertIsNot(trial, copied_trial)  # Check pass-by-value."}
+{"metadata": {"task_id": "google_vizier/124"}, "groundtruth": "query = query.where("}
+{"metadata": {"task_id": "google_vizier/132"}, "groundtruth": "for i in range(dim):"}
+{"metadata": {"task_id": "google_vizier/133"}, "groundtruth": "proto.start_time.nanos = int(1e9 * (creation_secs - int(creation_secs)))"}
+{"metadata": {"task_id": "google_vizier/131"}, "groundtruth": "if normalization == 0:"}
+{"metadata": {"task_id": "google_vizier/134"}, "groundtruth": "5,"}
+{"metadata": {"task_id": "google_vizier/135"}, "groundtruth": "constants.METADATA_NAMESPACE,"}
+{"metadata": {"task_id": "google_vizier/136"}, "groundtruth": "('Penalize Parent Id: %s. Parameters are stuck. '"}
+{"metadata": {"task_id": "google_vizier/137"}, "groundtruth": "alpha: float = 3.0):"}
+{"metadata": {"task_id": "google_vizier/139"}, "groundtruth": "self.mode = mode"}
+{"metadata": {"task_id": "google_vizier/140"}, "groundtruth": "return self._id"}
+{"metadata": {"task_id": "google_vizier/142"}, "groundtruth": "parameter_index += 1"}
+{"metadata": {"task_id": "google_vizier/141"}, "groundtruth": "if np.isposinf(labels_arr).any():"}
+{"metadata": {"task_id": "google_vizier/143"}, "groundtruth": "x = (x - self.min_value) / (self.max_value - self.min_value)"}
+{"metadata": {"task_id": "google_vizier/144"}, "groundtruth": "'While creating Parameter with name={}: exactly one of '"}
+{"metadata": {"task_id": "google_vizier/138"}, "groundtruth": "self._num_vars = self._lin_reg.num_vars"}
+{"metadata": {"task_id": "google_vizier/145"}, "groundtruth": "_metadata: pg.Dict = attr.field()"}
+{"metadata": {"task_id": "google_vizier/146"}, "groundtruth": "client_id: str,"}
+{"metadata": {"task_id": "google_vizier/147"}, "groundtruth": "goal=goal,"}
+{"metadata": {"task_id": "google_vizier/148"}, "groundtruth": "if trial1.infeasible or trial2.infeasible:"}
+{"metadata": {"task_id": "google_vizier/149"}, "groundtruth": "evaluated_count,"}
+{"metadata": {"task_id": "google_vizier/150"}, "groundtruth": "return proto"}
+{"metadata": {"task_id": "google_vizier/152"}, "groundtruth": "kernel.lengthscale.constrain_bounded(1e-2, 1e2)"}
+{"metadata": {"task_id": "google_vizier/154"}, "groundtruth": "last_step = step"}
+{"metadata": {"task_id": "google_vizier/153"}, "groundtruth": "X = []"}
+{"metadata": {"task_id": "google_vizier/151"}, "groundtruth": "_, dimension = points.shape"}
+{"metadata": {"task_id": "google_vizier/155"}, "groundtruth": "self.add_link(key, value)"}
+{"metadata": {"task_id": "google_vizier/156"}, "groundtruth": "name='eval_average_return',"}
+{"metadata": {"task_id": "google_vizier/161"}, "groundtruth": "return tuple(output)"}
+{"metadata": {"task_id": "google_vizier/162"}, "groundtruth": "'[=0/3][0]',"}
+{"metadata": {"task_id": "google_vizier/158"}, "groundtruth": "root.add_discrete_param('discrete', [-1.0, 1.0, 2.0])"}
+{"metadata": {"task_id": "google_vizier/163"}, "groundtruth": "origin_3d = np.array([-1, -1, 1])"}
+{"metadata": {"task_id": "google_vizier/157"}, "groundtruth": "filter_fn=lambda x: not isinstance(x, pg.geno.CustomDecisionPoint))"}
+{"metadata": {"task_id": "google_vizier/159"}, "groundtruth": "super(SimpleRegretConvergenceRunnerTest, self).setUp()"}
+{"metadata": {"task_id": "google_vizier/164"}, "groundtruth": "trial_ids: Optional[Iterable[int]] = None,"}
+{"metadata": {"task_id": "google_vizier/165"}, "groundtruth": "int_max_value = int(max_value)"}
+{"metadata": {"task_id": "google_vizier/167"}, "groundtruth": "trial_metadata: Iterable[UnitMetadataUpdate],"}
+{"metadata": {"task_id": "google_vizier/160"}, "groundtruth": "self.study_config,"}
+{"metadata": {"task_id": "google_vizier/168"}, "groundtruth": "self.assertGreater(min(min(sequence)), 0)"}
+{"metadata": {"task_id": "google_vizier/169"}, "groundtruth": "self.assertIsNone(test.final_measurement)"}
+{"metadata": {"task_id": "google_vizier/166"}, "groundtruth": "baseline_benchmark_state_factory: benchmarks.BenchmarkStateFactory,"}
+{"metadata": {"task_id": "google_vizier/170"}, "groundtruth": "logging.info("}
+{"metadata": {"task_id": "google_vizier/171"}, "groundtruth": "sampled_categorical_params = np.float_("}
+{"metadata": {"task_id": "google_vizier/175"}, "groundtruth": "return copy.deepcopy(list(self._child_parameter_configs))"}
+{"metadata": {"task_id": "google_vizier/176"}, "groundtruth": ").name,"}
+{"metadata": {"task_id": "google_vizier/172"}, "groundtruth": "root_dir=\"hpob-data/\","}
+{"metadata": {"task_id": "google_vizier/177"}, "groundtruth": "if search_space.is_conditional:"}
+{"metadata": {"task_id": "google_vizier/178"}, "groundtruth": "elif self.is_requested:"}
+{"metadata": {"task_id": "google_vizier/173"}, "groundtruth": "),"}
+{"metadata": {"task_id": "google_vizier/179"}, "groundtruth": "validator=attr.validators.instance_of(vz.MetadataDelta))"}
+{"metadata": {"task_id": "google_vizier/180"}, "groundtruth": "seed=None,"}
+{"metadata": {"task_id": "google_vizier/174"}, "groundtruth": "constraint = sp_model.get_constraints(_test_coroutine)"}
+{"metadata": {"task_id": "google_vizier/181"}, "groundtruth": "goal=pyvizier.ObjectiveMetricGoal.MINIMIZE,"}
+{"metadata": {"task_id": "google_vizier/182"}, "groundtruth": "f'guid=\"{self.study_guid}\": guid=\"{study_guid}\"')"}
+{"metadata": {"task_id": "google_vizier/184"}, "groundtruth": "name=param_name,"}
+{"metadata": {"task_id": "google_vizier/185"}, "groundtruth": "dict(flip_sign=True, safety_threshold=-5.0),"}
+{"metadata": {"task_id": "google_vizier/183"}, "groundtruth": "space.add("}
+{"metadata": {"task_id": "google_vizier/186"}, "groundtruth": "s = 0.0"}
+{"metadata": {"task_id": "google_vizier/187"}, "groundtruth": "self.assertTrue(np.isfinite(lp))"}
+{"metadata": {"task_id": "google_vizier/190"}, "groundtruth": "self._owner_name_to_lock = collections.defaultdict(threading.Lock)"}
+{"metadata": {"task_id": "google_vizier/188"}, "groundtruth": "self._designer_factory = designer_factory"}
+{"metadata": {"task_id": "google_vizier/189"}, "groundtruth": "c_mat = LambdaAlpha(alpha, dim) / (alpha**0.25)"}
+{"metadata": {"task_id": "google_vizier/191"}, "groundtruth": "from vizier.service import resources"}
+{"metadata": {"task_id": "google_vizier/195"}, "groundtruth": "count: Optional[int] = None) -> Sequence[vz.TrialSuggestion]:"}
+{"metadata": {"task_id": "alibaba_FederatedScope/0"}, "groundtruth": "partition/noniid_partition.py"}
+{"metadata": {"task_id": "alibaba_FederatedScope/1"}, "groundtruth": "logging.warning("}
+{"metadata": {"task_id": "google_vizier/197"}, "groundtruth": "constants.WARMSTART_CHECKPOINT_PATH_KEY] = checkpoint_path"}
+{"metadata": {"task_id": "google_vizier/198"}, "groundtruth": "n = ys.shape[0]"}
+{"metadata": {"task_id": "alibaba_FederatedScope/2"}, "groundtruth": "',': 0.6559597911540539,"}
+{"metadata": {"task_id": "google_vizier/193"}, "groundtruth": "use_retrying_cholesky: bool = True,"}
+{"metadata": {"task_id": "google_vizier/192"}, "groundtruth": "dict(dtype=np.float32),"}
+{"metadata": {"task_id": "alibaba_FederatedScope/3"}, "groundtruth": "federate_method,"}
+{"metadata": {"task_id": "alibaba_FederatedScope/4"}, "groundtruth": "p2o = dict()"}
+{"metadata": {"task_id": "alibaba_FederatedScope/5"}, "groundtruth": "eoq=tokenizer.eoq_token,"}
+{"metadata": {"task_id": "alibaba_FederatedScope/6"}, "groundtruth": "return dataset, encoded_inputs, examples"}
+{"metadata": {"task_id": "google_vizier/196"}, "groundtruth": "d = core.DictOf2DArrays({'a': rnd([10, 2]), 'b': rnd([10, 1])})"}
+{"metadata": {"task_id": "google_vizier/194"}, "groundtruth": "trial_proto.id = str(1)"}
+{"metadata": {"task_id": "google_vizier/199"}, "groundtruth": "classifier_instance = classifiers.SklearnClassifier("}
+{"metadata": {"task_id": "alibaba_FederatedScope/7"}, "groundtruth": "return results"}
+{"metadata": {"task_id": "alibaba_FederatedScope/8"}, "groundtruth": "f\"[Local/Global mode] Client #{self.ID} has been \""}
+{"metadata": {"task_id": "alibaba_FederatedScope/9"}, "groundtruth": "f\"{cache_path}, we faced the exception: \\n \""}
+{"metadata": {"task_id": "alibaba_FederatedScope/10"}, "groundtruth": "index, input_x, input_y = self.sample_data()"}
+{"metadata": {"task_id": "alibaba_FederatedScope/11"}, "groundtruth": "end_index = min(data_size, (batch + 1) * batch_size)"}
+{"metadata": {"task_id": "alibaba_FederatedScope/12"}, "groundtruth": "return rouge_output"}
+{"metadata": {"task_id": "alibaba_FederatedScope/13"}, "groundtruth": "pred = []"}
+{"metadata": {"task_id": "alibaba_FederatedScope/14"}, "groundtruth": "only_for_eval=False,"}
+{"metadata": {"task_id": "alibaba_FederatedScope/15"}, "groundtruth": "result = eval(row['result'])"}
+{"metadata": {"task_id": "alibaba_FederatedScope/17"}, "groundtruth": "self._theta[i] = np.exp(z)"}
+{"metadata": {"task_id": "alibaba_FederatedScope/18"}, "groundtruth": "client._find_and_send_split = types.MethodType(_find_and_send_split,"}
+{"metadata": {"task_id": "alibaba_FederatedScope/16"}, "groundtruth": "try:"}
+{"metadata": {"task_id": "alibaba_FederatedScope/19"}, "groundtruth": "server_class=get_server_cls(init_cfg),"}
+{"metadata": {"task_id": "alibaba_FederatedScope/21"}, "groundtruth": "f\"The first appeared sweep has id {sweep_name_2_id[run_header]}\""}
+{"metadata": {"task_id": "alibaba_FederatedScope/22"}, "groundtruth": "shape=tuple(shapes['feature']),"}
+{"metadata": {"task_id": "alibaba_FederatedScope/23"}, "groundtruth": "self.total_download_bytes = 0  # total download space cost in bytes"}
+{"metadata": {"task_id": "alibaba_FederatedScope/20"}, "groundtruth": "files = [f for f in files if f.startswith('task_')]"}
+{"metadata": {"task_id": "alibaba_FederatedScope/24"}, "groundtruth": "f'will use `{mode}` to calculate `ctx.var`.')"}
+{"metadata": {"task_id": "alibaba_FederatedScope/26"}, "groundtruth": "f\" {target_split_name}_loader in the trainer, \""}
+{"metadata": {"task_id": "alibaba_FederatedScope/27"}, "groundtruth": "sender = message.sender"}
+{"metadata": {"task_id": "alibaba_FederatedScope/28"}, "groundtruth": "base_trainer: Type[GeneralTorchTrainer]) -> Type[GeneralTorchTrainer]:"}
+{"metadata": {"task_id": "alibaba_FederatedScope/25"}, "groundtruth": "hugging_face_path = os.getcwd()"}
+{"metadata": {"task_id": "alibaba_FederatedScope/30"}, "groundtruth": "insert_pos=0)  # insert at the front"}
+{"metadata": {"task_id": "alibaba_FederatedScope/31"}, "groundtruth": "from federatedscope.core.auxiliaries.ReIterator import ReIterator"}
+{"metadata": {"task_id": "alibaba_FederatedScope/32"}, "groundtruth": "logger.info(formatted_logs)"}
+{"metadata": {"task_id": "alibaba_FederatedScope/33"}, "groundtruth": "with self.sess.as_default():"}
+{"metadata": {"task_id": "alibaba_FederatedScope/34"}, "groundtruth": "for i in range(0, self.model_nums)"}
+{"metadata": {"task_id": "alibaba_FederatedScope/29"}, "groundtruth": "0.07743, 0.12915, 0.21544,"}
+{"metadata": {"task_id": "alibaba_FederatedScope/40"}, "groundtruth": "ctx.y_prob = CtxVar(pred, LIFECYCLE.BATCH)"}
+{"metadata": {"task_id": "alibaba_FederatedScope/36"}, "groundtruth": "content=metrics))"}
+{"metadata": {"task_id": "alibaba_FederatedScope/35"}, "groundtruth": "kw = {"}
+{"metadata": {"task_id": "alibaba_FederatedScope/39"}, "groundtruth": "cfg.vertical.algo = 'xgb'"}
+{"metadata": {"task_id": "alibaba_FederatedScope/37"}, "groundtruth": "from federatedscope.cl.loss import *"}
+{"metadata": {"task_id": "alibaba_FederatedScope/42"}, "groundtruth": "raise NotImplementedError("}
+{"metadata": {"task_id": "alibaba_FederatedScope/38"}, "groundtruth": "ctx.data_batch = ctx.target_data"}
+{"metadata": {"task_id": "alibaba_FederatedScope/41"}, "groundtruth": "return graphs"}
+{"metadata": {"task_id": "alibaba_FederatedScope/43"}, "groundtruth": "'a list/tuple of strings or a list/tuple of '"}
+{"metadata": {"task_id": "alibaba_FederatedScope/44"}, "groundtruth": "else:"}
+{"metadata": {"task_id": "alibaba_FederatedScope/45"}, "groundtruth": "cfg.data.type = 'toy'"}
+{"metadata": {"task_id": "alibaba_FederatedScope/46"}, "groundtruth": "if osp.exists(cache_dir):"}
+{"metadata": {"task_id": "alibaba_FederatedScope/47"}, "groundtruth": "max_seq_len,"}
+{"metadata": {"task_id": "alibaba_FederatedScope/49"}, "groundtruth": "callback_func_for_ss_instance_sum, worker)"}
+{"metadata": {"task_id": "alibaba_FederatedScope/50"}, "groundtruth": "true_missing=true_missing,"}
+{"metadata": {"task_id": "alibaba_FederatedScope/51"}, "groundtruth": "cfg.benchmark.model,"}
+{"metadata": {"task_id": "alibaba_FederatedScope/52"}, "groundtruth": "pass"}
+{"metadata": {"task_id": "alibaba_FederatedScope/48"}, "groundtruth": "log=hp.log))"}
+{"metadata": {"task_id": "alibaba_FederatedScope/53"}, "groundtruth": "]"}
+{"metadata": {"task_id": "alibaba_FederatedScope/54"}, "groundtruth": "monitor(res=res, sim_time=time.time() - t_start, budget=budget)"}
+{"metadata": {"task_id": "alibaba_FederatedScope/55"}, "groundtruth": "plt.close()"}
+{"metadata": {"task_id": "alibaba_FederatedScope/56"}, "groundtruth": "help='path of exp results',"}
+{"metadata": {"task_id": "alibaba_FederatedScope/58"}, "groundtruth": "ctx.loss_batch = (self.cfg.fedsageplus.a * loss_num +"}
+{"metadata": {"task_id": "alibaba_FederatedScope/57"}, "groundtruth": "start_index = batch * batch_size"}
+{"metadata": {"task_id": "alibaba_FederatedScope/62"}, "groundtruth": "self._client_num:"}
+{"metadata": {"task_id": "alibaba_FederatedScope/63"}, "groundtruth": "elif model_config.type == 'vgg11':"}
+{"metadata": {"task_id": "alibaba_FederatedScope/61"}, "groundtruth": "{"}
+{"metadata": {"task_id": "alibaba_FederatedScope/64"}, "groundtruth": "self.kwargs_for_trigger_train_func = \\"}
+{"metadata": {"task_id": "alibaba_FederatedScope/65"}, "groundtruth": "config=self._cfg)"}
+{"metadata": {"task_id": "alibaba_FederatedScope/66"}, "groundtruth": "cfg.model.type = 'lr'"}
+{"metadata": {"task_id": "alibaba_FederatedScope/60"}, "groundtruth": "dtype=np.int64)"}
+{"metadata": {"task_id": "alibaba_FederatedScope/59"}, "groundtruth": "{'loss_total': total_loss, 'avg_loss': total_loss/float("}
+{"metadata": {"task_id": "alibaba_FederatedScope/67"}, "groundtruth": "return osp.join(self.root, self.name, 'raw')"}
+{"metadata": {"task_id": "alibaba_FederatedScope/68"}, "groundtruth": "name,"}
+{"metadata": {"task_id": "alibaba_FederatedScope/69"}, "groundtruth": "for file_name in onlyfiles:"}
+{"metadata": {"task_id": "alibaba_FederatedScope/71"}, "groundtruth": "from federatedscope.core.trainers.enums import LIFECYCLE, MODE"}
+{"metadata": {"task_id": "alibaba_FederatedScope/70"}, "groundtruth": "in_channels,"}
+{"metadata": {"task_id": "alibaba_FederatedScope/73"}, "groundtruth": "self.classifier = nn.Linear(self.hidden_size, config.num_labels)"}
+{"metadata": {"task_id": "alibaba_FederatedScope/74"}, "groundtruth": "online=self._cfg.federate.online_aggr,"}
+{"metadata": {"task_id": "alibaba_FederatedScope/75"}, "groundtruth": "in_contrast_prepare=self._in_contrast_prepare,"}
+{"metadata": {"task_id": "alibaba_FederatedScope/72"}, "groundtruth": "cfg.trainer.type = 'nodefullbatch_trainer'"}
+{"metadata": {"task_id": "alibaba_FederatedScope/76"}, "groundtruth": "client_num=self.client_num,"}
+{"metadata": {"task_id": "alibaba_FederatedScope/78"}, "groundtruth": "LIFECYCLE.BATCH)"}
+{"metadata": {"task_id": "alibaba_FederatedScope/79"}, "groundtruth": "over_X = np.repeat(X[rel_score > cvg_score], over_rate, axis=0)"}
+{"metadata": {"task_id": "alibaba_FederatedScope/80"}, "groundtruth": "self.msg_buffer['ss_instance_sum'] = {}"}
+{"metadata": {"task_id": "alibaba_FederatedScope/77"}, "groundtruth": "import logging"}
+{"metadata": {"task_id": "alibaba_FederatedScope/81"}, "groundtruth": "non_sample_case = cfg.federate.method in [\"local\", \"global\"]"}
+{"metadata": {"task_id": "alibaba_FederatedScope/82"}, "groundtruth": "'capital_gain', 'capital_loss', 'hours_per_week', 'native_country',"}
+{"metadata": {"task_id": "alibaba_FederatedScope/87"}, "groundtruth": "or \"s02\" in sub or \"s005\" in sub or \"s01\" in sub \\"}
+{"metadata": {"task_id": "alibaba_FederatedScope/83"}, "groundtruth": "self.ctx.contrast_monitor.stat == 1"}
+{"metadata": {"task_id": "alibaba_FederatedScope/88"}, "groundtruth": "trainer_cls = func(config.trainer.type)"}
+{"metadata": {"task_id": "alibaba_FederatedScope/89"}, "groundtruth": "encoded_input.context_len = context_len"}
+{"metadata": {"task_id": "alibaba_FederatedScope/84"}, "groundtruth": "data_y = data['y']"}
+{"metadata": {"task_id": "alibaba_FederatedScope/85"}, "groundtruth": "print(results)"}
+{"metadata": {"task_id": "alibaba_FederatedScope/90"}, "groundtruth": "test_targets: y of test data"}
+{"metadata": {"task_id": "alibaba_FederatedScope/86"}, "groundtruth": "print(('Testing %s.%s' % (type(self).__name__, self._testMethodName)))"}
+{"metadata": {"task_id": "alibaba_FederatedScope/93"}, "groundtruth": "config.data.transform.append({})"}
+{"metadata": {"task_id": "alibaba_FederatedScope/94"}, "groundtruth": "dif = max_seq_len - len(token_ids)"}
+{"metadata": {"task_id": "alibaba_FederatedScope/91"}, "groundtruth": "import json"}
+{"metadata": {"task_id": "alibaba_FederatedScope/92"}, "groundtruth": "if move_on_flag:"}
+{"metadata": {"task_id": "alibaba_FederatedScope/95"}, "groundtruth": "model_type=config.model.model_type,"}
+{"metadata": {"task_id": "alibaba_FederatedScope/96"}, "groundtruth": "kernel_size=3,"}
+{"metadata": {"task_id": "alibaba_FederatedScope/97"}, "groundtruth": "results = runner.run()"}
+{"metadata": {"task_id": "alibaba_FederatedScope/100"}, "groundtruth": "import torch"}
+{"metadata": {"task_id": "alibaba_FederatedScope/101"}, "groundtruth": "DummyEncryptKeypair"}
+{"metadata": {"task_id": "alibaba_FederatedScope/102"}, "groundtruth": "ordinary_test_results = Fed_runner.run()"}
+{"metadata": {"task_id": "alibaba_FederatedScope/103"}, "groundtruth": "each_train_data = ["}
+{"metadata": {"task_id": "alibaba_FederatedScope/98"}, "groundtruth": "planes,"}
+{"metadata": {"task_id": "alibaba_FederatedScope/99"}, "groundtruth": "for Client {:d}'.format(ctx.attack.trigger_type, i))"}
+{"metadata": {"task_id": "alibaba_FederatedScope/104"}, "groundtruth": "from federatedscope.core.auxiliaries.utils import setup_seed"}
+{"metadata": {"task_id": "alibaba_FederatedScope/105"}, "groundtruth": "for metric in column_names_generalization:"}
+{"metadata": {"task_id": "alibaba_FederatedScope/106"}, "groundtruth": "return {}"}
+{"metadata": {"task_id": "alibaba_FederatedScope/107"}, "groundtruth": "cfg.hpo.num_workers = 0"}
+{"metadata": {"task_id": "alibaba_FederatedScope/108"}, "groundtruth": "ctx.eval_metrics = self.ctx.monitor.eval(ctx)"}
+{"metadata": {"task_id": "alibaba_FederatedScope/109"}, "groundtruth": "self.data_name.append(each_data)"}
+{"metadata": {"task_id": "alibaba_FederatedScope/111"}, "groundtruth": "pretrain=False,"}
+{"metadata": {"task_id": "alibaba_FederatedScope/110"}, "groundtruth": "def __init__(self,"}
+{"metadata": {"task_id": "alibaba_FederatedScope/113"}, "groundtruth": "self.ss_manager = AdditiveSecretSharing("}
+{"metadata": {"task_id": "alibaba_FederatedScope/112"}, "groundtruth": "self.ctx.monitor.track_avg_flops(flops_one_batch,"}
+{"metadata": {"task_id": "alibaba_FederatedScope/114"}, "groundtruth": "config=self._trial_cfg.clone(),"}
+{"metadata": {"task_id": "alibaba_FederatedScope/116"}, "groundtruth": "self.build_msg_value(self.timestamp))"}
+{"metadata": {"task_id": "alibaba_FederatedScope/118"}, "groundtruth": "self.data[i]['train'] = {"}
+{"metadata": {"task_id": "alibaba_FederatedScope/119"}, "groundtruth": "config=self.cfg,"}
+{"metadata": {"task_id": "alibaba_FederatedScope/121"}, "groundtruth": "plt.gca().invert_xaxis()"}
+{"metadata": {"task_id": "alibaba_FederatedScope/115"}, "groundtruth": "self.__dict__[CfgNode.DEPRECATED_KEYS] = set()"}
+{"metadata": {"task_id": "alibaba_FederatedScope/122"}, "groundtruth": "check_eval_result=False,"}
+{"metadata": {"task_id": "alibaba_FederatedScope/117"}, "groundtruth": "from federatedscope.core.configs.config import global_cfg"}
+{"metadata": {"task_id": "alibaba_FederatedScope/124"}, "groundtruth": "'token_ids': encoded_inputs.input_ids,"}
+{"metadata": {"task_id": "alibaba_FederatedScope/123"}, "groundtruth": "log=True))"}
+{"metadata": {"task_id": "alibaba_FederatedScope/120"}, "groundtruth": "logger.info('Server has been set up ... ')"}
+{"metadata": {"task_id": "alibaba_FederatedScope/128"}, "groundtruth": "self.data = data"}
+{"metadata": {"task_id": "alibaba_FederatedScope/129"}, "groundtruth": "self.data[0]['train'] = None"}
+{"metadata": {"task_id": "alibaba_FederatedScope/130"}, "groundtruth": "self._cfg.hpo.sha.budgets):"}
+{"metadata": {"task_id": "alibaba_FederatedScope/125"}, "groundtruth": "denominator = nominator"}
+{"metadata": {"task_id": "alibaba_FederatedScope/131"}, "groundtruth": "content={'contrast_monitor': contrast_monitor}))"}
+{"metadata": {"task_id": "alibaba_FederatedScope/134"}, "groundtruth": "cfg.data.splits = [0.8, 0.2, 0.2]"}
+{"metadata": {"task_id": "alibaba_FederatedScope/127"}, "groundtruth": "monitor=self._monitor)"}
+{"metadata": {"task_id": "alibaba_FederatedScope/126"}, "groundtruth": "seed = seed if seed is not None else np.random.randint(1, 100000)"}
+{"metadata": {"task_id": "alibaba_FederatedScope/132"}, "groundtruth": "sentence = inputs[i, ("}
+{"metadata": {"task_id": "alibaba_FederatedScope/135"}, "groundtruth": "return test_suite"}
+{"metadata": {"task_id": "alibaba_FederatedScope/136"}, "groundtruth": "seed=123,"}
+{"metadata": {"task_id": "alibaba_FederatedScope/133"}, "groundtruth": "self.dataset[\"x\"][idx]).float(), torch.from_numpy("}
+{"metadata": {"task_id": "alibaba_FederatedScope/137"}, "groundtruth": "self.prompt = 'FederatedScope>> '"}
+{"metadata": {"task_id": "alibaba_FederatedScope/138"}, "groundtruth": "for dataset_name in expected_datasets_name:"}
+{"metadata": {"task_id": "alibaba_FederatedScope/139"}, "groundtruth": "return model_deltas"}
+{"metadata": {"task_id": "alibaba_FederatedScope/140"}, "groundtruth": "return degree, gen_feat, nc_pred[:raw_data.num_nodes]"}
+{"metadata": {"task_id": "alibaba_FederatedScope/146"}, "groundtruth": "content = message.content"}
+{"metadata": {"task_id": "alibaba_FederatedScope/142"}, "groundtruth": "dimensions=len("}
+{"metadata": {"task_id": "alibaba_FederatedScope/147"}, "groundtruth": "CS.UniformFloatHyperparameter('dropout', lower=.0, upper=.5))"}
+{"metadata": {"task_id": "alibaba_FederatedScope/148"}, "groundtruth": "client_class=get_client_cls(init_cfg),"}
+{"metadata": {"task_id": "alibaba_FederatedScope/149"}, "groundtruth": "model=client_model or get_model(client_specific_config.model,"}
+{"metadata": {"task_id": "alibaba_FederatedScope/141"}, "groundtruth": "self.ssh = paramiko.SSHClient()"}
+{"metadata": {"task_id": "alibaba_FederatedScope/145"}, "groundtruth": "from federatedscope.core.auxiliaries.runner_builder import get_runner"}
+{"metadata": {"task_id": "alibaba_FederatedScope/150"}, "groundtruth": "c.ServerApp.ip = \"0.0.0.0\""}
+{"metadata": {"task_id": "alibaba_FederatedScope/143"}, "groundtruth": "num_non_padding = (encoded_inputs.input_ids !="}
+{"metadata": {"task_id": "alibaba_FederatedScope/151"}, "groundtruth": "self.device)"}
+{"metadata": {"task_id": "alibaba_FederatedScope/152"}, "groundtruth": "if actual_answer.find(cleaned_answer) == -1:"}
+{"metadata": {"task_id": "alibaba_FederatedScope/144"}, "groundtruth": "super(FedOptAggregator, self).__init__(model, device, config)"}
+{"metadata": {"task_id": "alibaba_FederatedScope/153"}, "groundtruth": "cfg.model.hidden = 128"}
+{"metadata": {"task_id": "alibaba_FederatedScope/155"}, "groundtruth": "self.callback_funcs_for_assign_id, [None])"}
+{"metadata": {"task_id": "alibaba_FederatedScope/160"}, "groundtruth": "self._monitor.calc_model_metric(self.model.state_dict(),"}
+{"metadata": {"task_id": "alibaba_FederatedScope/154"}, "groundtruth": "load_path = data_path + 'ARDIS_test_labels.csv'"}
+{"metadata": {"task_id": "alibaba_FederatedScope/161"}, "groundtruth": "original_val = [(x, y) for x, y in zip(dataset['validation'][0],"}
+{"metadata": {"task_id": "alibaba_FederatedScope/157"}, "groundtruth": "def wrapper(self, mode, hooks_set, dataset_name=None):"}
+{"metadata": {"task_id": "alibaba_FederatedScope/156"}, "groundtruth": "dec_out=None,"}
+{"metadata": {"task_id": "alibaba_FederatedScope/162"}, "groundtruth": "client_id + 1: dataset[client_id]"}
+{"metadata": {"task_id": "alibaba_FederatedScope/164"}, "groundtruth": "from scipy.special import softmax"}
+{"metadata": {"task_id": "alibaba_FederatedScope/165"}, "groundtruth": "role='Server #',"}
+{"metadata": {"task_id": "alibaba_FederatedScope/163"}, "groundtruth": "new_hook=hook_on_batch_start_replace_data_batch,"}
+{"metadata": {"task_id": "alibaba_FederatedScope/159"}, "groundtruth": "cfg.eval.freq = 10"}
+{"metadata": {"task_id": "alibaba_FederatedScope/158"}, "groundtruth": "val_data, val_targets = None, None"}
+{"metadata": {"task_id": "alibaba_FederatedScope/166"}, "groundtruth": "elif config.asyn.use:"}
+{"metadata": {"task_id": "alibaba_FederatedScope/168"}, "groundtruth": "self.model.load_state_dict(model_parameters, strict)"}
+{"metadata": {"task_id": "alibaba_FederatedScope/167"}, "groundtruth": "f\"metrics are: {str(system_metrics)}\")"}
+{"metadata": {"task_id": "alibaba_FederatedScope/169"}, "groundtruth": "elif isinstance(eval_metric, list):"}
+{"metadata": {"task_id": "alibaba_FederatedScope/170"}, "groundtruth": "rank_order = colum_order_per_data * len(filters_each_line_table)"}
+{"metadata": {"task_id": "alibaba_FederatedScope/171"}, "groundtruth": "self.ctx.model.load_state_dict(model_para)"}
+{"metadata": {"task_id": "alibaba_FederatedScope/172"}, "groundtruth": "text_b = truncated_context"}
+{"metadata": {"task_id": "alibaba_FederatedScope/173"}, "groundtruth": "xs, mean_ranks, mean_ranks_bbo, mean_ranks_mf = get_mean_loss("}
+{"metadata": {"task_id": "alibaba_FederatedScope/174"}, "groundtruth": "self.cfg.dataloader.batch_size))"}
+{"metadata": {"task_id": "alibaba_FederatedScope/175"}, "groundtruth": "elif self.optim.lower() == 'sgd':  # actually gd"}
+{"metadata": {"task_id": "alibaba_FederatedScope/176"}, "groundtruth": "cfg.fedsageplus.c = 1.0"}
+{"metadata": {"task_id": "alibaba_FederatedScope/177"}, "groundtruth": "dataset = TUDataset(self.root, name)"}
+{"metadata": {"task_id": "alibaba_FederatedScope/178"}, "groundtruth": "**ctx.cfg.train.optimizer)"}
+{"metadata": {"task_id": "alibaba_FederatedScope/184"}, "groundtruth": "h=32,"}
+{"metadata": {"task_id": "alibaba_FederatedScope/185"}, "groundtruth": "if t.requires_grad:"}
+{"metadata": {"task_id": "alibaba_FederatedScope/179"}, "groundtruth": "mask = ctx.data['data']['{}_mask'.format(ctx.cur_split)]"}
+{"metadata": {"task_id": "alibaba_FederatedScope/186"}, "groundtruth": "continue"}
+{"metadata": {"task_id": "alibaba_FederatedScope/181"}, "groundtruth": "from federatedscope.core.workers.client import Client"}
+{"metadata": {"task_id": "alibaba_FederatedScope/187"}, "groundtruth": "*args,"}
+{"metadata": {"task_id": "alibaba_FederatedScope/188"}, "groundtruth": "lower=1e-5,"}
+{"metadata": {"task_id": "alibaba_FederatedScope/180"}, "groundtruth": "for i, pad_idx in enumerate(num_non_padding):"}
+{"metadata": {"task_id": "alibaba_FederatedScope/189"}, "groundtruth": "sample_client=None,"}
+{"metadata": {"task_id": "alibaba_FederatedScope/183"}, "groundtruth": "os.makedirs(self._cfg.hpo.working_folder, exist_ok=True)"}
+{"metadata": {"task_id": "alibaba_FederatedScope/182"}, "groundtruth": "self.ctx.monitor.total_flops += self.ctx.monitor.flops_per_sample * \\"}
+{"metadata": {"task_id": "alibaba_FederatedScope/190"}, "groundtruth": "trial_cfg.merge_from_list("}
+{"metadata": {"task_id": "alibaba_FederatedScope/191"}, "groundtruth": "new_hook=self._hook_on_epoch_start_data2device,"}
+{"metadata": {"task_id": "alibaba_FederatedScope/192"}, "groundtruth": "import re"}
+{"metadata": {"task_id": "alibaba_FederatedScope/193"}, "groundtruth": "for p in model.parameters():"}
+{"metadata": {"task_id": "alibaba_FederatedScope/194"}, "groundtruth": "padding=1,"}
+{"metadata": {"task_id": "alibaba_FederatedScope/197"}, "groundtruth": "tmp_loss.detach().to('cpu').numpy())"}
+{"metadata": {"task_id": "alibaba_FederatedScope/199"}, "groundtruth": "for i in range(self.num_of_clients + 1):"}
+{"metadata": {"task_id": "alibaba_FederatedScope/195"}, "groundtruth": "if self.cfg.nbafl.use:"}
+{"metadata": {"task_id": "alibaba_FederatedScope/196"}, "groundtruth": "buffer = self.msg_buffer['eval'][state]"}
+{"metadata": {"task_id": "alibaba_FederatedScope/198"}, "groundtruth": "ctx.num_samples = CtxVar(0, LIFECYCLE.ROUTINE)"}
+{"metadata": {"task_id": "pytorch_rl/0"}, "groundtruth": "for idx in range(self.num_workers):"}
+{"metadata": {"task_id": "pytorch_rl/1"}, "groundtruth": "assert not spec.is_in(td.get(\"action\"))"}
+{"metadata": {"task_id": "pytorch_rl/2"}, "groundtruth": "\"value_network\","}
+{"metadata": {"task_id": "pytorch_rl/3"}, "groundtruth": "assert \"b\" not in td.keys()"}
+{"metadata": {"task_id": "pytorch_rl/5"}, "groundtruth": "in_keys=[(\"next\", \"state\"), (\"next\", \"belief\")],"}
+{"metadata": {"task_id": "pytorch_rl/4"}, "groundtruth": "\"Miscellaneous\","}
+{"metadata": {"task_id": "pytorch_rl/6"}, "groundtruth": "action_dim_gsde, state_dim_gsde = None, None"}
+{"metadata": {"task_id": "pytorch_rl/7"}, "groundtruth": "from .replay_buffer import make_replay_buffer"}
+{"metadata": {"task_id": "pytorch_rl/9"}, "groundtruth": "default=\"LazyMemmapStorage\","}
+{"metadata": {"task_id": "pytorch_rl/8"}, "groundtruth": "if kwargs is None:"}
+{"metadata": {"task_id": "pytorch_rl/10"}, "groundtruth": "tensordict = TensorDict({}, self.batch_size, device=self.device)"}
+{"metadata": {"task_id": "pytorch_rl/14"}, "groundtruth": "grad_action = _tree_reshape(grad_action, ctx.env.batch_size)"}
+{"metadata": {"task_id": "pytorch_rl/11"}, "groundtruth": "support = torch.linspace(vmin, vmax, atoms, dtype=torch.float)"}
+{"metadata": {"task_id": "pytorch_rl/16"}, "groundtruth": "generalized_advantage_estimate,"}
+{"metadata": {"task_id": "pytorch_rl/12"}, "groundtruth": "while n < init_env_steps:"}
+{"metadata": {"task_id": "pytorch_rl/25"}, "groundtruth": "return self"}
+{"metadata": {"task_id": "pytorch_rl/24"}, "groundtruth": "gammas = torch.ones(*gamma.shape, T + 1, 1, device=device, dtype=dtype)"}
+{"metadata": {"task_id": "pytorch_rl/15"}, "groundtruth": ")"}
+{"metadata": {"task_id": "pytorch_rl/13"}, "groundtruth": "observation=UnboundedContinuousTensorSpec("}
+{"metadata": {"task_id": "pytorch_rl/26"}, "groundtruth": "spec[k],"}
+{"metadata": {"task_id": "pytorch_rl/17"}, "groundtruth": "parser = argparse.ArgumentParser("}
+{"metadata": {"task_id": "pytorch_rl/27"}, "groundtruth": "if not hasattr(cfg, \"init_env_steps\"):"}
+{"metadata": {"task_id": "pytorch_rl/21"}, "groundtruth": "return self.__class__("}
+{"metadata": {"task_id": "pytorch_rl/23"}, "groundtruth": "spec = None"}
+{"metadata": {"task_id": "pytorch_rl/28"}, "groundtruth": "prohibited.add(\"done\")"}
+{"metadata": {"task_id": "pytorch_rl/18"}, "groundtruth": "from torchrl.data.utils import DEVICE_TYPING"}
+{"metadata": {"task_id": "pytorch_rl/19"}, "groundtruth": "_has_ts = False"}
+{"metadata": {"task_id": "pytorch_rl/20"}, "groundtruth": "return cfg"}
+{"metadata": {"task_id": "pytorch_rl/22"}, "groundtruth": "children = list(env.transform.transforms.children())"}
+{"metadata": {"task_id": "pytorch_rl/29"}, "groundtruth": "else:"}
+{"metadata": {"task_id": "pytorch_rl/30"}, "groundtruth": "except StopIteration:"}
+{"metadata": {"task_id": "pytorch_rl/31"}, "groundtruth": "out_key = self.out_keys[0]"}
+{"metadata": {"task_id": "pytorch_rl/32"}, "groundtruth": "key = (\"target_\" + key[0], *key[1:])"}
+{"metadata": {"task_id": "pytorch_rl/33"}, "groundtruth": "* mask.to(torch.float),"}
+{"metadata": {"task_id": "pytorch_rl/35"}, "groundtruth": "return tensordict"}
+{"metadata": {"task_id": "pytorch_rl/36"}, "groundtruth": "if tensordict.batch_dims < 1:"}
+{"metadata": {"task_id": "pytorch_rl/37"}, "groundtruth": "from_pixels = kwargs.pop(\"from_pixels\", False)"}
+{"metadata": {"task_id": "pytorch_rl/34"}, "groundtruth": "actor,"}
+{"metadata": {"task_id": "pytorch_rl/38"}, "groundtruth": "param_multiplier = 1"}
+{"metadata": {"task_id": "pytorch_rl/40"}, "groundtruth": "raise TypeError("}
+{"metadata": {"task_id": "pytorch_rl/41"}, "groundtruth": "if msg not in (\"continue\", \"continue_random\"):"}
+{"metadata": {"task_id": "pytorch_rl/39"}, "groundtruth": "self.register_buffer(\"_sep_\".join([module_name, key]), buffer)"}
+{"metadata": {"task_id": "pytorch_rl/42"}, "groundtruth": "key, *keys = jax.random.split(key, np.prod(batch_size) + 1)"}
+{"metadata": {"task_id": "pytorch_rl/43"}, "groundtruth": "def to(self, dest: Union[torch.dtype, DEVICE_TYPING]) -> \"TensorSpec\":"}
+{"metadata": {"task_id": "pytorch_rl/44"}, "groundtruth": "print(i, val)"}
+{"metadata": {"task_id": "pytorch_rl/46"}, "groundtruth": "import platform"}
+{"metadata": {"task_id": "pytorch_rl/48"}, "groundtruth": "assert (p == 0).all()"}
+{"metadata": {"task_id": "pytorch_rl/45"}, "groundtruth": "from functools import wraps"}
+{"metadata": {"task_id": "pytorch_rl/47"}, "groundtruth": "if out_key in tensordict.keys():"}
+{"metadata": {"task_id": "pytorch_rl/49"}, "groundtruth": "from_dim,"}
+{"metadata": {"task_id": "pytorch_rl/53"}, "groundtruth": "if \"_observation_spec\" not in self.__dir__():"}
+{"metadata": {"task_id": "pytorch_rl/50"}, "groundtruth": "print(d)  # trajectories are split automatically in [6 workers x 10 steps]"}
+{"metadata": {"task_id": "pytorch_rl/52"}, "groundtruth": "self.reward_spec = UnboundedContinuousTensorSpec("}
+{"metadata": {"task_id": "pytorch_rl/51"}, "groundtruth": "data = [torch.randint(100, (1,)) for _ in range(size)]"}
+{"metadata": {"task_id": "pytorch_rl/54"}, "groundtruth": "action=_dmcontrol_to_torchrl_spec_transform("}
+{"metadata": {"task_id": "pytorch_rl/55"}, "groundtruth": "assert all("}
+{"metadata": {"task_id": "pytorch_rl/60"}, "groundtruth": "tensordict = tensordict.clone(recurse=False)"}
+{"metadata": {"task_id": "pytorch_rl/58"}, "groundtruth": "\"_\","}
+{"metadata": {"task_id": "pytorch_rl/59"}, "groundtruth": "from _utils_internal import ("}
+{"metadata": {"task_id": "pytorch_rl/61"}, "groundtruth": "self._log_dict[key].append(item)"}
+{"metadata": {"task_id": "pytorch_rl/56"}, "groundtruth": "if self.is_functional and params is None:"}
+{"metadata": {"task_id": "pytorch_rl/62"}, "groundtruth": "num_cells=[64, 64],"}
+{"metadata": {"task_id": "pytorch_rl/57"}, "groundtruth": "import os"}
+{"metadata": {"task_id": "pytorch_rl/64"}, "groundtruth": "for i, video_name in enumerate(os.listdir(videos_dir)):"}
+{"metadata": {"task_id": "pytorch_rl/63"}, "groundtruth": "tensordicts.set("}
+{"metadata": {"task_id": "pytorch_rl/65"}, "groundtruth": "obs = torch.randn(*batch_size, *temporal_size, 3, 64, 64, device=device)"}
+{"metadata": {"task_id": "pytorch_rl/66"}, "groundtruth": "rank=rank,"}
+{"metadata": {"task_id": "pytorch_rl/67"}, "groundtruth": "in_keys=dist_in_keys,"}
+{"metadata": {"task_id": "pytorch_rl/68"}, "groundtruth": "not _has_functorch, reason=f\"functorch not installed: {FUNCTORCH_ERR}\""}
+{"metadata": {"task_id": "pytorch_rl/69"}, "groundtruth": "frames_per_batch=frames_per_batch,"}
+{"metadata": {"task_id": "pytorch_rl/71"}, "groundtruth": "[\"double\", torch.double, \"cpu\"],"}
+{"metadata": {"task_id": "pytorch_rl/72"}, "groundtruth": "), f\"failed: mean={mean}, std={std}, sigma_init={sigma_init}, actual: {sigma.mean()}\""}
+{"metadata": {"task_id": "pytorch_rl/70"}, "groundtruth": "},"}
+{"metadata": {"task_id": "pytorch_rl/73"}, "groundtruth": "err_msg = ("}
+{"metadata": {"task_id": "pytorch_rl/74"}, "groundtruth": "counter = 0"}
+{"metadata": {"task_id": "pytorch_rl/75"}, "groundtruth": "torch.manual_seed(0)"}
+{"metadata": {"task_id": "pytorch_rl/77"}, "groundtruth": "num_envs=num_envs,"}
+{"metadata": {"task_id": "pytorch_rl/78"}, "groundtruth": "state_value,"}
+{"metadata": {"task_id": "pytorch_rl/76"}, "groundtruth": "if not _has_dmc and env_lib is DMControlEnv:"}
+{"metadata": {"task_id": "pytorch_rl/79"}, "groundtruth": "return \"missing\""}
+{"metadata": {"task_id": "pytorch_rl/80"}, "groundtruth": "for b in rb._storage:"}
+{"metadata": {"task_id": "pytorch_rl/81"}, "groundtruth": "out = TransformedEnv(container.base_env)"}
+{"metadata": {"task_id": "pytorch_rl/82"}, "groundtruth": "if not safe and spec_type == \"bounded\":"}
+{"metadata": {"task_id": "pytorch_rl/84"}, "groundtruth": "device=device,"}
+{"metadata": {"task_id": "pytorch_rl/83"}, "groundtruth": "[11.0, -1.0, 7.0, -1.0, 20.0],"}
+{"metadata": {"task_id": "pytorch_rl/90"}, "groundtruth": "elif safe and spec_type == \"bounded\":"}
+{"metadata": {"task_id": "pytorch_rl/89"}, "groundtruth": "scale_mapping=f\"biased_softplus_{default_policy_scale}\","}
+{"metadata": {"task_id": "pytorch_rl/87"}, "groundtruth": "print("}
+{"metadata": {"task_id": "pytorch_rl/92"}, "groundtruth": "if UNSQUEEZE_SINGLETON and not td_clone.ndimension():"}
+{"metadata": {"task_id": "pytorch_rl/91"}, "groundtruth": "print(f\"TensorDict before going through module: {td}\")"}
+{"metadata": {"task_id": "pytorch_rl/88"}, "groundtruth": "[batch_size, temporal_length],"}
+{"metadata": {"task_id": "pytorch_rl/85"}, "groundtruth": "if isinstance(spec, gym.spaces.tuple.Tuple):"}
+{"metadata": {"task_id": "pytorch_rl/95"}, "groundtruth": "[[[2, 4], [3, 5]], [[4, 5], [2, 3]], [[2, 3], [3, 2]]],"}
+{"metadata": {"task_id": "pytorch_rl/93"}, "groundtruth": "return index, {}"}
+{"metadata": {"task_id": "pytorch_rl/96"}, "groundtruth": "params[\"module\", \"1\"] = params[\"module\", \"2\"]"}
+{"metadata": {"task_id": "pytorch_rl/94"}, "groundtruth": "del tdmodule[3]"}
+{"metadata": {"task_id": "pytorch_rl/86"}, "groundtruth": "self.convert_to_functional("}
+{"metadata": {"task_id": "pytorch_rl/97"}, "groundtruth": "0,"}
+{"metadata": {"task_id": "pytorch_rl/98"}, "groundtruth": "f\"type {type(transform)} instead.\""}
+{"metadata": {"task_id": "pytorch_rl/99"}, "groundtruth": "self.loss_components = loss_components"}
+{"metadata": {"task_id": "pytorch_rl/100"}, "groundtruth": "from .ddpg import DDPGLoss"}
+{"metadata": {"task_id": "pytorch_rl/103"}, "groundtruth": "module=module,"}
+{"metadata": {"task_id": "pytorch_rl/101"}, "groundtruth": "self, tensordict: Optional[TensorDictBase] = None, **kwargs"}
+{"metadata": {"task_id": "pytorch_rl/104"}, "groundtruth": "aggregator_class,"}
+{"metadata": {"task_id": "pytorch_rl/105"}, "groundtruth": "actor = Actor("}
+{"metadata": {"task_id": "pytorch_rl/106"}, "groundtruth": "@pytest.mark.skipif(not (_has_dmc and _has_gym), reason=\"gym or dm_control not present\")"}
+{"metadata": {"task_id": "pytorch_rl/102"}, "groundtruth": "\" with a null number of dimensions. Try using a multidimensional\""}
+{"metadata": {"task_id": "pytorch_rl/107"}, "groundtruth": "}"}
+{"metadata": {"task_id": "pytorch_rl/109"}, "groundtruth": "super().__init__(in_keys=in_keys, out_keys=out_keys)"}
+{"metadata": {"task_id": "pytorch_rl/113"}, "groundtruth": "m, s"}
+{"metadata": {"task_id": "pytorch_rl/111"}, "groundtruth": "prc_queue_in,"}
+{"metadata": {"task_id": "pytorch_rl/114"}, "groundtruth": "proof_environment: EnvBase, cfg: \"DictConfig\", device: torch.device  # noqa: F821"}
+{"metadata": {"task_id": "pytorch_rl/108"}, "groundtruth": "del td"}
+{"metadata": {"task_id": "pytorch_rl/115"}, "groundtruth": "torch.manual_seed(seed)"}
+{"metadata": {"task_id": "pytorch_rl/117"}, "groundtruth": "mlp_net_kwargs_net2=value_net_default_kwargs2,"}
+{"metadata": {"task_id": "pytorch_rl/110"}, "groundtruth": "if self.del_keys:"}
+{"metadata": {"task_id": "pytorch_rl/112"}, "groundtruth": "if rank == 0:"}
+{"metadata": {"task_id": "pytorch_rl/119"}, "groundtruth": "egl_display, config_attribs, pointer(egl_cfg), 1, pointer(num_configs)"}
+{"metadata": {"task_id": "pytorch_rl/120"}, "groundtruth": "{"}
+{"metadata": {"task_id": "pytorch_rl/118"}, "groundtruth": "raise ValueError("}
+{"metadata": {"task_id": "pytorch_rl/116"}, "groundtruth": "transform: Optional[d.Transform] = None,"}
+{"metadata": {"task_id": "pytorch_rl/121"}, "groundtruth": "raise"}
+{"metadata": {"task_id": "pytorch_rl/122"}, "groundtruth": "to_dim,"}
+{"metadata": {"task_id": "pytorch_rl/124"}, "groundtruth": "render_kwargs=self.render_kwargs,"}
+{"metadata": {"task_id": "pytorch_rl/123"}, "groundtruth": "self.encoder = nn.ModuleList("}
+{"metadata": {"task_id": "pytorch_rl/127"}, "groundtruth": "dest_device = torch.device(dest)"}
+{"metadata": {"task_id": "pytorch_rl/126"}, "groundtruth": "TanhDelta,"}
+{"metadata": {"task_id": "pytorch_rl/128"}, "groundtruth": "device=self.device,"}
+{"metadata": {"task_id": "pytorch_rl/125"}, "groundtruth": "convnet = models.resnet50(pretrained=False)"}
+{"metadata": {"task_id": "pytorch_rl/129"}, "groundtruth": "\"belief\","}
+{"metadata": {"task_id": "pytorch_rl/130"}, "groundtruth": "os.makedirs(self.build_temp)"}
+{"metadata": {"task_id": "pytorch_rl/131"}, "groundtruth": "def _set_seed_initial(self, seed: int) -> None:  # noqa: F811"}
+{"metadata": {"task_id": "pytorch_rl/132"}, "groundtruth": "reset_kwargs = data"}
+{"metadata": {"task_id": "pytorch_rl/133"}, "groundtruth": "self.update(loc, scale)"}
+{"metadata": {"task_id": "pytorch_rl/134"}, "groundtruth": "reset_at_each_iter=False,"}
+{"metadata": {"task_id": "pytorch_rl/135"}, "groundtruth": "tc_sample = mystorage.get(idx)"}
+{"metadata": {"task_id": "pytorch_rl/136"}, "groundtruth": "params_mean = torch.randn_like(action) / 10"}
+{"metadata": {"task_id": "pytorch_rl/138"}, "groundtruth": "if p.grad is not None and p.grad.norm() > 0.0:"}
+{"metadata": {"task_id": "pytorch_rl/137"}, "groundtruth": "return out"}
+{"metadata": {"task_id": "pytorch_rl/139"}, "groundtruth": "self.out_keys = out_keys"}
+{"metadata": {"task_id": "pytorch_rl/141"}, "groundtruth": ".to_tensordict()"}
+{"metadata": {"task_id": "pytorch_rl/142"}, "groundtruth": "interval = maxi - mini"}
+{"metadata": {"task_id": "pytorch_rl/140"}, "groundtruth": "tsf_loc = ("}
+{"metadata": {"task_id": "pytorch_rl/143"}, "groundtruth": ".select(*self.qvalue_network.in_keys)"}
+{"metadata": {"task_id": "pytorch_rl/144"}, "groundtruth": "self.gSDE = gSDE"}
+{"metadata": {"task_id": "pytorch_rl/146"}, "groundtruth": "postproc = self.postprocs"}
+{"metadata": {"task_id": "pytorch_rl/145"}, "groundtruth": "f\"The last {self.ndim} of the extended shape must match the\""}
+{"metadata": {"task_id": "pytorch_rl/147"}, "groundtruth": "cls,"}
+{"metadata": {"task_id": "pytorch_rl/152"}, "groundtruth": "return gym.make(env_name, render_mode=\"rgb_array\")"}
+{"metadata": {"task_id": "pytorch_rl/153"}, "groundtruth": "spec=spec,"}
+{"metadata": {"task_id": "pytorch_rl/154"}, "groundtruth": "\"b\": torch.randn(100, 1),"}
+{"metadata": {"task_id": "pytorch_rl/151"}, "groundtruth": "_reward_count,"}
+{"metadata": {"task_id": "pytorch_rl/150"}, "groundtruth": "storage = LazyMemmapStorage(S)"}
+{"metadata": {"task_id": "pytorch_rl/155"}, "groundtruth": "batch_size=["}
+{"metadata": {"task_id": "pytorch_rl/148"}, "groundtruth": "spec=None,"}
+{"metadata": {"task_id": "pytorch_rl/156"}, "groundtruth": "]"}
+{"metadata": {"task_id": "pytorch_rl/157"}, "groundtruth": "Trainer,"}
+{"metadata": {"task_id": "pytorch_rl/149"}, "groundtruth": "sampled_tensordict[\"reward\"]"}
+{"metadata": {"task_id": "pytorch_rl/158"}, "groundtruth": "next_val_key=\"state_value\","}
+{"metadata": {"task_id": "pytorch_rl/159"}, "groundtruth": "SafeProbabilisticSequential("}
+{"metadata": {"task_id": "pytorch_rl/160"}, "groundtruth": "def __init__(self, max_steps: int = 5, **kwargs):"}
+{"metadata": {"task_id": "pytorch_rl/161"}, "groundtruth": "if dtype is not None:"}
+{"metadata": {"task_id": "pytorch_rl/164"}, "groundtruth": "advantage = self.advantage(x)"}
+{"metadata": {"task_id": "pytorch_rl/163"}, "groundtruth": "f\"The hook collection {dest} is not recognised. Choose from:\""}
+{"metadata": {"task_id": "pytorch_rl/162"}, "groundtruth": "env.close()"}
+{"metadata": {"task_id": "pytorch_rl/165"}, "groundtruth": "s = rb.sample(5)"}
+{"metadata": {"task_id": "pytorch_rl/166"}, "groundtruth": "math.log1p(self.clip_epsilon),"}
+{"metadata": {"task_id": "pytorch_rl/168"}, "groundtruth": "assert counter == len(loss_fn._actor_network_params.keys(True, True))"}
+{"metadata": {"task_id": "pytorch_rl/167"}, "groundtruth": "if _spec is None:"}
+{"metadata": {"task_id": "pytorch_rl/169"}, "groundtruth": "f\"Cannot copy a storage of type {type(_storage)} onto another of type {type(self._storage)}\""}
+{"metadata": {"task_id": "pytorch_rl/170"}, "groundtruth": "assert (ts.encode(ts.to_numpy(r)) == r).all()"}
+{"metadata": {"task_id": "pytorch_rl/171"}, "groundtruth": "policy: SafeModule,"}
+{"metadata": {"task_id": "pytorch_rl/173"}, "groundtruth": "self._policy_dict[_device].load_state_dict("}
+{"metadata": {"task_id": "pytorch_rl/177"}, "groundtruth": "A2CModelConfig,"}
+{"metadata": {"task_id": "pytorch_rl/175"}, "groundtruth": "dest_device = self.device"}
+{"metadata": {"task_id": "pytorch_rl/178"}, "groundtruth": "f\"value key '{value_key}' not found in value network out_keys.\""}
+{"metadata": {"task_id": "pytorch_rl/180"}, "groundtruth": "\"depth\": 0,"}
+{"metadata": {"task_id": "pytorch_rl/172"}, "groundtruth": "tensordict,"}
+{"metadata": {"task_id": "pytorch_rl/181"}, "groundtruth": "kernel_size=_kernel,"}
+{"metadata": {"task_id": "pytorch_rl/174"}, "groundtruth": "print(\"projected action: \\n\", env.action_spec.project(action))"}
+{"metadata": {"task_id": "pytorch_rl/182"}, "groundtruth": "raise RuntimeError("}
+{"metadata": {"task_id": "pytorch_rl/176"}, "groundtruth": "env.set_seed(seed)"}
+{"metadata": {"task_id": "pytorch_rl/186"}, "groundtruth": "from tensordict import TensorDict"}
+{"metadata": {"task_id": "pytorch_rl/185"}, "groundtruth": "self._create_td()"}
+{"metadata": {"task_id": "pytorch_rl/187"}, "groundtruth": "(255 * (pixels * stats[\"scale\"] + stats[\"loc\"]))"}
+{"metadata": {"task_id": "pytorch_rl/179"}, "groundtruth": "rollout_bis = rssm_rollout(tensordict_bis)"}
+{"metadata": {"task_id": "pytorch_rl/184"}, "groundtruth": "args = parser.parse_args()"}
+{"metadata": {"task_id": "pytorch_rl/189"}, "groundtruth": "plt.title(\"value\")"}
+{"metadata": {"task_id": "pytorch_rl/183"}, "groundtruth": "TensorDict("}
+{"metadata": {"task_id": "pytorch_rl/190"}, "groundtruth": "from torchrl.envs.transforms.transforms import ("}
+{"metadata": {"task_id": "pytorch_rl/188"}, "groundtruth": "@pytest.mark.parametrize(\"lazy\", [True, False])"}
+{"metadata": {"task_id": "pytorch_rl/191"}, "groundtruth": "scale = advantage.std().clamp_min(1e-6).item()"}
+{"metadata": {"task_id": "pytorch_rl/192"}, "groundtruth": "if isinstance(observation_spec, (gym.spaces.dict.Dict,)):"}
+{"metadata": {"task_id": "pytorch_rl/193"}, "groundtruth": "param_name,"}
+{"metadata": {"task_id": "pytorch_rl/195"}, "groundtruth": "target_return = tensordict.get(self.value_target_key)"}
+{"metadata": {"task_id": "pytorch_rl/196"}, "groundtruth": "self.__dict__[\"_input_spec\"] = None"}
+{"metadata": {"task_id": "pytorch_rl/197"}, "groundtruth": "tdrollout = []"}
+{"metadata": {"task_id": "pytorch_rl/194"}, "groundtruth": "out = step_mdp("}
+{"metadata": {"task_id": "pytorch_rl/199"}, "groundtruth": "video=video_wrong_format,"}
+{"metadata": {"task_id": "pytorch_rl/198"}, "groundtruth": "\"expln\": expln,"}
+{"metadata": {"task_id": "opendilab_ACE/0"}, "groundtruth": "Squeeze data from tuple, list or dict to single object"}
+{"metadata": {"task_id": "opendilab_ACE/2"}, "groundtruth": "def _func():"}
+{"metadata": {"task_id": "opendilab_ACE/1"}, "groundtruth": "- logit (:obj:`torch.FloatTensor`): :math:`(B, M)`, where B is batch size and M is ``action_shape``"}
+{"metadata": {"task_id": "opendilab_ACE/4"}, "groundtruth": "N = logits.shape[1]"}
+{"metadata": {"task_id": "opendilab_ACE/3"}, "groundtruth": "add: str,"}
+{"metadata": {"task_id": "opendilab_ACE/6"}, "groundtruth": "expert_cfg, seed=seed, env=env_fn, auto=True, create_cfg=expert_create_cfg, save_cfg=True"}
+{"metadata": {"task_id": "opendilab_ACE/7"}, "groundtruth": "elif isinstance(elem, tuple) and hasattr(elem, '_fields'):  # namedtuple"}
+{"metadata": {"task_id": "opendilab_ACE/5"}, "groundtruth": "from ding.utils import import_module, read_file, save_file, LockContext, LockContextType, LEAGUE_REGISTRY, \\"}
+{"metadata": {"task_id": "opendilab_ACE/16"}, "groundtruth": "Overview:"}
+{"metadata": {"task_id": "opendilab_ACE/18"}, "groundtruth": "The user can define and use customized network model but must obey the same inferface definition indicated \\"}
+{"metadata": {"task_id": "opendilab_ACE/12"}, "groundtruth": "hpc_action = hpc_action.cuda()"}
+{"metadata": {"task_id": "opendilab_ACE/19"}, "groundtruth": "data = diff_shape_collate(data)"}
+{"metadata": {"task_id": "opendilab_ACE/10"}, "groundtruth": "one_phase_step=2000,"}
+{"metadata": {"task_id": "opendilab_ACE/9"}, "groundtruth": "return _math_binary(lambda x, y: x ** y, index)"}
+{"metadata": {"task_id": "opendilab_ACE/20"}, "groundtruth": ">>> inputs = torch.randn(4, 64)"}
+{"metadata": {"task_id": "opendilab_ACE/8"}, "groundtruth": "Init the Rainbow Model according to arguments."}
+{"metadata": {"task_id": "opendilab_ACE/11"}, "groundtruth": "- logit (:obj:`torch.FloatTensor`): :math:`(B, N)`"}
+{"metadata": {"task_id": "opendilab_ACE/17"}, "groundtruth": ")"}
+{"metadata": {"task_id": "opendilab_ACE/21"}, "groundtruth": "- data (:obj:`List[Dict[str, Any]`): The trajectory data(a list of transition), each element is the same \\"}
+{"metadata": {"task_id": "opendilab_ACE/15"}, "groundtruth": "while len(hpc_fns[fn_name]) > per_fn_limit:"}
+{"metadata": {"task_id": "opendilab_ACE/14"}, "groundtruth": "pass"}
+{"metadata": {"task_id": "opendilab_ACE/22"}, "groundtruth": "data = generate_data_list(20)"}
+{"metadata": {"task_id": "opendilab_ACE/23"}, "groundtruth": "N = 10"}
+{"metadata": {"task_id": "opendilab_ACE/13"}, "groundtruth": "12 | ``learn.``          bool        False          | Determine whether to use        | Temperature parameter"}
+{"metadata": {"task_id": "opendilab_ACE/25"}, "groundtruth": "),"}
+{"metadata": {"task_id": "opendilab_ACE/26"}, "groundtruth": "print('epoch: {}, original qntd rescale cost time: {}'.format(i, time.time() - t))"}
+{"metadata": {"task_id": "opendilab_ACE/24"}, "groundtruth": "from .base_serial_collector import CachePool, TrajBuffer"}
+{"metadata": {"task_id": "opendilab_ACE/27"}, "groundtruth": "token: Optional[str] = None,"}
+{"metadata": {"task_id": "opendilab_ACE/28"}, "groundtruth": "- values (:obj:`torch.FloatTensor`): :math:`(T+1, B)`"}
+{"metadata": {"task_id": "opendilab_ACE/29"}, "groundtruth": "from typing import Tuple"}
+{"metadata": {"task_id": "opendilab_ACE/30"}, "groundtruth": "_time_1 = time.time()"}
+{"metadata": {"task_id": "opendilab_ACE/33"}, "groundtruth": "r\"\"\""}
+{"metadata": {"task_id": "opendilab_ACE/32"}, "groundtruth": "return default_func(233)(callback)(a, b)"}
+{"metadata": {"task_id": "opendilab_ACE/31"}, "groundtruth": "from .ppo import PPOPolicy, PPOOffPolicy"}
+{"metadata": {"task_id": "opendilab_ACE/35"}, "groundtruth": "|                                                     |                                   | DDPG paper, Guassian"}
+{"metadata": {"task_id": "opendilab_ACE/36"}, "groundtruth": "elif isinstance(elem, int_classes):"}
+{"metadata": {"task_id": "opendilab_ACE/37"}, "groundtruth": "return Loader("}
+{"metadata": {"task_id": "opendilab_ACE/38"}, "groundtruth": "def send_learn_info(self, learn_info: dict) -> None:"}
+{"metadata": {"task_id": "opendilab_ACE/34"}, "groundtruth": "if isinstance(replay_path, str):"}
+{"metadata": {"task_id": "opendilab_ACE/39"}, "groundtruth": "- activation (:obj:`Optional[nn.Module]`):"}
+{"metadata": {"task_id": "opendilab_ACE/40"}, "groundtruth": "self.d_k = d_k"}
+{"metadata": {"task_id": "opendilab_ACE/41"}, "groundtruth": "dst_model,"}
+{"metadata": {"task_id": "opendilab_ACE/42"}, "groundtruth": "naive coordinator will pass when need to notify_fail_learner_task"}
+{"metadata": {"task_id": "opendilab_ACE/46"}, "groundtruth": "assert _norm({'a': 2}) == 16"}
+{"metadata": {"task_id": "opendilab_ACE/45"}, "groundtruth": "\"Replay buffer's data can only train for {} steps. \".format(i) +"}
+{"metadata": {"task_id": "opendilab_ACE/44"}, "groundtruth": "self.historical_players.append(hp)"}
+{"metadata": {"task_id": "opendilab_ACE/52"}, "groundtruth": "entropy = pd.neglogp(logit2)"}
+{"metadata": {"task_id": "opendilab_ACE/53"}, "groundtruth": "including at least ``action``."}
+{"metadata": {"task_id": "opendilab_ACE/49"}, "groundtruth": "self._traj_buffer = {env_id: TrajBuffer(self._traj_len) for env_id in range(self._env_num)}"}
+{"metadata": {"task_id": "opendilab_ACE/48"}, "groundtruth": "if not all_enemies_health:"}
+{"metadata": {"task_id": "opendilab_ACE/54"}, "groundtruth": "self._path_policy = cfg.path_policy  # path to save policy"}
+{"metadata": {"task_id": "opendilab_ACE/47"}, "groundtruth": "close_slave_event.wait()"}
+{"metadata": {"task_id": "opendilab_ACE/51"}, "groundtruth": "def test_sequence_mask():"}
+{"metadata": {"task_id": "opendilab_ACE/50"}, "groundtruth": "value_loss = F.mse_loss(output['value'], data['value'])"}
+{"metadata": {"task_id": "opendilab_ACE/43"}, "groundtruth": "print(\"target problem: B = {}, M = {}, N = {}, H = {}, W = {}\".format(B, M, N, H, W))"}
+{"metadata": {"task_id": "opendilab_ACE/55"}, "groundtruth": "from ding.policy import create_policy, PolicyFactory"}
+{"metadata": {"task_id": "opendilab_ACE/56"}, "groundtruth": "elif isinstance(elem, float):"}
+{"metadata": {"task_id": "opendilab_ACE/57"}, "groundtruth": "Add noise to collector's action output; Do clips on both generated noise and action after adding noise."}
+{"metadata": {"task_id": "opendilab_ACE/58"}, "groundtruth": "duration = sum([d['time'] for d in self._episode_info])"}
+{"metadata": {"task_id": "opendilab_ACE/59"}, "groundtruth": "actual=repr(self.__task_status.name),"}
+{"metadata": {"task_id": "opendilab_ACE/60"}, "groundtruth": "'d': {"}
+{"metadata": {"task_id": "opendilab_ACE/61"}, "groundtruth": "from .base_serial_collector import ISerialCollector, CachePool, TrajBuffer, INF, to_tensor_transitions"}
+{"metadata": {"task_id": "opendilab_ACE/62"}, "groundtruth": "_name = \"BasePlayer\"  # override this variable for sub-class player"}
+{"metadata": {"task_id": "opendilab_ACE/63"}, "groundtruth": "'g': 4,"}
+{"metadata": {"task_id": "opendilab_ACE/64"}, "groundtruth": "}"}
+{"metadata": {"task_id": "opendilab_ACE/65"}, "groundtruth": "shuffle=False,"}
+{"metadata": {"task_id": "opendilab_ACE/66"}, "groundtruth": "error_task_start=self._error_new_task,"}
+{"metadata": {"task_id": "opendilab_ACE/67"}, "groundtruth": "Arguments:"}
+{"metadata": {"task_id": "opendilab_ACE/68"}, "groundtruth": "stop, reward = evaluator.eval(learner.save_checkpoint, learner.train_iter, collector.envstep)"}
+{"metadata": {"task_id": "opendilab_ACE/69"}, "groundtruth": "config = [deepcopy(pendulum_cql_default_config), deepcopy(pendulum_cql_default_create_config)]"}
+{"metadata": {"task_id": "opendilab_ACE/70"}, "groundtruth": "- indices (:obj:`List[int]`): A list including all the sample indices."}
+{"metadata": {"task_id": "opendilab_ACE/71"}, "groundtruth": "actions = {}"}
+{"metadata": {"task_id": "opendilab_ACE/72"}, "groundtruth": "from .nn_test_helper import is_differentiable"}
+{"metadata": {"task_id": "opendilab_ACE/73"}, "groundtruth": "cur_metrics = metrics"}
+{"metadata": {"task_id": "opendilab_ACE/74"}, "groundtruth": "loss.backward()"}
+{"metadata": {"task_id": "opendilab_ACE/75"}, "groundtruth": "return _result"}
+{"metadata": {"task_id": "opendilab_ACE/76"}, "groundtruth": "import torch"}
+{"metadata": {"task_id": "opendilab_ACE/78"}, "groundtruth": "exit(-1)"}
+{"metadata": {"task_id": "opendilab_ACE/77"}, "groundtruth": "alpha=0.99,"}
+{"metadata": {"task_id": "opendilab_ACE/79"}, "groundtruth": "if done:"}
+{"metadata": {"task_id": "opendilab_ACE/81"}, "groundtruth": "q_nstep_td_data(ori_q, ori_next_n_q, ori_action, ori_next_n_action, ori_reward, ori_done, ori_weight), gamma, T"}
+{"metadata": {"task_id": "opendilab_ACE/80"}, "groundtruth": "from collections import namedtuple, deque"}
+{"metadata": {"task_id": "opendilab_ACE/82"}, "groundtruth": "step_time=0.01,"}
+{"metadata": {"task_id": "opendilab_ACE/83"}, "groundtruth": "def test_atoc():"}
+{"metadata": {"task_id": "opendilab_ACE/84"}, "groundtruth": "config = [deepcopy(cooperative_navigation_coma_config), deepcopy(cooperative_navigation_coma_create_config)]"}
+{"metadata": {"task_id": "opendilab_ACE/85"}, "groundtruth": "learning_rate=0.001,"}
+{"metadata": {"task_id": "opendilab_ACE/87"}, "groundtruth": "self._env.launch()"}
+{"metadata": {"task_id": "opendilab_ACE/88"}, "groundtruth": "aux_loss_weight=dict("}
+{"metadata": {"task_id": "opendilab_ACE/89"}, "groundtruth": "return size + idx"}
+{"metadata": {"task_id": "opendilab_ACE/86"}, "groundtruth": "assert [type(item) for _, item in err.errors] == [TypeError, TypeError]"}
+{"metadata": {"task_id": "opendilab_ACE/90"}, "groundtruth": "if self.mixer:"}
+{"metadata": {"task_id": "opendilab_ACE/91"}, "groundtruth": "if windows_flag:"}
+{"metadata": {"task_id": "opendilab_ACE/92"}, "groundtruth": ":self.n_agents] & ~medivac_mask  # heal action"}
+{"metadata": {"task_id": "opendilab_ACE/94"}, "groundtruth": "collect=dict("}
+{"metadata": {"task_id": "opendilab_ACE/93"}, "groundtruth": "learning_rate=0.0005,"}
+{"metadata": {"task_id": "opendilab_ACE/95"}, "groundtruth": "policy: str,"}
+{"metadata": {"task_id": "opendilab_ACE/96"}, "groundtruth": "import time"}
+{"metadata": {"task_id": "opendilab_ACE/97"}, "groundtruth": "reward = t.info['final_eval_reward']"}
+{"metadata": {"task_id": "opendilab_ACE/98"}, "groundtruth": "(6.6, 13.2),"}
+{"metadata": {"task_id": "opendilab_ACE/99"}, "groundtruth": "else:"}
+{"metadata": {"task_id": "opendilab_ACE/100"}, "groundtruth": "except Exception:"}
+{"metadata": {"task_id": "opendilab_ACE/101"}, "groundtruth": "coordinator = Coordinator(setup_config)"}
+{"metadata": {"task_id": "opendilab_ACE/102"}, "groundtruth": "_norm = lcmp(2, '<', norm(item('a')), \"<=\", 5)"}
+{"metadata": {"task_id": "opendilab_ACE/103"}, "groundtruth": "hpc_weight = hpc_weight.cuda()"}
+{"metadata": {"task_id": "opendilab_ACE/104"}, "groundtruth": "from ding.utils import find_free_port"}
+{"metadata": {"task_id": "opendilab_ACE/105"}, "groundtruth": "from typing import Any"}
+{"metadata": {"task_id": "opendilab_ACE/107"}, "groundtruth": "with pytest.raises(ValueError):"}
+{"metadata": {"task_id": "opendilab_ACE/106"}, "groundtruth": "raise ValueError('Either int or float should be allowed.')"}
+{"metadata": {"task_id": "opendilab_ACE/109"}, "groundtruth": "with timer:"}
+{"metadata": {"task_id": "opendilab_ACE/110"}, "groundtruth": "self._last_eval_iter = train_iter"}
+{"metadata": {"task_id": "opendilab_ACE/108"}, "groundtruth": "return self.actor_critic(x, mode='compute_actor')"}
+{"metadata": {"task_id": "opendilab_ACE/111"}, "groundtruth": "- num_quantiles (:obj:`int`): Number of quantiles in the prediction distribution."}
+{"metadata": {"task_id": "opendilab_ACE/112"}, "groundtruth": "_init_collect, _forward_collect, _reset_collect, _process_transition, _init_eval, _forward_eval\\"}
+{"metadata": {"task_id": "opendilab_ACE/113"}, "groundtruth": "- necessary: ``cur_lr``, ``total_loss``, ``policy_loss`,``value_loss``,``entropy_loss``"}
+{"metadata": {"task_id": "opendilab_ACE/114"}, "groundtruth": "type='exp',"}
+{"metadata": {"task_id": "opendilab_ACE/118"}, "groundtruth": "'d': 6,"}
+{"metadata": {"task_id": "opendilab_ACE/117"}, "groundtruth": "from ding.model import model_wrap"}
+{"metadata": {"task_id": "opendilab_ACE/116"}, "groundtruth": "global_obs_shape: int,"}
+{"metadata": {"task_id": "opendilab_ACE/119"}, "groundtruth": "create_cfg.policy.type = create_cfg.policy.type + '_command'"}
+{"metadata": {"task_id": "opendilab_ACE/115"}, "groundtruth": "actor_head_hidden_size=embedding_size,"}
+{"metadata": {"task_id": "opendilab_ACE/120"}, "groundtruth": "assert conn.is_connected"}
+{"metadata": {"task_id": "opendilab_ACE/121"}, "groundtruth": "import random"}
+{"metadata": {"task_id": "opendilab_ACE/122"}, "groundtruth": "- buffer_id (:obj:`str`): the buffer_id of buffer to add info to"}
+{"metadata": {"task_id": "opendilab_ACE/124"}, "groundtruth": "'player_id': active_player_id,"}
+{"metadata": {"task_id": "opendilab_ACE/125"}, "groundtruth": "raise err"}
+{"metadata": {"task_id": "opendilab_ACE/123"}, "groundtruth": "Init eval model with argmax strategy and the hidden_state plugin."}
+{"metadata": {"task_id": "opendilab_ACE/126"}, "groundtruth": "M, N = s1.shape[0], s2.shape[0]"}
+{"metadata": {"task_id": "opendilab_ACE/127"}, "groundtruth": "self._gamma = self._cfg.discount_factor  # necessary for parallel"}
+{"metadata": {"task_id": "opendilab_ACE/128"}, "groundtruth": "Returns:"}
+{"metadata": {"task_id": "opendilab_ACE/129"}, "groundtruth": "game_steps_per_episode=self.game_steps_per_episode,"}
+{"metadata": {"task_id": "opendilab_ACE/130"}, "groundtruth": "class TestBattleRecordDict:"}
+{"metadata": {"task_id": "opendilab_ACE/131"}, "groundtruth": "if ding.enable_hpc_rl:"}
+{"metadata": {"task_id": "opendilab_ACE/132"}, "groundtruth": "t.close()"}
+{"metadata": {"task_id": "opendilab_ACE/133"}, "groundtruth": "\"map_type\": \"marines\","}
+{"metadata": {"task_id": "opendilab_ACE/134"}, "groundtruth": "- value_wight(:obj:`float`): The weight of value loss in total loss"}
+{"metadata": {"task_id": "opendilab_ACE/136"}, "groundtruth": "- timestep (:obj:`namedtuple`): Output after env step, including at least ['obs', 'reward', 'done'] \\"}
+{"metadata": {"task_id": "opendilab_ACE/135"}, "groundtruth": "assert _loader(0.999) == 0.999"}
+{"metadata": {"task_id": "opendilab_ACE/137"}, "groundtruth": "hpc_qntd_rescale = hpc_qntd_rescale.cuda()"}
+{"metadata": {"task_id": "opendilab_ACE/138"}, "groundtruth": "False,"}
+{"metadata": {"task_id": "opendilab_ACE/139"}, "groundtruth": "action = action.reshape(T * B, A).unsqueeze(-1)"}
+{"metadata": {"task_id": "opendilab_ACE/140"}, "groundtruth": "collect_demo_data("}
+{"metadata": {"task_id": "opendilab_ACE/141"}, "groundtruth": "from ding.config import read_config, compile_config"}
+{"metadata": {"task_id": "opendilab_ACE/142"}, "groundtruth": "obs['states'] = obs['states'].index_select(1, entity_ind)"}
+{"metadata": {"task_id": "opendilab_ACE/144"}, "groundtruth": "'reward_std': np.std(self._episode_result),"}
+{"metadata": {"task_id": "opendilab_ACE/143"}, "groundtruth": "if isinstance(obs_shape, int):"}
+{"metadata": {"task_id": "opendilab_ACE/145"}, "groundtruth": "return step_fn()"}
+{"metadata": {"task_id": "opendilab_ACE/146"}, "groundtruth": "ori_loss.backward()"}
+{"metadata": {"task_id": "opendilab_ACE/148"}, "groundtruth": "Returning the combination dictionry."}
+{"metadata": {"task_id": "opendilab_ACE/147"}, "groundtruth": "p.total_agent_step = ONE_PHASE_STEP + 1"}
+{"metadata": {"task_id": "opendilab_ACE/150"}, "groundtruth": "elif task_name == 'learner_start_task':"}
+{"metadata": {"task_id": "opendilab_ACE/149"}, "groundtruth": "SMACRewardInfo = SMACACEEnv.SMACRewardInfo"}
+{"metadata": {"task_id": "opendilab_ACE/151"}, "groundtruth": "os.popen('rm -rf env_*_*')"}
+{"metadata": {"task_id": "opendilab_ACE/152"}, "groundtruth": "s.update(meta)"}
+{"metadata": {"task_id": "opendilab_ACE/153"}, "groundtruth": "type=str,"}
+{"metadata": {"task_id": "opendilab_ACE/154"}, "groundtruth": "'priority': td_error_per_sample.abs().tolist(),"}
+{"metadata": {"task_id": "opendilab_ACE/155"}, "groundtruth": "{"}
+{"metadata": {"task_id": "opendilab_ACE/156"}, "groundtruth": "raise NotImplementedError"}
+{"metadata": {"task_id": "opendilab_ACE/157"}, "groundtruth": "logging.info("}
+{"metadata": {"task_id": "opendilab_ACE/158"}, "groundtruth": "config = [deepcopy(cooperative_navigation_wqmix_config), deepcopy(cooperative_navigation_wqmix_create_config)]"}
+{"metadata": {"task_id": "opendilab_ACE/159"}, "groundtruth": "- output (:obj:`Dict[int, Dict[str,Any]]`): Dict of predicting policy_output(logit, action) for each env."}
+{"metadata": {"task_id": "opendilab_ACE/160"}, "groundtruth": "action[0] = 'block'"}
+{"metadata": {"task_id": "opendilab_ACE/161"}, "groundtruth": "path = 'model.pt'"}
+{"metadata": {"task_id": "opendilab_ACE/163"}, "groundtruth": "self.__task_complete(result)"}
+{"metadata": {"task_id": "opendilab_ACE/162"}, "groundtruth": "can be used for training directly. A train sample can be a processed transition(DQN with nstep TD) \\"}
+{"metadata": {"task_id": "opendilab_ACE/164"}, "groundtruth": "__init__, step"}
+{"metadata": {"task_id": "opendilab_ACE/165"}, "groundtruth": "dns_name = replica_conn.split(\":\")[0]"}
+{"metadata": {"task_id": "opendilab_ACE/166"}, "groundtruth": "\"b_race\": \"P\","}
+{"metadata": {"task_id": "opendilab_ACE/167"}, "groundtruth": "from ding.utils import lists_to_dicts, SequenceType"}
+{"metadata": {"task_id": "opendilab_ACE/169"}, "groundtruth": "time.sleep(0.1)"}
+{"metadata": {"task_id": "opendilab_ACE/170"}, "groundtruth": "},"}
+{"metadata": {"task_id": "opendilab_ACE/168"}, "groundtruth": "assert self.intrinsic_reward_type in ['add', 'new', 'assign']"}
+{"metadata": {"task_id": "opendilab_ACE/172"}, "groundtruth": "'data': json.dumps(d)"}
+{"metadata": {"task_id": "opendilab_ACE/171"}, "groundtruth": "try:"}
+{"metadata": {"task_id": "opendilab_ACE/173"}, "groundtruth": "if isinstance(left_reward, torch.Tensor):"}
+{"metadata": {"task_id": "opendilab_ACE/176"}, "groundtruth": "'body': json.dumps({\"success\": True}),"}
+{"metadata": {"task_id": "opendilab_ACE/175"}, "groundtruth": "assert not self._eval_flag"}
+{"metadata": {"task_id": "opendilab_ACE/177"}, "groundtruth": "Execute parameter updates with ``'compute_actor'`` mode"}
+{"metadata": {"task_id": "opendilab_ACE/178"}, "groundtruth": "ip = s.getsockname()[0]"}
+{"metadata": {"task_id": "opendilab_ACE/174"}, "groundtruth": "Return the decompressed original data (lz4 compressor)."}
+{"metadata": {"task_id": "opendilab_ACE/179"}, "groundtruth": "hpc_weight = ori_weight.clone().detach()"}
+{"metadata": {"task_id": "opendilab_ACE/180"}, "groundtruth": "assert _loader(1) == 0.5"}
+{"metadata": {"task_id": "opendilab_ACE/181"}, "groundtruth": "from typing import Type"}
+{"metadata": {"task_id": "opendilab_ACE/182"}, "groundtruth": "from ding.rl_utils import v_1step_td_data, v_1step_td_error, get_train_sample"}
+{"metadata": {"task_id": "opendilab_ACE/184"}, "groundtruth": "_, idx = model(data)"}
+{"metadata": {"task_id": "opendilab_ACE/183"}, "groundtruth": "info = {'priority': [], 'replay_unique_id': [], 'replay_buffer_idx': []}"}
+{"metadata": {"task_id": "opendilab_ACE/185"}, "groundtruth": "self._env.seed(self._seed + np_seed)"}
+{"metadata": {"task_id": "opendilab_ACE/186"}, "groundtruth": "dataset = create_dataset(cfg)"}
+{"metadata": {"task_id": "opendilab_ACE/187"}, "groundtruth": ">>> torch.Size([4, 64])"}
+{"metadata": {"task_id": "opendilab_ACE/188"}, "groundtruth": "return out"}
+{"metadata": {"task_id": "opendilab_ACE/189"}, "groundtruth": "STARTED = 0x12  # doc: Task started, initialization is completed."}
+{"metadata": {"task_id": "opendilab_ACE/190"}, "groundtruth": "embedding_size: int,"}
+{"metadata": {"task_id": "opendilab_ACE/191"}, "groundtruth": "- obs (:obj:`Any`): Env observation"}
+{"metadata": {"task_id": "opendilab_ACE/193"}, "groundtruth": "def __check_channel(self, func: Callable[[], Any]) -> Callable[[], Any]:"}
+{"metadata": {"task_id": "opendilab_ACE/192"}, "groundtruth": "__init__, __call__"}
+{"metadata": {"task_id": "opendilab_ACE/194"}, "groundtruth": "def create_evaluator_env_cfg(cfg: dict) -> List[dict]:"}
+{"metadata": {"task_id": "opendilab_ACE/195"}, "groundtruth": "| in the support set."}
+{"metadata": {"task_id": "opendilab_ACE/196"}, "groundtruth": "self._logger.error(\"Failed to sync with server, message: {}\".format(message))"}
+{"metadata": {"task_id": "opendilab_ACE/197"}, "groundtruth": "return super()._forward_learn(data)"}
+{"metadata": {"task_id": "opendilab_ACE/198"}, "groundtruth": "0"}
+{"metadata": {"task_id": "opendilab_ACE/199"}, "groundtruth": "code=CommonErrorCode.SUCCESS,"}

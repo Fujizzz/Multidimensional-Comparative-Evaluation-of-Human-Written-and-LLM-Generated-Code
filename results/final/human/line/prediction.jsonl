@@ -1,0 +1,1600 @@
+{"metadata": {"task_id": "huggingface_diffusers/0"}, "prediction": "StableDiffusionInpaintPipelineLegacy,"}
+{"metadata": {"task_id": "huggingface_diffusers/3"}, "prediction": "import os"}
+{"metadata": {"task_id": "huggingface_diffusers/4"}, "prediction": "timesteps: torch.IntTensor,"}
+{"metadata": {"task_id": "huggingface_diffusers/2"}, "prediction": "\"Run validation every X epochs. Validation consists of running the prompt\""}
+{"metadata": {"task_id": "huggingface_diffusers/5"}, "prediction": "return image"}
+{"metadata": {"task_id": "huggingface_diffusers/7"}, "prediction": ")"}
+{"metadata": {"task_id": "huggingface_diffusers/8"}, "prediction": "assert np.abs(image_from_tuple_slice.flatten() - expected_slice).max() < 1e-2"}
+{"metadata": {"task_id": "huggingface_diffusers/1"}, "prediction": "requires_backends(self, [\"torch\", \"transformers\", \"k_diffusion\"])"}
+{"metadata": {"task_id": "huggingface_diffusers/6"}, "prediction": "self.model_save_dir = kwargs.get(\"model_save_dir\", None)"}
+{"metadata": {"task_id": "huggingface_diffusers/9"}, "prediction": "):"}
+{"metadata": {"task_id": "huggingface_diffusers/13"}, "prediction": "out_channels: int,"}
+{"metadata": {"task_id": "huggingface_diffusers/12"}, "prediction": "def from_config(cls, *args, **kwargs):"}
+{"metadata": {"task_id": "huggingface_diffusers/10"}, "prediction": "filename = os.path.split(path)[-1]"}
+{"metadata": {"task_id": "huggingface_diffusers/11"}, "prediction": "\"PLBartDecoder\","}
+{"metadata": {"task_id": "huggingface_diffusers/15"}, "prediction": "model_id,"}
+{"metadata": {"task_id": "huggingface_diffusers/16"}, "prediction": "The number of steps taken forward in time before going backward in time for a single jump (\"j\" in"}
+{"metadata": {"task_id": "huggingface_diffusers/14"}, "prediction": "height (`int`, *optional*, defaults to 512):"}
+{"metadata": {"task_id": "huggingface_diffusers/17"}, "prediction": "diff_max = (generated - audio).abs().max()"}
+{"metadata": {"task_id": "huggingface_diffusers/20"}, "prediction": "Function invoked when calling the pipeline for generation."}
+{"metadata": {"task_id": "huggingface_diffusers/23"}, "prediction": "num_attention_heads=4,"}
+{"metadata": {"task_id": "huggingface_diffusers/24"}, "prediction": "def tearDown(self):"}
+{"metadata": {"task_id": "huggingface_diffusers/19"}, "prediction": "provided, text embeddings will be generated from `prompt` input argument."}
+{"metadata": {"task_id": "huggingface_diffusers/21"}, "prediction": "f\"{diffusers_attention_prefix}.add_k_proj.bias\": encoder_k_bias,"}
+{"metadata": {"task_id": "huggingface_diffusers/22"}, "prediction": "text_embeddings_clip,"}
+{"metadata": {"task_id": "huggingface_diffusers/26"}, "prediction": "return_dict=False,"}
+{"metadata": {"task_id": "huggingface_diffusers/27"}, "prediction": "self.sample = None"}
+{"metadata": {"task_id": "huggingface_diffusers/25"}, "prediction": "installation page: https://pytorch.org/get-started/locally/ and follow the ones that match your environment."}
+{"metadata": {"task_id": "huggingface_diffusers/28"}, "prediction": "accelerator.wait_for_everyone()"}
+{"metadata": {"task_id": "huggingface_diffusers/18"}, "prediction": "noise to that region the larger the `strength`. If `strength` is 0, no inpainting will occur."}
+{"metadata": {"task_id": "huggingface_diffusers/29"}, "prediction": "args.local_rank = env_local_rank"}
+{"metadata": {"task_id": "huggingface_diffusers/30"}, "prediction": "return latents"}
+{"metadata": {"task_id": "huggingface_diffusers/31"}, "prediction": "elif isinstance(image, torch.Tensor):"}
+{"metadata": {"task_id": "huggingface_diffusers/32"}, "prediction": "Save a model and its configuration file to a directory, so that it can be re-loaded using the"}
+{"metadata": {"task_id": "huggingface_diffusers/33"}, "prediction": "state_dict (dict): EMA state. Should be an object returned"}
+{"metadata": {"task_id": "huggingface_diffusers/34"}, "prediction": "self.timesteps = self.timesteps.to(original_samples.device, dtype=torch.float32)"}
+{"metadata": {"task_id": "huggingface_diffusers/35"}, "prediction": "else:"}
+{"metadata": {"task_id": "huggingface_diffusers/36"}, "prediction": "from diffusers.pipelines.stable_diffusion import StableDiffusionSafetyChecker"}
+{"metadata": {"task_id": "huggingface_diffusers/37"}, "prediction": "uncond_tokens,"}
+{"metadata": {"task_id": "huggingface_diffusers/41"}, "prediction": "t_mask_np, t_masked_np = prepare_mask_and_masked_image(im_np, mask_np)"}
+{"metadata": {"task_id": "huggingface_diffusers/38"}, "prediction": "The output format of the generate image. Choose between"}
+{"metadata": {"task_id": "huggingface_diffusers/45"}, "prediction": "max_diff = (output_slice.flatten() - expected_slice).abs().sum().item()"}
+{"metadata": {"task_id": "huggingface_diffusers/46"}, "prediction": "res_skip_channels = in_channels if (i == num_layers - 1) else out_channels"}
+{"metadata": {"task_id": "huggingface_diffusers/43"}, "prediction": "Truncates log_p_x_0 such that for each column vector, the total cumulative probability is `truncation_rate` The"}
+{"metadata": {"task_id": "huggingface_diffusers/39"}, "prediction": "generator=generator,"}
+{"metadata": {"task_id": "huggingface_diffusers/57"}, "prediction": "uncond_tokens = [\"\"] * batch_size"}
+{"metadata": {"task_id": "huggingface_diffusers/44"}, "prediction": "dummy_file_paths = {"}
+{"metadata": {"task_id": "huggingface_diffusers/40"}, "prediction": "return (pred_prev_sample, state)"}
+{"metadata": {"task_id": "huggingface_diffusers/48"}, "prediction": "out_channels=out_channels,"}
+{"metadata": {"task_id": "huggingface_diffusers/58"}, "prediction": "image = torch.from_numpy(image).to(dtype=torch.float32) / 127.5 - 1.0"}
+{"metadata": {"task_id": "huggingface_diffusers/53"}, "prediction": "kwargs[\"num_inference_steps\"] = num_inference_steps"}
+{"metadata": {"task_id": "huggingface_diffusers/42"}, "prediction": "do_classifier_free_guidance = guidance_scale > 1.0"}
+{"metadata": {"task_id": "huggingface_diffusers/59"}, "prediction": "time_embedding_norm=resnet_time_scale_shift,"}
+{"metadata": {"task_id": "huggingface_diffusers/56"}, "prediction": "scheduler_config = self.get_scheduler_config()"}
+{"metadata": {"task_id": "huggingface_diffusers/55"}, "prediction": "sd_upsample_prefix = f\"up.{3-i}.upsample.\""}
+{"metadata": {"task_id": "huggingface_diffusers/51"}, "prediction": "\"thresholding\": False,"}
+{"metadata": {"task_id": "huggingface_diffusers/49"}, "prediction": "raise ValueError(\"Mask should be in [0, 1] range\")"}
+{"metadata": {"task_id": "huggingface_diffusers/47"}, "prediction": "[`DDIMScheduler`], [`LMSDiscreteScheduler`], or [`PNDMScheduler`]."}
+{"metadata": {"task_id": "huggingface_diffusers/54"}, "prediction": "\" checkpoints in case they are better than the last checkpoint, and are also suitable for resuming\""}
+{"metadata": {"task_id": "huggingface_diffusers/50"}, "prediction": "super_res_latents (`torch.FloatTensor` of shape (batch size, channels, super res height, super res width), *optional*):"}
+{"metadata": {"task_id": "huggingface_diffusers/52"}, "prediction": "\"linear\": PIL_INTERPOLATION[\"linear\"],"}
+{"metadata": {"task_id": "huggingface_diffusers/60"}, "prediction": "unet = self.dummy_uncond_unet"}
+{"metadata": {"task_id": "huggingface_diffusers/61"}, "prediction": "if isinstance(first, dict):"}
+{"metadata": {"task_id": "huggingface_diffusers/62"}, "prediction": "documented_obj = []"}
+{"metadata": {"task_id": "huggingface_diffusers/63"}, "prediction": "r\"\"\""}
+{"metadata": {"task_id": "huggingface_diffusers/64"}, "prediction": "elif model_class == \"RobertaSeriesModelWithTransformation\":"}
+{"metadata": {"task_id": "huggingface_diffusers/65"}, "prediction": "parser.add_argument(\"--prior_loss_weight\", type=float, default=1.0, help=\"The weight of prior preservation loss.\")"}
+{"metadata": {"task_id": "huggingface_diffusers/67"}, "prediction": "feature_extractor=CLIPFeatureExtractor.from_pretrained(\"openai/clip-vit-base-patch32\"),"}
+{"metadata": {"task_id": "huggingface_diffusers/68"}, "prediction": "height (`int`, *optional*, defaults to self.unet.config.sample_size * self.vae_scale_factor):"}
+{"metadata": {"task_id": "huggingface_diffusers/70"}, "prediction": "\"--dataset_config_name\","}
+{"metadata": {"task_id": "huggingface_diffusers/71"}, "prediction": "transformer=transformer,"}
+{"metadata": {"task_id": "huggingface_diffusers/69"}, "prediction": "model = PriorTransformer(**PRIOR_CONFIG)"}
+{"metadata": {"task_id": "huggingface_diffusers/66"}, "prediction": "...     \"runwayml/stable-diffusion-v1-5\", revision=\"bf16\", dtype=jnp.bfloat16"}
+{"metadata": {"task_id": "huggingface_diffusers/73"}, "prediction": "time_step = scheduler.timesteps[len(scheduler.timesteps) // 2]"}
+{"metadata": {"task_id": "huggingface_diffusers/74"}, "prediction": "from diffusers.models.embeddings import get_timestep_embedding"}
+{"metadata": {"task_id": "huggingface_diffusers/76"}, "prediction": "transform_to_pil = transforms.ToPILImage()"}
+{"metadata": {"task_id": "huggingface_diffusers/77"}, "prediction": "DiffusionPipeline,"}
+{"metadata": {"task_id": "huggingface_diffusers/79"}, "prediction": "self.mean, self.logvar = torch.chunk(parameters, 2, dim=1)"}
+{"metadata": {"task_id": "huggingface_diffusers/78"}, "prediction": "def __init__("}
+{"metadata": {"task_id": "huggingface_diffusers/83"}, "prediction": "model_output: jnp.ndarray,"}
+{"metadata": {"task_id": "huggingface_diffusers/72"}, "prediction": "out_channels=3,"}
+{"metadata": {"task_id": "huggingface_diffusers/85"}, "prediction": "vqvae ([`VQModel`]):"}
+{"metadata": {"task_id": "huggingface_diffusers/84"}, "prediction": "\"prompt\": \"An astronaut riding an elephant\","}
+{"metadata": {"task_id": "huggingface_diffusers/82"}, "prediction": "if not self.use_linear_projection:"}
+{"metadata": {"task_id": "huggingface_diffusers/80"}, "prediction": "deps[\"huggingface-hub\"],"}
+{"metadata": {"task_id": "huggingface_diffusers/75"}, "prediction": "parser.add_argument("}
+{"metadata": {"task_id": "huggingface_diffusers/81"}, "prediction": "\"image\": init_image,"}
+{"metadata": {"task_id": "huggingface_diffusers/88"}, "prediction": "out_channels=4,"}
+{"metadata": {"task_id": "huggingface_diffusers/86"}, "prediction": "type=int,"}
+{"metadata": {"task_id": "huggingface_diffusers/87"}, "prediction": "args.max_train_steps = args.num_train_epochs * num_update_steps_per_epoch"}
+{"metadata": {"task_id": "huggingface_diffusers/89"}, "prediction": "\"num_train_timesteps\": 1100,"}
+{"metadata": {"task_id": "huggingface_diffusers/90"}, "prediction": "logging.basicConfig("}
+{"metadata": {"task_id": "huggingface_diffusers/91"}, "prediction": "from diffusers.schedulers import DDIMScheduler, LMSDiscreteScheduler, PNDMScheduler"}
+{"metadata": {"task_id": "huggingface_diffusers/92"}, "prediction": "}"}
+{"metadata": {"task_id": "huggingface_diffusers/93"}, "prediction": "assert number_of_steps == 2"}
+{"metadata": {"task_id": "huggingface_diffusers/94"}, "prediction": "sld_momentum_scale (`float`, *optional*, defaults to 0.3):"}
+{"metadata": {"task_id": "huggingface_diffusers/95"}, "prediction": "if token is None:"}
+{"metadata": {"task_id": "huggingface_diffusers/96"}, "prediction": "resnet_groups=resnet_groups,"}
+{"metadata": {"task_id": "huggingface_diffusers/98"}, "prediction": "model = UNet2DConditionModel("}
+{"metadata": {"task_id": "huggingface_diffusers/97"}, "prediction": "\"--scale_lr\","}
+{"metadata": {"task_id": "huggingface_diffusers/99"}, "prediction": "Pre-generated text embeddings. Can be used to easily tweak text inputs, *e.g.* prompt weighting. If not"}
+{"metadata": {"task_id": "huggingface_diffusers/102"}, "prediction": "args.learning_rate"}
+{"metadata": {"task_id": "huggingface_diffusers/104"}, "prediction": "model_id, subfolder=\"unet\", dtype=dtype, revision=revision"}
+{"metadata": {"task_id": "huggingface_diffusers/103"}, "prediction": "transforms.Resize(args.resolution, interpolation=transforms.InterpolationMode.BILINEAR),"}
+{"metadata": {"task_id": "huggingface_diffusers/105"}, "prediction": "scheduler = FlaxPNDMScheduler("}
+{"metadata": {"task_id": "huggingface_diffusers/106"}, "prediction": "tokenizer = CLIPTokenizer.from_pretrained(\"hf-internal-testing/tiny-random-clip\")"}
+{"metadata": {"task_id": "huggingface_diffusers/101"}, "prediction": "if step == 1:"}
+{"metadata": {"task_id": "huggingface_diffusers/108"}, "prediction": "Whether or not to force the (re-)download of the model weights and configuration files, overriding the"}
+{"metadata": {"task_id": "huggingface_diffusers/110"}, "prediction": "for name, param in named_params.items():"}
+{"metadata": {"task_id": "huggingface_diffusers/107"}, "prediction": "_backends = [\"torch\", \"transformers\"]"}
+{"metadata": {"task_id": "huggingface_diffusers/111"}, "prediction": "return model"}
+{"metadata": {"task_id": "huggingface_diffusers/100"}, "prediction": "timestep_list,"}
+{"metadata": {"task_id": "huggingface_diffusers/113"}, "prediction": "\"cross_attention_dim\": 32,"}
+{"metadata": {"task_id": "huggingface_diffusers/114"}, "prediction": "ddpm_2 = DDPMScheduler.from_pretrained(\"google/ddpm-celebahq-256\", beta_start=88)"}
+{"metadata": {"task_id": "huggingface_diffusers/116"}, "prediction": "prompt_ids = shard(prompt_ids)"}
+{"metadata": {"task_id": "huggingface_diffusers/115"}, "prediction": "One or a list of [torch generator(s)](https://pytorch.org/docs/stable/generated/torch.Generator.html)"}
+{"metadata": {"task_id": "huggingface_diffusers/117"}, "prediction": "requires_backends(self, [\"torch\"])"}
+{"metadata": {"task_id": "huggingface_diffusers/109"}, "prediction": "main()"}
+{"metadata": {"task_id": "huggingface_diffusers/112"}, "prediction": "from tqdm.auto import tqdm"}
+{"metadata": {"task_id": "huggingface_diffusers/118"}, "prediction": "dtype=self.dtype,"}
+{"metadata": {"task_id": "huggingface_diffusers/119"}, "prediction": "cross_attention_dim=32,"}
+{"metadata": {"task_id": "huggingface_diffusers/120"}, "prediction": "set=\"train\","}
+{"metadata": {"task_id": "huggingface_diffusers/123"}, "prediction": "diffusers_transformer_block_prefix = f\"transformer_blocks.{transformer_block_idx}\""}
+{"metadata": {"task_id": "huggingface_diffusers/122"}, "prediction": "if `guidance_scale` is less than `1`)."}
+{"metadata": {"task_id": "huggingface_diffusers/121"}, "prediction": "help=("}
+{"metadata": {"task_id": "huggingface_diffusers/124"}, "prediction": "0.49129390716552734,"}
+{"metadata": {"task_id": "huggingface_diffusers/125"}, "prediction": "\"--checkpoint_load_device\","}
+{"metadata": {"task_id": "huggingface_diffusers/126"}, "prediction": ">>> img2img = StableDiffusionImg2ImgPipeline(**text2img.components)"}
+{"metadata": {"task_id": "huggingface_diffusers/128"}, "prediction": "args.pretrained_model_name_or_path,"}
+{"metadata": {"task_id": "huggingface_diffusers/129"}, "prediction": "gc.collect()"}
+{"metadata": {"task_id": "huggingface_diffusers/127"}, "prediction": "to make generation deterministic."}
+{"metadata": {"task_id": "huggingface_diffusers/130"}, "prediction": "image quality. This pipeline requires a value of at least `1`."}
+{"metadata": {"task_id": "huggingface_diffusers/131"}, "prediction": "assert torch.allclose(output_slice.flatten(), expected_slice, atol=1e-3)"}
+{"metadata": {"task_id": "huggingface_diffusers/133"}, "prediction": "output_2 = sd_pipe(**inputs)"}
+{"metadata": {"task_id": "huggingface_diffusers/132"}, "prediction": "self.conv = conv"}
+{"metadata": {"task_id": "huggingface_diffusers/134"}, "prediction": "parser = argparse.ArgumentParser(description=\"Simple example of a training script.\")"}
+{"metadata": {"task_id": "huggingface_diffusers/136"}, "prediction": "return ("}
+{"metadata": {"task_id": "huggingface_diffusers/137"}, "prediction": "n_heads (:obj:`int`):"}
+{"metadata": {"task_id": "huggingface_diffusers/139"}, "prediction": "num_inference_steps = 10"}
+{"metadata": {"task_id": "huggingface_diffusers/138"}, "prediction": "Cross Attention 2D Downsizing block - original architecture from Unet transformers:"}
+{"metadata": {"task_id": "huggingface_diffusers/135"}, "prediction": "Pre-generated noisy latents, sampled from a Gaussian distribution, to be used as inputs for image"}
+{"metadata": {"task_id": "huggingface_diffusers/140"}, "prediction": "num_training_steps=args.max_train_steps * args.gradient_accumulation_steps,"}
+{"metadata": {"task_id": "huggingface_diffusers/142"}, "prediction": "return components"}
+{"metadata": {"task_id": "huggingface_diffusers/141"}, "prediction": "path = os.path.basename(args.resume_from_checkpoint)"}
+{"metadata": {"task_id": "huggingface_diffusers/144"}, "prediction": "\"unet\": unet,"}
+{"metadata": {"task_id": "huggingface_diffusers/143"}, "prediction": "prompts: List[str]"}
+{"metadata": {"task_id": "huggingface_diffusers/145"}, "prediction": "temb_channels=512,"}
+{"metadata": {"task_id": "huggingface_diffusers/146"}, "prediction": "return os.path.join(tests_dir, append_path)"}
+{"metadata": {"task_id": "huggingface_diffusers/148"}, "prediction": "if torch_device == \"mps\":"}
+{"metadata": {"task_id": "huggingface_diffusers/149"}, "prediction": "repeats=args.repeats,"}
+{"metadata": {"task_id": "huggingface_diffusers/147"}, "prediction": "func_doc = fn.__doc__"}
+{"metadata": {"task_id": "huggingface_diffusers/150"}, "prediction": "pipe = self.pipeline_class(**init_components)"}
+{"metadata": {"task_id": "huggingface_diffusers/151"}, "prediction": "text_encoder_config = PretrainedConfig.from_pretrained("}
+{"metadata": {"task_id": "huggingface_diffusers/154"}, "prediction": "if latents is None:"}
+{"metadata": {"task_id": "huggingface_diffusers/152"}, "prediction": "import hashlib"}
+{"metadata": {"task_id": "huggingface_diffusers/155"}, "prediction": "num_inference_steps (`int`, *optional*, defaults to 50):"}
+{"metadata": {"task_id": "huggingface_diffusers/156"}, "prediction": "prompt (`str` or `List[str]`, *optional*):"}
+{"metadata": {"task_id": "huggingface_diffusers/153"}, "prediction": "\"models/xlm_roberta/test_modeling_xlm_roberta.py\","}
+{"metadata": {"task_id": "huggingface_diffusers/158"}, "prediction": "scheduler = scheduler_class(**scheduler_config)"}
+{"metadata": {"task_id": "huggingface_diffusers/157"}, "prediction": "if output_size is None:"}
+{"metadata": {"task_id": "huggingface_diffusers/161"}, "prediction": "\"nearest\": PIL.Image.Resampling.NEAREST,"}
+{"metadata": {"task_id": "huggingface_diffusers/160"}, "prediction": "When `\"auto\"`, halves the input to the attention heads, so attention will be computed in two steps. If"}
+{"metadata": {"task_id": "huggingface_diffusers/162"}, "prediction": "size=512,"}
+{"metadata": {"task_id": "huggingface_diffusers/163"}, "prediction": "max_length=self.tokenizer.model_max_length,"}
+{"metadata": {"task_id": "huggingface_diffusers/164"}, "prediction": "beta_end: float = 0.02,"}
+{"metadata": {"task_id": "huggingface_diffusers/159"}, "prediction": "image = np.array(image).astype(np.uint8)"}
+{"metadata": {"task_id": "huggingface_diffusers/166"}, "prediction": "noisy_latents = noise_scheduler.add_noise(latents, noise, timesteps)"}
+{"metadata": {"task_id": "huggingface_diffusers/167"}, "prediction": "max_length=max_length,"}
+{"metadata": {"task_id": "huggingface_diffusers/165"}, "prediction": "if os.path.isdir(pretrained_model_name_or_path)"}
+{"metadata": {"task_id": "huggingface_diffusers/168"}, "prediction": "safety_checker=None,"}
+{"metadata": {"task_id": "huggingface_diffusers/169"}, "prediction": "if self.config.prediction_type == \"epsilon\":"}
+{"metadata": {"task_id": "huggingface_diffusers/172"}, "prediction": "result_mean = torch.mean(torch.abs(sample))"}
+{"metadata": {"task_id": "huggingface_diffusers/170"}, "prediction": "with tempfile.NamedTemporaryFile() as file:"}
+{"metadata": {"task_id": "huggingface_diffusers/171"}, "prediction": "max_diff = np.abs(output_batch[0][0] - output[0][0]).max()"}
+{"metadata": {"task_id": "huggingface_diffusers/175"}, "prediction": "vae = AutoencoderKL("}
+{"metadata": {"task_id": "huggingface_diffusers/173"}, "prediction": "images = images.cpu().permute(0, 2, 3, 1).numpy()"}
+{"metadata": {"task_id": "huggingface_diffusers/174"}, "prediction": "num_images_per_prompt (`int`, *optional*, defaults to 1):"}
+{"metadata": {"task_id": "huggingface_diffusers/178"}, "prediction": "output = scheduler.step(residual, time_step, sample, **kwargs).prev_sample"}
+{"metadata": {"task_id": "huggingface_diffusers/176"}, "prediction": ") -> Union[FlaxKarrasVeOutput, Tuple]:"}
+{"metadata": {"task_id": "huggingface_diffusers/179"}, "prediction": "except OptionalDependencyNotAvailable:"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/0"}, "prediction": "all_images.append(batch[\"image\"][i][indices[:, 1], indices[:, 2]])"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/2"}, "prediction": "def get_outputs_for_camera_ray_bundle(self, camera_ray_bundle: RayBundle) -> Dict[str, torch.Tensor]:"}
+{"metadata": {"task_id": "huggingface_diffusers/177"}, "prediction": "groups_out=None,"}
+{"metadata": {"task_id": "huggingface_diffusers/180"}, "prediction": "Parameters `dtype`"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/1"}, "prediction": "crop_border_pixels: Optional[int] = None,"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/3"}, "prediction": "CONSOLE.log(f\"Deleting {img}\")"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/4"}, "prediction": "if not line:"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/5"}, "prediction": "with progress as progress_bar:"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/6"}, "prediction": "from typing import Dict, List"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/7"}, "prediction": "assert not size_of_chunk"}
+{"metadata": {"task_id": "huggingface_diffusers/181"}, "prediction": "masked_image = image * (image_mask < 127.5)"}
+{"metadata": {"task_id": "huggingface_diffusers/182"}, "prediction": "block_out_channels=[32, 64],"}
+{"metadata": {"task_id": "huggingface_diffusers/183"}, "prediction": "requires_backends(cls, [\"torch\"])"}
+{"metadata": {"task_id": "huggingface_diffusers/184"}, "prediction": "text_encoder = resize_token_embeddings("}
+{"metadata": {"task_id": "huggingface_diffusers/186"}, "prediction": "block_out_channels=(32, 32, 64),"}
+{"metadata": {"task_id": "huggingface_diffusers/185"}, "prediction": "unet.load_state_dict(unet_state_dict)"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/8"}, "prediction": "self.zmq_socket, self.zmq_stream, self.zmq_url = self.setup_zmq(zmq_url)"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/9"}, "prediction": "self.depth_unit_scale_factor = self.metadata[\"depth_unit_scale_factor\"]"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/10"}, "prediction": "self.mlp_head = tcnn.Network("}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/11"}, "prediction": "self.image_indices = list(range(len(input_dataset)))"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/13"}, "prediction": "shutil.rmtree(image_dir, ignore_errors=True)"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/12"}, "prediction": "temporal_row_index,"}
+{"metadata": {"task_id": "huggingface_diffusers/187"}, "prediction": "return new_state_dict"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/14"}, "prediction": "density = self.field_output_density(base_mlp_out)"}
+{"metadata": {"task_id": "huggingface_diffusers/188"}, "prediction": "Conceptually, indicates how much to transform the reference `image`. Must be between 0 and 1. `image`"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/15"}, "prediction": "d = {\"t1\": torch.ones((4, 6, 3)), \"t2\": {\"t3\": torch.ones((6, 4))}}"}
+{"metadata": {"task_id": "huggingface_diffusers/189"}, "prediction": "pipe = StableDiffusionDepth2ImgPipeline.from_pretrained("}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/16"}, "prediction": "):"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/17"}, "prediction": "CameraModel(model_id=0, model_name=\"SIMPLE_PINHOLE\", num_params=3),"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/18"}, "prediction": "nears = torch.clamp(nears, min=near_plane)"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/19"}, "prediction": "RGBFieldHead,"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/20"}, "prediction": "coord.broadcast_to(1, 2),"}
+{"metadata": {"task_id": "huggingface_diffusers/193"}, "prediction": "t[t != t] = 0"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/21"}, "prediction": "error = float(elems[7])"}
+{"metadata": {"task_id": "huggingface_diffusers/192"}, "prediction": "_backends = [\"torch\"]"}
+{"metadata": {"task_id": "huggingface_diffusers/194"}, "prediction": "from ...models import AutoencoderKL, UNet2DConditionModel"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/22"}, "prediction": "return colormaps.apply_depth_colormap(outputs[reformatted_output], accumulation=outputs[accumulation_str])"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/23"}, "prediction": "and (torch.max(outputs[reformatted_output]) - 1.0) <= eps  # handle floating point arithmetic"}
+{"metadata": {"task_id": "huggingface_diffusers/190"}, "prediction": "def __init__(self):"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/24"}, "prediction": "self._model = typing.cast(Model, DDP(self._model, device_ids=[local_rank], find_unused_parameters=True))"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/25"}, "prediction": "return stuff.detach().cpu()"}
+{"metadata": {"task_id": "huggingface_diffusers/196"}, "prediction": "def test_save_load_float16(self):"}
+{"metadata": {"task_id": "huggingface_diffusers/195"}, "prediction": "text_input_ids, untruncated_ids"}
+{"metadata": {"task_id": "huggingface_diffusers/197"}, "prediction": "mask_image = load_image("}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/26"}, "prediction": "histogram_padding: float = 0.01,"}
+{"metadata": {"task_id": "huggingface_diffusers/198"}, "prediction": "default=100,"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/27"}, "prediction": "config: Optional[TrainerConfig] = None,"}
+{"metadata": {"task_id": "huggingface_diffusers/191"}, "prediction": "_backends = [\"flax\"]"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/28"}, "prediction": "entrypoint()"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/29"}, "prediction": "self.viewer_state.update_scene(self, step, self.pipeline.model, num_rays_per_batch)"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/32"}, "prediction": "implementation: Literal[\"tcnn\", \"torch\"] = \"tcnn\","}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/31"}, "prediction": "feature_type: Literal["}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/33"}, "prediction": "ends=ends,"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/30"}, "prediction": "directions=shaped_raybundle_fields.directions,  # [..., 1, 3]"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/34"}, "prediction": "test_tensor_ops()"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/35"}, "prediction": "* `NamedTuple[V1_i, V2_i, ...]` -> `NamedTuple[nerfstudio_collate([V1_1, V1_2, ...]),"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/36"}, "prediction": "assert camera_opt_to_camera is None or camera_opt_to_camera.shape[:-2] == coords.shape[:-1]"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/37"}, "prediction": "basename = name.split(\".\")[0]"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/38"}, "prediction": ")"}
+{"metadata": {"task_id": "huggingface_diffusers/199"}, "prediction": "text_encoder=text_encoder,"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/39"}, "prediction": "assert len(i_eval) == num_eval_images"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/41"}, "prediction": "\"myst_nb\","}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/40"}, "prediction": "},"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/42"}, "prediction": "imgs = read_images_binary(self.data / \"dense/sparse/images.bin\")"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/46"}, "prediction": "from torch.nn import Parameter"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/44"}, "prediction": "CONSOLE.log(\"[bold green]:tada: Done copying images.\")"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/49"}, "prediction": "target_path = str(save_dir / f\"{dataset_name}/{capture_name}\")"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/43"}, "prediction": "condition = d_values < triangle_distances"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/48"}, "prediction": "depth = rescale(depth, 1 / d, cv2.INTER_AREA)"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/45"}, "prediction": "CONSOLE.log(f\":broom: Deleted existing completion directory: {target_dir}.\")"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/50"}, "prediction": "v = f\"{v:0.4f}\""}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/47"}, "prediction": "k4 = distortion_params[..., 3]"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/53"}, "prediction": "c2wh = torch.matmul(c2wh_global, local_c2wh)"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/56"}, "prediction": "encoded = encoder(in_tensor)"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/55"}, "prediction": "idx_lo = torch.clamp(idx_lo, min=0, max=y1.shape[-1] - 1)"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/54"}, "prediction": "activation=nn.ReLU(),"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/57"}, "prediction": "img.rename(image_dir / f\"frame_{i+1+num_extracted_frames:05d}.png\")"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/52"}, "prediction": "from nerfstudio.configs.method_configs import AnnotatedBaseConfigUnion"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/51"}, "prediction": "UniformSampler,"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/58"}, "prediction": "ty_max_temp = (aabb[4] - origins[:, 1]) / directions[:, 1]"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/61"}, "prediction": "2 * qvec[3] * qvec[1] + 2 * qvec[0] * qvec[2],"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/59"}, "prediction": "if not self.has_printed and self.config.max_log_size:"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/62"}, "prediction": "return {}"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/60"}, "prediction": "test_nested_class()"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/64"}, "prediction": "self.optimizers[param_group_name].step()"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/66"}, "prediction": "offset += params_in_level"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/65"}, "prediction": "self.func(*self.args, **self.kwargs, step=step)"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/67"}, "prediction": "from torch import nn"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/63"}, "prediction": "comp_m = torch.tensor(bounding_box_max, device=point.device)"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/69"}, "prediction": "colormap_type = self.state.vis[\"renderingState/colormap_choice\"].read()"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/68"}, "prediction": "from typing_extensions import Literal"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/70"}, "prediction": "]"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/71"}, "prediction": "self.profiler_dict = {}"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/72"}, "prediction": "def get_image_metrics_and_images("}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/73"}, "prediction": "config.add(host)"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/74"}, "prediction": "squares_per_side_h, squares_per_side_w, 1, 2"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/75"}, "prediction": "\"otype\": \"SphericalHarmonics\","}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/76"}, "prediction": "camera_to_world_h[0, :],"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/78"}, "prediction": ") -> None:"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/77"}, "prediction": "points3D = read_points3d_binary(os.path.join(path, \"points3D\") + ext)"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/80"}, "prediction": "sigma_fn=None,  # self.get_sigma_fn(rays_o, rays_d),"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/83"}, "prediction": "return None"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/79"}, "prediction": "ret_code = subprocess.call(command, shell=True)"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/81"}, "prediction": "rc_path = pathlib.Path(os.environ[\"HOME\"]) / f\".{shell}rc\""}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/82"}, "prediction": "frame_json = io.load_from_json(json_filename)"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/88"}, "prediction": "base_mlp_out = self.mlp_base(encoded_xyz)"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/84"}, "prediction": "line_of_sight_loss_near = (weights - torch.exp(target_distribution.log_prob(steps - termination_depth))) ** 2"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/86"}, "prediction": "xys = np.column_stack([tuple(map(float, x_y_id_s[0::3])), tuple(map(float, x_y_id_s[1::3]))])"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/87"}, "prediction": "output_type = OutputTypes.RGB_FINE"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/85"}, "prediction": "transform = torch.eye(4)"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/91"}, "prediction": "cy=0.5 * float(height),"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/89"}, "prediction": "point3D_id = int(elems[0])"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/90"}, "prediction": "directions = -("}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/95"}, "prediction": "self.vis_outputs = outputs"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/93"}, "prediction": "super().__init__()"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/94"}, "prediction": "mlp_out_sem = self.mlp_semantic(mlp_out)"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/92"}, "prediction": "spacing_fn_inv=lambda x: x,"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/97"}, "prediction": "m00 = M[0, 0]"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/100"}, "prediction": "config.viewer, log_filename=viewer_log_path, datapath=config.pipeline.datamanager.dataparser.data"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/101"}, "prediction": "if camera_mask_path is not None:"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/102"}, "prediction": "\"times\": torch.as_tensor(time_ids[idx] / self._time_ids.max()).float(),"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/99"}, "prediction": "**kwargs,"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/98"}, "prediction": "_, eval_loss_dict, eval_metrics_dict = self.pipeline.get_eval_loss_dict(step=step)"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/103"}, "prediction": "self.kill_webrtc_signal = False"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/96"}, "prediction": "radius: float, center: TensorType[3] = None, color: str = \"black\", opacity: float = 1.0, resolution: int = 32"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/104"}, "prediction": "import os"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/105"}, "prediction": "pipeline,"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/106"}, "prediction": "nbf.write(ntbk, ipath)"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/107"}, "prediction": "],"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/108"}, "prediction": "new_batch[\"image\"] = images"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/110"}, "prediction": "q = np.array(quaternion, dtype=np.float64, copy=True)"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/111"}, "prediction": "\"nerfacto\": \"Recommended real-time model tuned for real captures. This model will be continually updated.\","}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/109"}, "prediction": ")  # transient rgb"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/114"}, "prediction": "else:"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/112"}, "prediction": "for shell in shells_found:"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/115"}, "prediction": "class Blender(DataParser):"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/116"}, "prediction": "metrics_dict_list = []"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/113"}, "prediction": "class ColmapCameraModel:"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/118"}, "prediction": "),"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/119"}, "prediction": "\"scheduler\": None,"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/120"}, "prediction": "f\"{destination}\","}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/121"}, "prediction": "t_max = torch.max(tx_min, tx_max)"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/117"}, "prediction": "resolution: Union[int, List[int]] = field(default_factory=lambda: [128, 128, 128])"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/123"}, "prediction": "return dataparser_outputs"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/122"}, "prediction": "from mathutils import Matrix"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/125"}, "prediction": "if h_w.ndim == 0 or h_w.shape[-1] != 1:"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/124"}, "prediction": "print(\"ssh_key_filename\", ssh_key_filename)"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/126"}, "prediction": "from nuscenes.utils.data_classes import Box"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/129"}, "prediction": "assert batch.b.shape == (4, 5)"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/128"}, "prediction": "w2c = np.concatenate([w2c, np.array([[0, 0, 0, 1]])], 0)"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/127"}, "prediction": "scale_factor: float = 1.0"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/131"}, "prediction": "return ray_bundle"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/130"}, "prediction": "pred_normal_loss,"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/136"}, "prediction": "input_json = None"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/132"}, "prediction": "k2: float = 0.0,"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/133"}, "prediction": "\"n_levels\": num_levels,"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/135"}, "prediction": ").values"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/134"}, "prediction": "[0.0, 0.0, 0.0, 1.0],"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/139"}, "prediction": "mapper_cmd = ["}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/137"}, "prediction": "from typing import Dict, Optional, Union"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/140"}, "prediction": "if self.config.save_only_latest_checkpoint:"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/138"}, "prediction": "completions_dir = pathlib.Path(__file__).absolute().parent"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/141"}, "prediction": "from dataclasses import dataclass, field"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/143"}, "prediction": "outputs.append(exp_map_SO3xR3(self.pose_adjustment[indices, :]))"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/142"}, "prediction": "\"Ns 1.00000000\","}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/144"}, "prediction": "pipeline: Pipeline,"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/148"}, "prediction": "assert distortion_params_delta is None or distortion_params_delta.shape[:-1] == coords.shape[:-1]"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/145"}, "prediction": "{"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/147"}, "prediction": "tyro.extras.set_accent_color(\"bright_yellow\")"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/149"}, "prediction": "for k, v in stuff.items():"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/146"}, "prediction": "tmp_path = str(save_dir / \".temp\")"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/151"}, "prediction": ".tolist()[1:]"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/153"}, "prediction": "eigenvals = eigenvals[idx]"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/150"}, "prediction": "lines += f\"{key}: {str(val)}\".split(\"\\n\")"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/156"}, "prediction": "height: Optional[Union[TensorType[\"batch_hs\":..., 1], int]] = None,"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/152"}, "prediction": "Annotated[ProcessVideo, tyro.conf.subcommand(name=\"video\")],"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/157"}, "prediction": "cmd = f\"ffprobe -v error -select_streams v:0 -count_packets \\"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/158"}, "prediction": "compressed = compressed.replace(\"--check\", \"\")"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/155"}, "prediction": "camera_optimizer=CameraOptimizerConfig("}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/160"}, "prediction": "directions=self.directions,"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/161"}, "prediction": "assert fps_str not in metrics_dict"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/154"}, "prediction": "cell_tags = cell.get(\"metadata\", {}).get(\"tags\", [])"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/162"}, "prediction": "StrictHostKeyChecking=\"No\","}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/163"}, "prediction": "t = M[i, i] - (M[j, j] + M[k, k]) + M[3, 3]"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/164"}, "prediction": "torch.stack("}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/159"}, "prediction": "for key, scalar in scalar_dict.items():"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/166"}, "prediction": "print(\"skipping\", config_name)"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/167"}, "prediction": "if skipped_frames > 0:"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/168"}, "prediction": "new_path = self.entries"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/165"}, "prediction": "density_before_activation, base_mlp_out = torch.split(h, [1, self.geo_feat_dim], dim=-1)"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/172"}, "prediction": "translation = im_data.tvec.reshape(3, 1)"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/170"}, "prediction": "aabb_center = torch.tensor("}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/174"}, "prediction": "self._lookat = np.array(extra_dict[\"lookat\"], dtype=np.float32)"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/169"}, "prediction": "torch.zeros(5, 1),"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/171"}, "prediction": "use_integrated_encoding: bool = False,"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/175"}, "prediction": "image_dir: Path,"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/173"}, "prediction": "radius: TensorType[..., 1],"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/176"}, "prediction": "positions = ray_samples.frustums.get_positions()"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/177"}, "prediction": "one_minus_cosine_by_theta2 = torch.where(near_zero, 0.5 * sine_by_theta, (1 - cosine) / theta2_nz)"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/181"}, "prediction": "logfile = open(  # pylint: disable=consider-using-with"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/178"}, "prediction": "uv_coords_shape = uv_coords.shape"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/180"}, "prediction": "import struct"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/179"}, "prediction": "if not os.path.exists(config.load_dir):"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/183"}, "prediction": "x_y_id_s = read_next_bytes(fid, num_bytes=24 * num_points2d, format_char_sequence=\"ddq\" * num_points2d)"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/186"}, "prediction": "return True"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/187"}, "prediction": "input_dim: int = 3,"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/182"}, "prediction": "class DepthNerfactoModelConfig(NerfactoModelConfig):"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/184"}, "prediction": "wandb.log({name: wandb.Image(image)}, step=step)"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/188"}, "prediction": "from aiortc import RTCPeerConnection"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/189"}, "prediction": "\"nerfacto\","}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/185"}, "prediction": "state = {key.replace(\"module.\", \"\"): value for key, value in loaded_state.items()}"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/190"}, "prediction": "super().__init__(num_samples=num_samples)"}
+{"metadata": {"task_id": "awslabs_fortuna/0"}, "prediction": ")"}
+{"metadata": {"task_id": "awslabs_fortuna/1"}, "prediction": "val_data_loader=self.reg_val_data_loader,"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/191"}, "prediction": "for i, process in enumerate(process_context.processes):"}
+{"metadata": {"task_id": "awslabs_fortuna/2"}, "prediction": "disable_training_metrics_computation=True,"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/192"}, "prediction": "self.embeddings.data.uniform_(-std, std)"}
+{"metadata": {"task_id": "awslabs_fortuna/3"}, "prediction": "def __init__(self, mean: Array, cov: Array):"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/195"}, "prediction": "print(f\"Error: {e}\")"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/193"}, "prediction": "\"otype\": \"FullyFusedMLP\","}
+{"metadata": {"task_id": "awslabs_fortuna/7"}, "prediction": "sample = prob_class.posterior.sample()"}
+{"metadata": {"task_id": "awslabs_fortuna/4"}, "prediction": "else:"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/199"}, "prediction": "scale_factor /= float(torch.max(torch.abs(poses[:, :3, 3])))"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/198"}, "prediction": "from __future__ import annotations"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/196"}, "prediction": "try:"}
+{"metadata": {"task_id": "awslabs_fortuna/6"}, "prediction": "self,"}
+{"metadata": {"task_id": "awslabs_fortuna/8"}, "prediction": "self.assertEqual("}
+{"metadata": {"task_id": "awslabs_fortuna/5"}, "prediction": "n = len(rav)"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/194"}, "prediction": "if zmq_port is None:"}
+{"metadata": {"task_id": "awslabs_fortuna/9"}, "prediction": "rng: PRNGKeyArray,"}
+{"metadata": {"task_id": "nerfstudio-project_nerfstudio/197"}, "prediction": "base_mlp_layer_width: int = 256,"}
+{"metadata": {"task_id": "awslabs_fortuna/10"}, "prediction": "def __str__(self):"}
+{"metadata": {"task_id": "awslabs_fortuna/11"}, "prediction": "train_data_loader=self.class_train_data_loader,"}
+{"metadata": {"task_id": "awslabs_fortuna/13"}, "prediction": "validation_metrics_step5 = {\"metric1\": 1, \"metric2\": 2}"}
+{"metadata": {"task_id": "awslabs_fortuna/12"}, "prediction": "from fortuna.prob_model.posterior.posterior_state_repository import \\"}
+{"metadata": {"task_id": "awslabs_fortuna/14"}, "prediction": "raise ValueError("}
+{"metadata": {"task_id": "awslabs_fortuna/15"}, "prediction": "-------"}
+{"metadata": {"task_id": "awslabs_fortuna/16"}, "prediction": "state,"}
+{"metadata": {"task_id": "awslabs_fortuna/17"}, "prediction": "An estimate of the predictive entropy for each input."}
+{"metadata": {"task_id": "awslabs_fortuna/19"}, "prediction": "MAPPosteriorApproximator"}
+{"metadata": {"task_id": "awslabs_fortuna/18"}, "prediction": "def __init__("}
+{"metadata": {"task_id": "awslabs_fortuna/20"}, "prediction": "model parameters, :math:`\\mathcal{D}` is a training data set and :math:`\\phi` are calibration parameters."}
+{"metadata": {"task_id": "awslabs_fortuna/21"}, "prediction": "val_targets: Array,"}
+{"metadata": {"task_id": "awslabs_fortuna/22"}, "prediction": "raise TypeError(\"`key_paths` must be a tuple.\")"}
+{"metadata": {"task_id": "awslabs_fortuna/23"}, "prediction": "yield from data_loader"}
+{"metadata": {"task_id": "awslabs_fortuna/24"}, "prediction": "unravel: Optional[Callable[[any], PyTree]] = None,"}
+{"metadata": {"task_id": "awslabs_fortuna/25"}, "prediction": "params = mlp.init(self.rng, self.inputs)"}
+{"metadata": {"task_id": "awslabs_fortuna/27"}, "prediction": "self.n_inputs,"}
+{"metadata": {"task_id": "awslabs_fortuna/26"}, "prediction": "checkpointer: CalibCheckpointer = CalibCheckpointer(),"}
+{"metadata": {"task_id": "awslabs_fortuna/28"}, "prediction": "predict_fn=self.joint.likelihood.prob_output_layer.predict,"}
+{"metadata": {"task_id": "awslabs_fortuna/29"}, "prediction": "),"}
+{"metadata": {"task_id": "awslabs_fortuna/30"}, "prediction": "self.save_checkpoint_dir"}
+{"metadata": {"task_id": "awslabs_fortuna/31"}, "prediction": "def init("}
+{"metadata": {"task_id": "awslabs_fortuna/32"}, "prediction": "Number of target samples to draw for each input."}
+{"metadata": {"task_id": "awslabs_fortuna/33"}, "prediction": "val_epoch_metrics_str,"}
+{"metadata": {"task_id": "awslabs_fortuna/34"}, "prediction": "An estimate of the aleatoric predictive variance."}
+{"metadata": {"task_id": "awslabs_fortuna/35"}, "prediction": "self.assertDictEqual("}
+{"metadata": {"task_id": "awslabs_fortuna/36"}, "prediction": "outputs = outputs.reshape(outputs.shape[0] * outputs.shape[1], -1)"}
+{"metadata": {"task_id": "awslabs_fortuna/37"}, "prediction": "Compute the outputs and their calibrated version."}
+{"metadata": {"task_id": "awslabs_fortuna/38"}, "prediction": "Tuple[Callable[[jnp.ndarray, Array], Union[float, Array]], ...]"}
+{"metadata": {"task_id": "awslabs_fortuna/40"}, "prediction": "calib_config=self.class_calib_config_nodir_nodump,"}
+{"metadata": {"task_id": "awslabs_fortuna/39"}, "prediction": "return super(MultiDeviceMixin, self).save_checkpoint("}
+{"metadata": {"task_id": "awslabs_fortuna/41"}, "prediction": "self.rank = rank"}
+{"metadata": {"task_id": "awslabs_fortuna/42"}, "prediction": "predict_fn: Callable[[jnp.ndarray], jnp.ndarray],"}
+{"metadata": {"task_id": "awslabs_fortuna/43"}, "prediction": "calib_config=calib_config,"}
+{"metadata": {"task_id": "awslabs_fortuna/45"}, "prediction": "super().__init__(*args, **kwargs)"}
+{"metadata": {"task_id": "awslabs_fortuna/44"}, "prediction": "metrics: Optional[Tuple[Callable[[jnp.ndarray, Array], float], ...]] = None,"}
+{"metadata": {"task_id": "awslabs_fortuna/47"}, "prediction": "A loader of input data points."}
+{"metadata": {"task_id": "awslabs_fortuna/46"}, "prediction": "state, status[\"swag\"] = trainer.train("}
+{"metadata": {"task_id": "awslabs_fortuna/48"}, "prediction": "predict_fn=lambda x: x,"}
+{"metadata": {"task_id": "awslabs_fortuna/49"}, "prediction": "loo_val_outputs = np.random.normal(size=(n, 1))"}
+{"metadata": {"task_id": "awslabs_fortuna/51"}, "prediction": "fit_config=self.class_fit_config_dir_dump(tmp_dir),"}
+{"metadata": {"task_id": "awslabs_fortuna/50"}, "prediction": "training_dataloader=train_data_loader,"}
+{"metadata": {"task_id": "awslabs_fortuna/52"}, "prediction": "for data in response.iter_content(chunk_size=1024):"}
+{"metadata": {"task_id": "awslabs_fortuna/53"}, "prediction": "fun: Callable,"}
+{"metadata": {"task_id": "awslabs_fortuna/54"}, "prediction": "conv: ModuleDef = nn.Conv"}
+{"metadata": {"task_id": "awslabs_fortuna/55"}, "prediction": "from jax import random, vmap"}
+{"metadata": {"task_id": "awslabs_fortuna/56"}, "prediction": "self, val_lower_bounds: Array, val_upper_bounds: Array, val_targets: Array,"}
+{"metadata": {"task_id": "awslabs_fortuna/57"}, "prediction": "output_type=\"continuous\","}
+{"metadata": {"task_id": "awslabs_fortuna/58"}, "prediction": "jnp.ndarray"}
+{"metadata": {"task_id": "awslabs_fortuna/59"}, "prediction": "self.disable_jit = disable_jit"}
+{"metadata": {"task_id": "awslabs_fortuna/62"}, "prediction": "plot_reliability_diagram(accs[0], confs[0])"}
+{"metadata": {"task_id": "awslabs_fortuna/61"}, "prediction": "A posterior approximation method. The default method is SWAG."}
+{"metadata": {"task_id": "awslabs_fortuna/60"}, "prediction": "if mutable is not None:"}
+{"metadata": {"task_id": "awslabs_fortuna/63"}, "prediction": "from fortuna.typing import OptaxOptimizer, Path"}
+{"metadata": {"task_id": "awslabs_fortuna/64"}, "prediction": "distribute: bool"}
+{"metadata": {"task_id": "awslabs_fortuna/65"}, "prediction": "from fortuna.prob_model.calib_config.base import CalibConfig"}
+{"metadata": {"task_id": "awslabs_fortuna/68"}, "prediction": "prob_class.save_state(checkpoint_path=tmp_dir)"}
+{"metadata": {"task_id": "awslabs_fortuna/66"}, "prediction": "Tuple[Callable[[jnp.ndarray, jnp.ndarray, Array], Array], ...]"}
+{"metadata": {"task_id": "awslabs_fortuna/67"}, "prediction": "activations: Optional[Tuple[Callable[[Array], Array]]] = (nn.relu, nn.relu)"}
+{"metadata": {"task_id": "awslabs_fortuna/69"}, "prediction": "lik_log_var=self.reg_lik.model_manager.likelihood_log_variance_model.init("}
+{"metadata": {"task_id": "awslabs_fortuna/70"}, "prediction": "self.state.put(state, keep=fit_config.checkpointer.keep_top_n_checkpoints)"}
+{"metadata": {"task_id": "awslabs_fortuna/71"}, "prediction": "from jax import random"}
+{"metadata": {"task_id": "awslabs_fortuna/73"}, "prediction": "optimizer=FitOptimizer(n_epochs=3),"}
+{"metadata": {"task_id": "awslabs_fortuna/72"}, "prediction": "calib_config: CalibConfig = CalibConfig(),"}
+{"metadata": {"task_id": "awslabs_fortuna/74"}, "prediction": "}"}
+{"metadata": {"task_id": "awslabs_fortuna/75"}, "prediction": "metrics: Optional["}
+{"metadata": {"task_id": "awslabs_fortuna/76"}, "prediction": "calib_config=self.reg_calib_config_nodir_nodump,"}
+{"metadata": {"task_id": "awslabs_fortuna/78"}, "prediction": "status = prob_reg_map.train("}
+{"metadata": {"task_id": "awslabs_fortuna/77"}, "prediction": "ADVIPosterior"}
+{"metadata": {"task_id": "awslabs_fortuna/80"}, "prediction": "Whether to distribute computation over multiple devices, if available."}
+{"metadata": {"task_id": "awslabs_fortuna/79"}, "prediction": "MultiDeviceCalibModelCalibrator)"}
+{"metadata": {"task_id": "awslabs_fortuna/81"}, "prediction": "raise ValueError(\"\"\"`error` must be a scalar between 0 and 1.\"\"\")"}
+{"metadata": {"task_id": "awslabs_fortuna/82"}, "prediction": "def __call__(self, x: jnp.ndarray,) -> jnp.ndarray:"}
+{"metadata": {"task_id": "awslabs_fortuna/83"}, "prediction": "optimizer=optimizer,"}
+{"metadata": {"task_id": "awslabs_fortuna/84"}, "prediction": ":math:`p(y|\\mu, \\sigma^2)=\\text{Normal}(y|\\mu, \\sigma^2)`, where :math:`y` denotes a target variable and"}
+{"metadata": {"task_id": "awslabs_fortuna/85"}, "prediction": "val_data_loader=self.class_val_data_loader,"}
+{"metadata": {"task_id": "awslabs_fortuna/86"}, "prediction": "----------"}
+{"metadata": {"task_id": "awslabs_fortuna/87"}, "prediction": ") -> Dict[str, jnp.ndarray]:"}
+{"metadata": {"task_id": "awslabs_fortuna/88"}, "prediction": "rng: jnp.ndarray,"}
+{"metadata": {"task_id": "awslabs_fortuna/89"}, "prediction": "An estimate of the predictive aleatoric variance for each input."}
+{"metadata": {"task_id": "awslabs_fortuna/90"}, "prediction": "progress_bar,"}
+{"metadata": {"task_id": "awslabs_fortuna/91"}, "prediction": "self.assertEqual(c1, c2)"}
+{"metadata": {"task_id": "awslabs_fortuna/92"}, "prediction": "(preds.shape[1], preds.shape[0] * preds.shape[2],)"}
+{"metadata": {"task_id": "awslabs_fortuna/93"}, "prediction": "early_stopping_patience=2,"}
+{"metadata": {"task_id": "awslabs_fortuna/94"}, "prediction": "calib_data_loader=calib_data_loader,"}
+{"metadata": {"task_id": "awslabs_fortuna/95"}, "prediction": "perm = np.random.choice("}
+{"metadata": {"task_id": "awslabs_fortuna/96"}, "prediction": "An evaluation of the log-pdf for each data point."}
+{"metadata": {"task_id": "awslabs_fortuna/97"}, "prediction": "mutable: Optional[Mutable] = None"}
+{"metadata": {"task_id": "awslabs_fortuna/98"}, "prediction": "model must have been calibrated beforehand."}
+{"metadata": {"task_id": "awslabs_fortuna/99"}, "prediction": "def _update(_i):"}
+{"metadata": {"task_id": "awslabs_fortuna/100"}, "prediction": "strides: Tuple[int, int] = (1, 1)"}
+{"metadata": {"task_id": "awslabs_fortuna/101"}, "prediction": "if (val_uncertainties <= 0).any():"}
+{"metadata": {"task_id": "awslabs_fortuna/102"}, "prediction": "val_lower_bounds, val_upper_bounds, val_targets, error"}
+{"metadata": {"task_id": "awslabs_fortuna/103"}, "prediction": "return_aux = []"}
+{"metadata": {"task_id": "awslabs_fortuna/104"}, "prediction": "prob_output_layer: ProbOutputLayer,"}
+{"metadata": {"task_id": "awslabs_fortuna/105"}, "prediction": "params: CalibParams,"}
+{"metadata": {"task_id": "awslabs_fortuna/106"}, "prediction": "def __init__(self, generator):"}
+{"metadata": {"task_id": "awslabs_fortuna/108"}, "prediction": "distribute: bool = True,"}
+{"metadata": {"task_id": "awslabs_fortuna/107"}, "prediction": "mutable=init_prob_model_state.mutable,"}
+{"metadata": {"task_id": "awslabs_fortuna/109"}, "prediction": "self, devices: int = -1, disable_jit: bool = False,"}
+{"metadata": {"task_id": "awslabs_fortuna/110"}, "prediction": "shape_inputs=self.shape_inputs,"}
+{"metadata": {"task_id": "awslabs_fortuna/111"}, "prediction": "state: PosteriorState,"}
+{"metadata": {"task_id": "awslabs_fortuna/112"}, "prediction": "prefix: str = \"checkpoint_\","}
+{"metadata": {"task_id": "awslabs_fortuna/113"}, "prediction": "dropout_rate=self.dropout_rate,"}
+{"metadata": {"task_id": "awslabs_fortuna/114"}, "prediction": "if self.should_perform_validation(val_targets, epoch):"}
+{"metadata": {"task_id": "awslabs_fortuna/115"}, "prediction": "flag = 0"}
+{"metadata": {"task_id": "awslabs_fortuna/116"}, "prediction": "n_data=10,"}
+{"metadata": {"task_id": "awslabs_fortuna/117"}, "prediction": "disable_calibration_metrics_computation: bool = False,"}
+{"metadata": {"task_id": "awslabs_fortuna/118"}, "prediction": "training_dataloader=training_dataloader,"}
+{"metadata": {"task_id": "awslabs_fortuna/119"}, "prediction": "from fortuna.prob_model.posterior.map.map_state import MAPState"}
+{"metadata": {"task_id": "awslabs_fortuna/121"}, "prediction": "likelihood_log_variance_model=MyModel(self.reg_output_dim),"}
+{"metadata": {"task_id": "awslabs_fortuna/120"}, "prediction": "state: TrainState,"}
+{"metadata": {"task_id": "awslabs_fortuna/123"}, "prediction": "("}
+{"metadata": {"task_id": "awslabs_fortuna/122"}, "prediction": "logging.info(\"Training on CPU without jit.\")"}
+{"metadata": {"task_id": "awslabs_fortuna/124"}, "prediction": "make_array_random_data("}
+{"metadata": {"task_id": "awslabs_fortuna/125"}, "prediction": "val_losses = super().val_loss_step(state, batch, outputs, fun, rng, n_data)"}
+{"metadata": {"task_id": "awslabs_fortuna/126"}, "prediction": "return np.concatenate(targets, 0)"}
+{"metadata": {"task_id": "awslabs_fortuna/127"}, "prediction": "output_calibrator=self.output_calib_manager.init("}
+{"metadata": {"task_id": "awslabs_fortuna/128"}, "prediction": "uncertainty_fn: Callable[[jnp.ndarray, jnp.ndarray, Array], jnp.ndarray],"}
+{"metadata": {"task_id": "awslabs_fortuna/129"}, "prediction": "if metrics is not None:"}
+{"metadata": {"task_id": "awslabs_fortuna/130"}, "prediction": "- :math:`W` denotes the random model parameters."}
+{"metadata": {"task_id": "awslabs_fortuna/131"}, "prediction": ") -> jnp.ndarray:"}
+{"metadata": {"task_id": "awslabs_fortuna/132"}, "prediction": "from fortuna.output_calibrator.output_calib_manager.base import \\"}
+{"metadata": {"task_id": "awslabs_fortuna/133"}, "prediction": "self.output_dim,"}
+{"metadata": {"task_id": "awslabs_fortuna/134"}, "prediction": "output_calibrator=ClassificationTemperatureScaler(),"}
+{"metadata": {"task_id": "awslabs_fortuna/135"}, "prediction": "filters=self.filters,"}
+{"metadata": {"task_id": "awslabs_fortuna/136"}, "prediction": "metaclass=abc.ABCMeta,"}
+{"metadata": {"task_id": "awslabs_fortuna/137"}, "prediction": "raise ValueError(\"\"\"`probs` must be a two-dimensional array.\"\"\")"}
+{"metadata": {"task_id": "awslabs_fortuna/138"}, "prediction": "params=calib_dict[\"calib_params\"],"}
+{"metadata": {"task_id": "awslabs_fortuna/139"}, "prediction": ") -> Tuple[CalibState, Dict[str, Any]]:"}
+{"metadata": {"task_id": "awslabs_fortuna/140"}, "prediction": "bs = 32"}
+{"metadata": {"task_id": "awslabs_fortuna/141"}, "prediction": "return state, data_loaders, outputs_loaders, model_key"}
+{"metadata": {"task_id": "awslabs_fortuna/142"}, "prediction": "else None"}
+{"metadata": {"task_id": "awslabs_fortuna/143"}, "prediction": "def sync_gradients_and_loss("}
+{"metadata": {"task_id": "awslabs_fortuna/144"}, "prediction": "self.n_batches = 2"}
+{"metadata": {"task_id": "awslabs_fortuna/145"}, "prediction": "validation_dataset_size: int,"}
+{"metadata": {"task_id": "awslabs_fortuna/146"}, "prediction": "def sample(self, params_like: Params, rng: Optional[PRNGKeyArray] = None) -> Params:"}
+{"metadata": {"task_id": "awslabs_fortuna/147"}, "prediction": "See `posterior_approximator` in `Parameters`."}
+{"metadata": {"task_id": "awslabs_fortuna/148"}, "prediction": "yield from self._targets_loader()"}
+{"metadata": {"task_id": "awslabs_fortuna/150"}, "prediction": "n_params = len(ravel_pytree(self.params)[0])"}
+{"metadata": {"task_id": "awslabs_fortuna/151"}, "prediction": "if output_type == \"continuous\""}
+{"metadata": {"task_id": "awslabs_fortuna/149"}, "prediction": "A random number generator. If not passed, this will be taken from the attributes of this class."}
+{"metadata": {"task_id": "awslabs_fortuna/152"}, "prediction": "self.assertFalse(improved)"}
+{"metadata": {"task_id": "awslabs_fortuna/153"}, "prediction": "cls,"}
+{"metadata": {"task_id": "awslabs_fortuna/154"}, "prediction": "right = jnp.concatenate([mu[None] + ri[:, None] for mu, ri in zip(cross_test_outputs, r)])"}
+{"metadata": {"task_id": "awslabs_fortuna/156"}, "prediction": "self.forward = architecture.forward"}
+{"metadata": {"task_id": "awslabs_fortuna/155"}, "prediction": "pass"}
+{"metadata": {"task_id": "awslabs_fortuna/157"}, "prediction": "self.assertDictEqual(observed_losses_and_metrics, expected_losses_and_metrics)"}
+{"metadata": {"task_id": "awslabs_fortuna/158"}, "prediction": "\"image_dark\": \"fortuna_symbol_white.png\","}
+{"metadata": {"task_id": "awslabs_fortuna/159"}, "prediction": "state: CalibState,"}
+{"metadata": {"task_id": "awslabs_fortuna/162"}, "prediction": "calib_params=state.calib_params,"}
+{"metadata": {"task_id": "awslabs_fortuna/160"}, "prediction": "yield np.random.normal(size=(batch_size,) + shape_inputs)"}
+{"metadata": {"task_id": "awslabs_fortuna/163"}, "prediction": "status = prob_reg.train("}
+{"metadata": {"task_id": "awslabs_fortuna/161"}, "prediction": "OptaxOptimizer = GradientTransformation"}
+{"metadata": {"task_id": "awslabs_fortuna/164"}, "prediction": "ckpt_file_temp = os.path.join(ckpt_dir, name + \".temp\")"}
+{"metadata": {"task_id": "awslabs_fortuna/165"}, "prediction": "if not self._ready:"}
+{"metadata": {"task_id": "awslabs_fortuna/166"}, "prediction": "lambda batch: tree_map(_reshape_input_batch, batch), self.dataloader"}
+{"metadata": {"task_id": "awslabs_fortuna/167"}, "prediction": "output_dim=self.output_dim,"}
+{"metadata": {"task_id": "awslabs_fortuna/168"}, "prediction": "return brier_score(p, y)"}
+{"metadata": {"task_id": "awslabs_fortuna/170"}, "prediction": "return_aux += [\"mutable\"]"}
+{"metadata": {"task_id": "awslabs_fortuna/171"}, "prediction": "**kwargs"}
+{"metadata": {"task_id": "awslabs_fortuna/172"}, "prediction": "\"discrete\", \"continuous\""}
+{"metadata": {"task_id": "awslabs_fortuna/169"}, "prediction": "from fortuna.typing import Array"}
+{"metadata": {"task_id": "awslabs_fortuna/173"}, "prediction": "prefix=prefix,"}
+{"metadata": {"task_id": "awslabs_fortuna/174"}, "prediction": "assert jnp.alltrue(prob_model.rng._rng == prob_model.likelihood.rng._rng)"}
+{"metadata": {"task_id": "awslabs_fortuna/175"}, "prediction": "optimizer=calib_config.optimizer.method,"}
+{"metadata": {"task_id": "awslabs_fortuna/176"}, "prediction": "calib_params : Optional[CalibParams]"}
+{"metadata": {"task_id": "awslabs_fortuna/177"}, "prediction": "{"}
+{"metadata": {"task_id": "awslabs_fortuna/178"}, "prediction": "assert hasattr(cs.mutable, \"unfreeze\")"}
+{"metadata": {"task_id": "awslabs_fortuna/179"}, "prediction": "seed: int = 0,"}
+{"metadata": {"task_id": "awslabs_fortuna/180"}, "prediction": "self, joint: Joint, posterior_approximator: ADVIPosteriorApproximator,"}
+{"metadata": {"task_id": "awslabs_fortuna/181"}, "prediction": "the output calibrator is described by a function :math:`g(\\phi, o)`,"}
+{"metadata": {"task_id": "awslabs_fortuna/182"}, "prediction": "rng: Optional[PRNGKeyArray] = None,"}
+{"metadata": {"task_id": "awslabs_fortuna/183"}, "prediction": "\\mathbb{E}_{Y|w, x}[Y],"}
+{"metadata": {"task_id": "awslabs_fortuna/184"}, "prediction": "if lower_bounds.ndim == 1:"}
+{"metadata": {"task_id": "awslabs_fortuna/185"}, "prediction": "scores: Optional[Array] = None,"}
+{"metadata": {"task_id": "awslabs_fortuna/187"}, "prediction": "targets: Array,"}
+{"metadata": {"task_id": "awslabs_fortuna/188"}, "prediction": "self._fun = fun"}
+{"metadata": {"task_id": "awslabs_fortuna/186"}, "prediction": "return_aux = [\"outputs\"]"}
+{"metadata": {"task_id": "awslabs_fortuna/189"}, "prediction": "Number of target samples to sample for each input data point."}
+{"metadata": {"task_id": "awslabs_fortuna/190"}, "prediction": "\"sphinx_gallery.load_style\","}
+{"metadata": {"task_id": "awslabs_fortuna/191"}, "prediction": "if means is not None:"}
+{"metadata": {"task_id": "awslabs_fortuna/192"}, "prediction": "save_every_n_steps=fit_config.checkpointer.save_every_n_steps,"}
+{"metadata": {"task_id": "awslabs_fortuna/194"}, "prediction": ") = trainer._training_loop("}
+{"metadata": {"task_id": "awslabs_fortuna/193"}, "prediction": "from jax._src.prng import PRNGKeyArray"}
+{"metadata": {"task_id": "awslabs_fortuna/195"}, "prediction": "progress_bar.update(len(data))"}
+{"metadata": {"task_id": "awslabs_fortuna/196"}, "prediction": "rav = ravel_pytree(params)[0]"}
+{"metadata": {"task_id": "awslabs_fortuna/197"}, "prediction": "if inputs is not None:"}
+{"metadata": {"task_id": "awslabs_fortuna/199"}, "prediction": "yield from self._inputs_loader()"}
+{"metadata": {"task_id": "awslabs_fortuna/198"}, "prediction": "d2 = d0"}
+{"metadata": {"task_id": "huggingface_evaluate/0"}, "prediction": "metrics = [metric_dir.split(os.sep)[-2] for metric_dir in glob.glob(\"./metrics/*/\")]"}
+{"metadata": {"task_id": "huggingface_evaluate/1"}, "prediction": "addscore = 2 * addscore_precision * addscore_recall / (addscore_precision + addscore_recall)"}
+{"metadata": {"task_id": "huggingface_evaluate/3"}, "prediction": "metric.add_batch(references=refs, predictions=preds)"}
+{"metadata": {"task_id": "huggingface_evaluate/2"}, "prediction": "with tempfile.TemporaryDirectory() as dirname:"}
+{"metadata": {"task_id": "huggingface_evaluate/5"}, "prediction": "metric=\"accuracy\","}
+{"metadata": {"task_id": "huggingface_evaluate/6"}, "prediction": "def zstd_file(tmp_path_factory):"}
+{"metadata": {"task_id": "huggingface_evaluate/4"}, "prediction": ">>> results = indic_glue_metric.compute(predictions=predictions, references=references)"}
+{"metadata": {"task_id": "huggingface_evaluate/7"}, "prediction": "device_id: Device for featurization. Supply a GPU id (e.g. 0 or 3) to use GPU. If no GPU with this id is found, use CPU"}
+{"metadata": {"task_id": "huggingface_evaluate/8"}, "prediction": "else:"}
+{"metadata": {"task_id": "huggingface_evaluate/9"}, "prediction": "f\"{os.path.join(self.dir_path, 'questionanswering_squadv2_transformers', 'eval_results.json')}\", \"r\""}
+{"metadata": {"task_id": "huggingface_evaluate/10"}, "prediction": "predictions: array-like of shape (n_samples,) or (n_samples, n_outputs)"}
+{"metadata": {"task_id": "huggingface_evaluate/13"}, "prediction": "init_file_path = os.path.join(importable_subdirectory, \"__init__.py\")"}
+{"metadata": {"task_id": "huggingface_evaluate/12"}, "prediction": "combined_evaluation = combine([dummy_metric, dummy_metric])"}
+{"metadata": {"task_id": "huggingface_evaluate/11"}, "prediction": ">>> precision_metric = evaluate.load(\"precision\")"}
+{"metadata": {"task_id": "huggingface_evaluate/14"}, "prediction": "import os"}
+{"metadata": {"task_id": "huggingface_evaluate/15"}, "prediction": "List of predicted segmentation maps, each of shape (height, width). Each segmentation map can be of a different size."}
+{"metadata": {"task_id": "huggingface_evaluate/18"}, "prediction": "data=self.data,"}
+{"metadata": {"task_id": "huggingface_evaluate/17"}, "prediction": "error_msg = ("}
+{"metadata": {"task_id": "huggingface_evaluate/16"}, "prediction": ">>> results = super_glue_metric.compute(predictions=predictions, references=references)"}
+{"metadata": {"task_id": "huggingface_evaluate/19"}, "prediction": "label_column (`str`, defaults to `\"label\"`):"}
+{"metadata": {"task_id": "huggingface_evaluate/22"}, "prediction": "def setUp(self):"}
+{"metadata": {"task_id": "huggingface_evaluate/21"}, "prediction": "\"ner_tags\": [[1, 2, 0, 0, 0, 0, 3, 0, 0, 0]],"}
+{"metadata": {"task_id": "huggingface_evaluate/20"}, "prediction": "with contextlib.redirect_stdout(stream):"}
+{"metadata": {"task_id": "huggingface_evaluate/24"}, "prediction": "return LocalEvaluationModuleFactory("}
+{"metadata": {"task_id": "huggingface_evaluate/30"}, "prediction": "metric=\"seqeval\","}
+{"metadata": {"task_id": "huggingface_evaluate/25"}, "prediction": "}"}
+{"metadata": {"task_id": "huggingface_evaluate/23"}, "prediction": ">>>     metric=\"wer\","}
+{"metadata": {"task_id": "huggingface_evaluate/26"}, "prediction": "for line in lines:"}
+{"metadata": {"task_id": "huggingface_evaluate/32"}, "prediction": "self.assertEqual(self.counter, 8)"}
+{"metadata": {"task_id": "huggingface_evaluate/28"}, "prediction": "feature_extractor: Union[\"PreTrainedTokenizerBase\", \"FeatureExtractionMixin\"] = None,  # noqa: F821"}
+{"metadata": {"task_id": "huggingface_evaluate/33"}, "prediction": "elif mode is OfflineSimulationMode.HF_EVALUATE_OFFLINE_SET_TO_1:"}
+{"metadata": {"task_id": "huggingface_evaluate/31"}, "prediction": ")"}
+{"metadata": {"task_id": "huggingface_evaluate/27"}, "prediction": "metric=cer,"}
+{"metadata": {"task_id": "huggingface_evaluate/34"}, "prediction": "model_id=\"username/repo\","}
+{"metadata": {"task_id": "huggingface_evaluate/29"}, "prediction": "tokens separated by spaces."}
+{"metadata": {"task_id": "huggingface_evaluate/35"}, "prediction": "preds = [\"weaewolf\"]"}
+{"metadata": {"task_id": "huggingface_evaluate/36"}, "prediction": "label_mapping=self.label_mapping,"}
+{"metadata": {"task_id": "huggingface_evaluate/38"}, "prediction": ">>> predictions = [0, 1, 1, 0, 0]"}
+{"metadata": {"task_id": "huggingface_evaluate/40"}, "prediction": "The CoNLL format has one word per line with all the annotation for this word in column separated by spaces:"}
+{"metadata": {"task_id": "huggingface_evaluate/37"}, "prediction": "message = \"Unanswered question \" + qa[\"id\"] + \" will receive score 0.\""}
+{"metadata": {"task_id": "huggingface_evaluate/39"}, "prediction": "cache_dir = config.HF_EVALUATE_CACHE"}
+{"metadata": {"task_id": "huggingface_evaluate/43"}, "prediction": ") -> requests.Response:"}
+{"metadata": {"task_id": "huggingface_evaluate/41"}, "prediction": "return filename"}
+{"metadata": {"task_id": "huggingface_evaluate/42"}, "prediction": "ftp_get(url, temp_file)"}
+{"metadata": {"task_id": "huggingface_evaluate/45"}, "prediction": "return HubEvaluationModuleFactory("}
+{"metadata": {"task_id": "huggingface_evaluate/44"}, "prediction": ">>>     data=data,"}
+{"metadata": {"task_id": "huggingface_evaluate/46"}, "prediction": "],"}
+{"metadata": {"task_id": "huggingface_evaluate/47"}, "prediction": "smooth_value (`float`): The smoothing value. Only valid when `smooth_method='floor'` (in which case `smooth_value` defaults to `0.1`) or `smooth_method='add-k'` (in which case `smooth_value` defaults to `1`)."}
+{"metadata": {"task_id": "huggingface_evaluate/49"}, "prediction": "\"legend_loc\": \"upper right\","}
+{"metadata": {"task_id": "huggingface_evaluate/51"}, "prediction": "{\"type\": \"dummy_metric\", \"value\": 1.0, \"name\": \"Pretty Metric Name\"},"}
+{"metadata": {"task_id": "huggingface_evaluate/50"}, "prediction": ">>> sources=[\"About 95 species are currently accepted .\"]"}
+{"metadata": {"task_id": "huggingface_evaluate/52"}, "prediction": "an associated metric, and runs evaluation on a model or pipeline. Evaluation suites can be a Python script found"}
+{"metadata": {"task_id": "huggingface_evaluate/48"}, "prediction": "...                                     predictions=[1, 2, 2, 0, 3, 3],"}
+{"metadata": {"task_id": "huggingface_evaluate/53"}, "prediction": "launch_gradio_widget(module)"}
+{"metadata": {"task_id": "huggingface_evaluate/54"}, "prediction": "exclude = set(string.punctuation)"}
+{"metadata": {"task_id": "huggingface_evaluate/56"}, "prediction": "del metric"}
+{"metadata": {"task_id": "huggingface_evaluate/55"}, "prediction": "- `'micro'`: Calculate metrics globally by counting the total true positives, false negatives, and false positives."}
+{"metadata": {"task_id": "huggingface_evaluate/57"}, "prediction": "resume_download: bool = False"}
+{"metadata": {"task_id": "huggingface_evaluate/58"}, "prediction": "{'precision': 0.5}"}
+{"metadata": {"task_id": "huggingface_evaluate/62"}, "prediction": "if not _run_packaged_tests or _run_packaged_tests == 0:"}
+{"metadata": {"task_id": "huggingface_evaluate/60"}, "prediction": "_value = default"}
+{"metadata": {"task_id": "huggingface_evaluate/59"}, "prediction": "['MISC', 'PER', 'overall_precision', 'overall_recall', 'overall_f1', 'overall_accuracy']"}
+{"metadata": {"task_id": "huggingface_evaluate/61"}, "prediction": ">>> data = [\"hello world and hello moon\"]"}
+{"metadata": {"task_id": "huggingface_evaluate/63"}, "prediction": "HubEvaluationModuleFactory,"}
+{"metadata": {"task_id": "huggingface_evaluate/65"}, "prediction": "["}
+{"metadata": {"task_id": "huggingface_evaluate/64"}, "prediction": "Examples:"}
+{"metadata": {"task_id": "huggingface_evaluate/67"}, "prediction": ">>> data = load_dataset(\"wmt19\", \"fr-de\", split=\"validation[:40]\")"}
+{"metadata": {"task_id": "huggingface_evaluate/70"}, "prediction": "results = metric.compute()"}
+{"metadata": {"task_id": "huggingface_evaluate/66"}, "prediction": ">>> task_evaluator = evaluator(\"automatic-speech-recognition\")"}
+{"metadata": {"task_id": "huggingface_evaluate/71"}, "prediction": "json.dump(data, f)"}
+{"metadata": {"task_id": "huggingface_evaluate/69"}, "prediction": "module_type: Optional[str] = None,"}
+{"metadata": {"task_id": "huggingface_evaluate/68"}, "prediction": "]"}
+{"metadata": {"task_id": "huggingface_evaluate/76"}, "prediction": "inputs_description=_KWARGS_DESCRIPTION,"}
+{"metadata": {"task_id": "huggingface_evaluate/72"}, "prediction": "**params,"}
+{"metadata": {"task_id": "huggingface_evaluate/77"}, "prediction": ">>> predictions = [\"hello there\", \"general kenobi\"]"}
+{"metadata": {"task_id": "huggingface_evaluate/73"}, "prediction": "rougeLsum: rouge_lsum (f1)"}
+{"metadata": {"task_id": "huggingface_evaluate/78"}, "prediction": "r4gramslist = []"}
+{"metadata": {"task_id": "huggingface_evaluate/79"}, "prediction": "if not transformers_version.endswith(\".dev0\"):"}
+{"metadata": {"task_id": "huggingface_evaluate/75"}, "prediction": "\"table-question-answering\","}
+{"metadata": {"task_id": "huggingface_evaluate/74"}, "prediction": "while True:"}
+{"metadata": {"task_id": "huggingface_evaluate/80"}, "prediction": "import io"}
+{"metadata": {"task_id": "huggingface_evaluate/82"}, "prediction": "{\"start\": 16, \"entity\": \"B-LOC\"},"}
+{"metadata": {"task_id": "huggingface_evaluate/81"}, "prediction": "from evaluate.utils import launch_gradio_widget"}
+{"metadata": {"task_id": "huggingface_evaluate/83"}, "prediction": "This metric computes the area under the curve (AUC) for the Receiver Operating Characteristic Curve (ROC). The return values represent how well the model used is predicting the correct classes, based on the input data. A score of `0.5` means that the model is predicting exactly at chance, i.e. the model's predictions are correct at the same rate as if the predictions were being decided by the flip of a fair coin or the roll of a fair die. A score above `0.5` indicates that the model is doing better than chance, while a score below `0.5` indicates that the model is doing worse than chance."}
+{"metadata": {"task_id": "huggingface_evaluate/84"}, "prediction": "homepage=\"https://github.com/openai/human-eval\","}
+{"metadata": {"task_id": "huggingface_evaluate/85"}, "prediction": "Args:"}
+{"metadata": {"task_id": "huggingface_evaluate/86"}, "prediction": "num_layers (int): The layer of representation to use,"}
+{"metadata": {"task_id": "huggingface_evaluate/87"}, "prediction": "\"Programming Language :: Python :: 3\","}
+{"metadata": {"task_id": "huggingface_evaluate/88"}, "prediction": "path = str(tmp_path_factory.mktemp(\"data\") / \"dataset.json\")"}
+{"metadata": {"task_id": "huggingface_evaluate/89"}, "prediction": "elif tokenizer == \"penn\":"}
+{"metadata": {"task_id": "huggingface_evaluate/90"}, "prediction": ">>> wer_score = wer.compute(predictions=predictions, references=references)"}
+{"metadata": {"task_id": "huggingface_evaluate/91"}, "prediction": "dataset_config (`str`, *optional*):"}
+{"metadata": {"task_id": "huggingface_evaluate/92"}, "prediction": "download_desc=download_config.download_desc,"}
+{"metadata": {"task_id": "huggingface_evaluate/93"}, "prediction": "for x, t in zip(evaluation_modules, evaluation_module_types)"}
+{"metadata": {"task_id": "huggingface_evaluate/94"}, "prediction": "average=average,"}
+{"metadata": {"task_id": "huggingface_evaluate/95"}, "prediction": "import sys"}
+{"metadata": {"task_id": "huggingface_evaluate/97"}, "prediction": "self.assertEqual(results[\"f1\"], 100.0)"}
+{"metadata": {"task_id": "huggingface_evaluate/96"}, "prediction": "title = {The Woman Worked as a Babysitter: On Biases in Language Generation},"}
+{"metadata": {"task_id": "huggingface_evaluate/98"}, "prediction": "finally:"}
+{"metadata": {"task_id": "huggingface_evaluate/99"}, "prediction": "`total_word_count` (`int`) : the total number of words in the input string(s)"}
+{"metadata": {"task_id": "huggingface_evaluate/100"}, "prediction": "- None (default): Returns an array of Matthews correlation coefficients, one for each feature"}
+{"metadata": {"task_id": "huggingface_evaluate/101"}, "prediction": "-0.7"}
+{"metadata": {"task_id": "huggingface_evaluate/102"}, "prediction": "shutil.move(temp_file.name, cache_path)"}
+{"metadata": {"task_id": "huggingface_evaluate/103"}, "prediction": "- 'idx': index of the question as specified by the dataset"}
+{"metadata": {"task_id": "huggingface_evaluate/105"}, "prediction": "self.assertTrue(abs(char_error_rate - 0.1818181818) < 1e-6)"}
+{"metadata": {"task_id": "huggingface_evaluate/104"}, "prediction": "in the input list, as well as the mean perplexity. If one of the input texts is"}
+{"metadata": {"task_id": "huggingface_evaluate/108"}, "prediction": "loaded_result_dict = json.load(f)"}
+{"metadata": {"task_id": "huggingface_evaluate/106"}, "prediction": "base_path=hf_hub_url(path=self.name, name=\"\", revision=revision),"}
+{"metadata": {"task_id": "huggingface_evaluate/107"}, "prediction": "from huggingface_hub.repocard import metadata_update"}
+{"metadata": {"task_id": "huggingface_evaluate/109"}, "prediction": ">>> print(results)"}
+{"metadata": {"task_id": "huggingface_evaluate/110"}, "prediction": "connected = ftp_head(url)"}
+{"metadata": {"task_id": "huggingface_evaluate/112"}, "prediction": "metric_inputs: Dict,"}
+{"metadata": {"task_id": "huggingface_evaluate/113"}, "prediction": "return path"}
+{"metadata": {"task_id": "huggingface_evaluate/111"}, "prediction": ">>> references = [[\"does this sentence match\", \"does this sentence match!?!\"],"}
+{"metadata": {"task_id": "huggingface_evaluate/115"}, "prediction": ">>> results = perplexity.compute(model_id='gpt2',"}
+{"metadata": {"task_id": "huggingface_evaluate/114"}, "prediction": "dataset_split: str = None,"}
+{"metadata": {"task_id": "huggingface_evaluate/116"}, "prediction": "try:"}
+{"metadata": {"task_id": "huggingface_evaluate/121"}, "prediction": "metric = DummyMetric("}
+{"metadata": {"task_id": "huggingface_evaluate/117"}, "prediction": "os.putenv = None"}
+{"metadata": {"task_id": "huggingface_evaluate/118"}, "prediction": "with:"}
+{"metadata": {"task_id": "huggingface_evaluate/123"}, "prediction": "Tokenizes an input line with the tokenizer."}
+{"metadata": {"task_id": "huggingface_evaluate/122"}, "prediction": "self.assertEqual(data.split, \"test\")"}
+{"metadata": {"task_id": "huggingface_evaluate/125"}, "prediction": "self.data = Dataset.from_dict({\"label\": [1, 0], \"text\": [\"great movie\", \"horrible movie\"]})"}
+{"metadata": {"task_id": "huggingface_evaluate/120"}, "prediction": "if self.revision is None and os.getenv(\"HF_SCRIPTS_VERSION\", SCRIPTS_VERSION) != \"main\":"}
+{"metadata": {"task_id": "huggingface_evaluate/119"}, "prediction": "description=_DESCRIPTION,"}
+{"metadata": {"task_id": "huggingface_evaluate/126"}, "prediction": "title={Evaluating Large Language Models Trained on Code},"}
+{"metadata": {"task_id": "huggingface_evaluate/127"}, "prediction": "from .utils import DatasetColumnPair"}
+{"metadata": {"task_id": "huggingface_evaluate/124"}, "prediction": "containing the score, the confidence interval and the standard error calculated for each metric key."}
+{"metadata": {"task_id": "huggingface_evaluate/128"}, "prediction": ">>> import numpy as np"}
+{"metadata": {"task_id": "huggingface_evaluate/129"}, "prediction": "e.args = (max_retry_error,)"}
+{"metadata": {"task_id": "huggingface_evaluate/130"}, "prediction": "metrics_online.StddevAcrossRuns("}
+{"metadata": {"task_id": "huggingface_evaluate/131"}, "prediction": "{'charcut_mt': 0.1971153846153846}"}
+{"metadata": {"task_id": "huggingface_evaluate/132"}, "prediction": "Returns the duplicate fraction of duplicate strings in the input."}
+{"metadata": {"task_id": "huggingface_evaluate/133"}, "prediction": ">>> results = recall_metric.compute(references=[0, 0, 1, 1, 1], predictions=[0, 1, 0, 1, 1], sample_weight=sample_weight)"}
+{"metadata": {"task_id": "huggingface_evaluate/134"}, "prediction": "{"}
+{"metadata": {"task_id": "huggingface_evaluate/135"}, "prediction": "self.evaluation_module_names = [module.name for module in self.evaluation_modules]"}
+{"metadata": {"task_id": "huggingface_evaluate/136"}, "prediction": "the mean IoU of the image is calculated by taking the IoU of each class and averaging them."}
+{"metadata": {"task_id": "huggingface_evaluate/138"}, "prediction": ">>> results = exact_match.compute(references=refs, predictions=preds, regexes_to_ignore=[\"the \", \"yell\", \"YELL\"], ignore_case=True, ignore_punctuation=True)"}
+{"metadata": {"task_id": "huggingface_evaluate/139"}, "prediction": "importable_directory_path = os.path.join(dynamic_modules_path, self.module_type, self.name)"}
+{"metadata": {"task_id": "huggingface_evaluate/140"}, "prediction": "references: array-like of shape (n_samples,) or (n_samples, n_outputs)"}
+{"metadata": {"task_id": "huggingface_evaluate/141"}, "prediction": "c2grams.append(c2gram)"}
+{"metadata": {"task_id": "huggingface_evaluate/137"}, "prediction": "logger.info(f\"TensorFlow found but with version {TF_VERSION}. `datasets` requires version 2 minimum.\")"}
+{"metadata": {"task_id": "huggingface_evaluate/142"}, "prediction": "evaluation_module = evaluation_module_factory("}
+{"metadata": {"task_id": "huggingface_evaluate/144"}, "prediction": "writer.writeheader()"}
+{"metadata": {"task_id": "huggingface_evaluate/143"}, "prediction": "{'mse': 0.375}"}
+{"metadata": {"task_id": "huggingface_evaluate/145"}, "prediction": "...     )"}
+{"metadata": {"task_id": "huggingface_evaluate/148"}, "prediction": "{\"start\": 0, \"entity\": \"B-LOC\"},"}
+{"metadata": {"task_id": "huggingface_evaluate/146"}, "prediction": "Overall accuracy on all images."}
+{"metadata": {"task_id": "huggingface_evaluate/147"}, "prediction": "- `'macro'`: Calculate metrics for each label, and find their unweighted mean. This does not take label imbalance into account."}
+{"metadata": {"task_id": "huggingface_evaluate/149"}, "prediction": "raise ValueError("}
+{"metadata": {"task_id": "huggingface_evaluate/150"}, "prediction": "...                              predictions=input_texts)"}
+{"metadata": {"task_id": "huggingface_evaluate/152"}, "prediction": "is_match = get_jaccard(pred, ground_truth) >= IOU_THRESH or ground_truth in pred"}
+{"metadata": {"task_id": "huggingface_evaluate/153"}, "prediction": "Sari = (F1_add + F1_keep + P_del) / 3"}
+{"metadata": {"task_id": "huggingface_evaluate/151"}, "prediction": "},"}
+{"metadata": {"task_id": "huggingface_evaluate/154"}, "prediction": "),"}
+{"metadata": {"task_id": "huggingface_evaluate/156"}, "prediction": "if config.JAX_AVAILABLE:"}
+{"metadata": {"task_id": "huggingface_evaluate/157"}, "prediction": "def xml_file(tmp_path_factory):"}
+{"metadata": {"task_id": "huggingface_evaluate/155"}, "prediction": "32.0"}
+{"metadata": {"task_id": "huggingface_evaluate/163"}, "prediction": "to_use_files.extend(list(Path(file_path).rglob(\"*.[pP][yY]\")))"}
+{"metadata": {"task_id": "huggingface_evaluate/158"}, "prediction": "```"}
+{"metadata": {"task_id": "huggingface_evaluate/159"}, "prediction": "def load_local_metric(evaluation_module_name, *args, **kwargs):"}
+{"metadata": {"task_id": "huggingface_evaluate/161"}, "prediction": "signal.setitimer(signal.ITIMER_REAL, 0)"}
+{"metadata": {"task_id": "huggingface_evaluate/162"}, "prediction": "if response.status_code == 200:  # ok"}
+{"metadata": {"task_id": "huggingface_evaluate/165"}, "prediction": "self.label_mapping = {\"NEGATIVE\": 0.0, \"POSITIVE\": 1.0}"}
+{"metadata": {"task_id": "huggingface_evaluate/160"}, "prediction": "raise e1 from None"}
+{"metadata": {"task_id": "huggingface_evaluate/168"}, "prediction": "f\"Input {input_name}: {summarize_if_long_list(batch[input_name])}\""}
+{"metadata": {"task_id": "huggingface_evaluate/164"}, "prediction": "predictions = json.load(prediction_file)"}
+{"metadata": {"task_id": "huggingface_evaluate/167"}, "prediction": "task_type: str"}
+{"metadata": {"task_id": "huggingface_evaluate/166"}, "prediction": "with self.assertRaises(ValueError):"}
+{"metadata": {"task_id": "huggingface_evaluate/171"}, "prediction": "metric=\"squad\","}
+{"metadata": {"task_id": "huggingface_evaluate/172"}, "prediction": "return False"}
+{"metadata": {"task_id": "huggingface_evaluate/169"}, "prediction": "...                                     predictions=[10, 9, 2.5, 6, 4],"}
+{"metadata": {"task_id": "huggingface_evaluate/170"}, "prediction": "author={Bertie Vidgen and Tristan Thrush and Zeerak Waseem and Douwe Kiela},"}
+{"metadata": {"task_id": "huggingface_evaluate/173"}, "prediction": "confidence_level=confidence_level,"}
+{"metadata": {"task_id": "huggingface_evaluate/174"}, "prediction": "the name of the column containing the input text in the dataset specified by `data`."}
+{"metadata": {"task_id": "huggingface_evaluate/178"}, "prediction": "url, temp_file, proxies=None, resume_size=0, headers=None, cookies=None, timeout=100.0, max_retries=0, desc=None"}
+{"metadata": {"task_id": "huggingface_evaluate/175"}, "prediction": "Parses test cases to be used in gradio Dataframe. Note that an apostrophe is added"}
+{"metadata": {"task_id": "huggingface_evaluate/176"}, "prediction": ">>> print({k: round(v, 2) for k, v in results['regard_difference'].items()})"}
+{"metadata": {"task_id": "huggingface_evaluate/181"}, "prediction": "references (list of list of str): The references. There should be one reference sub-list for each prediction sentence."}
+{"metadata": {"task_id": "huggingface_evaluate/177"}, "prediction": "pixel_values = torch.stack("}
+{"metadata": {"task_id": "huggingface_evaluate/180"}, "prediction": "predictions (list of str): The predicted sentences."}
+{"metadata": {"task_id": "huggingface_evaluate/182"}, "prediction": "max_length (int): maximum sequence length."}
+{"metadata": {"task_id": "huggingface_evaluate/179"}, "prediction": "- for 'axb':"}
+{"metadata": {"task_id": "huggingface_evaluate/184"}, "prediction": "tf_mock = mock.Mock()"}
+{"metadata": {"task_id": "huggingface_evaluate/186"}, "prediction": "Computes CUAD scores (EM, F1, AUPR, Precision@80%Recall, and Precision@90%Recall)."}
+{"metadata": {"task_id": "huggingface_evaluate/188"}, "prediction": "self.assertAlmostEqual(results[\"total_time_in_seconds\"], 0.1, 1)"}
+{"metadata": {"task_id": "huggingface_evaluate/183"}, "prediction": "multi_class=\"raise\","}
+{"metadata": {"task_id": "huggingface_evaluate/185"}, "prediction": "self.assertListEqual(predictions[\"predictions\"][0], [\"B-LOC\", \"O\", \"O\", \"O\", \"B-LOC\", \"O\"])"}
+{"metadata": {"task_id": "huggingface_evaluate/187"}, "prediction": "the name of the column containing the input audio path in the dataset specified by `data`."}
+{"metadata": {"task_id": "huggingface_evaluate/189"}, "prediction": "description: str"}
+{"metadata": {"task_id": "huggingface_evaluate/191"}, "prediction": "Argument can be used to overwrite a default tokenizer if `model_or_pipeline` represents a model for"}
+{"metadata": {"task_id": "huggingface_evaluate/190"}, "prediction": "longer than the max input length of the model, then it is truncated to the"}
+{"metadata": {"task_id": "huggingface_evaluate/192"}, "prediction": "\"references\": Sequence(Value(\"string\", id=\"reference\"), id=\"references\"),"}
+{"metadata": {"task_id": "huggingface_evaluate/193"}, "prediction": "(1, 0, preds_0, refs_0, None, tmp_dir, 0),"}
+{"metadata": {"task_id": "huggingface_evaluate/195"}, "prediction": "...     \"rank\": [0, 1],"}
+{"metadata": {"task_id": "huggingface_evaluate/196"}, "prediction": "f\"evaluate-{module_type}/{path}\","}
+{"metadata": {"task_id": "huggingface_evaluate/198"}, "prediction": "def hypothesis_sent():"}
+{"metadata": {"task_id": "huggingface_evaluate/199"}, "prediction": "Computes NIST score of translated segments against one or more references."}
+{"metadata": {"task_id": "huggingface_evaluate/194"}, "prediction": "N\tCoreference\tCoreference chain information encoded in a parenthesis structure."}
+{"metadata": {"task_id": "huggingface_evaluate/197"}, "prediction": "if self.config_name not in [\"online\", \"offline\"]:"}
+{"metadata": {"task_id": "google_vizier/0"}, "prediction": "firefly_pool.create_or_update_fly(trial, 112)"}
+{"metadata": {"task_id": "google_vizier/3"}, "prediction": ")"}
+{"metadata": {"task_id": "google_vizier/1"}, "prediction": "logging.warn("}
+{"metadata": {"task_id": "google_vizier/5"}, "prediction": "if self._getter_spec.type == NumpyArraySpecType.DISCRETE"}
+{"metadata": {"task_id": "google_vizier/4"}, "prediction": "UNKNOWN = 'UNKNOWN'"}
+{"metadata": {"task_id": "google_vizier/6"}, "prediction": "expected = ["}
+{"metadata": {"task_id": "google_vizier/7"}, "prediction": "early_stopping_operations: Dict["}
+{"metadata": {"task_id": "google_vizier/2"}, "prediction": "feasible_values = []"}
+{"metadata": {"task_id": "google_vizier/8"}, "prediction": "components.append(cls.default_study_prefix)"}
+{"metadata": {"task_id": "google_vizier/11"}, "prediction": "absltest.main()"}
+{"metadata": {"task_id": "google_vizier/9"}, "prediction": "def _set_bounds("}
+{"metadata": {"task_id": "google_vizier/10"}, "prediction": "if name not in self._parameter_configs:"}
+{"metadata": {"task_id": "google_vizier/13"}, "prediction": "name=pc.name,"}
+{"metadata": {"task_id": "google_vizier/12"}, "prediction": "initial_temp: float = 1.0,"}
+{"metadata": {"task_id": "google_vizier/14"}, "prediction": "self._best_params: Dict[str, Any] = None  # place holder for best parameters"}
+{"metadata": {"task_id": "google_vizier/15"}, "prediction": "logging.info('Starting a new convergence test (n_features: %s)', n_features)"}
+{"metadata": {"task_id": "google_vizier/16"}, "prediction": "if proto.state == proto.STOPPING"}
+{"metadata": {"task_id": "google_vizier/22"}, "prediction": "datetime.datetime.now().astimezone())"}
+{"metadata": {"task_id": "google_vizier/19"}, "prediction": "self._features = np.concatenate([self._features, random_features])"}
+{"metadata": {"task_id": "google_vizier/26"}, "prediction": "class OwnerResource:"}
+{"metadata": {"task_id": "google_vizier/17"}, "prediction": "[0.0, 0.0, 0.0, 1.0],"}
+{"metadata": {"task_id": "google_vizier/27"}, "prediction": "remaining_parameters = copy.deepcopy(pytrial.parameters)"}
+{"metadata": {"task_id": "google_vizier/18"}, "prediction": "init=True,"}
+{"metadata": {"task_id": "google_vizier/29"}, "prediction": "candidate_num_trials=evaluations,"}
+{"metadata": {"task_id": "google_vizier/21"}, "prediction": "parameters = dict(locals())"}
+{"metadata": {"task_id": "google_vizier/20"}, "prediction": "bounds=new_bounds,"}
+{"metadata": {"task_id": "google_vizier/24"}, "prediction": "actual: list[pyvizier.ParameterValue] = converter.to_parameter_values(  # pytype:disable=annotation-type-mismatch"}
+{"metadata": {"task_id": "google_vizier/25"}, "prediction": "if self.apply_log:"}
+{"metadata": {"task_id": "google_vizier/23"}, "prediction": "proto.value.string_value = parameter_value.value"}
+{"metadata": {"task_id": "google_vizier/28"}, "prediction": "if not self.sym_init_args.measurements:"}
+{"metadata": {"task_id": "google_vizier/30"}, "prediction": "x_observed, y_observed, x_predictive = test_data_fn(data_key, dtype)"}
+{"metadata": {"task_id": "google_vizier/31"}, "prediction": "num_shards: int = 10,"}
+{"metadata": {"task_id": "google_vizier/33"}, "prediction": "raise ValueError(f'Algorithm {algorithm} is not registered.')"}
+{"metadata": {"task_id": "google_vizier/32"}, "prediction": "from vizier._src.benchmarks.experimenters import numpy_experimenter"}
+{"metadata": {"task_id": "google_vizier/34"}, "prediction": "name='main_objective', goal=pyvizier.ObjectiveMetricGoal.MINIMIZE))"}
+{"metadata": {"task_id": "google_vizier/36"}, "prediction": "len(search_space.parameters),"}
+{"metadata": {"task_id": "google_vizier/37"}, "prediction": "dtype=float,"}
+{"metadata": {"task_id": "google_vizier/35"}, "prediction": "'block_identity'"}
+{"metadata": {"task_id": "google_vizier/40"}, "prediction": "self.verbose >= 1,"}
+{"metadata": {"task_id": "google_vizier/39"}, "prediction": "ys=np.exp(np.array([-0.9, -1.0, -1.1]).reshape(3, 1) * xs_t),"}
+{"metadata": {"task_id": "google_vizier/38"}, "prediction": "inputs = self.to_features(trials)"}
+{"metadata": {"task_id": "google_vizier/41"}, "prediction": "for param_config in self._problem.search_space.parameters:"}
+{"metadata": {"task_id": "google_vizier/42"}, "prediction": "self: _P,"}
+{"metadata": {"task_id": "google_vizier/44"}, "prediction": "lower_array, higher_array, strict=True)"}
+{"metadata": {"task_id": "google_vizier/45"}, "prediction": "del seed"}
+{"metadata": {"task_id": "google_vizier/47"}, "prediction": "length_scale = yield sp.ModelParameter.from_prior("}
+{"metadata": {"task_id": "google_vizier/48"}, "prediction": "d = core.DictOf2DArrays({"}
+{"metadata": {"task_id": "google_vizier/50"}, "prediction": "return self.trial_converter.metric_information"}
+{"metadata": {"task_id": "google_vizier/49"}, "prediction": "x_poly_features = self._poly_transformer.fit_transform(x.reshape(1, -1))"}
+{"metadata": {"task_id": "google_vizier/52"}, "prediction": "else:"}
+{"metadata": {"task_id": "google_vizier/43"}, "prediction": "psr: Optional[PolynomialSparseRecovery] = None,"}
+{"metadata": {"task_id": "google_vizier/51"}, "prediction": "extended_baseline = ConvergenceCurve.extrapolate_ys(self._baseline_curve,"}
+{"metadata": {"task_id": "google_vizier/53"}, "prediction": "colons separating the components."}
+{"metadata": {"task_id": "google_vizier/46"}, "prediction": "name=proto.parameter_id,"}
+{"metadata": {"task_id": "google_vizier/56"}, "prediction": "('DifferentPowers', bbob.DifferentPowers),"}
+{"metadata": {"task_id": "google_vizier/57"}, "prediction": "self._trial = self._trial_client.materialize()"}
+{"metadata": {"task_id": "google_vizier/55"}, "prediction": "e = custom_errors.ImmutableStudyError("}
+{"metadata": {"task_id": "google_vizier/54"}, "prediction": "return np.array(perturbation_factors)"}
+{"metadata": {"task_id": "google_vizier/58"}, "prediction": "self.assertIsInstance(parameters['training_steps'], float)"}
+{"metadata": {"task_id": "google_vizier/59"}, "prediction": "raise ValueError('Only one of `length` and `index` can be specified. Got'"}
+{"metadata": {"task_id": "google_vizier/61"}, "prediction": "p2: vz.ParameterDict,"}
+{"metadata": {"task_id": "google_vizier/60"}, "prediction": "trial = self.datastore.get_trial(request.name)"}
+{"metadata": {"task_id": "google_vizier/62"}, "prediction": "self.assertTrue((labels_test_pred == self.labels_train).all())"}
+{"metadata": {"task_id": "google_vizier/63"}, "prediction": "study_name: str,"}
+{"metadata": {"task_id": "google_vizier/64"}, "prediction": "'jax': _parse_requirements('requirements-jax.txt'),"}
+{"metadata": {"task_id": "google_vizier/65"}, "prediction": "problem_statement: vz.ProblemStatement) -> None:"}
+{"metadata": {"task_id": "google_vizier/66"}, "prediction": "labels_arr_transformed = np.reshape(labels_arr_transformed,"}
+{"metadata": {"task_id": "google_vizier/68"}, "prediction": "while True:"}
+{"metadata": {"task_id": "google_vizier/67"}, "prediction": "_NUM_INITIAL_COMPLETED_TRIALS + len(trials[::2]))"}
+{"metadata": {"task_id": "google_vizier/70"}, "prediction": "if len(self.prior_rewards.shape) > 1:"}
+{"metadata": {"task_id": "google_vizier/71"}, "prediction": "noise_fn = functools.partial("}
+{"metadata": {"task_id": "google_vizier/72"}, "prediction": "for t in self._trials:"}
+{"metadata": {"task_id": "google_vizier/73"}, "prediction": "type(default_value)))"}
+{"metadata": {"task_id": "google_vizier/69"}, "prediction": "trial: vz.Trial = attr.field(validator=attr.validators.instance_of(vz.Trial))"}
+{"metadata": {"task_id": "google_vizier/74"}, "prediction": "np.testing.assert_equal(actual, expected)"}
+{"metadata": {"task_id": "google_vizier/75"}, "prediction": "'Study with name %s already exists.' % study.name"}
+{"metadata": {"task_id": "google_vizier/76"}, "prediction": "root.add_categorical_param("}
+{"metadata": {"task_id": "google_vizier/78"}, "prediction": "bijector = None"}
+{"metadata": {"task_id": "google_vizier/77"}, "prediction": "]"}
+{"metadata": {"task_id": "google_vizier/83"}, "prediction": "arr = np.array([[1.0], [2.0], [np.nan], [4.0], [np.nan]])"}
+{"metadata": {"task_id": "google_vizier/84"}, "prediction": "dict(dtype='float32'),"}
+{"metadata": {"task_id": "google_vizier/85"}, "prediction": "for i, val in enumerate(vector.flat):"}
+{"metadata": {"task_id": "google_vizier/86"}, "prediction": "fx(x)"}
+{"metadata": {"task_id": "google_vizier/79"}, "prediction": "elif external_type == ExternalType.BOOLEAN:"}
+{"metadata": {"task_id": "google_vizier/87"}, "prediction": "d1 = core.DictOf2DArrays({'a': rnd([10, 2]), 'b': rnd([10, 1])})"}
+{"metadata": {"task_id": "google_vizier/80"}, "prediction": "empty_pb2.Empty()"}
+{"metadata": {"task_id": "google_vizier/81"}, "prediction": "labels_std = np.sqrt(self._estimate_variance(labels_arr_finite))"}
+{"metadata": {"task_id": "google_vizier/82"}, "prediction": "import numpy as np"}
+{"metadata": {"task_id": "google_vizier/88"}, "prediction": "return SearchSpace()"}
+{"metadata": {"task_id": "google_vizier/90"}, "prediction": "query = query.where(self._studies_table.c.study_name == study_name)"}
+{"metadata": {"task_id": "google_vizier/91"}, "prediction": "if not best_results:"}
+{"metadata": {"task_id": "google_vizier/92"}, "prediction": "raise ValueError(f'Only DOUBLE parameters can be normalized: {pc}.')"}
+{"metadata": {"task_id": "google_vizier/93"}, "prediction": "return value * f1 * np.max([1.0, f2])"}
+{"metadata": {"task_id": "google_vizier/95"}, "prediction": "):"}
+{"metadata": {"task_id": "google_vizier/94"}, "prediction": "def update_metadata(self, delta: vz.Metadata) -> None:"}
+{"metadata": {"task_id": "google_vizier/89"}, "prediction": "metadatum.value = value"}
+{"metadata": {"task_id": "google_vizier/96"}, "prediction": "experimental_fidelity_config: Optional[FidelityConfig] = None,"}
+{"metadata": {"task_id": "google_vizier/97"}, "prediction": "class EarlyStoppingOperationResource:"}
+{"metadata": {"task_id": "google_vizier/98"}, "prediction": "space = pc.SearchSpace()"}
+{"metadata": {"task_id": "google_vizier/99"}, "prediction": "created_time=int(trial.creation_time.timestamp()),"}
+{"metadata": {"task_id": "google_vizier/101"}, "prediction": "'Duplicate metric of name \"%s\".'"}
+{"metadata": {"task_id": "google_vizier/100"}, "prediction": "_parameter_name(choice_path),"}
+{"metadata": {"task_id": "google_vizier/103"}, "prediction": "return trial1.final_measurement.metrics["}
+{"metadata": {"task_id": "google_vizier/105"}, "prediction": "population = converter.to_population(trials)"}
+{"metadata": {"task_id": "google_vizier/106"}, "prediction": "self._studies_table.c.study_name == study.name"}
+{"metadata": {"task_id": "google_vizier/107"}, "prediction": "def from_request_proto("}
+{"metadata": {"task_id": "google_vizier/102"}, "prediction": "population_dict = attr.asdict(self._population)"}
+{"metadata": {"task_id": "google_vizier/104"}, "prediction": "self.runner = runner"}
+{"metadata": {"task_id": "google_vizier/108"}, "prediction": "AcquisitionOptimizer]"}
+{"metadata": {"task_id": "google_vizier/109"}, "prediction": "nsamples: int = 1000,"}
+{"metadata": {"task_id": "google_vizier/110"}, "prediction": "algorithm = proto.algorithm"}
+{"metadata": {"task_id": "google_vizier/112"}, "prediction": "self._algorithm.feedback(tuner_trial.dna, reward)"}
+{"metadata": {"task_id": "google_vizier/113"}, "prediction": "raise ValueError(f'{type(self)} works with exactly one metric.')"}
+{"metadata": {"task_id": "google_vizier/111"}, "prediction": "kw_only=True)"}
+{"metadata": {"task_id": "google_vizier/115"}, "prediction": "len(self._incorporated_trial_ids),"}
+{"metadata": {"task_id": "google_vizier/117"}, "prediction": "py_study_config = vz.StudyConfig("}
+{"metadata": {"task_id": "google_vizier/118"}, "prediction": "return random.RandomDesigner(problem.search_space, seed=seed)"}
+{"metadata": {"task_id": "google_vizier/114"}, "prediction": "problem_and_trials.trials[0].final_measurement.metrics["}
+{"metadata": {"task_id": "google_vizier/120"}, "prediction": "if resource.trial_id not in trial_protos:"}
+{"metadata": {"task_id": "google_vizier/119"}, "prediction": "* self.config.perturbation"}
+{"metadata": {"task_id": "google_vizier/121"}, "prediction": "self._store.update(*args, **kwargs)"}
+{"metadata": {"task_id": "google_vizier/116"}, "prediction": "measurement = Measurement(metrics={"}
+{"metadata": {"task_id": "google_vizier/122"}, "prediction": "study_configs = []"}
+{"metadata": {"task_id": "google_vizier/127"}, "prediction": "])"}
+{"metadata": {"task_id": "google_vizier/123"}, "prediction": "benchmark_subroutines=[benchmarks.GenerateAndEvaluate()],"}
+{"metadata": {"task_id": "google_vizier/129"}, "prediction": "study_node = self._owners[s_resource.owner_id].studies["}
+{"metadata": {"task_id": "google_vizier/128"}, "prediction": "logging.log_if(logging.INFO, 'gradients: %s', self.verbose >= 2, grads)"}
+{"metadata": {"task_id": "google_vizier/130"}, "prediction": "selected_spaces.append(selected_parameter.subspace(value))"}
+{"metadata": {"task_id": "google_vizier/125"}, "prediction": "np.testing.assert_equal(converter.to_features([trial]), expected)"}
+{"metadata": {"task_id": "google_vizier/126"}, "prediction": "self.assertIsNot(trial, copied_trial)  # Check pass-by-value."}
+{"metadata": {"task_id": "google_vizier/124"}, "prediction": "query = query.where("}
+{"metadata": {"task_id": "google_vizier/132"}, "prediction": "for i in range(dim):"}
+{"metadata": {"task_id": "google_vizier/133"}, "prediction": "proto.start_time.nanos = int(1e9 * (creation_secs - int(creation_secs)))"}
+{"metadata": {"task_id": "google_vizier/131"}, "prediction": "if normalization == 0:"}
+{"metadata": {"task_id": "google_vizier/134"}, "prediction": "5,"}
+{"metadata": {"task_id": "google_vizier/135"}, "prediction": "constants.METADATA_NAMESPACE,"}
+{"metadata": {"task_id": "google_vizier/136"}, "prediction": "('Penalize Parent Id: %s. Parameters are stuck. '"}
+{"metadata": {"task_id": "google_vizier/137"}, "prediction": "alpha: float = 3.0):"}
+{"metadata": {"task_id": "google_vizier/139"}, "prediction": "self.mode = mode"}
+{"metadata": {"task_id": "google_vizier/140"}, "prediction": "return self._id"}
+{"metadata": {"task_id": "google_vizier/142"}, "prediction": "parameter_index += 1"}
+{"metadata": {"task_id": "google_vizier/141"}, "prediction": "if np.isposinf(labels_arr).any():"}
+{"metadata": {"task_id": "google_vizier/143"}, "prediction": "x = (x - self.min_value) / (self.max_value - self.min_value)"}
+{"metadata": {"task_id": "google_vizier/144"}, "prediction": "'While creating Parameter with name={}: exactly one of '"}
+{"metadata": {"task_id": "google_vizier/138"}, "prediction": "self._num_vars = self._lin_reg.num_vars"}
+{"metadata": {"task_id": "google_vizier/145"}, "prediction": "_metadata: pg.Dict = attr.field()"}
+{"metadata": {"task_id": "google_vizier/146"}, "prediction": "client_id: str,"}
+{"metadata": {"task_id": "google_vizier/147"}, "prediction": "goal=goal,"}
+{"metadata": {"task_id": "google_vizier/148"}, "prediction": "if trial1.infeasible or trial2.infeasible:"}
+{"metadata": {"task_id": "google_vizier/149"}, "prediction": "evaluated_count,"}
+{"metadata": {"task_id": "google_vizier/150"}, "prediction": "return proto"}
+{"metadata": {"task_id": "google_vizier/152"}, "prediction": "kernel.lengthscale.constrain_bounded(1e-2, 1e2)"}
+{"metadata": {"task_id": "google_vizier/154"}, "prediction": "last_step = step"}
+{"metadata": {"task_id": "google_vizier/153"}, "prediction": "X = []"}
+{"metadata": {"task_id": "google_vizier/151"}, "prediction": "_, dimension = points.shape"}
+{"metadata": {"task_id": "google_vizier/155"}, "prediction": "self.add_link(key, value)"}
+{"metadata": {"task_id": "google_vizier/156"}, "prediction": "name='eval_average_return',"}
+{"metadata": {"task_id": "google_vizier/161"}, "prediction": "return tuple(output)"}
+{"metadata": {"task_id": "google_vizier/162"}, "prediction": "'[=0/3][0]',"}
+{"metadata": {"task_id": "google_vizier/158"}, "prediction": "root.add_discrete_param('discrete', [-1.0, 1.0, 2.0])"}
+{"metadata": {"task_id": "google_vizier/163"}, "prediction": "origin_3d = np.array([-1, -1, 1])"}
+{"metadata": {"task_id": "google_vizier/157"}, "prediction": "filter_fn=lambda x: not isinstance(x, pg.geno.CustomDecisionPoint))"}
+{"metadata": {"task_id": "google_vizier/159"}, "prediction": "super(SimpleRegretConvergenceRunnerTest, self).setUp()"}
+{"metadata": {"task_id": "google_vizier/164"}, "prediction": "trial_ids: Optional[Iterable[int]] = None,"}
+{"metadata": {"task_id": "google_vizier/165"}, "prediction": "int_max_value = int(max_value)"}
+{"metadata": {"task_id": "google_vizier/167"}, "prediction": "trial_metadata: Iterable[UnitMetadataUpdate],"}
+{"metadata": {"task_id": "google_vizier/160"}, "prediction": "self.study_config,"}
+{"metadata": {"task_id": "google_vizier/168"}, "prediction": "self.assertGreater(min(min(sequence)), 0)"}
+{"metadata": {"task_id": "google_vizier/169"}, "prediction": "self.assertIsNone(test.final_measurement)"}
+{"metadata": {"task_id": "google_vizier/166"}, "prediction": "baseline_benchmark_state_factory: benchmarks.BenchmarkStateFactory,"}
+{"metadata": {"task_id": "google_vizier/170"}, "prediction": "logging.info("}
+{"metadata": {"task_id": "google_vizier/171"}, "prediction": "sampled_categorical_params = np.float_("}
+{"metadata": {"task_id": "google_vizier/175"}, "prediction": "return copy.deepcopy(list(self._child_parameter_configs))"}
+{"metadata": {"task_id": "google_vizier/176"}, "prediction": ").name,"}
+{"metadata": {"task_id": "google_vizier/172"}, "prediction": "root_dir=\"hpob-data/\","}
+{"metadata": {"task_id": "google_vizier/177"}, "prediction": "if search_space.is_conditional:"}
+{"metadata": {"task_id": "google_vizier/178"}, "prediction": "elif self.is_requested:"}
+{"metadata": {"task_id": "google_vizier/173"}, "prediction": "),"}
+{"metadata": {"task_id": "google_vizier/179"}, "prediction": "validator=attr.validators.instance_of(vz.MetadataDelta))"}
+{"metadata": {"task_id": "google_vizier/180"}, "prediction": "seed=None,"}
+{"metadata": {"task_id": "google_vizier/174"}, "prediction": "constraint = sp_model.get_constraints(_test_coroutine)"}
+{"metadata": {"task_id": "google_vizier/181"}, "prediction": "goal=pyvizier.ObjectiveMetricGoal.MINIMIZE,"}
+{"metadata": {"task_id": "google_vizier/182"}, "prediction": "f'guid=\"{self.study_guid}\": guid=\"{study_guid}\"')"}
+{"metadata": {"task_id": "google_vizier/184"}, "prediction": "name=param_name,"}
+{"metadata": {"task_id": "google_vizier/185"}, "prediction": "dict(flip_sign=True, safety_threshold=-5.0),"}
+{"metadata": {"task_id": "google_vizier/183"}, "prediction": "space.add("}
+{"metadata": {"task_id": "google_vizier/186"}, "prediction": "s = 0.0"}
+{"metadata": {"task_id": "google_vizier/187"}, "prediction": "self.assertTrue(np.isfinite(lp))"}
+{"metadata": {"task_id": "google_vizier/190"}, "prediction": "self._owner_name_to_lock = collections.defaultdict(threading.Lock)"}
+{"metadata": {"task_id": "google_vizier/188"}, "prediction": "self._designer_factory = designer_factory"}
+{"metadata": {"task_id": "google_vizier/189"}, "prediction": "c_mat = LambdaAlpha(alpha, dim) / (alpha**0.25)"}
+{"metadata": {"task_id": "google_vizier/191"}, "prediction": "from vizier.service import resources"}
+{"metadata": {"task_id": "google_vizier/195"}, "prediction": "count: Optional[int] = None) -> Sequence[vz.TrialSuggestion]:"}
+{"metadata": {"task_id": "alibaba_FederatedScope/0"}, "prediction": "partition/noniid_partition.py"}
+{"metadata": {"task_id": "alibaba_FederatedScope/1"}, "prediction": "logging.warning("}
+{"metadata": {"task_id": "google_vizier/197"}, "prediction": "constants.WARMSTART_CHECKPOINT_PATH_KEY] = checkpoint_path"}
+{"metadata": {"task_id": "google_vizier/198"}, "prediction": "n = ys.shape[0]"}
+{"metadata": {"task_id": "alibaba_FederatedScope/2"}, "prediction": "',': 0.6559597911540539,"}
+{"metadata": {"task_id": "google_vizier/193"}, "prediction": "use_retrying_cholesky: bool = True,"}
+{"metadata": {"task_id": "google_vizier/192"}, "prediction": "dict(dtype=np.float32),"}
+{"metadata": {"task_id": "alibaba_FederatedScope/3"}, "prediction": "federate_method,"}
+{"metadata": {"task_id": "alibaba_FederatedScope/4"}, "prediction": "p2o = dict()"}
+{"metadata": {"task_id": "alibaba_FederatedScope/5"}, "prediction": "eoq=tokenizer.eoq_token,"}
+{"metadata": {"task_id": "alibaba_FederatedScope/6"}, "prediction": "return dataset, encoded_inputs, examples"}
+{"metadata": {"task_id": "google_vizier/196"}, "prediction": "d = core.DictOf2DArrays({'a': rnd([10, 2]), 'b': rnd([10, 1])})"}
+{"metadata": {"task_id": "google_vizier/194"}, "prediction": "trial_proto.id = str(1)"}
+{"metadata": {"task_id": "google_vizier/199"}, "prediction": "classifier_instance = classifiers.SklearnClassifier("}
+{"metadata": {"task_id": "alibaba_FederatedScope/7"}, "prediction": "return results"}
+{"metadata": {"task_id": "alibaba_FederatedScope/8"}, "prediction": "f\"[Local/Global mode] Client #{self.ID} has been \""}
+{"metadata": {"task_id": "alibaba_FederatedScope/9"}, "prediction": "f\"{cache_path}, we faced the exception: \\n \""}
+{"metadata": {"task_id": "alibaba_FederatedScope/10"}, "prediction": "index, input_x, input_y = self.sample_data()"}
+{"metadata": {"task_id": "alibaba_FederatedScope/11"}, "prediction": "end_index = min(data_size, (batch + 1) * batch_size)"}
+{"metadata": {"task_id": "alibaba_FederatedScope/12"}, "prediction": "return rouge_output"}
+{"metadata": {"task_id": "alibaba_FederatedScope/13"}, "prediction": "pred = []"}
+{"metadata": {"task_id": "alibaba_FederatedScope/14"}, "prediction": "only_for_eval=False,"}
+{"metadata": {"task_id": "alibaba_FederatedScope/15"}, "prediction": "result = eval(row['result'])"}
+{"metadata": {"task_id": "alibaba_FederatedScope/17"}, "prediction": "self._theta[i] = np.exp(z)"}
+{"metadata": {"task_id": "alibaba_FederatedScope/18"}, "prediction": "client._find_and_send_split = types.MethodType(_find_and_send_split,"}
+{"metadata": {"task_id": "alibaba_FederatedScope/16"}, "prediction": "try:"}
+{"metadata": {"task_id": "alibaba_FederatedScope/19"}, "prediction": "server_class=get_server_cls(init_cfg),"}
+{"metadata": {"task_id": "alibaba_FederatedScope/21"}, "prediction": "f\"The first appeared sweep has id {sweep_name_2_id[run_header]}\""}
+{"metadata": {"task_id": "alibaba_FederatedScope/22"}, "prediction": "shape=tuple(shapes['feature']),"}
+{"metadata": {"task_id": "alibaba_FederatedScope/23"}, "prediction": "self.total_download_bytes = 0  # total download space cost in bytes"}
+{"metadata": {"task_id": "alibaba_FederatedScope/20"}, "prediction": "files = [f for f in files if f.startswith('task_')]"}
+{"metadata": {"task_id": "alibaba_FederatedScope/24"}, "prediction": "f'will use `{mode}` to calculate `ctx.var`.')"}
+{"metadata": {"task_id": "alibaba_FederatedScope/26"}, "prediction": "f\" {target_split_name}_loader in the trainer, \""}
+{"metadata": {"task_id": "alibaba_FederatedScope/27"}, "prediction": "sender = message.sender"}
+{"metadata": {"task_id": "alibaba_FederatedScope/28"}, "prediction": "base_trainer: Type[GeneralTorchTrainer]) -> Type[GeneralTorchTrainer]:"}
+{"metadata": {"task_id": "alibaba_FederatedScope/25"}, "prediction": "hugging_face_path = os.getcwd()"}
+{"metadata": {"task_id": "alibaba_FederatedScope/30"}, "prediction": "insert_pos=0)  # insert at the front"}
+{"metadata": {"task_id": "alibaba_FederatedScope/31"}, "prediction": "from federatedscope.core.auxiliaries.ReIterator import ReIterator"}
+{"metadata": {"task_id": "alibaba_FederatedScope/32"}, "prediction": "logger.info(formatted_logs)"}
+{"metadata": {"task_id": "alibaba_FederatedScope/33"}, "prediction": "with self.sess.as_default():"}
+{"metadata": {"task_id": "alibaba_FederatedScope/34"}, "prediction": "for i in range(0, self.model_nums)"}
+{"metadata": {"task_id": "alibaba_FederatedScope/29"}, "prediction": "0.07743, 0.12915, 0.21544,"}
+{"metadata": {"task_id": "alibaba_FederatedScope/40"}, "prediction": "ctx.y_prob = CtxVar(pred, LIFECYCLE.BATCH)"}
+{"metadata": {"task_id": "alibaba_FederatedScope/36"}, "prediction": "content=metrics))"}
+{"metadata": {"task_id": "alibaba_FederatedScope/35"}, "prediction": "kw = {"}
+{"metadata": {"task_id": "alibaba_FederatedScope/39"}, "prediction": "cfg.vertical.algo = 'xgb'"}
+{"metadata": {"task_id": "alibaba_FederatedScope/37"}, "prediction": "from federatedscope.cl.loss import *"}
+{"metadata": {"task_id": "alibaba_FederatedScope/42"}, "prediction": "raise NotImplementedError("}
+{"metadata": {"task_id": "alibaba_FederatedScope/38"}, "prediction": "ctx.data_batch = ctx.target_data"}
+{"metadata": {"task_id": "alibaba_FederatedScope/41"}, "prediction": "return graphs"}
+{"metadata": {"task_id": "alibaba_FederatedScope/43"}, "prediction": "'a list/tuple of strings or a list/tuple of '"}
+{"metadata": {"task_id": "alibaba_FederatedScope/44"}, "prediction": "else:"}
+{"metadata": {"task_id": "alibaba_FederatedScope/45"}, "prediction": "cfg.data.type = 'toy'"}
+{"metadata": {"task_id": "alibaba_FederatedScope/46"}, "prediction": "if osp.exists(cache_dir):"}
+{"metadata": {"task_id": "alibaba_FederatedScope/47"}, "prediction": "max_seq_len,"}
+{"metadata": {"task_id": "alibaba_FederatedScope/49"}, "prediction": "callback_func_for_ss_instance_sum, worker)"}
+{"metadata": {"task_id": "alibaba_FederatedScope/50"}, "prediction": "true_missing=true_missing,"}
+{"metadata": {"task_id": "alibaba_FederatedScope/51"}, "prediction": "cfg.benchmark.model,"}
+{"metadata": {"task_id": "alibaba_FederatedScope/52"}, "prediction": "pass"}
+{"metadata": {"task_id": "alibaba_FederatedScope/48"}, "prediction": "log=hp.log))"}
+{"metadata": {"task_id": "alibaba_FederatedScope/53"}, "prediction": "]"}
+{"metadata": {"task_id": "alibaba_FederatedScope/54"}, "prediction": "monitor(res=res, sim_time=time.time() - t_start, budget=budget)"}
+{"metadata": {"task_id": "alibaba_FederatedScope/55"}, "prediction": "plt.close()"}
+{"metadata": {"task_id": "alibaba_FederatedScope/56"}, "prediction": "help='path of exp results',"}
+{"metadata": {"task_id": "alibaba_FederatedScope/58"}, "prediction": "ctx.loss_batch = (self.cfg.fedsageplus.a * loss_num +"}
+{"metadata": {"task_id": "alibaba_FederatedScope/57"}, "prediction": "start_index = batch * batch_size"}
+{"metadata": {"task_id": "alibaba_FederatedScope/62"}, "prediction": "self._client_num:"}
+{"metadata": {"task_id": "alibaba_FederatedScope/63"}, "prediction": "elif model_config.type == 'vgg11':"}
+{"metadata": {"task_id": "alibaba_FederatedScope/61"}, "prediction": "{"}
+{"metadata": {"task_id": "alibaba_FederatedScope/64"}, "prediction": "self.kwargs_for_trigger_train_func = \\"}
+{"metadata": {"task_id": "alibaba_FederatedScope/65"}, "prediction": "config=self._cfg)"}
+{"metadata": {"task_id": "alibaba_FederatedScope/66"}, "prediction": "cfg.model.type = 'lr'"}
+{"metadata": {"task_id": "alibaba_FederatedScope/60"}, "prediction": "dtype=np.int64)"}
+{"metadata": {"task_id": "alibaba_FederatedScope/59"}, "prediction": "{'loss_total': total_loss, 'avg_loss': total_loss/float("}
+{"metadata": {"task_id": "alibaba_FederatedScope/67"}, "prediction": "return osp.join(self.root, self.name, 'raw')"}
+{"metadata": {"task_id": "alibaba_FederatedScope/68"}, "prediction": "name,"}
+{"metadata": {"task_id": "alibaba_FederatedScope/69"}, "prediction": "for file_name in onlyfiles:"}
+{"metadata": {"task_id": "alibaba_FederatedScope/71"}, "prediction": "from federatedscope.core.trainers.enums import LIFECYCLE, MODE"}
+{"metadata": {"task_id": "alibaba_FederatedScope/70"}, "prediction": "in_channels,"}
+{"metadata": {"task_id": "alibaba_FederatedScope/73"}, "prediction": "self.classifier = nn.Linear(self.hidden_size, config.num_labels)"}
+{"metadata": {"task_id": "alibaba_FederatedScope/74"}, "prediction": "online=self._cfg.federate.online_aggr,"}
+{"metadata": {"task_id": "alibaba_FederatedScope/75"}, "prediction": "in_contrast_prepare=self._in_contrast_prepare,"}
+{"metadata": {"task_id": "alibaba_FederatedScope/72"}, "prediction": "cfg.trainer.type = 'nodefullbatch_trainer'"}
+{"metadata": {"task_id": "alibaba_FederatedScope/76"}, "prediction": "client_num=self.client_num,"}
+{"metadata": {"task_id": "alibaba_FederatedScope/78"}, "prediction": "LIFECYCLE.BATCH)"}
+{"metadata": {"task_id": "alibaba_FederatedScope/79"}, "prediction": "over_X = np.repeat(X[rel_score > cvg_score], over_rate, axis=0)"}
+{"metadata": {"task_id": "alibaba_FederatedScope/80"}, "prediction": "self.msg_buffer['ss_instance_sum'] = {}"}
+{"metadata": {"task_id": "alibaba_FederatedScope/77"}, "prediction": "import logging"}
+{"metadata": {"task_id": "alibaba_FederatedScope/81"}, "prediction": "non_sample_case = cfg.federate.method in [\"local\", \"global\"]"}
+{"metadata": {"task_id": "alibaba_FederatedScope/82"}, "prediction": "'capital_gain', 'capital_loss', 'hours_per_week', 'native_country',"}
+{"metadata": {"task_id": "alibaba_FederatedScope/87"}, "prediction": "or \"s02\" in sub or \"s005\" in sub or \"s01\" in sub \\"}
+{"metadata": {"task_id": "alibaba_FederatedScope/83"}, "prediction": "self.ctx.contrast_monitor.stat == 1"}
+{"metadata": {"task_id": "alibaba_FederatedScope/88"}, "prediction": "trainer_cls = func(config.trainer.type)"}
+{"metadata": {"task_id": "alibaba_FederatedScope/89"}, "prediction": "encoded_input.context_len = context_len"}
+{"metadata": {"task_id": "alibaba_FederatedScope/84"}, "prediction": "data_y = data['y']"}
+{"metadata": {"task_id": "alibaba_FederatedScope/85"}, "prediction": "print(results)"}
+{"metadata": {"task_id": "alibaba_FederatedScope/90"}, "prediction": "test_targets: y of test data"}
+{"metadata": {"task_id": "alibaba_FederatedScope/86"}, "prediction": "print(('Testing %s.%s' % (type(self).__name__, self._testMethodName)))"}
+{"metadata": {"task_id": "alibaba_FederatedScope/93"}, "prediction": "config.data.transform.append({})"}
+{"metadata": {"task_id": "alibaba_FederatedScope/94"}, "prediction": "dif = max_seq_len - len(token_ids)"}
+{"metadata": {"task_id": "alibaba_FederatedScope/91"}, "prediction": "import json"}
+{"metadata": {"task_id": "alibaba_FederatedScope/92"}, "prediction": "if move_on_flag:"}
+{"metadata": {"task_id": "alibaba_FederatedScope/95"}, "prediction": "model_type=config.model.model_type,"}
+{"metadata": {"task_id": "alibaba_FederatedScope/96"}, "prediction": "kernel_size=3,"}
+{"metadata": {"task_id": "alibaba_FederatedScope/97"}, "prediction": "results = runner.run()"}
+{"metadata": {"task_id": "alibaba_FederatedScope/100"}, "prediction": "import torch"}
+{"metadata": {"task_id": "alibaba_FederatedScope/101"}, "prediction": "DummyEncryptKeypair"}
+{"metadata": {"task_id": "alibaba_FederatedScope/102"}, "prediction": "ordinary_test_results = Fed_runner.run()"}
+{"metadata": {"task_id": "alibaba_FederatedScope/103"}, "prediction": "each_train_data = ["}
+{"metadata": {"task_id": "alibaba_FederatedScope/98"}, "prediction": "planes,"}
+{"metadata": {"task_id": "alibaba_FederatedScope/99"}, "prediction": "for Client {:d}'.format(ctx.attack.trigger_type, i))"}
+{"metadata": {"task_id": "alibaba_FederatedScope/104"}, "prediction": "from federatedscope.core.auxiliaries.utils import setup_seed"}
+{"metadata": {"task_id": "alibaba_FederatedScope/105"}, "prediction": "for metric in column_names_generalization:"}
+{"metadata": {"task_id": "alibaba_FederatedScope/106"}, "prediction": "return {}"}
+{"metadata": {"task_id": "alibaba_FederatedScope/107"}, "prediction": "cfg.hpo.num_workers = 0"}
+{"metadata": {"task_id": "alibaba_FederatedScope/108"}, "prediction": "ctx.eval_metrics = self.ctx.monitor.eval(ctx)"}
+{"metadata": {"task_id": "alibaba_FederatedScope/109"}, "prediction": "self.data_name.append(each_data)"}
+{"metadata": {"task_id": "alibaba_FederatedScope/111"}, "prediction": "pretrain=False,"}
+{"metadata": {"task_id": "alibaba_FederatedScope/110"}, "prediction": "def __init__(self,"}
+{"metadata": {"task_id": "alibaba_FederatedScope/113"}, "prediction": "self.ss_manager = AdditiveSecretSharing("}
+{"metadata": {"task_id": "alibaba_FederatedScope/112"}, "prediction": "self.ctx.monitor.track_avg_flops(flops_one_batch,"}
+{"metadata": {"task_id": "alibaba_FederatedScope/114"}, "prediction": "config=self._trial_cfg.clone(),"}
+{"metadata": {"task_id": "alibaba_FederatedScope/116"}, "prediction": "self.build_msg_value(self.timestamp))"}
+{"metadata": {"task_id": "alibaba_FederatedScope/118"}, "prediction": "self.data[i]['train'] = {"}
+{"metadata": {"task_id": "alibaba_FederatedScope/119"}, "prediction": "config=self.cfg,"}
+{"metadata": {"task_id": "alibaba_FederatedScope/121"}, "prediction": "plt.gca().invert_xaxis()"}
+{"metadata": {"task_id": "alibaba_FederatedScope/115"}, "prediction": "self.__dict__[CfgNode.DEPRECATED_KEYS] = set()"}
+{"metadata": {"task_id": "alibaba_FederatedScope/122"}, "prediction": "check_eval_result=False,"}
+{"metadata": {"task_id": "alibaba_FederatedScope/117"}, "prediction": "from federatedscope.core.configs.config import global_cfg"}
+{"metadata": {"task_id": "alibaba_FederatedScope/124"}, "prediction": "'token_ids': encoded_inputs.input_ids,"}
+{"metadata": {"task_id": "alibaba_FederatedScope/123"}, "prediction": "log=True))"}
+{"metadata": {"task_id": "alibaba_FederatedScope/120"}, "prediction": "logger.info('Server has been set up ... ')"}
+{"metadata": {"task_id": "alibaba_FederatedScope/128"}, "prediction": "self.data = data"}
+{"metadata": {"task_id": "alibaba_FederatedScope/129"}, "prediction": "self.data[0]['train'] = None"}
+{"metadata": {"task_id": "alibaba_FederatedScope/130"}, "prediction": "self._cfg.hpo.sha.budgets):"}
+{"metadata": {"task_id": "alibaba_FederatedScope/125"}, "prediction": "denominator = nominator"}
+{"metadata": {"task_id": "alibaba_FederatedScope/131"}, "prediction": "content={'contrast_monitor': contrast_monitor}))"}
+{"metadata": {"task_id": "alibaba_FederatedScope/134"}, "prediction": "cfg.data.splits = [0.8, 0.2, 0.2]"}
+{"metadata": {"task_id": "alibaba_FederatedScope/127"}, "prediction": "monitor=self._monitor)"}
+{"metadata": {"task_id": "alibaba_FederatedScope/126"}, "prediction": "seed = seed if seed is not None else np.random.randint(1, 100000)"}
+{"metadata": {"task_id": "alibaba_FederatedScope/132"}, "prediction": "sentence = inputs[i, ("}
+{"metadata": {"task_id": "alibaba_FederatedScope/135"}, "prediction": "return test_suite"}
+{"metadata": {"task_id": "alibaba_FederatedScope/136"}, "prediction": "seed=123,"}
+{"metadata": {"task_id": "alibaba_FederatedScope/133"}, "prediction": "self.dataset[\"x\"][idx]).float(), torch.from_numpy("}
+{"metadata": {"task_id": "alibaba_FederatedScope/137"}, "prediction": "self.prompt = 'FederatedScope>> '"}
+{"metadata": {"task_id": "alibaba_FederatedScope/138"}, "prediction": "for dataset_name in expected_datasets_name:"}
+{"metadata": {"task_id": "alibaba_FederatedScope/139"}, "prediction": "return model_deltas"}
+{"metadata": {"task_id": "alibaba_FederatedScope/140"}, "prediction": "return degree, gen_feat, nc_pred[:raw_data.num_nodes]"}
+{"metadata": {"task_id": "alibaba_FederatedScope/146"}, "prediction": "content = message.content"}
+{"metadata": {"task_id": "alibaba_FederatedScope/142"}, "prediction": "dimensions=len("}
+{"metadata": {"task_id": "alibaba_FederatedScope/147"}, "prediction": "CS.UniformFloatHyperparameter('dropout', lower=.0, upper=.5))"}
+{"metadata": {"task_id": "alibaba_FederatedScope/148"}, "prediction": "client_class=get_client_cls(init_cfg),"}
+{"metadata": {"task_id": "alibaba_FederatedScope/149"}, "prediction": "model=client_model or get_model(client_specific_config.model,"}
+{"metadata": {"task_id": "alibaba_FederatedScope/141"}, "prediction": "self.ssh = paramiko.SSHClient()"}
+{"metadata": {"task_id": "alibaba_FederatedScope/145"}, "prediction": "from federatedscope.core.auxiliaries.runner_builder import get_runner"}
+{"metadata": {"task_id": "alibaba_FederatedScope/150"}, "prediction": "c.ServerApp.ip = \"0.0.0.0\""}
+{"metadata": {"task_id": "alibaba_FederatedScope/143"}, "prediction": "num_non_padding = (encoded_inputs.input_ids !="}
+{"metadata": {"task_id": "alibaba_FederatedScope/151"}, "prediction": "self.device)"}
+{"metadata": {"task_id": "alibaba_FederatedScope/152"}, "prediction": "if actual_answer.find(cleaned_answer) == -1:"}
+{"metadata": {"task_id": "alibaba_FederatedScope/144"}, "prediction": "super(FedOptAggregator, self).__init__(model, device, config)"}
+{"metadata": {"task_id": "alibaba_FederatedScope/153"}, "prediction": "cfg.model.hidden = 128"}
+{"metadata": {"task_id": "alibaba_FederatedScope/155"}, "prediction": "self.callback_funcs_for_assign_id, [None])"}
+{"metadata": {"task_id": "alibaba_FederatedScope/160"}, "prediction": "self._monitor.calc_model_metric(self.model.state_dict(),"}
+{"metadata": {"task_id": "alibaba_FederatedScope/154"}, "prediction": "load_path = data_path + 'ARDIS_test_labels.csv'"}
+{"metadata": {"task_id": "alibaba_FederatedScope/161"}, "prediction": "original_val = [(x, y) for x, y in zip(dataset['validation'][0],"}
+{"metadata": {"task_id": "alibaba_FederatedScope/157"}, "prediction": "def wrapper(self, mode, hooks_set, dataset_name=None):"}
+{"metadata": {"task_id": "alibaba_FederatedScope/156"}, "prediction": "dec_out=None,"}
+{"metadata": {"task_id": "alibaba_FederatedScope/162"}, "prediction": "client_id + 1: dataset[client_id]"}
+{"metadata": {"task_id": "alibaba_FederatedScope/164"}, "prediction": "from scipy.special import softmax"}
+{"metadata": {"task_id": "alibaba_FederatedScope/165"}, "prediction": "role='Server #',"}
+{"metadata": {"task_id": "alibaba_FederatedScope/163"}, "prediction": "new_hook=hook_on_batch_start_replace_data_batch,"}
+{"metadata": {"task_id": "alibaba_FederatedScope/159"}, "prediction": "cfg.eval.freq = 10"}
+{"metadata": {"task_id": "alibaba_FederatedScope/158"}, "prediction": "val_data, val_targets = None, None"}
+{"metadata": {"task_id": "alibaba_FederatedScope/166"}, "prediction": "elif config.asyn.use:"}
+{"metadata": {"task_id": "alibaba_FederatedScope/168"}, "prediction": "self.model.load_state_dict(model_parameters, strict)"}
+{"metadata": {"task_id": "alibaba_FederatedScope/167"}, "prediction": "f\"metrics are: {str(system_metrics)}\")"}
+{"metadata": {"task_id": "alibaba_FederatedScope/169"}, "prediction": "elif isinstance(eval_metric, list):"}
+{"metadata": {"task_id": "alibaba_FederatedScope/170"}, "prediction": "rank_order = colum_order_per_data * len(filters_each_line_table)"}
+{"metadata": {"task_id": "alibaba_FederatedScope/171"}, "prediction": "self.ctx.model.load_state_dict(model_para)"}
+{"metadata": {"task_id": "alibaba_FederatedScope/172"}, "prediction": "text_b = truncated_context"}
+{"metadata": {"task_id": "alibaba_FederatedScope/173"}, "prediction": "xs, mean_ranks, mean_ranks_bbo, mean_ranks_mf = get_mean_loss("}
+{"metadata": {"task_id": "alibaba_FederatedScope/174"}, "prediction": "self.cfg.dataloader.batch_size))"}
+{"metadata": {"task_id": "alibaba_FederatedScope/175"}, "prediction": "elif self.optim.lower() == 'sgd':  # actually gd"}
+{"metadata": {"task_id": "alibaba_FederatedScope/176"}, "prediction": "cfg.fedsageplus.c = 1.0"}
+{"metadata": {"task_id": "alibaba_FederatedScope/177"}, "prediction": "dataset = TUDataset(self.root, name)"}
+{"metadata": {"task_id": "alibaba_FederatedScope/178"}, "prediction": "**ctx.cfg.train.optimizer)"}
+{"metadata": {"task_id": "alibaba_FederatedScope/184"}, "prediction": "h=32,"}
+{"metadata": {"task_id": "alibaba_FederatedScope/185"}, "prediction": "if t.requires_grad:"}
+{"metadata": {"task_id": "alibaba_FederatedScope/179"}, "prediction": "mask = ctx.data['data']['{}_mask'.format(ctx.cur_split)]"}
+{"metadata": {"task_id": "alibaba_FederatedScope/186"}, "prediction": "continue"}
+{"metadata": {"task_id": "alibaba_FederatedScope/181"}, "prediction": "from federatedscope.core.workers.client import Client"}
+{"metadata": {"task_id": "alibaba_FederatedScope/187"}, "prediction": "*args,"}
+{"metadata": {"task_id": "alibaba_FederatedScope/188"}, "prediction": "lower=1e-5,"}
+{"metadata": {"task_id": "alibaba_FederatedScope/180"}, "prediction": "for i, pad_idx in enumerate(num_non_padding):"}
+{"metadata": {"task_id": "alibaba_FederatedScope/189"}, "prediction": "sample_client=None,"}
+{"metadata": {"task_id": "alibaba_FederatedScope/183"}, "prediction": "os.makedirs(self._cfg.hpo.working_folder, exist_ok=True)"}
+{"metadata": {"task_id": "alibaba_FederatedScope/182"}, "prediction": "self.ctx.monitor.total_flops += self.ctx.monitor.flops_per_sample * \\"}
+{"metadata": {"task_id": "alibaba_FederatedScope/190"}, "prediction": "trial_cfg.merge_from_list("}
+{"metadata": {"task_id": "alibaba_FederatedScope/191"}, "prediction": "new_hook=self._hook_on_epoch_start_data2device,"}
+{"metadata": {"task_id": "alibaba_FederatedScope/192"}, "prediction": "import re"}
+{"metadata": {"task_id": "alibaba_FederatedScope/193"}, "prediction": "for p in model.parameters():"}
+{"metadata": {"task_id": "alibaba_FederatedScope/194"}, "prediction": "padding=1,"}
+{"metadata": {"task_id": "alibaba_FederatedScope/197"}, "prediction": "tmp_loss.detach().to('cpu').numpy())"}
+{"metadata": {"task_id": "alibaba_FederatedScope/199"}, "prediction": "for i in range(self.num_of_clients + 1):"}
+{"metadata": {"task_id": "alibaba_FederatedScope/195"}, "prediction": "if self.cfg.nbafl.use:"}
+{"metadata": {"task_id": "alibaba_FederatedScope/196"}, "prediction": "buffer = self.msg_buffer['eval'][state]"}
+{"metadata": {"task_id": "alibaba_FederatedScope/198"}, "prediction": "ctx.num_samples = CtxVar(0, LIFECYCLE.ROUTINE)"}
+{"metadata": {"task_id": "pytorch_rl/0"}, "prediction": "for idx in range(self.num_workers):"}
+{"metadata": {"task_id": "pytorch_rl/1"}, "prediction": "assert not spec.is_in(td.get(\"action\"))"}
+{"metadata": {"task_id": "pytorch_rl/2"}, "prediction": "\"value_network\","}
+{"metadata": {"task_id": "pytorch_rl/3"}, "prediction": "assert \"b\" not in td.keys()"}
+{"metadata": {"task_id": "pytorch_rl/5"}, "prediction": "in_keys=[(\"next\", \"state\"), (\"next\", \"belief\")],"}
+{"metadata": {"task_id": "pytorch_rl/4"}, "prediction": "\"Miscellaneous\","}
+{"metadata": {"task_id": "pytorch_rl/6"}, "prediction": "action_dim_gsde, state_dim_gsde = None, None"}
+{"metadata": {"task_id": "pytorch_rl/7"}, "prediction": "from .replay_buffer import make_replay_buffer"}
+{"metadata": {"task_id": "pytorch_rl/9"}, "prediction": "default=\"LazyMemmapStorage\","}
+{"metadata": {"task_id": "pytorch_rl/8"}, "prediction": "if kwargs is None:"}
+{"metadata": {"task_id": "pytorch_rl/10"}, "prediction": "tensordict = TensorDict({}, self.batch_size, device=self.device)"}
+{"metadata": {"task_id": "pytorch_rl/14"}, "prediction": "grad_action = _tree_reshape(grad_action, ctx.env.batch_size)"}
+{"metadata": {"task_id": "pytorch_rl/11"}, "prediction": "support = torch.linspace(vmin, vmax, atoms, dtype=torch.float)"}
+{"metadata": {"task_id": "pytorch_rl/16"}, "prediction": "generalized_advantage_estimate,"}
+{"metadata": {"task_id": "pytorch_rl/12"}, "prediction": "while n < init_env_steps:"}
+{"metadata": {"task_id": "pytorch_rl/25"}, "prediction": "return self"}
+{"metadata": {"task_id": "pytorch_rl/24"}, "prediction": "gammas = torch.ones(*gamma.shape, T + 1, 1, device=device, dtype=dtype)"}
+{"metadata": {"task_id": "pytorch_rl/15"}, "prediction": ")"}
+{"metadata": {"task_id": "pytorch_rl/13"}, "prediction": "observation=UnboundedContinuousTensorSpec("}
+{"metadata": {"task_id": "pytorch_rl/26"}, "prediction": "spec[k],"}
+{"metadata": {"task_id": "pytorch_rl/17"}, "prediction": "parser = argparse.ArgumentParser("}
+{"metadata": {"task_id": "pytorch_rl/27"}, "prediction": "if not hasattr(cfg, \"init_env_steps\"):"}
+{"metadata": {"task_id": "pytorch_rl/21"}, "prediction": "return self.__class__("}
+{"metadata": {"task_id": "pytorch_rl/23"}, "prediction": "spec = None"}
+{"metadata": {"task_id": "pytorch_rl/28"}, "prediction": "prohibited.add(\"done\")"}
+{"metadata": {"task_id": "pytorch_rl/18"}, "prediction": "from torchrl.data.utils import DEVICE_TYPING"}
+{"metadata": {"task_id": "pytorch_rl/19"}, "prediction": "_has_ts = False"}
+{"metadata": {"task_id": "pytorch_rl/20"}, "prediction": "return cfg"}
+{"metadata": {"task_id": "pytorch_rl/22"}, "prediction": "children = list(env.transform.transforms.children())"}
+{"metadata": {"task_id": "pytorch_rl/29"}, "prediction": "else:"}
+{"metadata": {"task_id": "pytorch_rl/30"}, "prediction": "except StopIteration:"}
+{"metadata": {"task_id": "pytorch_rl/31"}, "prediction": "out_key = self.out_keys[0]"}
+{"metadata": {"task_id": "pytorch_rl/32"}, "prediction": "key = (\"target_\" + key[0], *key[1:])"}
+{"metadata": {"task_id": "pytorch_rl/33"}, "prediction": "* mask.to(torch.float),"}
+{"metadata": {"task_id": "pytorch_rl/35"}, "prediction": "return tensordict"}
+{"metadata": {"task_id": "pytorch_rl/36"}, "prediction": "if tensordict.batch_dims < 1:"}
+{"metadata": {"task_id": "pytorch_rl/37"}, "prediction": "from_pixels = kwargs.pop(\"from_pixels\", False)"}
+{"metadata": {"task_id": "pytorch_rl/34"}, "prediction": "actor,"}
+{"metadata": {"task_id": "pytorch_rl/38"}, "prediction": "param_multiplier = 1"}
+{"metadata": {"task_id": "pytorch_rl/40"}, "prediction": "raise TypeError("}
+{"metadata": {"task_id": "pytorch_rl/41"}, "prediction": "if msg not in (\"continue\", \"continue_random\"):"}
+{"metadata": {"task_id": "pytorch_rl/39"}, "prediction": "self.register_buffer(\"_sep_\".join([module_name, key]), buffer)"}
+{"metadata": {"task_id": "pytorch_rl/42"}, "prediction": "key, *keys = jax.random.split(key, np.prod(batch_size) + 1)"}
+{"metadata": {"task_id": "pytorch_rl/43"}, "prediction": "def to(self, dest: Union[torch.dtype, DEVICE_TYPING]) -> \"TensorSpec\":"}
+{"metadata": {"task_id": "pytorch_rl/44"}, "prediction": "print(i, val)"}
+{"metadata": {"task_id": "pytorch_rl/46"}, "prediction": "import platform"}
+{"metadata": {"task_id": "pytorch_rl/48"}, "prediction": "assert (p == 0).all()"}
+{"metadata": {"task_id": "pytorch_rl/45"}, "prediction": "from functools import wraps"}
+{"metadata": {"task_id": "pytorch_rl/47"}, "prediction": "if out_key in tensordict.keys():"}
+{"metadata": {"task_id": "pytorch_rl/49"}, "prediction": "from_dim,"}
+{"metadata": {"task_id": "pytorch_rl/53"}, "prediction": "if \"_observation_spec\" not in self.__dir__():"}
+{"metadata": {"task_id": "pytorch_rl/50"}, "prediction": "print(d)  # trajectories are split automatically in [6 workers x 10 steps]"}
+{"metadata": {"task_id": "pytorch_rl/52"}, "prediction": "self.reward_spec = UnboundedContinuousTensorSpec("}
+{"metadata": {"task_id": "pytorch_rl/51"}, "prediction": "data = [torch.randint(100, (1,)) for _ in range(size)]"}
+{"metadata": {"task_id": "pytorch_rl/54"}, "prediction": "action=_dmcontrol_to_torchrl_spec_transform("}
+{"metadata": {"task_id": "pytorch_rl/55"}, "prediction": "assert all("}
+{"metadata": {"task_id": "pytorch_rl/60"}, "prediction": "tensordict = tensordict.clone(recurse=False)"}
+{"metadata": {"task_id": "pytorch_rl/58"}, "prediction": "\"_\","}
+{"metadata": {"task_id": "pytorch_rl/59"}, "prediction": "from _utils_internal import ("}
+{"metadata": {"task_id": "pytorch_rl/61"}, "prediction": "self._log_dict[key].append(item)"}
+{"metadata": {"task_id": "pytorch_rl/56"}, "prediction": "if self.is_functional and params is None:"}
+{"metadata": {"task_id": "pytorch_rl/62"}, "prediction": "num_cells=[64, 64],"}
+{"metadata": {"task_id": "pytorch_rl/57"}, "prediction": "import os"}
+{"metadata": {"task_id": "pytorch_rl/64"}, "prediction": "for i, video_name in enumerate(os.listdir(videos_dir)):"}
+{"metadata": {"task_id": "pytorch_rl/63"}, "prediction": "tensordicts.set("}
+{"metadata": {"task_id": "pytorch_rl/65"}, "prediction": "obs = torch.randn(*batch_size, *temporal_size, 3, 64, 64, device=device)"}
+{"metadata": {"task_id": "pytorch_rl/66"}, "prediction": "rank=rank,"}
+{"metadata": {"task_id": "pytorch_rl/67"}, "prediction": "in_keys=dist_in_keys,"}
+{"metadata": {"task_id": "pytorch_rl/68"}, "prediction": "not _has_functorch, reason=f\"functorch not installed: {FUNCTORCH_ERR}\""}
+{"metadata": {"task_id": "pytorch_rl/69"}, "prediction": "frames_per_batch=frames_per_batch,"}
+{"metadata": {"task_id": "pytorch_rl/71"}, "prediction": "[\"double\", torch.double, \"cpu\"],"}
+{"metadata": {"task_id": "pytorch_rl/72"}, "prediction": "), f\"failed: mean={mean}, std={std}, sigma_init={sigma_init}, actual: {sigma.mean()}\""}
+{"metadata": {"task_id": "pytorch_rl/70"}, "prediction": "},"}
+{"metadata": {"task_id": "pytorch_rl/73"}, "prediction": "err_msg = ("}
+{"metadata": {"task_id": "pytorch_rl/74"}, "prediction": "counter = 0"}
+{"metadata": {"task_id": "pytorch_rl/75"}, "prediction": "torch.manual_seed(0)"}
+{"metadata": {"task_id": "pytorch_rl/77"}, "prediction": "num_envs=num_envs,"}
+{"metadata": {"task_id": "pytorch_rl/78"}, "prediction": "state_value,"}
+{"metadata": {"task_id": "pytorch_rl/76"}, "prediction": "if not _has_dmc and env_lib is DMControlEnv:"}
+{"metadata": {"task_id": "pytorch_rl/79"}, "prediction": "return \"missing\""}
+{"metadata": {"task_id": "pytorch_rl/80"}, "prediction": "for b in rb._storage:"}
+{"metadata": {"task_id": "pytorch_rl/81"}, "prediction": "out = TransformedEnv(container.base_env)"}
+{"metadata": {"task_id": "pytorch_rl/82"}, "prediction": "if not safe and spec_type == \"bounded\":"}
+{"metadata": {"task_id": "pytorch_rl/84"}, "prediction": "device=device,"}
+{"metadata": {"task_id": "pytorch_rl/83"}, "prediction": "[11.0, -1.0, 7.0, -1.0, 20.0],"}
+{"metadata": {"task_id": "pytorch_rl/90"}, "prediction": "elif safe and spec_type == \"bounded\":"}
+{"metadata": {"task_id": "pytorch_rl/89"}, "prediction": "scale_mapping=f\"biased_softplus_{default_policy_scale}\","}
+{"metadata": {"task_id": "pytorch_rl/87"}, "prediction": "print("}
+{"metadata": {"task_id": "pytorch_rl/92"}, "prediction": "if UNSQUEEZE_SINGLETON and not td_clone.ndimension():"}
+{"metadata": {"task_id": "pytorch_rl/91"}, "prediction": "print(f\"TensorDict before going through module: {td}\")"}
+{"metadata": {"task_id": "pytorch_rl/88"}, "prediction": "[batch_size, temporal_length],"}
+{"metadata": {"task_id": "pytorch_rl/85"}, "prediction": "if isinstance(spec, gym.spaces.tuple.Tuple):"}
+{"metadata": {"task_id": "pytorch_rl/95"}, "prediction": "[[[2, 4], [3, 5]], [[4, 5], [2, 3]], [[2, 3], [3, 2]]],"}
+{"metadata": {"task_id": "pytorch_rl/93"}, "prediction": "return index, {}"}
+{"metadata": {"task_id": "pytorch_rl/96"}, "prediction": "params[\"module\", \"1\"] = params[\"module\", \"2\"]"}
+{"metadata": {"task_id": "pytorch_rl/94"}, "prediction": "del tdmodule[3]"}
+{"metadata": {"task_id": "pytorch_rl/86"}, "prediction": "self.convert_to_functional("}
+{"metadata": {"task_id": "pytorch_rl/97"}, "prediction": "0,"}
+{"metadata": {"task_id": "pytorch_rl/98"}, "prediction": "f\"type {type(transform)} instead.\""}
+{"metadata": {"task_id": "pytorch_rl/99"}, "prediction": "self.loss_components = loss_components"}
+{"metadata": {"task_id": "pytorch_rl/100"}, "prediction": "from .ddpg import DDPGLoss"}
+{"metadata": {"task_id": "pytorch_rl/103"}, "prediction": "module=module,"}
+{"metadata": {"task_id": "pytorch_rl/101"}, "prediction": "self, tensordict: Optional[TensorDictBase] = None, **kwargs"}
+{"metadata": {"task_id": "pytorch_rl/104"}, "prediction": "aggregator_class,"}
+{"metadata": {"task_id": "pytorch_rl/105"}, "prediction": "actor = Actor("}
+{"metadata": {"task_id": "pytorch_rl/106"}, "prediction": "@pytest.mark.skipif(not (_has_dmc and _has_gym), reason=\"gym or dm_control not present\")"}
+{"metadata": {"task_id": "pytorch_rl/102"}, "prediction": "\" with a null number of dimensions. Try using a multidimensional\""}
+{"metadata": {"task_id": "pytorch_rl/107"}, "prediction": "}"}
+{"metadata": {"task_id": "pytorch_rl/109"}, "prediction": "super().__init__(in_keys=in_keys, out_keys=out_keys)"}
+{"metadata": {"task_id": "pytorch_rl/113"}, "prediction": "m, s"}
+{"metadata": {"task_id": "pytorch_rl/111"}, "prediction": "prc_queue_in,"}
+{"metadata": {"task_id": "pytorch_rl/114"}, "prediction": "proof_environment: EnvBase, cfg: \"DictConfig\", device: torch.device  # noqa: F821"}
+{"metadata": {"task_id": "pytorch_rl/108"}, "prediction": "del td"}
+{"metadata": {"task_id": "pytorch_rl/115"}, "prediction": "torch.manual_seed(seed)"}
+{"metadata": {"task_id": "pytorch_rl/117"}, "prediction": "mlp_net_kwargs_net2=value_net_default_kwargs2,"}
+{"metadata": {"task_id": "pytorch_rl/110"}, "prediction": "if self.del_keys:"}
+{"metadata": {"task_id": "pytorch_rl/112"}, "prediction": "if rank == 0:"}
+{"metadata": {"task_id": "pytorch_rl/119"}, "prediction": "egl_display, config_attribs, pointer(egl_cfg), 1, pointer(num_configs)"}
+{"metadata": {"task_id": "pytorch_rl/120"}, "prediction": "{"}
+{"metadata": {"task_id": "pytorch_rl/118"}, "prediction": "raise ValueError("}
+{"metadata": {"task_id": "pytorch_rl/116"}, "prediction": "transform: Optional[d.Transform] = None,"}
+{"metadata": {"task_id": "pytorch_rl/121"}, "prediction": "raise"}
+{"metadata": {"task_id": "pytorch_rl/122"}, "prediction": "to_dim,"}
+{"metadata": {"task_id": "pytorch_rl/124"}, "prediction": "render_kwargs=self.render_kwargs,"}
+{"metadata": {"task_id": "pytorch_rl/123"}, "prediction": "self.encoder = nn.ModuleList("}
+{"metadata": {"task_id": "pytorch_rl/127"}, "prediction": "dest_device = torch.device(dest)"}
+{"metadata": {"task_id": "pytorch_rl/126"}, "prediction": "TanhDelta,"}
+{"metadata": {"task_id": "pytorch_rl/128"}, "prediction": "device=self.device,"}
+{"metadata": {"task_id": "pytorch_rl/125"}, "prediction": "convnet = models.resnet50(pretrained=False)"}
+{"metadata": {"task_id": "pytorch_rl/129"}, "prediction": "\"belief\","}
+{"metadata": {"task_id": "pytorch_rl/130"}, "prediction": "os.makedirs(self.build_temp)"}
+{"metadata": {"task_id": "pytorch_rl/131"}, "prediction": "def _set_seed_initial(self, seed: int) -> None:  # noqa: F811"}
+{"metadata": {"task_id": "pytorch_rl/132"}, "prediction": "reset_kwargs = data"}
+{"metadata": {"task_id": "pytorch_rl/133"}, "prediction": "self.update(loc, scale)"}
+{"metadata": {"task_id": "pytorch_rl/134"}, "prediction": "reset_at_each_iter=False,"}
+{"metadata": {"task_id": "pytorch_rl/135"}, "prediction": "tc_sample = mystorage.get(idx)"}
+{"metadata": {"task_id": "pytorch_rl/136"}, "prediction": "params_mean = torch.randn_like(action) / 10"}
+{"metadata": {"task_id": "pytorch_rl/138"}, "prediction": "if p.grad is not None and p.grad.norm() > 0.0:"}
+{"metadata": {"task_id": "pytorch_rl/137"}, "prediction": "return out"}
+{"metadata": {"task_id": "pytorch_rl/139"}, "prediction": "self.out_keys = out_keys"}
+{"metadata": {"task_id": "pytorch_rl/141"}, "prediction": ".to_tensordict()"}
+{"metadata": {"task_id": "pytorch_rl/142"}, "prediction": "interval = maxi - mini"}
+{"metadata": {"task_id": "pytorch_rl/140"}, "prediction": "tsf_loc = ("}
+{"metadata": {"task_id": "pytorch_rl/143"}, "prediction": ".select(*self.qvalue_network.in_keys)"}
+{"metadata": {"task_id": "pytorch_rl/144"}, "prediction": "self.gSDE = gSDE"}
+{"metadata": {"task_id": "pytorch_rl/146"}, "prediction": "postproc = self.postprocs"}
+{"metadata": {"task_id": "pytorch_rl/145"}, "prediction": "f\"The last {self.ndim} of the extended shape must match the\""}
+{"metadata": {"task_id": "pytorch_rl/147"}, "prediction": "cls,"}
+{"metadata": {"task_id": "pytorch_rl/152"}, "prediction": "return gym.make(env_name, render_mode=\"rgb_array\")"}
+{"metadata": {"task_id": "pytorch_rl/153"}, "prediction": "spec=spec,"}
+{"metadata": {"task_id": "pytorch_rl/154"}, "prediction": "\"b\": torch.randn(100, 1),"}
+{"metadata": {"task_id": "pytorch_rl/151"}, "prediction": "_reward_count,"}
+{"metadata": {"task_id": "pytorch_rl/150"}, "prediction": "storage = LazyMemmapStorage(S)"}
+{"metadata": {"task_id": "pytorch_rl/155"}, "prediction": "batch_size=["}
+{"metadata": {"task_id": "pytorch_rl/148"}, "prediction": "spec=None,"}
+{"metadata": {"task_id": "pytorch_rl/156"}, "prediction": "]"}
+{"metadata": {"task_id": "pytorch_rl/157"}, "prediction": "Trainer,"}
+{"metadata": {"task_id": "pytorch_rl/149"}, "prediction": "sampled_tensordict[\"reward\"]"}
+{"metadata": {"task_id": "pytorch_rl/158"}, "prediction": "next_val_key=\"state_value\","}
+{"metadata": {"task_id": "pytorch_rl/159"}, "prediction": "SafeProbabilisticSequential("}
+{"metadata": {"task_id": "pytorch_rl/160"}, "prediction": "def __init__(self, max_steps: int = 5, **kwargs):"}
+{"metadata": {"task_id": "pytorch_rl/161"}, "prediction": "if dtype is not None:"}
+{"metadata": {"task_id": "pytorch_rl/164"}, "prediction": "advantage = self.advantage(x)"}
+{"metadata": {"task_id": "pytorch_rl/163"}, "prediction": "f\"The hook collection {dest} is not recognised. Choose from:\""}
+{"metadata": {"task_id": "pytorch_rl/162"}, "prediction": "env.close()"}
+{"metadata": {"task_id": "pytorch_rl/165"}, "prediction": "s = rb.sample(5)"}
+{"metadata": {"task_id": "pytorch_rl/166"}, "prediction": "math.log1p(self.clip_epsilon),"}
+{"metadata": {"task_id": "pytorch_rl/168"}, "prediction": "assert counter == len(loss_fn._actor_network_params.keys(True, True))"}
+{"metadata": {"task_id": "pytorch_rl/167"}, "prediction": "if _spec is None:"}
+{"metadata": {"task_id": "pytorch_rl/169"}, "prediction": "f\"Cannot copy a storage of type {type(_storage)} onto another of type {type(self._storage)}\""}
+{"metadata": {"task_id": "pytorch_rl/170"}, "prediction": "assert (ts.encode(ts.to_numpy(r)) == r).all()"}
+{"metadata": {"task_id": "pytorch_rl/171"}, "prediction": "policy: SafeModule,"}
+{"metadata": {"task_id": "pytorch_rl/173"}, "prediction": "self._policy_dict[_device].load_state_dict("}
+{"metadata": {"task_id": "pytorch_rl/177"}, "prediction": "A2CModelConfig,"}
+{"metadata": {"task_id": "pytorch_rl/175"}, "prediction": "dest_device = self.device"}
+{"metadata": {"task_id": "pytorch_rl/178"}, "prediction": "f\"value key '{value_key}' not found in value network out_keys.\""}
+{"metadata": {"task_id": "pytorch_rl/180"}, "prediction": "\"depth\": 0,"}
+{"metadata": {"task_id": "pytorch_rl/172"}, "prediction": "tensordict,"}
+{"metadata": {"task_id": "pytorch_rl/181"}, "prediction": "kernel_size=_kernel,"}
+{"metadata": {"task_id": "pytorch_rl/174"}, "prediction": "print(\"projected action: \\n\", env.action_spec.project(action))"}
+{"metadata": {"task_id": "pytorch_rl/182"}, "prediction": "raise RuntimeError("}
+{"metadata": {"task_id": "pytorch_rl/176"}, "prediction": "env.set_seed(seed)"}
+{"metadata": {"task_id": "pytorch_rl/186"}, "prediction": "from tensordict import TensorDict"}
+{"metadata": {"task_id": "pytorch_rl/185"}, "prediction": "self._create_td()"}
+{"metadata": {"task_id": "pytorch_rl/187"}, "prediction": "(255 * (pixels * stats[\"scale\"] + stats[\"loc\"]))"}
+{"metadata": {"task_id": "pytorch_rl/179"}, "prediction": "rollout_bis = rssm_rollout(tensordict_bis)"}
+{"metadata": {"task_id": "pytorch_rl/184"}, "prediction": "args = parser.parse_args()"}
+{"metadata": {"task_id": "pytorch_rl/189"}, "prediction": "plt.title(\"value\")"}
+{"metadata": {"task_id": "pytorch_rl/183"}, "prediction": "TensorDict("}
+{"metadata": {"task_id": "pytorch_rl/190"}, "prediction": "from torchrl.envs.transforms.transforms import ("}
+{"metadata": {"task_id": "pytorch_rl/188"}, "prediction": "@pytest.mark.parametrize(\"lazy\", [True, False])"}
+{"metadata": {"task_id": "pytorch_rl/191"}, "prediction": "scale = advantage.std().clamp_min(1e-6).item()"}
+{"metadata": {"task_id": "pytorch_rl/192"}, "prediction": "if isinstance(observation_spec, (gym.spaces.dict.Dict,)):"}
+{"metadata": {"task_id": "pytorch_rl/193"}, "prediction": "param_name,"}
+{"metadata": {"task_id": "pytorch_rl/195"}, "prediction": "target_return = tensordict.get(self.value_target_key)"}
+{"metadata": {"task_id": "pytorch_rl/196"}, "prediction": "self.__dict__[\"_input_spec\"] = None"}
+{"metadata": {"task_id": "pytorch_rl/197"}, "prediction": "tdrollout = []"}
+{"metadata": {"task_id": "pytorch_rl/194"}, "prediction": "out = step_mdp("}
+{"metadata": {"task_id": "pytorch_rl/199"}, "prediction": "video=video_wrong_format,"}
+{"metadata": {"task_id": "pytorch_rl/198"}, "prediction": "\"expln\": expln,"}
+{"metadata": {"task_id": "opendilab_ACE/0"}, "prediction": "Squeeze data from tuple, list or dict to single object"}
+{"metadata": {"task_id": "opendilab_ACE/2"}, "prediction": "def _func():"}
+{"metadata": {"task_id": "opendilab_ACE/1"}, "prediction": "- logit (:obj:`torch.FloatTensor`): :math:`(B, M)`, where B is batch size and M is ``action_shape``"}
+{"metadata": {"task_id": "opendilab_ACE/4"}, "prediction": "N = logits.shape[1]"}
+{"metadata": {"task_id": "opendilab_ACE/3"}, "prediction": "add: str,"}
+{"metadata": {"task_id": "opendilab_ACE/6"}, "prediction": "expert_cfg, seed=seed, env=env_fn, auto=True, create_cfg=expert_create_cfg, save_cfg=True"}
+{"metadata": {"task_id": "opendilab_ACE/7"}, "prediction": "elif isinstance(elem, tuple) and hasattr(elem, '_fields'):  # namedtuple"}
+{"metadata": {"task_id": "opendilab_ACE/5"}, "prediction": "from ding.utils import import_module, read_file, save_file, LockContext, LockContextType, LEAGUE_REGISTRY, \\"}
+{"metadata": {"task_id": "opendilab_ACE/16"}, "prediction": "Overview:"}
+{"metadata": {"task_id": "opendilab_ACE/18"}, "prediction": "The user can define and use customized network model but must obey the same inferface definition indicated \\"}
+{"metadata": {"task_id": "opendilab_ACE/12"}, "prediction": "hpc_action = hpc_action.cuda()"}
+{"metadata": {"task_id": "opendilab_ACE/19"}, "prediction": "data = diff_shape_collate(data)"}
+{"metadata": {"task_id": "opendilab_ACE/10"}, "prediction": "one_phase_step=2000,"}
+{"metadata": {"task_id": "opendilab_ACE/9"}, "prediction": "return _math_binary(lambda x, y: x ** y, index)"}
+{"metadata": {"task_id": "opendilab_ACE/20"}, "prediction": ">>> inputs = torch.randn(4, 64)"}
+{"metadata": {"task_id": "opendilab_ACE/8"}, "prediction": "Init the Rainbow Model according to arguments."}
+{"metadata": {"task_id": "opendilab_ACE/11"}, "prediction": "- logit (:obj:`torch.FloatTensor`): :math:`(B, N)`"}
+{"metadata": {"task_id": "opendilab_ACE/17"}, "prediction": ")"}
+{"metadata": {"task_id": "opendilab_ACE/21"}, "prediction": "- data (:obj:`List[Dict[str, Any]`): The trajectory data(a list of transition), each element is the same \\"}
+{"metadata": {"task_id": "opendilab_ACE/15"}, "prediction": "while len(hpc_fns[fn_name]) > per_fn_limit:"}
+{"metadata": {"task_id": "opendilab_ACE/14"}, "prediction": "pass"}
+{"metadata": {"task_id": "opendilab_ACE/22"}, "prediction": "data = generate_data_list(20)"}
+{"metadata": {"task_id": "opendilab_ACE/23"}, "prediction": "N = 10"}
+{"metadata": {"task_id": "opendilab_ACE/13"}, "prediction": "12 | ``learn.``          bool        False          | Determine whether to use        | Temperature parameter"}
+{"metadata": {"task_id": "opendilab_ACE/25"}, "prediction": "),"}
+{"metadata": {"task_id": "opendilab_ACE/26"}, "prediction": "print('epoch: {}, original qntd rescale cost time: {}'.format(i, time.time() - t))"}
+{"metadata": {"task_id": "opendilab_ACE/24"}, "prediction": "from .base_serial_collector import CachePool, TrajBuffer"}
+{"metadata": {"task_id": "opendilab_ACE/27"}, "prediction": "token: Optional[str] = None,"}
+{"metadata": {"task_id": "opendilab_ACE/28"}, "prediction": "- values (:obj:`torch.FloatTensor`): :math:`(T+1, B)`"}
+{"metadata": {"task_id": "opendilab_ACE/29"}, "prediction": "from typing import Tuple"}
+{"metadata": {"task_id": "opendilab_ACE/30"}, "prediction": "_time_1 = time.time()"}
+{"metadata": {"task_id": "opendilab_ACE/33"}, "prediction": "r\"\"\""}
+{"metadata": {"task_id": "opendilab_ACE/32"}, "prediction": "return default_func(233)(callback)(a, b)"}
+{"metadata": {"task_id": "opendilab_ACE/31"}, "prediction": "from .ppo import PPOPolicy, PPOOffPolicy"}
+{"metadata": {"task_id": "opendilab_ACE/35"}, "prediction": "|                                                     |                                   | DDPG paper, Guassian"}
+{"metadata": {"task_id": "opendilab_ACE/36"}, "prediction": "elif isinstance(elem, int_classes):"}
+{"metadata": {"task_id": "opendilab_ACE/37"}, "prediction": "return Loader("}
+{"metadata": {"task_id": "opendilab_ACE/38"}, "prediction": "def send_learn_info(self, learn_info: dict) -> None:"}
+{"metadata": {"task_id": "opendilab_ACE/34"}, "prediction": "if isinstance(replay_path, str):"}
+{"metadata": {"task_id": "opendilab_ACE/39"}, "prediction": "- activation (:obj:`Optional[nn.Module]`):"}
+{"metadata": {"task_id": "opendilab_ACE/40"}, "prediction": "self.d_k = d_k"}
+{"metadata": {"task_id": "opendilab_ACE/41"}, "prediction": "dst_model,"}
+{"metadata": {"task_id": "opendilab_ACE/42"}, "prediction": "naive coordinator will pass when need to notify_fail_learner_task"}
+{"metadata": {"task_id": "opendilab_ACE/46"}, "prediction": "assert _norm({'a': 2}) == 16"}
+{"metadata": {"task_id": "opendilab_ACE/45"}, "prediction": "\"Replay buffer's data can only train for {} steps. \".format(i) +"}
+{"metadata": {"task_id": "opendilab_ACE/44"}, "prediction": "self.historical_players.append(hp)"}
+{"metadata": {"task_id": "opendilab_ACE/52"}, "prediction": "entropy = pd.neglogp(logit2)"}
+{"metadata": {"task_id": "opendilab_ACE/53"}, "prediction": "including at least ``action``."}
+{"metadata": {"task_id": "opendilab_ACE/49"}, "prediction": "self._traj_buffer = {env_id: TrajBuffer(self._traj_len) for env_id in range(self._env_num)}"}
+{"metadata": {"task_id": "opendilab_ACE/48"}, "prediction": "if not all_enemies_health:"}
+{"metadata": {"task_id": "opendilab_ACE/54"}, "prediction": "self._path_policy = cfg.path_policy  # path to save policy"}
+{"metadata": {"task_id": "opendilab_ACE/47"}, "prediction": "close_slave_event.wait()"}
+{"metadata": {"task_id": "opendilab_ACE/51"}, "prediction": "def test_sequence_mask():"}
+{"metadata": {"task_id": "opendilab_ACE/50"}, "prediction": "value_loss = F.mse_loss(output['value'], data['value'])"}
+{"metadata": {"task_id": "opendilab_ACE/43"}, "prediction": "print(\"target problem: B = {}, M = {}, N = {}, H = {}, W = {}\".format(B, M, N, H, W))"}
+{"metadata": {"task_id": "opendilab_ACE/55"}, "prediction": "from ding.policy import create_policy, PolicyFactory"}
+{"metadata": {"task_id": "opendilab_ACE/56"}, "prediction": "elif isinstance(elem, float):"}
+{"metadata": {"task_id": "opendilab_ACE/57"}, "prediction": "Add noise to collector's action output; Do clips on both generated noise and action after adding noise."}
+{"metadata": {"task_id": "opendilab_ACE/58"}, "prediction": "duration = sum([d['time'] for d in self._episode_info])"}
+{"metadata": {"task_id": "opendilab_ACE/59"}, "prediction": "actual=repr(self.__task_status.name),"}
+{"metadata": {"task_id": "opendilab_ACE/60"}, "prediction": "'d': {"}
+{"metadata": {"task_id": "opendilab_ACE/61"}, "prediction": "from .base_serial_collector import ISerialCollector, CachePool, TrajBuffer, INF, to_tensor_transitions"}
+{"metadata": {"task_id": "opendilab_ACE/62"}, "prediction": "_name = \"BasePlayer\"  # override this variable for sub-class player"}
+{"metadata": {"task_id": "opendilab_ACE/63"}, "prediction": "'g': 4,"}
+{"metadata": {"task_id": "opendilab_ACE/64"}, "prediction": "}"}
+{"metadata": {"task_id": "opendilab_ACE/65"}, "prediction": "shuffle=False,"}
+{"metadata": {"task_id": "opendilab_ACE/66"}, "prediction": "error_task_start=self._error_new_task,"}
+{"metadata": {"task_id": "opendilab_ACE/67"}, "prediction": "Arguments:"}
+{"metadata": {"task_id": "opendilab_ACE/68"}, "prediction": "stop, reward = evaluator.eval(learner.save_checkpoint, learner.train_iter, collector.envstep)"}
+{"metadata": {"task_id": "opendilab_ACE/69"}, "prediction": "config = [deepcopy(pendulum_cql_default_config), deepcopy(pendulum_cql_default_create_config)]"}
+{"metadata": {"task_id": "opendilab_ACE/70"}, "prediction": "- indices (:obj:`List[int]`): A list including all the sample indices."}
+{"metadata": {"task_id": "opendilab_ACE/71"}, "prediction": "actions = {}"}
+{"metadata": {"task_id": "opendilab_ACE/72"}, "prediction": "from .nn_test_helper import is_differentiable"}
+{"metadata": {"task_id": "opendilab_ACE/73"}, "prediction": "cur_metrics = metrics"}
+{"metadata": {"task_id": "opendilab_ACE/74"}, "prediction": "loss.backward()"}
+{"metadata": {"task_id": "opendilab_ACE/75"}, "prediction": "return _result"}
+{"metadata": {"task_id": "opendilab_ACE/76"}, "prediction": "import torch"}
+{"metadata": {"task_id": "opendilab_ACE/78"}, "prediction": "exit(-1)"}
+{"metadata": {"task_id": "opendilab_ACE/77"}, "prediction": "alpha=0.99,"}
+{"metadata": {"task_id": "opendilab_ACE/79"}, "prediction": "if done:"}
+{"metadata": {"task_id": "opendilab_ACE/81"}, "prediction": "q_nstep_td_data(ori_q, ori_next_n_q, ori_action, ori_next_n_action, ori_reward, ori_done, ori_weight), gamma, T"}
+{"metadata": {"task_id": "opendilab_ACE/80"}, "prediction": "from collections import namedtuple, deque"}
+{"metadata": {"task_id": "opendilab_ACE/82"}, "prediction": "step_time=0.01,"}
+{"metadata": {"task_id": "opendilab_ACE/83"}, "prediction": "def test_atoc():"}
+{"metadata": {"task_id": "opendilab_ACE/84"}, "prediction": "config = [deepcopy(cooperative_navigation_coma_config), deepcopy(cooperative_navigation_coma_create_config)]"}
+{"metadata": {"task_id": "opendilab_ACE/85"}, "prediction": "learning_rate=0.001,"}
+{"metadata": {"task_id": "opendilab_ACE/87"}, "prediction": "self._env.launch()"}
+{"metadata": {"task_id": "opendilab_ACE/88"}, "prediction": "aux_loss_weight=dict("}
+{"metadata": {"task_id": "opendilab_ACE/89"}, "prediction": "return size + idx"}
+{"metadata": {"task_id": "opendilab_ACE/86"}, "prediction": "assert [type(item) for _, item in err.errors] == [TypeError, TypeError]"}
+{"metadata": {"task_id": "opendilab_ACE/90"}, "prediction": "if self.mixer:"}
+{"metadata": {"task_id": "opendilab_ACE/91"}, "prediction": "if windows_flag:"}
+{"metadata": {"task_id": "opendilab_ACE/92"}, "prediction": ":self.n_agents] & ~medivac_mask  # heal action"}
+{"metadata": {"task_id": "opendilab_ACE/94"}, "prediction": "collect=dict("}
+{"metadata": {"task_id": "opendilab_ACE/93"}, "prediction": "learning_rate=0.0005,"}
+{"metadata": {"task_id": "opendilab_ACE/95"}, "prediction": "policy: str,"}
+{"metadata": {"task_id": "opendilab_ACE/96"}, "prediction": "import time"}
+{"metadata": {"task_id": "opendilab_ACE/97"}, "prediction": "reward = t.info['final_eval_reward']"}
+{"metadata": {"task_id": "opendilab_ACE/98"}, "prediction": "(6.6, 13.2),"}
+{"metadata": {"task_id": "opendilab_ACE/99"}, "prediction": "else:"}
+{"metadata": {"task_id": "opendilab_ACE/100"}, "prediction": "except Exception:"}
+{"metadata": {"task_id": "opendilab_ACE/101"}, "prediction": "coordinator = Coordinator(setup_config)"}
+{"metadata": {"task_id": "opendilab_ACE/102"}, "prediction": "_norm = lcmp(2, '<', norm(item('a')), \"<=\", 5)"}
+{"metadata": {"task_id": "opendilab_ACE/103"}, "prediction": "hpc_weight = hpc_weight.cuda()"}
+{"metadata": {"task_id": "opendilab_ACE/104"}, "prediction": "from ding.utils import find_free_port"}
+{"metadata": {"task_id": "opendilab_ACE/105"}, "prediction": "from typing import Any"}
+{"metadata": {"task_id": "opendilab_ACE/107"}, "prediction": "with pytest.raises(ValueError):"}
+{"metadata": {"task_id": "opendilab_ACE/106"}, "prediction": "raise ValueError('Either int or float should be allowed.')"}
+{"metadata": {"task_id": "opendilab_ACE/109"}, "prediction": "with timer:"}
+{"metadata": {"task_id": "opendilab_ACE/110"}, "prediction": "self._last_eval_iter = train_iter"}
+{"metadata": {"task_id": "opendilab_ACE/108"}, "prediction": "return self.actor_critic(x, mode='compute_actor')"}
+{"metadata": {"task_id": "opendilab_ACE/111"}, "prediction": "- num_quantiles (:obj:`int`): Number of quantiles in the prediction distribution."}
+{"metadata": {"task_id": "opendilab_ACE/112"}, "prediction": "_init_collect, _forward_collect, _reset_collect, _process_transition, _init_eval, _forward_eval\\"}
+{"metadata": {"task_id": "opendilab_ACE/113"}, "prediction": "- necessary: ``cur_lr``, ``total_loss``, ``policy_loss`,``value_loss``,``entropy_loss``"}
+{"metadata": {"task_id": "opendilab_ACE/114"}, "prediction": "type='exp',"}
+{"metadata": {"task_id": "opendilab_ACE/118"}, "prediction": "'d': 6,"}
+{"metadata": {"task_id": "opendilab_ACE/117"}, "prediction": "from ding.model import model_wrap"}
+{"metadata": {"task_id": "opendilab_ACE/116"}, "prediction": "global_obs_shape: int,"}
+{"metadata": {"task_id": "opendilab_ACE/119"}, "prediction": "create_cfg.policy.type = create_cfg.policy.type + '_command'"}
+{"metadata": {"task_id": "opendilab_ACE/115"}, "prediction": "actor_head_hidden_size=embedding_size,"}
+{"metadata": {"task_id": "opendilab_ACE/120"}, "prediction": "assert conn.is_connected"}
+{"metadata": {"task_id": "opendilab_ACE/121"}, "prediction": "import random"}
+{"metadata": {"task_id": "opendilab_ACE/122"}, "prediction": "- buffer_id (:obj:`str`): the buffer_id of buffer to add info to"}
+{"metadata": {"task_id": "opendilab_ACE/124"}, "prediction": "'player_id': active_player_id,"}
+{"metadata": {"task_id": "opendilab_ACE/125"}, "prediction": "raise err"}
+{"metadata": {"task_id": "opendilab_ACE/123"}, "prediction": "Init eval model with argmax strategy and the hidden_state plugin."}
+{"metadata": {"task_id": "opendilab_ACE/126"}, "prediction": "M, N = s1.shape[0], s2.shape[0]"}
+{"metadata": {"task_id": "opendilab_ACE/127"}, "prediction": "self._gamma = self._cfg.discount_factor  # necessary for parallel"}
+{"metadata": {"task_id": "opendilab_ACE/128"}, "prediction": "Returns:"}
+{"metadata": {"task_id": "opendilab_ACE/129"}, "prediction": "game_steps_per_episode=self.game_steps_per_episode,"}
+{"metadata": {"task_id": "opendilab_ACE/130"}, "prediction": "class TestBattleRecordDict:"}
+{"metadata": {"task_id": "opendilab_ACE/131"}, "prediction": "if ding.enable_hpc_rl:"}
+{"metadata": {"task_id": "opendilab_ACE/132"}, "prediction": "t.close()"}
+{"metadata": {"task_id": "opendilab_ACE/133"}, "prediction": "\"map_type\": \"marines\","}
+{"metadata": {"task_id": "opendilab_ACE/134"}, "prediction": "- value_wight(:obj:`float`): The weight of value loss in total loss"}
+{"metadata": {"task_id": "opendilab_ACE/136"}, "prediction": "- timestep (:obj:`namedtuple`): Output after env step, including at least ['obs', 'reward', 'done'] \\"}
+{"metadata": {"task_id": "opendilab_ACE/135"}, "prediction": "assert _loader(0.999) == 0.999"}
+{"metadata": {"task_id": "opendilab_ACE/137"}, "prediction": "hpc_qntd_rescale = hpc_qntd_rescale.cuda()"}
+{"metadata": {"task_id": "opendilab_ACE/138"}, "prediction": "False,"}
+{"metadata": {"task_id": "opendilab_ACE/139"}, "prediction": "action = action.reshape(T * B, A).unsqueeze(-1)"}
+{"metadata": {"task_id": "opendilab_ACE/140"}, "prediction": "collect_demo_data("}
+{"metadata": {"task_id": "opendilab_ACE/141"}, "prediction": "from ding.config import read_config, compile_config"}
+{"metadata": {"task_id": "opendilab_ACE/142"}, "prediction": "obs['states'] = obs['states'].index_select(1, entity_ind)"}
+{"metadata": {"task_id": "opendilab_ACE/144"}, "prediction": "'reward_std': np.std(self._episode_result),"}
+{"metadata": {"task_id": "opendilab_ACE/143"}, "prediction": "if isinstance(obs_shape, int):"}
+{"metadata": {"task_id": "opendilab_ACE/145"}, "prediction": "return step_fn()"}
+{"metadata": {"task_id": "opendilab_ACE/146"}, "prediction": "ori_loss.backward()"}
+{"metadata": {"task_id": "opendilab_ACE/148"}, "prediction": "Returning the combination dictionry."}
+{"metadata": {"task_id": "opendilab_ACE/147"}, "prediction": "p.total_agent_step = ONE_PHASE_STEP + 1"}
+{"metadata": {"task_id": "opendilab_ACE/150"}, "prediction": "elif task_name == 'learner_start_task':"}
+{"metadata": {"task_id": "opendilab_ACE/149"}, "prediction": "SMACRewardInfo = SMACACEEnv.SMACRewardInfo"}
+{"metadata": {"task_id": "opendilab_ACE/151"}, "prediction": "os.popen('rm -rf env_*_*')"}
+{"metadata": {"task_id": "opendilab_ACE/152"}, "prediction": "s.update(meta)"}
+{"metadata": {"task_id": "opendilab_ACE/153"}, "prediction": "type=str,"}
+{"metadata": {"task_id": "opendilab_ACE/154"}, "prediction": "'priority': td_error_per_sample.abs().tolist(),"}
+{"metadata": {"task_id": "opendilab_ACE/155"}, "prediction": "{"}
+{"metadata": {"task_id": "opendilab_ACE/156"}, "prediction": "raise NotImplementedError"}
+{"metadata": {"task_id": "opendilab_ACE/157"}, "prediction": "logging.info("}
+{"metadata": {"task_id": "opendilab_ACE/158"}, "prediction": "config = [deepcopy(cooperative_navigation_wqmix_config), deepcopy(cooperative_navigation_wqmix_create_config)]"}
+{"metadata": {"task_id": "opendilab_ACE/159"}, "prediction": "- output (:obj:`Dict[int, Dict[str,Any]]`): Dict of predicting policy_output(logit, action) for each env."}
+{"metadata": {"task_id": "opendilab_ACE/160"}, "prediction": "action[0] = 'block'"}
+{"metadata": {"task_id": "opendilab_ACE/161"}, "prediction": "path = 'model.pt'"}
+{"metadata": {"task_id": "opendilab_ACE/163"}, "prediction": "self.__task_complete(result)"}
+{"metadata": {"task_id": "opendilab_ACE/162"}, "prediction": "can be used for training directly. A train sample can be a processed transition(DQN with nstep TD) \\"}
+{"metadata": {"task_id": "opendilab_ACE/164"}, "prediction": "__init__, step"}
+{"metadata": {"task_id": "opendilab_ACE/165"}, "prediction": "dns_name = replica_conn.split(\":\")[0]"}
+{"metadata": {"task_id": "opendilab_ACE/166"}, "prediction": "\"b_race\": \"P\","}
+{"metadata": {"task_id": "opendilab_ACE/167"}, "prediction": "from ding.utils import lists_to_dicts, SequenceType"}
+{"metadata": {"task_id": "opendilab_ACE/169"}, "prediction": "time.sleep(0.1)"}
+{"metadata": {"task_id": "opendilab_ACE/170"}, "prediction": "},"}
+{"metadata": {"task_id": "opendilab_ACE/168"}, "prediction": "assert self.intrinsic_reward_type in ['add', 'new', 'assign']"}
+{"metadata": {"task_id": "opendilab_ACE/172"}, "prediction": "'data': json.dumps(d)"}
+{"metadata": {"task_id": "opendilab_ACE/171"}, "prediction": "try:"}
+{"metadata": {"task_id": "opendilab_ACE/173"}, "prediction": "if isinstance(left_reward, torch.Tensor):"}
+{"metadata": {"task_id": "opendilab_ACE/176"}, "prediction": "'body': json.dumps({\"success\": True}),"}
+{"metadata": {"task_id": "opendilab_ACE/175"}, "prediction": "assert not self._eval_flag"}
+{"metadata": {"task_id": "opendilab_ACE/177"}, "prediction": "Execute parameter updates with ``'compute_actor'`` mode"}
+{"metadata": {"task_id": "opendilab_ACE/178"}, "prediction": "ip = s.getsockname()[0]"}
+{"metadata": {"task_id": "opendilab_ACE/174"}, "prediction": "Return the decompressed original data (lz4 compressor)."}
+{"metadata": {"task_id": "opendilab_ACE/179"}, "prediction": "hpc_weight = ori_weight.clone().detach()"}
+{"metadata": {"task_id": "opendilab_ACE/180"}, "prediction": "assert _loader(1) == 0.5"}
+{"metadata": {"task_id": "opendilab_ACE/181"}, "prediction": "from typing import Type"}
+{"metadata": {"task_id": "opendilab_ACE/182"}, "prediction": "from ding.rl_utils import v_1step_td_data, v_1step_td_error, get_train_sample"}
+{"metadata": {"task_id": "opendilab_ACE/184"}, "prediction": "_, idx = model(data)"}
+{"metadata": {"task_id": "opendilab_ACE/183"}, "prediction": "info = {'priority': [], 'replay_unique_id': [], 'replay_buffer_idx': []}"}
+{"metadata": {"task_id": "opendilab_ACE/185"}, "prediction": "self._env.seed(self._seed + np_seed)"}
+{"metadata": {"task_id": "opendilab_ACE/186"}, "prediction": "dataset = create_dataset(cfg)"}
+{"metadata": {"task_id": "opendilab_ACE/187"}, "prediction": ">>> torch.Size([4, 64])"}
+{"metadata": {"task_id": "opendilab_ACE/188"}, "prediction": "return out"}
+{"metadata": {"task_id": "opendilab_ACE/189"}, "prediction": "STARTED = 0x12  # doc: Task started, initialization is completed."}
+{"metadata": {"task_id": "opendilab_ACE/190"}, "prediction": "embedding_size: int,"}
+{"metadata": {"task_id": "opendilab_ACE/191"}, "prediction": "- obs (:obj:`Any`): Env observation"}
+{"metadata": {"task_id": "opendilab_ACE/193"}, "prediction": "def __check_channel(self, func: Callable[[], Any]) -> Callable[[], Any]:"}
+{"metadata": {"task_id": "opendilab_ACE/192"}, "prediction": "__init__, __call__"}
+{"metadata": {"task_id": "opendilab_ACE/194"}, "prediction": "def create_evaluator_env_cfg(cfg: dict) -> List[dict]:"}
+{"metadata": {"task_id": "opendilab_ACE/195"}, "prediction": "| in the support set."}
+{"metadata": {"task_id": "opendilab_ACE/196"}, "prediction": "self._logger.error(\"Failed to sync with server, message: {}\".format(message))"}
+{"metadata": {"task_id": "opendilab_ACE/197"}, "prediction": "return super()._forward_learn(data)"}
+{"metadata": {"task_id": "opendilab_ACE/198"}, "prediction": "0"}
+{"metadata": {"task_id": "opendilab_ACE/199"}, "prediction": "code=CommonErrorCode.SUCCESS,"}

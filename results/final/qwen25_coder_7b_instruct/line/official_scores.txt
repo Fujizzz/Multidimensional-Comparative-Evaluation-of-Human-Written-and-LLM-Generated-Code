@@ -1,0 +1,24 @@
+RUN_ID = qwen25coder7binst__line__standard_line_rg1_ws20_ss2_allrepos_N200_seed42__bfloat16__t0__max128__20260423_143907
+PRED = predictions/qwen25coder7binst__line__standard_line_rg1_ws20_ss2_allrepos_N200_seed42__bfloat16__t0__max128__20260423_143907.jsonl
+
+=== EM (pass@1) ===
+EM
+0.215	200	alibaba_FederatedScope
+0.435	200	awslabs_fortuna
+0.205	200	google_vizier
+0.405	200	huggingface_diffusers
+0.31	200	huggingface_evaluate
+0.205	200	nerfstudio-project_nerfstudio
+0.21	200	opendilab_ACE
+0.305	200	pytorch_rl
+
+=== ES (pass@1) ===
+ES
+0.4773	200	alibaba_FederatedScope
+0.6203	200	awslabs_fortuna
+0.4318	200	google_vizier
+0.6099	200	huggingface_diffusers
+0.5467	200	huggingface_evaluate
+0.4553	200	nerfstudio-project_nerfstudio
+0.4809	200	opendilab_ACE
+0.5275	200	pytorch_rl

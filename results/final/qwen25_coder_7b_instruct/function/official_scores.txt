@@ -1,0 +1,24 @@
+RUN_ID = qwen25coder7binst__function__standard_function_rg1_ws20_ss2_currentrepos_full_seed42__bfloat16__t0__max128__20260423_180301
+PRED = predictions/qwen25coder7binst__function__standard_function_rg1_ws20_ss2_currentrepos_full_seed42__bfloat16__t0__max128__20260423_180301.jsonl
+
+=== EM (pass@1) ===
+EM
+0.0	46	CarperAI_trlx
+0.0597	67	lucidrains_imagen-pytorch
+0.0685	146	deepmind_tracr
+0.0	36	leopard-ai_betty
+0.0312	64	google_lightweight_mmm
+0.0312	32	amazon-science_patchcore-inspection
+0.0455	22	facebookresearch_omnivore
+0.0	42	maxhumber_redframes
+
+=== ES (pass@1) ===
+ES
+0.3389	46	CarperAI_trlx
+0.4377	67	lucidrains_imagen-pytorch
+0.412	146	deepmind_tracr
+0.3062	36	leopard-ai_betty
+0.3425	64	google_lightweight_mmm
+0.3278	32	amazon-science_patchcore-inspection
+0.3711	22	facebookresearch_omnivore
+0.2234	42	maxhumber_redframes

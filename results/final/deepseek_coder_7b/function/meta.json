@@ -1,0 +1,14 @@
+{
+  "run_id": "deepseek__function__rg1_ws20_ss2__standard_function_rg1_ws20_ss2_currentrepos_full_seed42__t0__max128__20260423_123858",
+  "task_name": "function",
+  "prompt_path": "prompts/standard_function_rg1_ws20_ss2_currentrepos_full_seed42.jsonl",
+  "model_path": "/root/autodl-tmp/LLM/Deepseek-coder",
+  "max_new_tokens": 128,
+  "temperature": 0.0,
+  "n_samples": 455,
+  "model_max_len": 16384,
+  "usable_input_len": 16224,
+  "n_truncated": 2,
+  "n_failed": 0,
+  "protocol": "original_protocol_generic_with_length_guard"
+}

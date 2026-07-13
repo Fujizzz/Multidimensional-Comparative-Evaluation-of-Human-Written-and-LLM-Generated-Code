@@ -1,0 +1,24 @@
+RUN_ID = deepseek__function__rg1_ws20_ss2__standard_function_rg1_ws20_ss2_currentrepos_full_seed42__t0__max128__20260423_123858
+PRED = predictions/deepseek__function__rg1_ws20_ss2__standard_function_rg1_ws20_ss2_currentrepos_full_seed42__t0__max128__20260423_123858.jsonl
+
+=== EM (pass@1) ===
+EM
+0.0	46	CarperAI_trlx
+0.0149	67	lucidrains_imagen-pytorch
+0.0616	146	deepmind_tracr
+0.0	36	leopard-ai_betty
+0.0312	64	google_lightweight_mmm
+0.0312	32	amazon-science_patchcore-inspection
+0.0	22	facebookresearch_omnivore
+0.0238	42	maxhumber_redframes
+
+=== ES (pass@1) ===
+ES
+0.3924	46	CarperAI_trlx
+0.3676	67	lucidrains_imagen-pytorch
+0.4369	146	deepmind_tracr
+0.3337	36	leopard-ai_betty
+0.3474	64	google_lightweight_mmm
+0.3897	32	amazon-science_patchcore-inspection
+0.3736	22	facebookresearch_omnivore
+0.2935	42	maxhumber_redframes

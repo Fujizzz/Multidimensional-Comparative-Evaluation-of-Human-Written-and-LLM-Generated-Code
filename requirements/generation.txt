@@ -1,0 +1,11 @@
+# GPU generation dependencies. Install a CUDA-compatible PyTorch build first.
+requests>=2.31,<3
+torch>=2.1
+tqdm>=4.66
+transformers>=4.40
+
+# Repoformer generation additionally requires vLLM on Linux.
+# vllm>=0.4
+
+# Agent experiments used mini-swe-agent 2.2.8.
+# mini-swe-agent==2.2.8

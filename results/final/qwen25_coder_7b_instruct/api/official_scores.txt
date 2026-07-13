@@ -1,0 +1,26 @@
+RUN_ID = qwen25coder7binst__api__standard_api_rg1_ws20_ss2_allrepos_N200_seed42__bfloat16__t0__max128__20260423_163747
+TASK_NAME = api
+PRED = predictions/qwen25coder7binst__api__standard_api_rg1_ws20_ss2_allrepos_N200_seed42__bfloat16__t0__max128__20260423_163747.jsonl
+REPOS = ['alibaba_FederatedScope', 'awslabs_fortuna', 'google_vizier', 'huggingface_diffusers', 'huggingface_evaluate', 'nerfstudio-project_nerfstudio', 'opendilab_ACE', 'pytorch_rl']
+
+=== EM (pass@1) ===
+EM
+0.06	200	alibaba_FederatedScope
+0.12	200	awslabs_fortuna
+0.05	200	google_vizier
+0.135	200	huggingface_diffusers
+0.045	200	huggingface_evaluate
+0.06	200	nerfstudio-project_nerfstudio
+0.085	200	opendilab_ACE
+0.05	200	pytorch_rl
+
+=== ES (pass@1) ===
+ES
+0.2659	200	alibaba_FederatedScope
+0.2871	200	awslabs_fortuna
+0.204	200	google_vizier
+0.2472	200	huggingface_diffusers
+0.3381	200	huggingface_evaluate
+0.2369	200	nerfstudio-project_nerfstudio
+0.2216	200	opendilab_ACE
+0.1963	200	pytorch_rl
