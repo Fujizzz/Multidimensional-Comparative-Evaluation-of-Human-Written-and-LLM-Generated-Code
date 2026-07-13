@@ -1,24 +1,26 @@
-# 人工与大模型生成代码的多维度对比评估
+# Multidimensional Comparative Evaluation of Human-Written and LLM-Generated Code
 
-本仓库是重庆大学软件工程本科毕业论文《人工与大模型生成代码的多维度对比评估》的实验复现代码与数据归档。实验以 RepoEval 为统一任务源，在 Function、Line 和 API 三类仓库级代码补全任务上，对人工参考代码与五类生成方法进行比较，并从参考一致性、可执行性、工程质量、上下文一致性和风险暴露五个维度进行评估。
+This repository contains the code, data, and experimental artifacts for the undergraduate thesis **“Multidimensional Comparative Evaluation of Human-Written and LLM-Generated Code”** at Chongqing University.
 
-论文 PDF 未纳入仓库，以避免公开学号等个人信息。
+The study uses RepoEval as a unified benchmark and compares human-written reference code with five code-generation approaches across repository-level Function, Line, and API completion tasks. The outputs are evaluated along five dimensions: reference consistency, executability, engineering quality, contextual coherence, and risk exposure.
 
-## 实验对象
+The thesis PDF is intentionally excluded to avoid publishing personal information such as the student ID.
 
-| 类别 | 方法 |
+## Evaluated Approaches
+
+| Category | Method |
 | --- | --- |
-| 人工基线 | RepoEval human reference |
-| 本地代码模型 | DeepSeek-Coder 7B、Qwen2.5-Coder 7B Instruct |
-| API 模型 | DeepSeek-V4-Flash |
-| 检索增强 | Repoformer 7B |
-| Agent | mini-swe-agent + DeepSeek-V4-Flash |
+| Human baseline | RepoEval human reference |
+| Local code models | DeepSeek-Coder 7B and Qwen2.5-Coder 7B Instruct |
+| API model | DeepSeek-V4-Flash |
+| Retrieval-augmented generation | Repoformer 7B |
+| Agent-based generation | mini-swe-agent with DeepSeek-V4-Flash |
 
-RepoEval 共包含 3655 个实验样本：Function 455 个、Line 1600 个、API 1600 个。每个方法均按相同任务集合统计，整体指标按三类任务样本数加权。
+RepoEval contains 3,655 samples used in this study: 455 Function completion samples, 1,600 Line completion samples, and 1,600 API completion samples. Every method is evaluated on the same task set, and overall metrics are weighted by the number of samples in each task.
 
-## 论文核心结果
+## Main Results
 
-| 方法 | EM | ES | Comp | CC | DLR | LLR | IE | CIOR | DCall |
+| Method | EM | ES | Comp | CC | DLR | LLR | IE | CIOR | DCall |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | Human Baseline | 1.0000 | 1.0000 | 0.9067 | 1.2528 | 0.0042 | 0.0444 | 1.9972 | 0.0000 | 0.0052 |
 | DeepSeek-Coder 7B | 0.3395 | 0.5959 | 0.2566 | 1.9174 | 0.0585 | 0.0328 | 4.0245 | 0.0000 | 0.0249 |
@@ -27,31 +29,31 @@ RepoEval 共包含 3655 个实验样本：Function 455 个、Line 1600 个、API
 | Repoformer 7B | 0.4211 | 0.6918 | 0.2178 | 7.7702 | 0.1070 | 0.0385 | 3.1108 | 0.8205 | 0.0167 |
 | mini-swe-agent (DeepSeek-V4-Flash) | 0.2547 | 0.4303 | 0.4025 | 12.7677 | 0.0528 | 0.0338 | 2.6783 | 0.8246 | 0.0107 |
 
-其中 EM、ES、Comp、CIOR 越大越好；CC、DLR、LLR、IE、DCall 越小越好。完整指标定义见论文附录，逐样本字段保存在各结果目录的 `metrics.jsonl` 中。
+Higher values are better for EM, ES, Comp, and CIOR. Lower values are better for CC, DLR, LLR, IE, and DCall. Per-sample values for the full metric suite are available in the corresponding `metrics.jsonl` files.
 
-## 仓库结构
+## Repository Structure
 
 ```text
 .
-├── configs/                 # Agent 任务模板和模型配置
-├── data/repoeval/           # 论文实际使用的 3655 个输入样本
-├── requirements/            # 评估、绘图和生成依赖
+├── configs/                 # Agent task templates and model configuration
+├── data/repoeval/           # The 3,655 RepoEval inputs used in the thesis
+├── requirements/            # Evaluation, plotting, and generation dependencies
 ├── results/
-│   ├── final/               # 六种方法的最终输出、逐样本指标和 summary
-│   ├── figures/             # 论文图表及可重新生成的图表
-│   └── tables/              # 汇总 CSV
+│   ├── final/               # Final outputs, per-sample metrics, and summaries
+│   ├── figures/             # Thesis figures and regenerated figures
+│   └── tables/              # Aggregated CSV tables
 ├── scripts/verify_results.py
 └── src/
-    ├── evaluation/          # 多维度评估实现
-    ├── generation/          # 本地模型、API、Repoformer、Agent 生成脚本
-    └── plotting/            # 从 summary 重建论文图表
+    ├── evaluation/          # Multidimensional evaluation implementation
+    ├── generation/          # Local, API, Repoformer, and agent runners
+    └── plotting/            # Figure generation from summary files
 ```
 
-未纳入的内容包括模型权重、虚拟环境、缓存、日志、探索性 sanity/pilot 运行、重复压缩包、Agent 临时工作区，以及约 1.9 GB 的第三方仓库快照。
+Model weights, virtual environments, caches, logs, exploratory sanity or pilot runs, duplicate archives, agent workspaces, and approximately 1.9 GB of third-party repository snapshots are excluded.
 
-## 快速验证
+## Quick Verification
 
-建议使用 Python 3.10 或 3.11。
+Python 3.10 or 3.11 is recommended.
 
 ```bash
 python -m venv .venv
@@ -60,20 +62,20 @@ pip install -r requirements/base.txt
 python scripts/verify_results.py
 ```
 
-验证脚本会检查三个数据文件的样本数，重新读取 18 份最终 summary，按 455/1600/1600 加权，并逐项核对论文表 4.4–4.10 的整体数值。
+The verification script checks the number of samples in all three datasets, loads the 18 final summary files, computes weighted metrics using the 455/1,600/1,600 task sizes, and verifies every overall value reported in the thesis.
 
-重新绘图：
+To regenerate the main figures:
 
 ```bash
 pip install -r requirements/plotting.txt
 python src/plotting/plot_paper_results.py
 ```
 
-新图表会写入 `results/figures/regenerated/`。
+Generated figures and tables are written to `results/figures/regenerated/`.
 
-## 重新评估已有输出
+## Re-evaluating Existing Outputs
 
-以下示例重新评估 DeepSeek API 的 Function 输出：
+The following command re-evaluates the DeepSeek API Function-completion outputs:
 
 ```bash
 python src/evaluation/evaluate_repoeval.py \
@@ -83,13 +85,19 @@ python src/evaluation/evaluate_repoeval.py \
   --output_dir runs/deepseek_api_function_eval
 ```
 
-评估器输出 `metrics.jsonl` 和 `summary.json`。它实现 RepoEval 对齐的 EM/ES，并计算 Comp、CC、DLR、LLR、IE、CIOR、DCall 及附录中列出的扩展指标。代码重组与编译检查不是隔离沙箱，只应对可信数据运行。
+The evaluator produces `metrics.jsonl` and `summary.json`. It implements RepoEval-aligned EM and ES together with Comp, CC, DLR, LLR, IE, CIOR, DCall, and the extended metrics documented in the thesis appendix.
 
-## 重新生成模型输出
+Code reconstruction and compilation checks are not executed in an isolated security sandbox. Only run the evaluator on trusted data.
 
-GPU 推理前先安装与本机 CUDA 匹配的 PyTorch，再安装 `requirements/generation.txt`。
+## Regenerating Model Outputs
 
-### 本地 Hugging Face 模型
+Before GPU inference, install a CUDA-compatible PyTorch build and then install the generation dependencies:
+
+```bash
+pip install -r requirements/generation.txt
+```
+
+### Local Hugging Face Models
 
 ```bash
 python src/generation/run_hf_prefix_completion.py \
@@ -102,11 +110,11 @@ python src/generation/run_hf_prefix_completion.py \
   --temperature 0
 ```
 
-论文中的 DeepSeek-Coder 和 Qwen2.5-Coder 均采用单候选、temperature=0、max_new_tokens=128。模型权重不随仓库分发。
+The DeepSeek-Coder and Qwen2.5-Coder experiments use one candidate per sample, `temperature=0`, and `max_new_tokens=128`. Model weights are not distributed with this repository.
 
 ### DeepSeek API
 
-密钥必须通过环境变量传入，禁止写入源码：
+API credentials must be provided through an environment variable and must never be written into source files:
 
 ```bash
 export DEEPSEEK_API_KEY="your-key"
@@ -125,7 +133,7 @@ python src/generation/run_deepseek_api.py \
 
 ### Repoformer
 
-`run_repoformer.py` 需要 Repoformer 模型权重、vLLM 和处理后的 RepoEval 数据。示例：
+`run_repoformer.py` requires Repoformer model weights, vLLM, and processed RepoEval data:
 
 ```bash
 python src/generation/run_repoformer.py \
@@ -137,7 +145,9 @@ python src/generation/run_repoformer.py \
 
 ### mini-swe-agent
 
-Agent 复现还需要 mini-swe-agent 2.2.8，以及按 RepoEval 原始目录结构准备的 `repos_source/function_level/` 和 `repos_source/line_and_api_level/`。三类任务分别使用 `configs/agent/function.yaml`、`line.yaml` 和 `api.yaml`；模型配置为 `configs/models/deepseek_v4_flash_thinking.yaml`。
+Agent reproduction additionally requires mini-swe-agent 2.2.8 and RepoEval repository snapshots arranged under `repos_source/function_level/` and `repos_source/line_and_api_level/`.
+
+The three tasks use `configs/agent/function.yaml`, `configs/agent/line.yaml`, and `configs/agent/api.yaml`, respectively. The model configuration is stored in `configs/models/deepseek_v4_flash_thinking.yaml`.
 
 ```bash
 export DEEPSEEK_API_KEY="your-key"
@@ -155,18 +165,20 @@ python src/generation/run_mini_agent.py \
   --num-candidates 1
 ```
 
-论文正式设置为 thinking enabled、reasoning_effort=high、单候选、最长 4096 token。完整目标仓库快照未直接纳入 Git，以控制体积并避免重复分发第三方源码；来源与注意事项见 [THIRD_PARTY.md](THIRD_PARTY.md)。
+The final agent setting uses thinking mode, `reasoning_effort=high`, one candidate per task, and a maximum output length of 4,096 tokens.
 
-## 数据与结果说明
+Full repository snapshots are not committed to Git in order to control repository size and avoid redistributing third-party source trees. See [THIRD_PARTY.md](THIRD_PARTY.md) for component and licensing information.
 
-- `data/repoeval/*.jsonl`：统一实验输入，包含人工参考补全。
-- `results/final/**/prediction.jsonl`、`raw_generation.jsonl` 或 `raw_outputs.jsonl`：模型输出（若原运行保存）。
-- `results/final/**/metrics.jsonl`：逐样本标准化代码与全部指标；Repoformer 的标准化输出可由该文件恢复。
-- `results/final/**/*summary.json`：按方法和任务汇总的最终结果。
-- `results/figures/`、`results/tables/`：论文使用的图表和中间表格。
+## Data and Result Files
 
-## 安全与许可证
+- `data/repoeval/*.jsonl`: unified experimental inputs, including the human-written reference completions.
+- `results/final/**/prediction.jsonl`, `raw_generation.jsonl`, or `raw_outputs.jsonl`: model outputs where retained by the original run.
+- `results/final/**/metrics.jsonl`: normalized code and the complete per-sample metric suite. Repoformer outputs can be recovered from these records.
+- `results/final/**/*summary.json`: final per-method and per-task summaries.
+- `results/figures/` and `results/tables/`: figures and intermediate tables used in the thesis.
 
-- API 密钥只从环境变量读取；`.env`、密钥文件、模型权重和运行工作区均被 `.gitignore` 排除。
-- 本仓库尚未选择开源许可证；在仓库所有者添加许可证之前默认保留全部权利。
-- 第三方组件仍受各自许可证约束，详见 [THIRD_PARTY.md](THIRD_PARTY.md)。
+## Security and Licensing
+
+- API credentials are read exclusively from environment variables. `.env` files, credential files, model weights, and runtime workspaces are excluded by `.gitignore`.
+- No open-source license has been selected. All rights are reserved until the repository owner adds a license.
+- Third-party components remain subject to their respective licenses and usage terms. See [THIRD_PARTY.md](THIRD_PARTY.md).
