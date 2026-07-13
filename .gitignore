@@ -23,7 +23,7 @@ runs/
 workspaces/
 repos_source/
 checkpoints/
-models/
+/models/
 *.log
 
 # Archives and local thesis source

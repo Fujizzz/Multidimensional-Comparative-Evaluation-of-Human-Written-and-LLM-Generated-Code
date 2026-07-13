@@ -1,0 +1,7 @@
+model:
+  model_name: "deepseek/deepseek-v4-flash"
+  cost_tracking: "ignore_errors"
+  model_kwargs:
+    thinking:
+      type: "enabled"
+      reasoning_effort: "high"

@@ -1,10 +1,37 @@
 # Multidimensional Comparative Evaluation of Human-Written and LLM-Generated Code
 
-This repository contains the code, data, and experimental artifacts for the undergraduate thesis **“Multidimensional Comparative Evaluation of Human-Written and LLM-Generated Code”** at Chongqing University.
+<p align="center">
+  <a href="https://github.com/Fujizzz/Multidimensional-Comparative-Evaluation-of-Human-Written-and-LLM-Generated-Code/actions/workflows/verify.yml"><img src="https://github.com/Fujizzz/Multidimensional-Comparative-Evaluation-of-Human-Written-and-LLM-Generated-Code/actions/workflows/verify.yml/badge.svg" alt="Artifact verification"></a>
+  <img src="https://img.shields.io/badge/Python-3.10%20%7C%203.11-3776AB?logo=python&logoColor=white" alt="Python 3.10 or 3.11">
+  <img src="https://img.shields.io/badge/benchmark-RepoEval-6f42c1" alt="RepoEval benchmark">
+  <img src="https://img.shields.io/badge/artifact-reproducible-2ea44f" alt="Reproducible research artifact">
+</p>
 
-The study uses RepoEval as a unified benchmark and compares human-written reference code with five code-generation approaches across repository-level Function, Line, and API completion tasks. The outputs are evaluated along five dimensions: reference consistency, executability, engineering quality, contextual coherence, and risk exposure.
+> A reproducible research artifact for evaluating human-written and LLM-generated code across correctness, executability, engineering quality, contextual coherence, and risk exposure.
 
-The thesis PDF is intentionally excluded to avoid publishing personal information such as the student ID.
+## Overview
+
+This repository contains the code, data, experiment outputs, and analysis artifacts for the undergraduate thesis **“Multidimensional Comparative Evaluation of Human-Written and LLM-Generated Code”** at Chongqing University.
+
+The study uses RepoEval as a unified benchmark and compares human-written reference code with five code-generation approaches across repository-level Function, Line, and API completion tasks. Every approach is evaluated on the same 3,655 samples using a consistent multidimensional evaluation pipeline.
+
+| Artifact | Scope |
+| --- | ---: |
+| Benchmark samples | 3,655 |
+| Task types | 3 |
+| Evaluated approaches | 6 |
+| Primary metrics | 9 |
+| Final method/task summaries | 18 |
+
+### What This Repository Provides
+
+- A unified evaluation implementation for nine primary correctness, quality, context, and risk metrics.
+- Reproducible inputs, retained model outputs, per-sample metrics, and aggregate summaries.
+- Generation runners for local Hugging Face models, an API model, Repoformer, and mini-swe-agent.
+- A one-command integrity check that reproduces every weighted result reported below.
+- Plotting code and publication-ready figures for independent inspection.
+
+The thesis PDF is intentionally excluded to avoid publishing personal information such as the student ID. Model weights and third-party repository snapshots are also excluded; their requirements are documented below.
 
 ## Evaluated Approaches
 
